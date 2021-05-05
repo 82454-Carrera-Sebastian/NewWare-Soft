@@ -29,64 +29,68 @@ namespace NewWare_Soft
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(104, 66);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(52, 20);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "User:";
             // 
-            // label2
+            // txtUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.txtUser.Location = new System.Drawing.Point(185, 66);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.TabIndex = 2;
             // 
-            // textBox1
+            // btnIngresar
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Location = new System.Drawing.Point(187, 157);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(98, 31);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // lblPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(185, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(65, 105);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(91, 20);
+            this.lblPassword.TabIndex = 5;
+            this.lblPassword.Text = "Password:";
             // 
-            // button1
+            // txtPassword
             // 
-            this.button1.Location = new System.Drawing.Point(209, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtPassword.Location = new System.Drawing.Point(184, 105);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.TabIndex = 6;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 262);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.lblUser);
             this.Name = "Login";
             this.Text = "Login al sistema";
             this.ResumeLayout(false);
@@ -96,11 +100,11 @@ namespace NewWare_Soft
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }
 
