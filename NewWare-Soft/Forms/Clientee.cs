@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
 {
-    public partial class Cliente : Form
+    public partial class Clientee : Form
     {
-        public Cliente()
+        public Clientee()
         {
             InitializeComponent();
         }
