@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NewWare_Soft
+namespace NewWare_Soft.Forms
 {
-    public partial class Login : Form
+    public partial class PrincipalForm : Form
     {
-        public Login()
+        public PrincipalForm()
         {
             InitializeComponent();
         }

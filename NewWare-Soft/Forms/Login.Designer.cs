@@ -62,6 +62,7 @@ namespace NewWare_Soft
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lblPassword
             // 
@@ -92,6 +93,7 @@ namespace NewWare_Soft
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblUser);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login al sistema";
             this.ResumeLayout(false);
             this.PerformLayout();

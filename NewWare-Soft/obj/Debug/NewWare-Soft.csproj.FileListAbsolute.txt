@@ -1,0 +1,11 @@
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
