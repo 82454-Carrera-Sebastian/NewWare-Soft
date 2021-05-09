@@ -1,4 +1,6 @@
-﻿using NewWare_Soft.Forms;
+﻿using NewWare_Soft.AccesoADatos_Usuarios;
+using NewWare_Soft.Entidades;
+using NewWare_Soft.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +22,48 @@ namespace NewWare_Soft
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            PrincipalForm ventana = new PrincipalForm();
-            ventana.ShowDialog();
-            this.Hide();
+            //if (txtUser.Text == "Admin" && txtPassword.Text == "12345")
+            //{
+            //    PrincipalForm ventana = new PrincipalForm();
+            //    ventana.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error");
+            //}
+
+            if (txtUser.Text.Equals("") || txtPassword.Text.Equals(""))
+            {
+                MessageBox.Show("Ingrese los valores correctos");
+            }
+            else
+            {
+                string nombreUsu = txtUser.Text;
+                string password = txtPassword.Text;
+                bool resultado = false;
+
+                try
+                {
+                    resultado = AD_Usuarios.ValidarUsuario(nombreUsu, password);
+                    if (resultado == true)
+                    {
+                        Usuarios usu = new Usuarios(nombreUsu, password);
+                        PrincipalForm ventana = new PrincipalForm(usu);
+                        ventana.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario inexistente");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Error al consultar el usuario");
+                }
+            }
         }
     }
 }

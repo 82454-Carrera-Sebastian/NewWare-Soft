@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos_Usuarios\AD_Usuarios.cs" />
+    <Compile Include="Entidades_Users\Usuarios.cs" />
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,7 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AccesoADatos\" />
-    <Folder Include="Entidades\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
