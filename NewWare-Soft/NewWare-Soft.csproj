@@ -47,8 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccesoADatos_Usuarios\AD_Usuarios.cs" />
-    <Compile Include="Entidades_Users\Usuarios.cs" />
+    <Compile Include="AccesoADatos\AD_Usuarios.cs" />
+    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +112,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AccesoADatos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
