@@ -17,6 +17,11 @@ namespace NewWare_Soft.Forms
         {
             InitializeComponent();
         }
-        
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserForm ventana = new UserForm();
+            ventana.Show();
+        }
     }
 }

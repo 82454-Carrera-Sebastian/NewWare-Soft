@@ -54,5 +54,37 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
                 cn.Close();
             }
         }
+
+        public static bool InsertarNuevoUsuario(string nombreUsuario, string password)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            bool resultado = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "InsertNewUser";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombreUsu", nombreUsuario);
+                cmd.Parameters.AddWithValue("@pass", password);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                resultado = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return resultado;
+        }
     }
 }
