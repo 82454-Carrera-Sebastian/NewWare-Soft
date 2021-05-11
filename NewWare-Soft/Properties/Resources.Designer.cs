@@ -59,5 +59,45 @@ namespace NewWare_Soft.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Picture1_3289576 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Picture1_3289576", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_user_plus_2561494 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_user-plus_2561494", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Users_delete_user_6646521 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Users_delete_user_6646521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Users_user_config_configuration_6646130 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Users_user_config_configuration_6646130", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
