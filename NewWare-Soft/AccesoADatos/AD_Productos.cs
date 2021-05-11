@@ -98,7 +98,7 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM productos";
+                string consulta = "SELECT Denominacion, Descripcion, FechaFinalizacion, PrecioVenta FROM productos";
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
@@ -126,7 +126,7 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE personas SET Denominacion = @denominacion, Descripcion = @descripcion, FechaFinalizacion = @fechaFinalizacion, Precio = @precio WHERE Denominacion LIKE @denominacion";
+                string consulta = "UPDATE productos SET Denominacion = @denominacion, Descripcion = @descripcion, FechaFinalizacion = @fechaFinalizacion, PrecioVenta = @precio WHERE Denominacion LIKE @denominacion";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@denominacion", prod.Denominacion);
                 cmd.Parameters.AddWithValue("@descripcion", prod.Descripcion);

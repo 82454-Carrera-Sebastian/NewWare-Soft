@@ -124,7 +124,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_user_plus_2561494;
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
@@ -132,7 +132,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_delete_user_6646521;
             this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
-            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.bajaToolStripMenuItem.Text = "Baja";
             this.bajaToolStripMenuItem.Click += new System.EventHandler(this.bajaToolStripMenuItem_Click);
             // 
@@ -140,7 +140,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_user_config_configuration_6646130;
             this.modificacionToolStripMenuItem.Name = "modificacionToolStripMenuItem";
-            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.modificacionToolStripMenuItem.Text = "Modificacion";
             this.modificacionToolStripMenuItem.Click += new System.EventHandler(this.modificacionToolStripMenuItem_Click);
             // 
@@ -215,6 +215,7 @@ namespace NewWare_Soft.Forms
             this.altaToolStripMenuItem3.Name = "altaToolStripMenuItem3";
             this.altaToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem3.Text = "Alta";
+            this.altaToolStripMenuItem3.Click += new System.EventHandler(this.altaToolStripMenuItem3_Click_1);
             // 
             // bajaToolStripMenuItem3
             // 

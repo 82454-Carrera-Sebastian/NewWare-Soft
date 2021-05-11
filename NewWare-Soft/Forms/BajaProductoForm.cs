@@ -103,6 +103,7 @@ namespace NewWare_Soft.Forms
                     MessageBox.Show("Se elimino el producto con exito");
                     limpiarCampos();
                     cargarGrilla();
+                    btnEliminarProducto.Enabled = false;
                 }
                 else
                 {
@@ -118,6 +119,7 @@ namespace NewWare_Soft.Forms
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             limpiarCampos();
+            btnEliminarProducto.Enabled = false;
         }
         private void BajaProductoForm_Load(object sender, EventArgs e)
         {
