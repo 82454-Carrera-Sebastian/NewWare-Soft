@@ -48,22 +48,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
-    <Compile Include="AccesoADatos\AD_Productos.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
-    <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Forms\BajaProductoForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BajaProductoForm.Designer.cs">
-      <DependentUpon>BajaProductoForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProductos.Designer.cs">
+      <DependentUpon>FormProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HerramientasForm.cs">
       <SubType>Form</SubType>
@@ -77,11 +75,11 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificacionProductoForm.cs">
+    <Compile Include="Forms\ModifUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificacionProductoForm.Designer.cs">
-      <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    <Compile Include="Forms\ModifUser.Designer.cs">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
@@ -103,8 +101,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BajaProductoForm.resx">
-      <DependentUpon>BajaProductoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProductos.resx">
+      <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HerramientasForm.resx">
       <DependentUpon>HerramientasForm.cs</DependentUpon>
@@ -112,14 +110,17 @@
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificacionProductoForm.resx">
-      <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ModifUser.resx">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductoForm.resx">
       <DependentUpon>ProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

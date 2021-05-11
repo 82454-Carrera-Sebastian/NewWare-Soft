@@ -17,6 +17,11 @@ namespace NewWare_Soft.Entidades
             Pass = password;
         }
 
+        public Usuarios()
+        {
+
+        }
+
         public string NombreUsuario
         {
             get => NombreUsu;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewWare_Soft.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace NewWare_Soft.Forms
 {
     public partial class PrincipalForm : Form
     {
-        public PrincipalForm()
+        public PrincipalForm(Usuarios usu)
         {
             InitializeComponent();
         }
@@ -20,21 +21,20 @@ namespace NewWare_Soft.Forms
         private void altaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             //Alta Producto
-            ProductoForm ventana = new ProductoForm();
+            FormProductos ventana = new FormProductos();
             ventana.Show();
         }
 
-        private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Modificacion Producto
-            ModificacionProductoForm ventana = new ModificacionProductoForm();
+            UserForm ventana = new UserForm();
             ventana.Show();
         }
 
-        private void bajaToolStripMenuItem3_Click(object sender, EventArgs e)
+        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Baja Producto
-            BajaProductoForm ventana = new BajaProductoForm();
+            ModifUser ventana = new ModifUser();
             ventana.Show();
         }
     }
