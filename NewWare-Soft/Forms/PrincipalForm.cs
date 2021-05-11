@@ -20,18 +20,20 @@ namespace NewWare_Soft.Forms
         private void altaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             //Alta Producto
-            FormProductos ventana = new FormProductos();
+            ProductoForm ventana = new ProductoForm();
             ventana.Show();
         }
 
         private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            //Modificacion Producto
             ModificacionProductoForm ventana = new ModificacionProductoForm();
             ventana.Show();
         }
 
         private void bajaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            //Baja Producto
             BajaProductoForm ventana = new BajaProductoForm();
             ventana.Show();
         }
