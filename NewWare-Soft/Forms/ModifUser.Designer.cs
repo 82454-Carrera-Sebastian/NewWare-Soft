@@ -30,8 +30,6 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblid = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblNewUser2 = new System.Windows.Forms.Label();
@@ -42,14 +40,16 @@ namespace NewWare_Soft.Forms
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblConfirmNewPass2 = new System.Windows.Forms.Label();
+            this.txtConfirmPass2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.lblid);
+            this.groupBox1.Controls.Add(this.txtConfirmPass2);
+            this.groupBox1.Controls.Add(this.lblConfirmNewPass2);
             this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.lblNewUser2);
@@ -58,60 +58,41 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Controls.Add(this.lblNewPass2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(7, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 224);
+            this.groupBox1.Size = new System.Drawing.Size(408, 202);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del nuevo usuario";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(184, 113);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(86, 28);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblid.Location = new System.Drawing.Point(141, 113);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(28, 17);
-            this.lblid.TabIndex = 8;
-            this.lblid.Text = "ID:";
             // 
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.Black;
-            this.btnModificar.Location = new System.Drawing.Point(197, 159);
+            this.btnModificar.Location = new System.Drawing.Point(210, 150);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(87, 46);
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "Modificar Usuario";
             this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Visible = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(76, 159);
+            this.btnEliminar.Location = new System.Drawing.Point(65, 150);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 46);
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar usuario";
             this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Visible = false;
             // 
             // lblNewUser2
             // 
             this.lblNewUser2.AutoSize = true;
             this.lblNewUser2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewUser2.Location = new System.Drawing.Point(18, 38);
+            this.lblNewUser2.Location = new System.Drawing.Point(28, 38);
             this.lblNewUser2.Name = "lblNewUser2";
             this.lblNewUser2.Size = new System.Drawing.Size(151, 17);
             this.lblNewUser2.TabIndex = 0;
@@ -120,7 +101,7 @@ namespace NewWare_Soft.Forms
             // txtNewUser2
             // 
             this.txtNewUser2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewUser2.Location = new System.Drawing.Point(184, 35);
+            this.txtNewUser2.Location = new System.Drawing.Point(197, 32);
             this.txtNewUser2.Name = "txtNewUser2";
             this.txtNewUser2.Size = new System.Drawing.Size(100, 23);
             this.txtNewUser2.TabIndex = 3;
@@ -128,7 +109,7 @@ namespace NewWare_Soft.Forms
             // txtNewPass2
             // 
             this.txtNewPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPass2.Location = new System.Drawing.Point(184, 70);
+            this.txtNewPass2.Location = new System.Drawing.Point(197, 70);
             this.txtNewPass2.Name = "txtNewPass2";
             this.txtNewPass2.PasswordChar = '*';
             this.txtNewPass2.Size = new System.Drawing.Size(100, 23);
@@ -138,7 +119,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNewPass2.AutoSize = true;
             this.lblNewPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewPass2.Location = new System.Drawing.Point(73, 73);
+            this.lblNewPass2.Location = new System.Drawing.Point(83, 76);
             this.lblNewPass2.Name = "lblNewPass2";
             this.lblNewPass2.Size = new System.Drawing.Size(96, 17);
             this.lblNewPass2.TabIndex = 1;
@@ -151,14 +132,15 @@ namespace NewWare_Soft.Forms
             this.ID,
             this.User,
             this.Password});
-            this.GrillaUsers.Location = new System.Drawing.Point(15, 258);
+            this.GrillaUsers.Location = new System.Drawing.Point(12, 220);
             this.GrillaUsers.Name = "GrillaUsers";
-            this.GrillaUsers.Size = new System.Drawing.Size(444, 226);
+            this.GrillaUsers.Size = new System.Drawing.Size(444, 264);
             this.GrillaUsers.TabIndex = 8;
+            this.GrillaUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrillaUsers_CellClick);
             // 
             // ID
             // 
-            this.ID.DataPropertyName = "IdUsuarios";
+            this.ID.DataPropertyName = "IdUsuario";
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
             this.ID.Width = 50;
@@ -176,6 +158,25 @@ namespace NewWare_Soft.Forms
             this.Password.HeaderText = "Password";
             this.Password.Name = "Password";
             this.Password.Width = 150;
+            // 
+            // lblConfirmNewPass2
+            // 
+            this.lblConfirmNewPass2.AutoSize = true;
+            this.lblConfirmNewPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmNewPass2.Location = new System.Drawing.Point(8, 113);
+            this.lblConfirmNewPass2.Name = "lblConfirmNewPass2";
+            this.lblConfirmNewPass2.Size = new System.Drawing.Size(171, 17);
+            this.lblConfirmNewPass2.TabIndex = 8;
+            this.lblConfirmNewPass2.Text = "Confirmar Contraseña:";
+            // 
+            // txtConfirmPass2
+            // 
+            this.txtConfirmPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPass2.Location = new System.Drawing.Point(197, 107);
+            this.txtConfirmPass2.Name = "txtConfirmPass2";
+            this.txtConfirmPass2.PasswordChar = '*';
+            this.txtConfirmPass2.Size = new System.Drawing.Size(100, 23);
+            this.txtConfirmPass2.TabIndex = 9;
             // 
             // ModifUser
             // 
@@ -208,7 +209,7 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn User;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Label lblConfirmNewPass2;
+        private System.Windows.Forms.TextBox txtConfirmPass2;
     }
 }
