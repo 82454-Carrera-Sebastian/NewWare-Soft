@@ -10,3 +10,6 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.FormProductos.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources

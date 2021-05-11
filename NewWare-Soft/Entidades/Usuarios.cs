@@ -11,10 +11,16 @@ namespace NewWare_Soft.Entidades
         private string NombreUsu;
         private string Pass;
 
+
         public Usuarios(string nombreUsuario, string password)
         {
             NombreUsu = nombreUsuario;
             Pass = password;
+        }
+
+        public Usuarios()
+        {
+
         }
 
         public string NombreUsuario

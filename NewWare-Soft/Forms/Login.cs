@@ -22,17 +22,6 @@ namespace NewWare_Soft
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            //if (txtUser.Text == "Admin" && txtPassword.Text == "12345")
-            //{
-            //    PrincipalForm ventana = new PrincipalForm();
-            //    ventana.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Error");
-            //}
-
             if (txtUser.Text.Equals("") || txtPassword.Text.Equals(""))
             {
                 MessageBox.Show("Ingrese los valores correctos");
@@ -60,7 +49,6 @@ namespace NewWare_Soft
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show("Error al consultar el usuario");
                 }
             }
