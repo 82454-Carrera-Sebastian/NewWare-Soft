@@ -17,6 +17,31 @@ namespace NewWare_Soft.Forms
         {
             InitializeComponent();
         }
-        
+
+        public PrincipalForm()
+        {
+            InitializeComponent();
+        }
+
+        private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AltaPersonal ventana = new AltaPersonal();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void modificacionToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ModificarPersonal ventana = new ModificarPersonal();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void bajaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            BajaPersonal ventana = new BajaPersonal();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

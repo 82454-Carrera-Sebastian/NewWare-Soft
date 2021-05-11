@@ -48,7 +48,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
+    <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="Entidades\Personal.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Forms\AltaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaPersonal.Designer.cs">
+      <DependentUpon>AltaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaPersonal.Designer.cs">
+      <DependentUpon>BajaPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +81,12 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModificarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificarPersonal.Designer.cs">
+      <DependentUpon>ModificarPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +101,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AltaPersonal.resx">
+      <DependentUpon>AltaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaPersonal.resx">
+      <DependentUpon>BajaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificarPersonal.resx">
+      <DependentUpon>ModificarPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
