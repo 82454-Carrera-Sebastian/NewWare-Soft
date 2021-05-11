@@ -12,7 +12,7 @@ namespace NewWare_Soft.Entidades
         private string descripcion;
         private DateTime fechaFinalizacion;
         private int precio;
-        public Producto(string denominacion, string descripcion, DateTime fechaFinalizacion, int precio) 
+        public Producto(string denominacion, string descripcion, DateTime fechaFinalizacion, int precio)
         {
             this.denominacion = denominacion;
             this.descripcion = descripcion;
