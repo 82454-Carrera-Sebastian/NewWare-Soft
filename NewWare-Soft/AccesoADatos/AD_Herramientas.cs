@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewWare_Soft.AccesoADatos
+namespace NewWare_Soft.AccesoADatos_Herramientas
 {
     public class AD_Herramientas
     {

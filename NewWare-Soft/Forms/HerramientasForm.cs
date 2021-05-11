@@ -22,6 +22,5 @@ namespace NewWare_Soft.Forms
 
         }
 
-
     }
 }
