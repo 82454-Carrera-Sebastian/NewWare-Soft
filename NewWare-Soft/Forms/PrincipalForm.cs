@@ -16,5 +16,18 @@ namespace NewWare_Soft.Forms
         {
             InitializeComponent();
         }
+
+        private void altaToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            //Alta Producto
+            FormProductos ventana = new FormProductos();
+            ventana.Show();
+        }
+
+        private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ModificacionProductoForm ventana = new ModificacionProductoForm();
+            ventana.Show();
+        }
     }
 }
