@@ -30,10 +30,6 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.grdProductos = new System.Windows.Forms.DataGridView();
-            this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinalizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.txtFinalizacion = new System.Windows.Forms.MaskedTextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -44,6 +40,10 @@ namespace NewWare_Soft.Forms
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnModificarProducto = new System.Windows.Forms.Button();
+            this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinalizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,30 +63,6 @@ namespace NewWare_Soft.Forms
             this.grdProductos.Size = new System.Drawing.Size(445, 429);
             this.grdProductos.TabIndex = 21;
             this.grdProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProductos_CellClick);
-            // 
-            // denominacion
-            // 
-            this.denominacion.HeaderText = "Denominación";
-            this.denominacion.Name = "denominacion";
-            this.denominacion.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "Descripción";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            // 
-            // fechaFinalizacion
-            // 
-            this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
-            this.fechaFinalizacion.Name = "fechaFinalizacion";
-            this.fechaFinalizacion.ReadOnly = true;
-            // 
-            // precio
-            // 
-            this.precio.HeaderText = "Precio De Venta";
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
             // 
             // txtPrecio
             // 
@@ -180,6 +156,34 @@ namespace NewWare_Soft.Forms
             this.btnModificarProducto.UseVisualStyleBackColor = true;
             this.btnModificarProducto.Click += new System.EventHandler(this.btnModificarProducto_Click);
             // 
+            // denominacion
+            // 
+            this.denominacion.DataPropertyName = "Denominacion";
+            this.denominacion.HeaderText = "Denominación";
+            this.denominacion.Name = "denominacion";
+            this.denominacion.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.DataPropertyName = "Descripcion";
+            this.descripcion.HeaderText = "Descripción";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            // 
+            // fechaFinalizacion
+            // 
+            this.fechaFinalizacion.DataPropertyName = "FechaFinalizacion";
+            this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
+            this.fechaFinalizacion.Name = "fechaFinalizacion";
+            this.fechaFinalizacion.ReadOnly = true;
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "PrecioVenta";
+            this.precio.HeaderText = "Precio De Venta";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            // 
             // ModificacionProductoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,10 +212,6 @@ namespace NewWare_Soft.Forms
         #endregion
 
         private System.Windows.Forms.DataGridView grdProductos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn denominacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalizacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
         private System.Windows.Forms.MaskedTextBox txtFinalizacion;
         private System.Windows.Forms.TextBox txtDescripcion;
@@ -222,5 +222,9 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnModificarProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn denominacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalizacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
     }
 }

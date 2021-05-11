@@ -156,24 +156,28 @@
             // 
             // denominacion
             // 
+            this.denominacion.DataPropertyName = "Denominacion";
             this.denominacion.HeaderText = "Denominación";
             this.denominacion.Name = "denominacion";
             this.denominacion.ReadOnly = true;
             // 
             // descripcion
             // 
+            this.descripcion.DataPropertyName = "Descripcion";
             this.descripcion.HeaderText = "Descripción";
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
             // 
             // fechaFinalizacion
             // 
+            this.fechaFinalizacion.DataPropertyName = "FechaFinalizacion";
             this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
             this.fechaFinalizacion.Name = "fechaFinalizacion";
             this.fechaFinalizacion.ReadOnly = true;
             // 
             // precio
             // 
+            this.precio.DataPropertyName = "PrecioVenta";
             this.precio.HeaderText = "Precio De Venta";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;

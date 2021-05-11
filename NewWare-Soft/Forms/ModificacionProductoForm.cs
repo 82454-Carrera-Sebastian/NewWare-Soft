@@ -18,7 +18,6 @@ namespace NewWare_Soft.Forms
         {
             InitializeComponent();
         }
-
         private void ModificacionProductoForm_Load(object sender, EventArgs e)
         {
             limpiarCampos();
@@ -60,8 +59,8 @@ namespace NewWare_Soft.Forms
             {
                 Producto per = AD_Productos.obtenerProducto(denominacion);
                 limpiarCampos();
-                activarDesactivarCampos(true);
                 cargarCampos(per);
+                activarDesactivarCampos(true);
             }
             catch (Exception)
             {
@@ -99,6 +98,7 @@ namespace NewWare_Soft.Forms
                 MessageBox.Show("Se actualizo el producto con exito");
                 limpiarCampos();
                 cargarGrilla();
+                activarDesactivarCampos(false);
             }
             else
             {
@@ -108,6 +108,7 @@ namespace NewWare_Soft.Forms
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             limpiarCampos();
+            activarDesactivarCampos(false);
         }
         private Producto obtenerDatosProducto()
         {

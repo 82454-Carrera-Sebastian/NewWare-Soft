@@ -15,3 +15,21 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Form
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
