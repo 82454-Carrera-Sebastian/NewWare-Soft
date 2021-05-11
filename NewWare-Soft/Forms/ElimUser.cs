@@ -71,26 +71,34 @@ namespace NewWare_Soft.Forms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("Deseas eliminar a " + txtElimUser.Text + "?", "Confirmar baja", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                Usuarios U = ObtenerDatosUsuario();
-                bool resultado = AD_Usuarios.EliminarUsuario(U);
-                if (resultado)
+                try
                 {
-                    MessageBox.Show("Usuario eliminado con éxito");
-                    LimpiarCampos();
-                    CargarGrilla();
-                    btnEliminar.Enabled = false;
+                    Usuarios U = ObtenerDatosUsuario();
+                    bool resultado = AD_Usuarios.EliminarUsuario(U);
+                    if (resultado)
+                    {
+                        MessageBox.Show("Usuario eliminado con éxito");
+                        LimpiarCampos();
+                        CargarGrilla();
+                        btnEliminar.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al eliminar el usuario");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Error al eliminar el usuario");
+                    MessageBox.Show("Error al eliminar usuario");
+                    txtElimUser.Focus();
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error al eliminar usuario");
-                txtElimUser.Focus();
+                LimpiarCampos();
+                btnEliminar.Enabled = false;
             }
         }
     }

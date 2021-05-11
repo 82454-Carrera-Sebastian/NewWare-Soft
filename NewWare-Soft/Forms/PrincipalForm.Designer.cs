@@ -105,7 +105,7 @@ namespace NewWare_Soft.Forms
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(913, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(973, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -153,19 +153,19 @@ namespace NewWare_Soft.Forms
             // altaToolStripMenuItem1
             // 
             this.altaToolStripMenuItem1.Name = "altaToolStripMenuItem1";
-            this.altaToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem1.Text = "Alta";
             // 
             // bajaToolStripMenuItem1
             // 
             this.bajaToolStripMenuItem1.Name = "bajaToolStripMenuItem1";
-            this.bajaToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.bajaToolStripMenuItem1.Text = "Baja";
             // 
             // modificacionToolStripMenuItem1
             // 
             this.modificacionToolStripMenuItem1.Name = "modificacionToolStripMenuItem1";
-            this.modificacionToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.modificacionToolStripMenuItem1.Text = "Modificacion";
             // 
             // personalToolStripMenuItem
@@ -181,19 +181,19 @@ namespace NewWare_Soft.Forms
             // altaToolStripMenuItem2
             // 
             this.altaToolStripMenuItem2.Name = "altaToolStripMenuItem2";
-            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem2.Text = "Alta";
             // 
             // bajaToolStripMenuItem2
             // 
             this.bajaToolStripMenuItem2.Name = "bajaToolStripMenuItem2";
-            this.bajaToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.bajaToolStripMenuItem2.Text = "Baja";
             // 
             // modificacionToolStripMenuItem2
             // 
             this.modificacionToolStripMenuItem2.Name = "modificacionToolStripMenuItem2";
-            this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.modificacionToolStripMenuItem2.Text = "Modificacion";
             // 
             // productoToolStripMenuItem
@@ -480,7 +480,7 @@ namespace NewWare_Soft.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 450);
+            this.ClientSize = new System.Drawing.Size(973, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PrincipalForm";

@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ElimUser));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblElimUser = new System.Windows.Forms.Label();
@@ -149,6 +150,7 @@ namespace NewWare_Soft.Forms
             this.ClientSize = new System.Drawing.Size(492, 502);
             this.Controls.Add(this.GrillaUsers2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ElimUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dar de baja un usuario";

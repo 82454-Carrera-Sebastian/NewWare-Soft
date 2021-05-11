@@ -85,26 +85,34 @@ namespace NewWare_Soft.Forms
             {
                 if (txtModifPass.Text.Equals(txtConfirm2Pass.Text))
                 {
-                    try
+                    if (MessageBox.Show("Vas a modificar la contraseña de " + txtModifUser.Text + ", estas seguro?", "Confirmar modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        Usuarios U = ObtenerDatosUsuario();
-                        bool resultado = AD_Usuarios.ModificarUsuario(U);
-                        if (resultado)
+                        try
                         {
-                            MessageBox.Show("Usuario modificado con éxito");
-                            LimpiarCampos();
-                            CargarGrilla();
-                            btnModificar.Enabled = false;
+                            Usuarios U = ObtenerDatosUsuario();
+                            bool resultado = AD_Usuarios.ModificarUsuario(U);
+                            if (resultado)
+                            {
+                                MessageBox.Show("Usuario modificado con éxito");
+                                LimpiarCampos();
+                                CargarGrilla();
+                                btnModificar.Enabled = false;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al modificar el usuario");
+                            }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            MessageBox.Show("Error al modificar el usuario");
+                            MessageBox.Show("Error al modificar usuario");
+                            txtModifUser.Focus();
                         }
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show("Error al modificar usuario");
-                        txtModifUser.Focus();
+                        LimpiarCampos();
+                        btnModificar.Enabled = false;
                     }
                 }
                 else

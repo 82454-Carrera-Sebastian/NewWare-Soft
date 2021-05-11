@@ -29,6 +29,7 @@ namespace NewWare_Soft
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lblUser = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
@@ -92,6 +93,7 @@ namespace NewWare_Soft
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblUser);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login al sistema";
