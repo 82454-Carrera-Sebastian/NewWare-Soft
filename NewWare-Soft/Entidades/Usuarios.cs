@@ -8,7 +8,6 @@ namespace NewWare_Soft.Entidades
 {
     public class Usuarios
     {
-        private int id;
         private string NombreUsu;
         private string Pass;
 

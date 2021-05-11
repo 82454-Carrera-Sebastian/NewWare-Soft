@@ -30,6 +30,8 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtConfirmPass2 = new System.Windows.Forms.TextBox();
+            this.lblConfirmNewPass2 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblNewUser2 = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@ namespace NewWare_Soft.Forms
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblConfirmNewPass2 = new System.Windows.Forms.Label();
-            this.txtConfirmPass2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsers)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,26 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Size = new System.Drawing.Size(408, 202);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del nuevo usuario";
+            this.groupBox1.Text = "Actualizar contraseña/Eliminar Usuario";
+            // 
+            // txtConfirmPass2
+            // 
+            this.txtConfirmPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPass2.Location = new System.Drawing.Point(197, 107);
+            this.txtConfirmPass2.Name = "txtConfirmPass2";
+            this.txtConfirmPass2.PasswordChar = '*';
+            this.txtConfirmPass2.Size = new System.Drawing.Size(100, 23);
+            this.txtConfirmPass2.TabIndex = 9;
+            // 
+            // lblConfirmNewPass2
+            // 
+            this.lblConfirmNewPass2.AutoSize = true;
+            this.lblConfirmNewPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmNewPass2.Location = new System.Drawing.Point(8, 113);
+            this.lblConfirmNewPass2.Name = "lblConfirmNewPass2";
+            this.lblConfirmNewPass2.Size = new System.Drawing.Size(171, 17);
+            this.lblConfirmNewPass2.TabIndex = 8;
+            this.lblConfirmNewPass2.Text = "Confirmar Contraseña:";
             // 
             // btnModificar
             // 
@@ -87,6 +106,7 @@ namespace NewWare_Soft.Forms
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar usuario";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblNewUser2
             // 
@@ -158,25 +178,6 @@ namespace NewWare_Soft.Forms
             this.Password.HeaderText = "Password";
             this.Password.Name = "Password";
             this.Password.Width = 150;
-            // 
-            // lblConfirmNewPass2
-            // 
-            this.lblConfirmNewPass2.AutoSize = true;
-            this.lblConfirmNewPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmNewPass2.Location = new System.Drawing.Point(8, 113);
-            this.lblConfirmNewPass2.Name = "lblConfirmNewPass2";
-            this.lblConfirmNewPass2.Size = new System.Drawing.Size(171, 17);
-            this.lblConfirmNewPass2.TabIndex = 8;
-            this.lblConfirmNewPass2.Text = "Confirmar Contraseña:";
-            // 
-            // txtConfirmPass2
-            // 
-            this.txtConfirmPass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPass2.Location = new System.Drawing.Point(197, 107);
-            this.txtConfirmPass2.Name = "txtConfirmPass2";
-            this.txtConfirmPass2.PasswordChar = '*';
-            this.txtConfirmPass2.Size = new System.Drawing.Size(100, 23);
-            this.txtConfirmPass2.TabIndex = 9;
             // 
             // ModifUser
             // 

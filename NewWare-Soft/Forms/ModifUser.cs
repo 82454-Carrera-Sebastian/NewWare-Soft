@@ -96,6 +96,7 @@ namespace NewWare_Soft.Forms
         {
             int indice = e.RowIndex;
             btnModificar.Enabled = true;
+            btnEliminar.Enabled = true;
             DataGridViewRow filaselec = GrillaUsers.Rows[indice];
             string user = filaselec.Cells["User"].Value.ToString(); //
             Usuarios U = ObtenerUsuario(user);
@@ -131,6 +132,8 @@ namespace NewWare_Soft.Forms
                             MessageBox.Show("Usuario modificado con éxito");
                             LimpiarCampos();
                             CargarGrilla();
+                            btnModificar.Enabled = false;
+                            btnEliminar.Enabled = false;
                         }
                         else
                         {
@@ -180,6 +183,63 @@ namespace NewWare_Soft.Forms
                 cn.Close();
             }
             return resultado;
+        }
+
+        private bool EliminarUsuario(Usuarios usu)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            bool resultado = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "DELETE FROM usuarios WHERE NombreUsuario like @nombre"; //
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombre", usu.NombreUsuario);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                resultado = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return resultado;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Usuarios U = ObtenerDatosUsuario();
+                bool resultado = EliminarUsuario(U);
+                if (resultado)
+                {
+                    MessageBox.Show("Usuario eliminado con éxito");
+                    LimpiarCampos();
+                    CargarGrilla();
+                    btnModificar.Enabled = false;
+                    btnEliminar.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar el usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar usuario");
+                txtNewUser2.Focus();
+            }
         }
     }
 

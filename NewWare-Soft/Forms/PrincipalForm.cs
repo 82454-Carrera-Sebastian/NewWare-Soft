@@ -29,5 +29,11 @@ namespace NewWare_Soft.Forms
             ModifUser ventana = new ModifUser();
             ventana.ShowDialog();
         }
+
+        private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModifUser ventana = new ModifUser();
+            ventana.ShowDialog();
+        }
     }
 }
