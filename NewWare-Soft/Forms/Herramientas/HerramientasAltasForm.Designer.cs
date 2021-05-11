@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms
 {
-    partial class HerramientasForm
+    partial class HerramientasAltasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@ namespace NewWare_Soft.Forms
             this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescripcionHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModificarHerramienta = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@ namespace NewWare_Soft.Forms
             // btnAgregarHerramienta
             // 
             this.btnAgregarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHerramienta.Location = new System.Drawing.Point(301, 185);
+            this.btnAgregarHerramienta.Location = new System.Drawing.Point(131, 185);
             this.btnAgregarHerramienta.Name = "btnAgregarHerramienta";
             this.btnAgregarHerramienta.Size = new System.Drawing.Size(212, 63);
             this.btnAgregarHerramienta.TabIndex = 3;
@@ -124,18 +125,29 @@ namespace NewWare_Soft.Forms
             // btnModificarHerramienta
             // 
             this.btnModificarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarHerramienta.Location = new System.Drawing.Point(301, 185);
+            this.btnModificarHerramienta.Location = new System.Drawing.Point(349, 185);
             this.btnModificarHerramienta.Name = "btnModificarHerramienta";
             this.btnModificarHerramienta.Size = new System.Drawing.Size(212, 63);
             this.btnModificarHerramienta.TabIndex = 12;
             this.btnModificarHerramienta.Text = "Modificar Herramienta";
             this.btnModificarHerramienta.UseVisualStyleBackColor = true;
             // 
-            // HerramientasForm
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(168, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Alta de Herramientas";
+            // 
+            // HerramientasAltasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgregarHerramienta);
             this.Controls.Add(this.btnModificarHerramienta);
             this.Controls.Add(this.dataGridView1);
@@ -144,8 +156,9 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblNomHerramienta);
-            this.Name = "HerramientasForm";
-            this.Text = "HerramientasForm";
+            this.Name = "HerramientasAltasForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Alta de Herramientas";
             this.Load += new System.EventHandler(this.HerramientasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -165,5 +178,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionHerramienta;
         private System.Windows.Forms.Button btnModificarHerramienta;
+        private System.Windows.Forms.Label label1;
     }
 }
