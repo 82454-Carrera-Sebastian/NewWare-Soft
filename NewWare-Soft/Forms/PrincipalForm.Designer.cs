@@ -214,6 +214,7 @@ namespace NewWare_Soft.Forms
             this.bajaToolStripMenuItem3.Name = "bajaToolStripMenuItem3";
             this.bajaToolStripMenuItem3.Size = new System.Drawing.Size(270, 34);
             this.bajaToolStripMenuItem3.Text = "Baja";
+            this.bajaToolStripMenuItem3.Click += new System.EventHandler(this.bajaToolStripMenuItem3_Click);
             // 
             // modificacionToolStripMenuItem3
             // 
