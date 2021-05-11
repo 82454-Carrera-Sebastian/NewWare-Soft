@@ -31,5 +31,11 @@ namespace NewWare_Soft.Forms
             UserForm ventana = new UserForm();
             ventana.Show();
         }
+
+        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModifUser ventana = new ModifUser();
+            ventana.Show();
+        }
     }
 }

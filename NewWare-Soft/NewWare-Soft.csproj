@@ -75,6 +75,12 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModifUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModifUser.Designer.cs">
+      <DependentUpon>ModifUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModifUser.resx">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>

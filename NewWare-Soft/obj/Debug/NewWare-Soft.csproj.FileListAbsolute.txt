@@ -13,3 +13,4 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Form
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
