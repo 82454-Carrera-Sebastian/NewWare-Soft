@@ -52,6 +52,7 @@ namespace NewWare_Soft.Forms
                     {
                         MessageBox.Show("Herramienta dada de alta con exito");
                         LimpiarCampos();
+                        CargarGrilla();
                         txtNombre.Focus();
                     }
                     else
