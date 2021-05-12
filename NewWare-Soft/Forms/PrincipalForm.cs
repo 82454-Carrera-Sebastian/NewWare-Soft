@@ -91,5 +91,23 @@ namespace NewWare_Soft.Forms
             HerramientasModificacionesForm ventana = new HerramientasModificacionesForm();
             ventana.Show();
         }
+
+        private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AltaCliente window = new AltaCliente();
+            window.ShowDialog();
+        }
+
+        private void bajaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BajaCliente window = new BajaCliente();
+            window.ShowDialog();
+        }
+
+        private void modificacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ModificarCliente window = new ModificarCliente();
+            window.ShowDialog();
+        }
     }
 }

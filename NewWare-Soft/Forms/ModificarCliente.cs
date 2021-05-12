@@ -120,5 +120,9 @@ namespace NewWare_Soft.Forms
             textBox_telefono.Enabled = false;
         }
 
+        private void button_LimpiarCampos_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
     }
 }

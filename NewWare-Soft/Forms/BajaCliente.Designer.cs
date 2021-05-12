@@ -65,6 +65,7 @@
             this.button_SI.TabIndex = 2;
             this.button_SI.Text = "SI";
             this.button_SI.UseVisualStyleBackColor = true;
+            this.button_SI.Click += new System.EventHandler(this.button_SI_Click);
             // 
             // button_NO
             // 
@@ -74,6 +75,7 @@
             this.button_NO.TabIndex = 1;
             this.button_NO.Text = "NO";
             this.button_NO.UseVisualStyleBackColor = true;
+            this.button_NO.Click += new System.EventHandler(this.button_NO_Click);
             // 
             // label_consulta
             // 
@@ -129,6 +131,7 @@
             this.dataGridView_Clientes.RowTemplate.Height = 28;
             this.dataGridView_Clientes.Size = new System.Drawing.Size(665, 339);
             this.dataGridView_Clientes.TabIndex = 9;
+            this.dataGridView_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_ClienteBorrar_CellClick);
             // 
             // Email
             // 
@@ -170,6 +173,7 @@
             this.Name = "BajaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Baja de cliente";
+            this.Load += new System.EventHandler(this.BajaCliente_Load);
             this.groupBox_confirmacion.ResumeLayout(false);
             this.groupBox_confirmacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).EndInit();

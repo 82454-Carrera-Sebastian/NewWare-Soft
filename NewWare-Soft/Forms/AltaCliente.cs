@@ -150,7 +150,7 @@ namespace NewWare_Soft.Forms
             client.Barrio = int.Parse(textBox_barrio.Text.Trim());
             //falta validar que se sean ints
             client.Telefono = textBox_telefono.Text;
-            client.NroCalle = int.Parse(textBox_telefono.Text);
+            client.NroCalle = int.Parse(textBox_nroCalle.Text);
             return client;
 
 

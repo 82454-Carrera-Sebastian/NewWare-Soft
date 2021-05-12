@@ -63,6 +63,7 @@ namespace NewWare_Soft.Forms
             this.button_LimpiarCampos.TabIndex = 60;
             this.button_LimpiarCampos.Text = "Limpiar campos";
             this.button_LimpiarCampos.UseVisualStyleBackColor = true;
+            this.button_LimpiarCampos.Click += new System.EventHandler(this.button_LimpiarCampos_Click);
             // 
             // button_actualizarCliente
             // 
@@ -259,6 +260,7 @@ namespace NewWare_Soft.Forms
             this.dataGridView_Clientes.RowTemplate.Height = 28;
             this.dataGridView_Clientes.Size = new System.Drawing.Size(737, 339);
             this.dataGridView_Clientes.TabIndex = 43;
+            this.dataGridView_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_Cliente_CellClick);
             // 
             // label1
             // 
@@ -297,6 +299,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.label1);
             this.Name = "ModificarCliente";
             this.Text = "Modificar cliente";
+            this.Load += new System.EventHandler(this.ModificarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

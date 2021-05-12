@@ -75,8 +75,8 @@ namespace NewWare_Soft.Forms
             bool borrar = AD_Cliente.BorrarCliente_DB(VariablesGlobales.var);
             if (borrar)
             {
-                MessageBox.Show("Se borro el cliente con exito");
                 LlenarGrilla();
+                MessageBox.Show("Se borro el cliente con exito");
                 groupBox_confirmacion.Enabled = false;
                 groupBox_confirmacion.Visible = false;
                 button_NO.Enabled = false;
@@ -95,6 +95,5 @@ namespace NewWare_Soft.Forms
                 button_NO.Visible = false;
             }
         }
-
     }
 }
