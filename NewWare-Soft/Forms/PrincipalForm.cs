@@ -53,5 +53,23 @@ namespace NewWare_Soft.Forms
             ProductoForm ventana = new ProductoForm();
             ventana.Show();
         }
+
+        private void altaToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            HerramientasAltasForm ventana = new HerramientasAltasForm();
+            ventana.Show();
+        }
+
+        private void bajaToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Herramientas.HerramientasBajasForm ventana = new Herramientas.HerramientasBajasForm();
+            ventana.Show();
+        }
+
+        private void modificacionToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Herramientas.HerramientasModificacionesForm ventana = new Herramientas.HerramientasModificacionesForm();
+            ventana.Show();
+        }
     }
 }

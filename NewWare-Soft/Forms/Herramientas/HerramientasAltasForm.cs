@@ -61,7 +61,7 @@ namespace NewWare_Soft.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al insertar nuevo usuario");
+                    MessageBox.Show("Error al insertar nueva herramienta");
                 }
             }
         }
