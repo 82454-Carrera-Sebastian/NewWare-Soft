@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NewWare_Soft.AccesoADatos_Herramientas;
+using System;
 using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
@@ -19,8 +13,59 @@ namespace NewWare_Soft.Forms
 
         private void HerramientasForm_Load(object sender, EventArgs e)
         {
-
+            LimpiarCampos();
+            CargarGrilla();
         }
 
+        private void CargarGrilla()
+        {
+            try
+            {
+                gdrHerramientas.DataSource = AD_Herramientas.ObtenerListadoHerramientas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener herramientas");
+            }
+        }
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+        private void LimpiarCampos()
+        {
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
+        }
+        private void btnAgregarHerramienta_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show("Ingrese el nombre de la herramienta");
+            }
+            else
+            {
+                try
+                {
+                    bool resultado = AD_Herramientas.InsertarHerramienta(txtNombre.Text, txtDescripcion.Text);
+                    if (resultado)
+                    {
+                        MessageBox.Show("Herramienta dada de alta con exito");
+                        LimpiarCampos();
+                        txtNombre.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al insertar nueva herramienta");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al insertar nuevo usuario");
+                }
+            }
+        }
     }
+
+
 }

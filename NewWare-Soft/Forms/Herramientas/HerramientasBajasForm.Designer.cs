@@ -39,6 +39,7 @@ namespace NewWare_Soft.Forms.Herramientas
             this.lblDescripcionHerramienta = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lblNomHerramienta = new System.Windows.Forms.Label();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,22 @@ namespace NewWare_Soft.Forms.Herramientas
             this.lblNomHerramienta.TabIndex = 17;
             this.lblNomHerramienta.Text = "Nombre de la Herramienta:";
             // 
+            // btnLimpiarCampos
+            // 
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(20, 194);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(79, 63);
+            this.btnLimpiarCampos.TabIndex = 22;
+            this.btnLimpiarCampos.Text = "Limpiar campos";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            // 
             // HerramientasBajasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgregarHerramienta);
             this.Controls.Add(this.btnModificarHerramienta);
@@ -164,5 +176,6 @@ namespace NewWare_Soft.Forms.Herramientas
         private System.Windows.Forms.Label lblDescripcionHerramienta;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblNomHerramienta;
+        private System.Windows.Forms.Button btnLimpiarCampos;
     }
 }

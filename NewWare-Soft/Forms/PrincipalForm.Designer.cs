@@ -483,7 +483,7 @@ namespace NewWare_Soft.Forms
             this.Name = "PrincipalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrincipalForm";
-            this.Load += new System.EventHandler(this.PrincipalForm_Load);
+            //this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

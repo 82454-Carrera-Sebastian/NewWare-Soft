@@ -16,5 +16,16 @@ namespace NewWare_Soft.Forms.Herramientas
         {
             InitializeComponent();
         }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
+        }
+
+        private void btnModificarHerramienta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
