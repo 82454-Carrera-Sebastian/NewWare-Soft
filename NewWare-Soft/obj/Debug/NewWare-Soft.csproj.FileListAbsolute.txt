@@ -54,3 +54,26 @@ C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-S
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb

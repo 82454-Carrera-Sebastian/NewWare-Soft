@@ -52,6 +52,7 @@ namespace NewWare_Soft.Forms
                     {
                         MessageBox.Show("Herramienta dada de alta con exito");
                         LimpiarCampos();
+                        CargarGrilla();
                         txtNombre.Focus();
                     }
                     else
@@ -61,7 +62,7 @@ namespace NewWare_Soft.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al insertar nuevo usuario");
+                    MessageBox.Show("Error al insertar nueva herramienta");
                 }
             }
         }
