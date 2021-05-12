@@ -47,19 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Bancos.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
+    <Compile Include="AccesoADatos\AD_MotivosEgreso.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
+    <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
+    <Compile Include="Entidades\MotivoEgreso.cs" />
     <Compile Include="Entidades\Personal.cs" />
     <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Forms\AltaCliente.cs">
       <SubType>Form</SubType>
@@ -79,11 +85,29 @@
     <Compile Include="Forms\AltaPersonal.Designer.cs">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Alta_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alta_Banco.Designer.cs">
+      <DependentUpon>Alta_Banco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Alta_Cargo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Alta_Cargo.designer.cs">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alta_MotivoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alta_MotivoEgreso.Designer.cs">
+      <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alta_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alta_Tarjeta.Designer.cs">
+      <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BajaCliente.cs">
       <SubType>Form</SubType>
@@ -109,11 +133,29 @@
     <Compile Include="Forms\BajaProductoForm.Designer.cs">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Baja_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Baja_Banco.Designer.cs">
+      <DependentUpon>Baja_Banco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Baja_Cargo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Baja_Cargo.designer.cs">
       <DependentUpon>Baja_Cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Baja_MotivoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Baja_MotivoEgreso.Designer.cs">
+      <DependentUpon>Baja_MotivoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Baja_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Baja_Tarjeta.Designer.cs">
+      <DependentUpon>Baja_Tarjeta.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ElimUser.cs">
       <SubType>Form</SubType>
@@ -180,6 +222,24 @@
     </Compile>
     <Compile Include="Forms\ModifUser.Designer.cs">
       <DependentUpon>ModifUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mod_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mod_Banco.Designer.cs">
+      <DependentUpon>Mod_Banco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mod_MotivoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mod_MotivoEgreso.Designer.cs">
+      <DependentUpon>Mod_MotivoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mod_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mod_Tarjeta.Designer.cs">
+      <DependentUpon>Mod_Tarjeta.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
