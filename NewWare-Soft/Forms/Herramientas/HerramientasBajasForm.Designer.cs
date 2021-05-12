@@ -101,7 +101,6 @@ namespace NewWare_Soft.Forms.Herramientas
             this.txtPassword.Location = new System.Drawing.Point(253, 120);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(316, 54);
             this.txtPassword.TabIndex = 15;
             // 

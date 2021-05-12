@@ -37,7 +37,7 @@ namespace NewWare_Soft.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.gdrHerramientas = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescripcionHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
@@ -48,7 +48,6 @@ namespace NewWare_Soft.Forms
             this.txtDescripcion.Location = new System.Drawing.Point(250, 111);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PasswordChar = '*';
             this.txtDescripcion.Size = new System.Drawing.Size(316, 54);
             this.txtDescripcion.TabIndex = 2;
             // 
@@ -117,7 +116,7 @@ namespace NewWare_Soft.Forms
             this.gdrHerramientas.AllowUserToDeleteRows = false;
             this.gdrHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdrHerramientas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
+            this.IdHerramienta,
             this.NombreHerramienta,
             this.DescripcionHerramienta});
             this.gdrHerramientas.Location = new System.Drawing.Point(24, 282);
@@ -126,15 +125,17 @@ namespace NewWare_Soft.Forms
             this.gdrHerramientas.Size = new System.Drawing.Size(542, 150);
             this.gdrHerramientas.TabIndex = 20;
             // 
-            // Id
+            // IdHerramienta
             // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 30;
+            this.IdHerramienta.DataPropertyName = "IdHerramienta";
+            this.IdHerramienta.HeaderText = "Id";
+            this.IdHerramienta.Name = "IdHerramienta";
+            this.IdHerramienta.ReadOnly = true;
+            this.IdHerramienta.Width = 30;
             // 
             // NombreHerramienta
             // 
+            this.NombreHerramienta.DataPropertyName = "Nombre";
             this.NombreHerramienta.HeaderText = "Nombre";
             this.NombreHerramienta.Name = "NombreHerramienta";
             this.NombreHerramienta.ReadOnly = true;
@@ -142,6 +143,7 @@ namespace NewWare_Soft.Forms
             // 
             // DescripcionHerramienta
             // 
+            this.DescripcionHerramienta.DataPropertyName = "Descripcion";
             this.DescripcionHerramienta.HeaderText = "Descripción";
             this.DescripcionHerramienta.Name = "DescripcionHerramienta";
             this.DescripcionHerramienta.ReadOnly = true;
@@ -180,7 +182,7 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.DataGridView gdrHerramientas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionHerramienta;
     }
