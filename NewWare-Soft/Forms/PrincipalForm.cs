@@ -18,30 +18,40 @@ namespace NewWare_Soft.Forms
             InitializeComponent();
         }
 
-        public PrincipalForm()
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            UserForm ventana = new UserForm();
+            ventana.Show();
         }
 
-        private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AltaPersonal ventana = new AltaPersonal();
+            ModifUser ventana = new ModifUser();
             ventana.Show();
-            this.Hide();
         }
 
-        private void modificacionToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ModificarPersonal ventana = new ModificarPersonal();
+            ElimUser ventana = new ElimUser();
             ventana.Show();
-            this.Hide();
         }
 
-        private void bajaToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void bajaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            BajaPersonal ventana = new BajaPersonal();
+            BajaProductoForm ventana = new BajaProductoForm();
             ventana.Show();
-            this.Hide();
+        }
+
+        private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ModificacionProductoForm ventana = new ModificacionProductoForm();
+            ventana.Show();
+        }
+
+        private void altaToolStripMenuItem3_Click_1(object sender, EventArgs e)
+        {
+            ProductoForm ventana = new ProductoForm();
+            ventana.Show();
         }
     }
 }

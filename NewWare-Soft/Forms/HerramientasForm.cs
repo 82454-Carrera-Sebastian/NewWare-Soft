@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
 {
-    public partial class Clientee : Form
+    public partial class HerramientasForm : Form
     {
-        public Clientee()
+        public HerramientasForm()
         {
             InitializeComponent();
         }
+
+        private void HerramientasForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

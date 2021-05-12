@@ -47,21 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Herramientas.cs" />
+    <Compile Include="AccesoADatos\AD_Productos.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
-    <Compile Include="AccesoADatos\DAOpersonal.cs" />
-    <Compile Include="Entidades\Personal.cs" />
+    <Compile Include="Entidades\Herramientas.cs" />
+    <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Forms\AltaPersonal.cs">
+    <Compile Include="Forms\BajaProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaPersonal.Designer.cs">
-      <DependentUpon>AltaPersonal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\BajaPersonal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BajaPersonal.Designer.cs">
-      <DependentUpon>BajaPersonal.cs</DependentUpon>
+    <Compile Include="Forms\BajaProductoForm.Designer.cs">
+      <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
@@ -69,11 +65,17 @@
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProductos.cs">
+    <Compile Include="Forms\ElimUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProductos.Designer.cs">
-      <DependentUpon>FormProductos.cs</DependentUpon>
+    <Compile Include="Forms\ElimUser.Designer.cs">
+      <DependentUpon>ElimUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HerramientasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HerramientasForm.Designer.cs">
+      <DependentUpon>HerramientasForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -81,17 +83,29 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificarPersonal.cs">
+    <Compile Include="Forms\ModificacionProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificarPersonal.Designer.cs">
-      <DependentUpon>ModificarPersonal.cs</DependentUpon>
+    <Compile Include="Forms\ModificacionProductoForm.Designer.cs">
+      <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModifUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModifUser.Designer.cs">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductoForm.Designer.cs">
+      <DependentUpon>ProductoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserForm.cs">
       <SubType>Form</SubType>
@@ -101,23 +115,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AltaPersonal.resx">
-      <DependentUpon>AltaPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BajaProductoForm.resx">
+      <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaPersonal.resx">
-      <DependentUpon>BajaPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ElimUser.resx">
+      <DependentUpon>ElimUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormProductos.resx">
-      <DependentUpon>FormProductos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\HerramientasForm.resx">
+      <DependentUpon>HerramientasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarPersonal.resx">
-      <DependentUpon>ModificarPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ModificacionProductoForm.resx">
+      <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModifUser.resx">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductoForm.resx">
+      <DependentUpon>ProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +150,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -141,6 +165,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Picture1_3289576.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user-plus_2561494.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Users_delete_user_6646521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Users_user_config_configuration_6646130.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
