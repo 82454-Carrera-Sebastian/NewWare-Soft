@@ -87,3 +87,35 @@ C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-So
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
 >>>>>>> b36dced (Alta y Modificacion Terminada)
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Modificacion_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
