@@ -59,13 +59,6 @@
     <Compile Include="Forms\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaClientes.cs" />
-    <Compile Include="Forms\BajaCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BajaCliente.Designer.cs">
-      <DependentUpon>BajaCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,20 +91,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AltaCliente.resx">
-      <DependentUpon>AltaCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaCliente.resx">
-      <DependentUpon>BajaCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarCliente.resx">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
