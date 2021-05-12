@@ -9,8 +9,6 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
-C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.FormProductos.resources
-C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
@@ -54,3 +52,11 @@ C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-S
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
