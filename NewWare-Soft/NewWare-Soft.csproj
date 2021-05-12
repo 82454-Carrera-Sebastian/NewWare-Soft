@@ -47,12 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
@@ -77,6 +79,12 @@
     <Compile Include="Forms\AltaPersonal.Designer.cs">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Alta_Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alta_Cargo.designer.cs">
+      <DependentUpon>Alta_Cargo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BajaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +108,12 @@
     </Compile>
     <Compile Include="Forms\BajaProductoForm.Designer.cs">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Baja_Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Baja_Cargo.designer.cs">
+      <DependentUpon>Baja_Cargo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ElimUser.cs">
       <SubType>Form</SubType>
@@ -136,6 +150,12 @@
     </Compile>
     <Compile Include="Forms\ModificacionProductoForm.Designer.cs">
       <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Modificacion_Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Modificacion_Cargo.designer.cs">
+      <DependentUpon>Modificacion_Cargo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ModificarCliente.cs">
       <SubType>Form</SubType>
@@ -191,6 +211,9 @@
     <EmbeddedResource Include="Forms\AltaPersonal.resx">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alta_Cargo.resx">
+      <DependentUpon>Alta_Cargo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaProductoForm.resx">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Baja_Cargo.resx">
+      <DependentUpon>Baja_Cargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ElimUser.resx">
       <DependentUpon>ElimUser.cs</DependentUpon>
@@ -220,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificacionProductoForm.resx">
       <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Modificacion_Cargo.resx">
+      <DependentUpon>Modificacion_Cargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
