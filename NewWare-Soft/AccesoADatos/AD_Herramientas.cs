@@ -147,5 +147,36 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
             }
             return h;
         }
+
+        public static bool EliminarHerramienta(Herramientas her)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            bool resultado = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "DELETE FROM herramientas WHERE Nombre like @nombre";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombre", her.NombreHerramienta);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                resultado = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return resultado;
+        }
     }
 }
