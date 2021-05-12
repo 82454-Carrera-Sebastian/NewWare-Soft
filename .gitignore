@@ -1,2 +1,6 @@
 
 *.cache
+*.cache
+NewWare-Soft/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+NewWare-Soft/obj/Debug/NewWare-Soft.csprojAssemblyReference.cache
+NewWare-Soft/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

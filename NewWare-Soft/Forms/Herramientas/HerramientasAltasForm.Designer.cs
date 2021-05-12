@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms
 {
-    partial class HerramientasForm
+    partial class HerramientasAltasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,28 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDescripcionHerramienta = new System.Windows.Forms.Label();
-            this.btnLimpiarCampos = new System.Windows.Forms.Button();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNomHerramienta = new System.Windows.Forms.Label();
             this.btnAgregarHerramienta = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
+            this.gdrHerramientas = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescripcionHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnModificarHerramienta = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtPassword
+            // txtDescripcion
             // 
-            this.txtPassword.Location = new System.Drawing.Point(250, 111);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(316, 54);
-            this.txtPassword.TabIndex = 2;
+            this.txtDescripcion.Location = new System.Drawing.Point(250, 111);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.PasswordChar = '*';
+            this.txtDescripcion.Size = new System.Drawing.Size(316, 54);
+            this.txtDescripcion.TabIndex = 2;
             // 
             // lblDescripcionHerramienta
             // 
@@ -61,22 +62,12 @@ namespace NewWare_Soft.Forms
             this.lblDescripcionHerramienta.TabIndex = 10;
             this.lblDescripcionHerramienta.Text = "Descripcion de Heramienta:";
             // 
-            // btnLimpiarCampos
+            // txtNombre
             // 
-            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(24, 185);
-            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(79, 63);
-            this.btnLimpiarCampos.TabIndex = 4;
-            this.btnLimpiarCampos.Text = "Limpiar campos";
-            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
-            // 
-            // txtUser
-            // 
-            this.txtUser.Location = new System.Drawing.Point(250, 79);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(316, 20);
-            this.txtUser.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(250, 79);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(316, 20);
+            this.txtNombre.TabIndex = 1;
             // 
             // lblNomHerramienta
             // 
@@ -91,63 +82,89 @@ namespace NewWare_Soft.Forms
             // btnAgregarHerramienta
             // 
             this.btnAgregarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHerramienta.Location = new System.Drawing.Point(301, 185);
+            this.btnAgregarHerramienta.Location = new System.Drawing.Point(299, 185);
             this.btnAgregarHerramienta.Name = "btnAgregarHerramienta";
             this.btnAgregarHerramienta.Size = new System.Drawing.Size(212, 63);
             this.btnAgregarHerramienta.TabIndex = 3;
             this.btnAgregarHerramienta.Text = "Agregar Herramienta";
             this.btnAgregarHerramienta.UseVisualStyleBackColor = true;
+            this.btnAgregarHerramienta.Click += new System.EventHandler(this.btnAgregarHerramienta_Click);
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(168, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Alta de Herramientas";
+            // 
+            // btnLimpiarCampos
+            // 
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(24, 185);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(79, 63);
+            this.btnLimpiarCampos.TabIndex = 4;
+            this.btnLimpiarCampos.Text = "Limpiar campos";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
+            // 
+            // gdrHerramientas
+            // 
+            this.gdrHerramientas.AllowUserToAddRows = false;
+            this.gdrHerramientas.AllowUserToDeleteRows = false;
+            this.gdrHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdrHerramientas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.NombreHerramienta,
             this.DescripcionHerramienta});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 283);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(542, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.gdrHerramientas.Location = new System.Drawing.Point(24, 282);
+            this.gdrHerramientas.Name = "gdrHerramientas";
+            this.gdrHerramientas.ReadOnly = true;
+            this.gdrHerramientas.Size = new System.Drawing.Size(542, 150);
+            this.gdrHerramientas.TabIndex = 20;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 30;
             // 
             // NombreHerramienta
             // 
             this.NombreHerramienta.HeaderText = "Nombre";
             this.NombreHerramienta.Name = "NombreHerramienta";
+            this.NombreHerramienta.ReadOnly = true;
             this.NombreHerramienta.Width = 150;
             // 
             // DescripcionHerramienta
             // 
             this.DescripcionHerramienta.HeaderText = "Descripción";
             this.DescripcionHerramienta.Name = "DescripcionHerramienta";
+            this.DescripcionHerramienta.ReadOnly = true;
             this.DescripcionHerramienta.Width = 300;
             // 
-            // btnModificarHerramienta
-            // 
-            this.btnModificarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarHerramienta.Location = new System.Drawing.Point(301, 185);
-            this.btnModificarHerramienta.Name = "btnModificarHerramienta";
-            this.btnModificarHerramienta.Size = new System.Drawing.Size(212, 63);
-            this.btnModificarHerramienta.TabIndex = 12;
-            this.btnModificarHerramienta.Text = "Modificar Herramienta";
-            this.btnModificarHerramienta.UseVisualStyleBackColor = true;
-            // 
-            // HerramientasForm
+            // HerramientasAltasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 450);
+            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.gdrHerramientas);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgregarHerramienta);
-            this.Controls.Add(this.btnModificarHerramienta);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblDescripcionHerramienta);
             this.Controls.Add(this.btnLimpiarCampos);
-            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNomHerramienta);
-            this.Name = "HerramientasForm";
-            this.Text = "HerramientasForm";
+            this.Name = "HerramientasAltasForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Alta de Herramientas";
             this.Load += new System.EventHandler(this.HerramientasForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,15 +172,16 @@ namespace NewWare_Soft.Forms
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblDescripcionHerramienta;
-        private System.Windows.Forms.Button btnLimpiarCampos;
-        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNomHerramienta;
         private System.Windows.Forms.Button btnAgregarHerramienta;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLimpiarCampos;
+        private System.Windows.Forms.DataGridView gdrHerramientas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionHerramienta;
-        private System.Windows.Forms.Button btnModificarHerramienta;
     }
 }

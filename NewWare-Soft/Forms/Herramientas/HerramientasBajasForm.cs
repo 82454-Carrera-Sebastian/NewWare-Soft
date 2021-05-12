@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NewWare_Soft.Forms
+namespace NewWare_Soft.Forms.Herramientas
 {
-    public partial class HerramientasForm : Form
+    public partial class HerramientasBajasForm : Form
     {
-        public HerramientasForm()
+        public HerramientasBajasForm()
         {
             InitializeComponent();
         }
-
-        private void HerramientasForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

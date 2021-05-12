@@ -71,11 +71,23 @@
     <Compile Include="Forms\ElimUser.Designer.cs">
       <DependentUpon>ElimUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HerramientasForm.cs">
+    <Compile Include="Forms\Herramientas\HerramientasAltasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HerramientasForm.Designer.cs">
-      <DependentUpon>HerramientasForm.cs</DependentUpon>
+    <Compile Include="Forms\Herramientas\HerramientasAltasForm.Designer.cs">
+      <DependentUpon>HerramientasAltasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Herramientas\HerramientasBajasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Herramientas\HerramientasBajasForm.Designer.cs">
+      <DependentUpon>HerramientasBajasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Herramientas\HerramientasModificacionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Herramientas\HerramientasModificacionesForm.Designer.cs">
+      <DependentUpon>HerramientasModificacionesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -121,8 +133,14 @@
     <EmbeddedResource Include="Forms\ElimUser.resx">
       <DependentUpon>ElimUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HerramientasForm.resx">
-      <DependentUpon>HerramientasForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Herramientas\HerramientasAltasForm.resx">
+      <DependentUpon>HerramientasAltasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Herramientas\HerramientasBajasForm.resx">
+      <DependentUpon>HerramientasBajasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Herramientas\HerramientasModificacionesForm.resx">
+      <DependentUpon>HerramientasModificacionesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
