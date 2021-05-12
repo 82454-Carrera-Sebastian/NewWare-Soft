@@ -62,7 +62,6 @@
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </Compile>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <Compile Include="Forms\AltaClientes.cs" />
     <Compile Include="Forms\BajaCliente.cs">
       <SubType>Form</SubType>
@@ -70,8 +69,6 @@
     <Compile Include="Forms\BajaCliente.Designer.cs">
       <DependentUpon>BajaCliente.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> parent of 6f41d81 (Commit cliente)
     <Compile Include="Forms\FormProductos.cs">
 =======
     <Compile Include="Forms\BajaPersonal.cs">
@@ -162,15 +159,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 <<<<<<< HEAD
-<<<<<<< HEAD
     <EmbeddedResource Include="Forms\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> parent of 6f41d81 (Commit cliente)
     <EmbeddedResource Include="Forms\FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
 =======
@@ -200,7 +194,6 @@
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <EmbeddedResource Include="Forms\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
 =======
@@ -214,8 +207,6 @@
       <DependentUpon>ModifUser.cs</DependentUpon>
 >>>>>>> parent of 10db3f7 (Commit cliente)
     </EmbeddedResource>
-=======
->>>>>>> parent of 6f41d81 (Commit cliente)
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
