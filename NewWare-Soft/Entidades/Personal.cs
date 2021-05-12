@@ -106,3 +106,4 @@ namespace NewWare_Soft.Entidades
         }
     }
 }
+

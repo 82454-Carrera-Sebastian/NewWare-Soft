@@ -142,12 +142,5 @@ namespace NewWare_Soft.Forms
         {
             LimpiarCampos();
         }
-
-        private void btMenu_Click(object sender, EventArgs e)
-        {
-            PrincipalForm ventana = new PrincipalForm();
-            ventana.Show();
-            this.Hide();
-        }
     }
 }

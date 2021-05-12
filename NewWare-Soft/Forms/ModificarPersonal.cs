@@ -276,12 +276,5 @@ namespace NewWare_Soft.Forms
                 MessageBox.Show("Error al actualizar persona");
             }
         }
-
-        private void btMenu_Click(object sender, EventArgs e)
-        {
-            PrincipalForm ventana = new PrincipalForm();
-            ventana.Show();
-            this.Hide();
-        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblTitleBaja = new System.Windows.Forms.Label();
             this.gdrBaja = new System.Windows.Forms.DataGridView();
             this.Legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,10 +37,17 @@
             this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btMenu = new System.Windows.Forms.Button();
-            this.lblTitleBaja = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gdrBaja)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblTitleBaja
+            // 
+            this.lblTitleBaja.AutoSize = true;
+            this.lblTitleBaja.Location = new System.Drawing.Point(12, 9);
+            this.lblTitleBaja.Name = "lblTitleBaja";
+            this.lblTitleBaja.Size = new System.Drawing.Size(288, 13);
+            this.lblTitleBaja.TabIndex = 4;
+            this.lblTitleBaja.Text = "Seleccione un empleado para eliminar de la Base de Datos:";
             // 
             // gdrBaja
             // 
@@ -54,11 +62,11 @@
             this.Cargo,
             this.FechaIngreso,
             this.Barrio});
-            this.gdrBaja.Location = new System.Drawing.Point(12, 55);
+            this.gdrBaja.Location = new System.Drawing.Point(12, 29);
             this.gdrBaja.Name = "gdrBaja";
             this.gdrBaja.ReadOnly = true;
             this.gdrBaja.Size = new System.Drawing.Size(776, 412);
-            this.gdrBaja.TabIndex = 0;
+            this.gdrBaja.TabIndex = 3;
             this.gdrBaja.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrBaja_CellClick);
             // 
             // Legajo
@@ -115,32 +123,12 @@
             this.Barrio.ReadOnly = true;
             this.Barrio.Width = 110;
             // 
-            // btMenu
-            // 
-            this.btMenu.Location = new System.Drawing.Point(721, 12);
-            this.btMenu.Name = "btMenu";
-            this.btMenu.Size = new System.Drawing.Size(67, 37);
-            this.btMenu.TabIndex = 1;
-            this.btMenu.Text = "Volver a Menu";
-            this.btMenu.UseVisualStyleBackColor = true;
-            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
-            // 
-            // lblTitleBaja
-            // 
-            this.lblTitleBaja.AutoSize = true;
-            this.lblTitleBaja.Location = new System.Drawing.Point(12, 35);
-            this.lblTitleBaja.Name = "lblTitleBaja";
-            this.lblTitleBaja.Size = new System.Drawing.Size(288, 13);
-            this.lblTitleBaja.TabIndex = 2;
-            this.lblTitleBaja.Text = "Seleccione un empleado para eliminar de la Base de Datos:";
-            // 
             // BajaPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 489);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitleBaja);
-            this.Controls.Add(this.btMenu);
             this.Controls.Add(this.gdrBaja);
             this.Name = "BajaPersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -154,8 +142,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Label lblTitleBaja;
         private System.Windows.Forms.DataGridView gdrBaja;
-        private System.Windows.Forms.Button btMenu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Legajo;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroDocumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
@@ -163,6 +151,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
         private System.Windows.Forms.DataGridViewTextBoxColumn Barrio;
-        private System.Windows.Forms.Label lblTitleBaja;
     }
 }

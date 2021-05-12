@@ -36,13 +36,6 @@ namespace NewWare_Soft.Forms
             }
         }
 
-        private void btMenu_Click(object sender, EventArgs e)
-        {
-            PrincipalForm ventana = new PrincipalForm();
-            ventana.Show();
-            this.Hide();
-        }
-
         private void gdrBaja_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indice = e.RowIndex;
@@ -50,7 +43,7 @@ namespace NewWare_Soft.Forms
             string legajo = filaSeleccionada.Cells["Legajo"].Value.ToString();
             Personal p = DAOpersonal.ObtenerPersonal(legajo);
             DialogResult opt = new DialogResult();
-            opt = MessageBox.Show("Realmente desea eliminar al empleado: " + p.NombrePersonal + " " + p.ApellidoPersonal + " - Legajo: " + p.LegajoPersonal + "?","Eliminar Personal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            opt = MessageBox.Show("Realmente desea eliminar al empleado: " + p.NombrePersonal + " " + p.ApellidoPersonal + " - Legajo: " + p.LegajoPersonal + "?", "Eliminar Personal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (opt == DialogResult.Yes)
             {
                 DialogResult opt2 = new DialogResult();
