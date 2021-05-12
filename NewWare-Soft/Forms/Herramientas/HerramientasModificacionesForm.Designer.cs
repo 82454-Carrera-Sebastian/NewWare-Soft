@@ -32,14 +32,14 @@ namespace NewWare_Soft.Forms.Herramientas
             this.label1 = new System.Windows.Forms.Label();
             this.btnModificarHerramienta = new System.Windows.Forms.Button();
             this.gdrHerramientas = new System.Windows.Forms.DataGridView();
+            this.IdHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDescripcionHerramienta = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNomHerramienta = new System.Windows.Forms.Label();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
-            this.IdHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +79,30 @@ namespace NewWare_Soft.Forms.Herramientas
             this.gdrHerramientas.Size = new System.Drawing.Size(542, 150);
             this.gdrHerramientas.TabIndex = 19;
             this.gdrHerramientas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrHerramientas_CellClick);
+            // 
+            // IdHerramienta
+            // 
+            this.IdHerramienta.DataPropertyName = "IdHerramienta";
+            this.IdHerramienta.HeaderText = "Id";
+            this.IdHerramienta.Name = "IdHerramienta";
+            this.IdHerramienta.ReadOnly = true;
+            this.IdHerramienta.Width = 30;
+            // 
+            // NombreHerramienta
+            // 
+            this.NombreHerramienta.DataPropertyName = "Nombre";
+            this.NombreHerramienta.HeaderText = "Nombre";
+            this.NombreHerramienta.Name = "NombreHerramienta";
+            this.NombreHerramienta.ReadOnly = true;
+            this.NombreHerramienta.Width = 150;
+            // 
+            // DescripcionHerramienta
+            // 
+            this.DescripcionHerramienta.DataPropertyName = "Descripcion";
+            this.DescripcionHerramienta.HeaderText = "Descripción";
+            this.DescripcionHerramienta.Name = "DescripcionHerramienta";
+            this.DescripcionHerramienta.ReadOnly = true;
+            this.DescripcionHerramienta.Width = 300;
             // 
             // txtDescripcion
             // 
@@ -128,30 +152,6 @@ namespace NewWare_Soft.Forms.Herramientas
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
             this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
-            // IdHerramienta
-            // 
-            this.IdHerramienta.DataPropertyName = "IdHerramienta";
-            this.IdHerramienta.HeaderText = "Id";
-            this.IdHerramienta.Name = "IdHerramienta";
-            this.IdHerramienta.ReadOnly = true;
-            this.IdHerramienta.Width = 30;
-            // 
-            // NombreHerramienta
-            // 
-            this.NombreHerramienta.DataPropertyName = "Nombre";
-            this.NombreHerramienta.HeaderText = "Nombre";
-            this.NombreHerramienta.Name = "NombreHerramienta";
-            this.NombreHerramienta.ReadOnly = true;
-            this.NombreHerramienta.Width = 150;
-            // 
-            // DescripcionHerramienta
-            // 
-            this.DescripcionHerramienta.DataPropertyName = "Descripcion";
-            this.DescripcionHerramienta.HeaderText = "Descripción";
-            this.DescripcionHerramienta.Name = "DescripcionHerramienta";
-            this.DescripcionHerramienta.ReadOnly = true;
-            this.DescripcionHerramienta.Width = 300;
-            // 
             // HerramientasModificacionesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +166,7 @@ namespace NewWare_Soft.Forms.Herramientas
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNomHerramienta);
             this.Name = "HerramientasModificacionesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificaciones de Herramientas ";
             this.Load += new System.EventHandler(this.HerramientasModificacionesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).EndInit();
