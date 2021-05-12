@@ -48,11 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
+    <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\FormaPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
     <Compile Include="Entidades\Personal.cs" />
     <Compile Include="Entidades\Producto.cs" />
@@ -62,6 +64,12 @@
     </Compile>
     <Compile Include="Forms\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AltaFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaFormaPago.Designer.cs">
+      <DependentUpon>AltaFormaPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AltaPersonal.cs">
       <SubType>Form</SubType>
@@ -74,6 +82,12 @@
     </Compile>
     <Compile Include="Forms\BajaCliente.Designer.cs">
       <DependentUpon>BajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaFormaPago.Designer.cs">
+      <DependentUpon>BajaFormaPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BajaPersonal.cs">
       <SubType>Form</SubType>
@@ -129,6 +143,12 @@
     <Compile Include="Forms\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModificarFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificarFormaPago.Designer.cs">
+      <DependentUpon>ModificarFormaPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModificarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,11 +185,17 @@
     <EmbeddedResource Include="Forms\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AltaFormaPago.resx">
+      <DependentUpon>AltaFormaPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AltaPersonal.resx">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaFormaPago.resx">
+      <DependentUpon>BajaFormaPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaPersonal.resx">
       <DependentUpon>BajaPersonal.cs</DependentUpon>
@@ -197,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificarFormaPago.resx">
+      <DependentUpon>ModificarFormaPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificarPersonal.resx">
       <DependentUpon>ModificarPersonal.cs</DependentUpon>
