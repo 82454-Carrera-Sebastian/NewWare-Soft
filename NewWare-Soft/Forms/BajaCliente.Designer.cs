@@ -93,6 +93,7 @@
             this.button_Eliminar.TabIndex = 12;
             this.button_Eliminar.Text = "Eliminar";
             this.button_Eliminar.UseVisualStyleBackColor = true;
+            this.button_Eliminar.Click += new System.EventHandler(this.button_Eliminar_Click);
             // 
             // textBox_Email
             // 
@@ -156,7 +157,7 @@
             this.apellido_cliente.ReadOnly = true;
             this.apellido_cliente.Width = 200;
             // 
-            // BAJAcliente
+            // BajaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

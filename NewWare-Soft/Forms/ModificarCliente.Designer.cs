@@ -73,6 +73,7 @@ namespace NewWare_Soft.Forms
             this.button_actualizarCliente.TabIndex = 59;
             this.button_actualizarCliente.Text = "Actualizar";
             this.button_actualizarCliente.UseVisualStyleBackColor = true;
+            this.button_actualizarCliente.Click += new System.EventHandler(this.button_actualizarCliente_Click);
             // 
             // textBox_barrio
             // 

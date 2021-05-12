@@ -77,6 +77,7 @@
             this.button_agregarCliente.TabIndex = 45;
             this.button_agregarCliente.Text = "Agregar";
             this.button_agregarCliente.UseVisualStyleBackColor = true;
+            this.button_agregarCliente.Click += new System.EventHandler(this.button_agregarCliente_Click);
             // 
             // textBox_barrio
             // 
