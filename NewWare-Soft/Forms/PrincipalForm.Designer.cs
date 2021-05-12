@@ -247,20 +247,23 @@ namespace NewWare_Soft.Forms
             // altaToolStripMenuItem4
             // 
             this.altaToolStripMenuItem4.Name = "altaToolStripMenuItem4";
-            this.altaToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem4.Text = "Alta";
+            this.altaToolStripMenuItem4.Click += new System.EventHandler(this.altaToolStripMenuItem4_Click);
             // 
             // bajaToolStripMenuItem4
             // 
             this.bajaToolStripMenuItem4.Name = "bajaToolStripMenuItem4";
-            this.bajaToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.bajaToolStripMenuItem4.Text = "Baja";
+            this.bajaToolStripMenuItem4.Click += new System.EventHandler(this.bajaToolStripMenuItem4_Click);
             // 
             // modificacionToolStripMenuItem4
             // 
             this.modificacionToolStripMenuItem4.Name = "modificacionToolStripMenuItem4";
-            this.modificacionToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.modificacionToolStripMenuItem4.Text = "Modificacion";
+            this.modificacionToolStripMenuItem4.Click += new System.EventHandler(this.modificacionToolStripMenuItem4_Click);
             // 
             // etapasToolStripMenuItem
             // 

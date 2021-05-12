@@ -1,4 +1,5 @@
 ﻿using System;
+using NewWare_Soft.Entidades;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -33,7 +34,7 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al insertar herramienta"); 
+                MessageBox.Show("Error al insertar herramienta");
             }
             finally
             {
@@ -42,7 +43,7 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
             return resultado;
         }
 
-        public static bool ModificarHerramienta(string nombreHerramienta, string descripcion, int idHerramienta)
+        public static bool ModificarHerramienta(string nombreHerramienta, string descripcion)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -54,7 +55,6 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombre", nombreHerramienta);
                 cmd.Parameters.AddWithValue("@descripcion", descripcion);
-                cmd.Parameters.AddWithValue("@id",idHerramienta);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
 
@@ -83,7 +83,7 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
                 {
                     SqlCommand cmd = new SqlCommand();
 
-                    string consulta = "SELECT Nombre, Descripcion FROM herramientas";
+                    string consulta = "SELECT * FROM herramientas";
 
                     cmd.Parameters.Clear();
                     cmd.CommandType = CommandType.Text;
@@ -109,6 +109,74 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
                     cn.Close();
                 }
             }
+        }
+
+        public static Herramientas ObtenerHerramienta(String nombre)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            Herramientas h = new Herramientas("","");
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM herramientas where Nombre like @nombre";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombre", nombre);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr != null && dr.Read())
+                {
+                    h.NombreHerramienta = dr["Nombre"].ToString();
+                    h.Descripcion = dr["Descripcion"].ToString();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return h;
+        }
+
+        public static bool EliminarHerramienta(Herramientas her)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            bool resultado = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "DELETE FROM herramientas WHERE Nombre like @nombre";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombre", her.NombreHerramienta);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                resultado = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return resultado;
         }
     }
 }
