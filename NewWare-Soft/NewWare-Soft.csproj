@@ -60,6 +60,7 @@
     <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Etapas.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
     <Compile Include="Entidades\MotivoEgreso.cs" />
@@ -72,6 +73,12 @@
     </Compile>
     <Compile Include="Forms\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AltaEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaEtapa.Designer.cs">
+      <DependentUpon>AltaEtapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AltaFormaPago.cs">
       <SubType>Form</SubType>
@@ -114,6 +121,12 @@
     </Compile>
     <Compile Include="Forms\BajaCliente.Designer.cs">
       <DependentUpon>BajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaEtapa.Designer.cs">
+      <DependentUpon>BajaEtapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BajaFormaPago.cs">
       <SubType>Form</SubType>
@@ -205,6 +218,12 @@
     <Compile Include="Forms\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModificarEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificarEtapa.Designer.cs">
+      <DependentUpon>ModificarEtapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModificarFormaPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +284,9 @@
     <EmbeddedResource Include="Forms\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AltaEtapa.resx">
+      <DependentUpon>AltaEtapa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AltaFormaPago.resx">
       <DependentUpon>AltaFormaPago.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaEtapa.resx">
+      <DependentUpon>BajaEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaFormaPago.resx">
       <DependentUpon>BajaFormaPago.cs</DependentUpon>
@@ -312,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificarEtapa.resx">
+      <DependentUpon>ModificarEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificarFormaPago.resx">
       <DependentUpon>ModificarFormaPago.cs</DependentUpon>
