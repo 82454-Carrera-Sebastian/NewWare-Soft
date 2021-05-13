@@ -1,0 +1,121 @@
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+<<<<<<< HEAD
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+=======
+>>>>>>> 2ebee02 (Arreglo)
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+>>>>>>> b36dced (Alta y Modificacion Terminada)
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Modificacion_Cargo.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarCliente.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarFormaPago.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
