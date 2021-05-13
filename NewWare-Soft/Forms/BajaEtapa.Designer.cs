@@ -96,6 +96,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.dgvEtapas);
             this.Controls.Add(this.lblTitle);
             this.Name = "BajaEtapa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BajaEtapa";
             this.Load += new System.EventHandler(this.BajaEtapa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEtapas)).EndInit();

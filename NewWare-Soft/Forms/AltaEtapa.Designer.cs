@@ -115,6 +115,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblTitle);
             this.Name = "AltaEtapa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AltaEtapa";
             this.Load += new System.EventHandler(this.AltaEtapa_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEtapas)).EndInit();
