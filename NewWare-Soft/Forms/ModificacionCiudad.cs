@@ -67,6 +67,7 @@ namespace NewWare_Soft.Forms
         {
             int indice = e.RowIndex;
             btnModificarCiudad.Enabled = true;
+            txtNombreCiudad.Enabled = true;
             DataGridViewRow fila = grillaCiudades.Rows[indice];
             string nombreCiudad = fila.Cells["Nombre"].Value.ToString();
             string idCiudad = fila.Cells["Numero"].Value.ToString();

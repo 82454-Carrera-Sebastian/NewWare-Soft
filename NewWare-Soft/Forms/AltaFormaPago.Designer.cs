@@ -217,6 +217,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AltaFormaPago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AltaFormaPago";
             this.Load += new System.EventHandler(this.AltaFormaPago_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaFormaPago)).EndInit();

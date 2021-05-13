@@ -158,6 +158,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.grillaCiudades);
             this.Controls.Add(this.groupBox1);
             this.Name = "BajaCiudad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BajaCiudad";
             this.Load += new System.EventHandler(this.BajaCiudad_Load);
             this.groupBox1.ResumeLayout(false);

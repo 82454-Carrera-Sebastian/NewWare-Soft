@@ -167,6 +167,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Baja_Banco";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Baja_Banco";
             this.Load += new System.EventHandler(this.Baja_Banco_Load);
             this.groupBox1.ResumeLayout(false);

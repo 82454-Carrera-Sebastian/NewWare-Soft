@@ -361,8 +361,14 @@
     <EmbeddedResource Include="Forms\BajaProductoForm.resx">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Baja_Banco.resx">
+      <DependentUpon>Baja_Banco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Baja_Cargo.resx">
       <DependentUpon>Baja_Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Baja_Tarjeta.resx">
+      <DependentUpon>Baja_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ElimUser.resx">
       <DependentUpon>ElimUser.cs</DependentUpon>
@@ -405,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModifUser.resx">
       <DependentUpon>ModifUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mod_Banco.resx">
+      <DependentUpon>Mod_Banco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
@@ -449,6 +458,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_Users_user_config_configuration_6646130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Clients_communication_discussion_social_media_users_4850489.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_add_134224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_minus-circle_2561243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_edit_2561427.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_General_-_Office_32_1471083.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_MadeInUSA-product-export-usa-unitedstates-trade-chinaandustradewar_4817164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Wrench_3605320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_city-building-urban-office-business_3209372.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_house-home-main-menu-start-building_3643769.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_business_finance_money-12_2784282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_04.Bank_290147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_stay_away_from_group_5946932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_07.Wallet_290143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Artboard_37_3952964.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

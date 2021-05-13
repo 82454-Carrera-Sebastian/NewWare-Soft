@@ -217,9 +217,49 @@ namespace NewWare_Soft.Forms
             ventana.ShowDialog();
         }
 
-        private void PrincipalForm_Load(object sender, EventArgs e)
+        private void altaToolStripMenuItem7_Click(object sender, EventArgs e)
         {
+            AltaCiudad ventana = new AltaCiudad();
+            ventana.ShowDialog();
+        }
 
+        private void bajaToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            BajaCiudad ventana = new BajaCiudad();
+            ventana.ShowDialog();
+        }
+
+        private void modificacionToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            ModificacionCiudad ventana = new ModificacionCiudad();
+            ventana.ShowDialog();
+        }
+
+        private void altaToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            AltaBarrio ventana = new AltaBarrio();
+            ventana.ShowDialog();
+        }
+
+        private void bajaToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            BajaBarrio ventana = new BajaBarrio();
+            ventana.ShowDialog();
+        }
+
+        private void modificacionToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            ModificacionBarrio ventana = new ModificacionBarrio();
+            ventana.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Desea salir?", "Atencion!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
     

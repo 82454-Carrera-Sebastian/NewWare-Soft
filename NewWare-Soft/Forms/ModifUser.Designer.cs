@@ -173,6 +173,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.GrillaUsers);
             this.Controls.Add(this.groupBox1);
             this.Name = "ModifUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifUser";
             this.Load += new System.EventHandler(this.ModifUser_Load);
             this.groupBox1.ResumeLayout(false);

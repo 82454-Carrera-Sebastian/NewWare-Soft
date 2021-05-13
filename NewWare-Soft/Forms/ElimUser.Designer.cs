@@ -150,6 +150,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.GrillaUsers2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ElimUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ElimUser";
             this.Load += new System.EventHandler(this.ElimUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsers2)).EndInit();

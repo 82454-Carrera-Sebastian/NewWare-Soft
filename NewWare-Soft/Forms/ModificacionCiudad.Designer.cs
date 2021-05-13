@@ -30,15 +30,15 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtIdCiudad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreCiudad = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.grillaCiudades = new System.Windows.Forms.DataGridView();
-            this.btnLimiarCampos = new System.Windows.Forms.Button();
-            this.btnModificarCiudad = new System.Windows.Forms.Button();
-            this.txtIdCiudad = new System.Windows.Forms.TextBox();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLimiarCampos = new System.Windows.Forms.Button();
+            this.btnModificarCiudad = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaCiudades)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,14 @@ namespace NewWare_Soft.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
             // 
+            // txtIdCiudad
+            // 
+            this.txtIdCiudad.Enabled = false;
+            this.txtIdCiudad.Location = new System.Drawing.Point(107, 113);
+            this.txtIdCiudad.Name = "txtIdCiudad";
+            this.txtIdCiudad.Size = new System.Drawing.Size(44, 29);
+            this.txtIdCiudad.TabIndex = 6;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -69,6 +77,7 @@ namespace NewWare_Soft.Forms
             // 
             // txtNombreCiudad
             // 
+            this.txtNombreCiudad.Enabled = false;
             this.txtNombreCiudad.Location = new System.Drawing.Point(150, 53);
             this.txtNombreCiudad.Name = "txtNombreCiudad";
             this.txtNombreCiudad.Size = new System.Drawing.Size(199, 29);
@@ -99,6 +108,22 @@ namespace NewWare_Soft.Forms
             this.grillaCiudades.TabIndex = 3;
             this.grillaCiudades.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grillaCiudades_CellClick);
             // 
+            // Numero
+            // 
+            this.Numero.DataPropertyName = "IdCiudad";
+            this.Numero.HeaderText = "Nro";
+            this.Numero.Name = "Numero";
+            this.Numero.ReadOnly = true;
+            this.Numero.Width = 50;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "NombreCiudad";
+            this.Nombre.HeaderText = "NombreCiudad";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 200;
+            // 
             // btnLimiarCampos
             // 
             this.btnLimiarCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -121,30 +146,6 @@ namespace NewWare_Soft.Forms
             this.btnModificarCiudad.Text = "Realizar Cambios";
             this.btnModificarCiudad.UseVisualStyleBackColor = false;
             this.btnModificarCiudad.Click += new System.EventHandler(this.btnModificarCiudad_Click);
-            // 
-            // txtIdCiudad
-            // 
-            this.txtIdCiudad.Enabled = false;
-            this.txtIdCiudad.Location = new System.Drawing.Point(107, 113);
-            this.txtIdCiudad.Name = "txtIdCiudad";
-            this.txtIdCiudad.Size = new System.Drawing.Size(44, 29);
-            this.txtIdCiudad.TabIndex = 6;
-            // 
-            // Numero
-            // 
-            this.Numero.DataPropertyName = "IdCiudad";
-            this.Numero.HeaderText = "Nro";
-            this.Numero.Name = "Numero";
-            this.Numero.ReadOnly = true;
-            this.Numero.Width = 50;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "NombreCiudad";
-            this.Nombre.HeaderText = "NombreCiudad";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 200;
             // 
             // ModificacionCiudad
             // 

@@ -86,7 +86,7 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string query = "BorrarCliente2";
+                string query = "BorrarCliente";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@email", var);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -94,6 +94,7 @@ namespace NewWare_Soft.AccesoADatos
 
                 cn.Open();
                 cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
                 return true;
             }
 

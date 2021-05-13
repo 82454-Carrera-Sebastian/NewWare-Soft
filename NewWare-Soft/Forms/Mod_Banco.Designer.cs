@@ -33,13 +33,13 @@ namespace NewWare_Soft.Forms
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarBanco = new System.Windows.Forms.Button();
             this.gdrBancos = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreBanco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNombreBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscarBanco = new System.Windows.Forms.Label();
             this.txtNombreBanco = new System.Windows.Forms.TextBox();
             this.lblNombreBanco = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreBanco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrBancos)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +94,22 @@ namespace NewWare_Soft.Forms
             this.gdrBancos.TabIndex = 0;
             this.gdrBancos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrBancos_CellClick);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "IdBanco";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 50;
+            // 
+            // NombreBanco
+            // 
+            this.NombreBanco.DataPropertyName = "Nombre";
+            this.NombreBanco.HeaderText = "Nombre del banco";
+            this.NombreBanco.Name = "NombreBanco";
+            this.NombreBanco.ReadOnly = true;
+            this.NombreBanco.Width = 300;
+            // 
             // txtNombreBuscar
             // 
             this.txtNombreBuscar.Location = new System.Drawing.Point(162, 163);
@@ -139,22 +155,6 @@ namespace NewWare_Soft.Forms
             this.label1.TabIndex = 9;
             this.label1.Text = "Modificación de Banco";
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "IdBanco";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 50;
-            // 
-            // NombreBanco
-            // 
-            this.NombreBanco.DataPropertyName = "Nombre";
-            this.NombreBanco.HeaderText = "Nombre del banco";
-            this.NombreBanco.Name = "NombreBanco";
-            this.NombreBanco.ReadOnly = true;
-            this.NombreBanco.Width = 300;
-            // 
             // Mod_Banco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +166,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.lblNombreBanco);
             this.Controls.Add(this.label1);
             this.Name = "Mod_Banco";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mod_Banco";
             this.Load += new System.EventHandler(this.Mod_Banco_Load);
             this.groupBox1.ResumeLayout(false);

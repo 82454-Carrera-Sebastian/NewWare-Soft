@@ -30,6 +30,10 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.grdProductos = new System.Windows.Forms.DataGridView();
+            this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinalizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.txtFinalizacion = new System.Windows.Forms.MaskedTextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -40,10 +44,6 @@ namespace NewWare_Soft.Forms
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarProducto = new System.Windows.Forms.Button();
-            this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinalizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +63,34 @@ namespace NewWare_Soft.Forms
             this.grdProductos.Size = new System.Drawing.Size(445, 429);
             this.grdProductos.TabIndex = 21;
             this.grdProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProductos_CellClick);
+            // 
+            // denominacion
+            // 
+            this.denominacion.DataPropertyName = "Denominacion";
+            this.denominacion.HeaderText = "Denominación";
+            this.denominacion.Name = "denominacion";
+            this.denominacion.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.DataPropertyName = "Descripcion";
+            this.descripcion.HeaderText = "Descripción";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            // 
+            // fechaFinalizacion
+            // 
+            this.fechaFinalizacion.DataPropertyName = "FechaFinalizacion";
+            this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
+            this.fechaFinalizacion.Name = "fechaFinalizacion";
+            this.fechaFinalizacion.ReadOnly = true;
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "PrecioVenta";
+            this.precio.HeaderText = "Precio De Venta";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
             // 
             // txtPrecio
             // 
@@ -161,34 +189,6 @@ namespace NewWare_Soft.Forms
             this.btnEliminarProducto.UseVisualStyleBackColor = true;
             this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
             // 
-            // denominacion
-            // 
-            this.denominacion.DataPropertyName = "Denominacion";
-            this.denominacion.HeaderText = "Denominación";
-            this.denominacion.Name = "denominacion";
-            this.denominacion.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.DataPropertyName = "Descripcion";
-            this.descripcion.HeaderText = "Descripción";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            // 
-            // fechaFinalizacion
-            // 
-            this.fechaFinalizacion.DataPropertyName = "FechaFinalizacion";
-            this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
-            this.fechaFinalizacion.Name = "fechaFinalizacion";
-            this.fechaFinalizacion.ReadOnly = true;
-            // 
-            // precio
-            // 
-            this.precio.DataPropertyName = "PrecioVenta";
-            this.precio.HeaderText = "Precio De Venta";
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
-            // 
             // BajaProductoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +206,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminarProducto);
             this.Name = "BajaProductoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BajaProductoForm";
             this.Load += new System.EventHandler(this.BajaProductoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();

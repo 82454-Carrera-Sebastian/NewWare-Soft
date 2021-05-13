@@ -63,9 +63,140 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_04_Bank_290147 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_04.Bank_290147", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_07_Wallet_290143 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_07.Wallet_290143", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_add_134224 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_add_134224", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Artboard_37_3952964 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Artboard_37_3952964", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_business_finance_money_12_2784282 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_business_finance_money-12_2784282", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_city_building_urban_office_business_3209372 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_city-building-urban-office-business_3209372", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Clients_communication_discussion_social_media_users_4850489 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Clients_communication_discussion_social_media_users_4850489", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_edit_2561427 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_edit_2561427", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_General___Office_32_1471083 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_General_-_Office_32_1471083", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_house_home_main_menu_start_building_3643769 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_house-home-main-menu-start-building_3643769", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_MadeInUSA_product_export_usa_unitedstates_trade_chinaandustradewar_4817164 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_MadeInUSA-product-export-usa-unitedstates-trade-chinaandustradewar_481" +
+                        "7164", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_minus_circle_2561243 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_minus-circle_2561243", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Picture1_3289576 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Picture1_3289576", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_stay_away_from_group_5946932 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_stay_away_from_group_5946932", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +227,26 @@ namespace NewWare_Soft.Properties {
         internal static System.Drawing.Bitmap iconfinder_Users_user_config_configuration_6646130 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Users_user_config_configuration_6646130", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Wrench_3605320 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Wrench_3605320", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+            get {
+                object obj = ResourceManager.GetObject("Webp.net-resizeimage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -230,6 +230,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "BajaFormaPago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BajaFormaPago";
             this.Load += new System.EventHandler(this.BajaFormaPago_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaFormaPago)).EndInit();
