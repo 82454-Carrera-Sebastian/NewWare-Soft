@@ -63,6 +63,56 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486485588_add_create_new_math_sign_cross_plus_81186__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1486485588-add-create-new-math-sign-cross-plus_81186 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486564399_close_81512__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1486564399-close_81512 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap city_neighborhood_icon_144614 {
+            get {
+                object obj = ResourceManager.GetObject("city_neighborhood_icon_144614", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Citycons_location_icon_icons_com_67931 {
+            get {
+                object obj = ResourceManager.GetObject("Citycons_location_icon-icons.com_67931", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentediting_editdocuments_text_documentedi_2820 {
+            get {
+                object obj = ResourceManager.GetObject("documentediting_editdocuments_text_documentedi_2820", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Picture1_3289576 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Picture1_3289576", resourceCulture);
