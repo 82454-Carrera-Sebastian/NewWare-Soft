@@ -58,7 +58,9 @@
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
     <Compile Include="Entidades\Banco.cs" />
+    <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Cargos.cs" />
+    <Compile Include="Entidades\Ciudad.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Etapas.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
@@ -68,6 +70,18 @@
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Forms\AltaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaBarrio.Designer.cs">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AltaCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaCiudad.Designer.cs">
+      <DependentUpon>AltaCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +129,18 @@
     </Compile>
     <Compile Include="Forms\Alta_Tarjeta.Designer.cs">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaBarrio.Designer.cs">
+      <DependentUpon>BajaBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaCiudad.Designer.cs">
+      <DependentUpon>BajaCiudad.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BajaCliente.cs">
       <SubType>Form</SubType>
@@ -200,6 +226,18 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModificacionBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificacionBarrio.Designer.cs">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModificacionCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificacionCiudad.Designer.cs">
+      <DependentUpon>ModificacionCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModificacionProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +319,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VariablesGlobales.cs" />
+    <EmbeddedResource Include="Forms\AltaBarrio.resx">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AltaCiudad.resx">
+      <DependentUpon>AltaCiudad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +339,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Alta_Cargo.resx">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaBarrio.resx">
+      <DependentUpon>BajaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaCiudad.resx">
+      <DependentUpon>BajaCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
@@ -328,6 +378,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificacionBarrio.resx">
+      <DependentUpon>ModificacionBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificacionCiudad.resx">
+      <DependentUpon>ModificacionCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModificacionProductoForm.resx">
       <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
