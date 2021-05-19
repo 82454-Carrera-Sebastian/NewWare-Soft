@@ -34,13 +34,15 @@ namespace NewWare_Soft.Forms
             this.lblDescripcionCargo = new System.Windows.Forms.Label();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtDescripcionCargo = new System.Windows.Forms.TextBox();
-            this.btnModPersona = new System.Windows.Forms.Button();
+            this.btnModCargo = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grillaListaCargos = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtIdCargo = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaCargos)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +62,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNombreCargo.AutoSize = true;
             this.lblNombreCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCargo.Location = new System.Drawing.Point(49, 67);
+            this.lblNombreCargo.Location = new System.Drawing.Point(38, 138);
             this.lblNombreCargo.Name = "lblNombreCargo";
             this.lblNombreCargo.Size = new System.Drawing.Size(173, 25);
             this.lblNombreCargo.TabIndex = 2;
@@ -70,7 +72,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblDescripcionCargo.AutoSize = true;
             this.lblDescripcionCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionCargo.Location = new System.Drawing.Point(12, 121);
+            this.lblDescripcionCargo.Location = new System.Drawing.Point(1, 180);
             this.lblDescripcionCargo.Name = "lblDescripcionCargo";
             this.lblDescripcionCargo.Size = new System.Drawing.Size(210, 25);
             this.lblDescripcionCargo.TabIndex = 4;
@@ -78,32 +80,32 @@ namespace NewWare_Soft.Forms
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(217, 73);
+            this.txtCargo.Location = new System.Drawing.Point(217, 144);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(219, 20);
             this.txtCargo.TabIndex = 5;
             // 
             // txtDescripcionCargo
             // 
-            this.txtDescripcionCargo.Location = new System.Drawing.Point(217, 127);
+            this.txtDescripcionCargo.Location = new System.Drawing.Point(217, 180);
             this.txtDescripcionCargo.Multiline = true;
             this.txtDescripcionCargo.Name = "txtDescripcionCargo";
             this.txtDescripcionCargo.Size = new System.Drawing.Size(219, 124);
             this.txtDescripcionCargo.TabIndex = 6;
             // 
-            // btnModPersona
+            // btnModCargo
             // 
-            this.btnModPersona.Location = new System.Drawing.Point(350, 289);
-            this.btnModPersona.Name = "btnModPersona";
-            this.btnModPersona.Size = new System.Drawing.Size(75, 38);
-            this.btnModPersona.TabIndex = 7;
-            this.btnModPersona.Text = "Modificar Persona";
-            this.btnModPersona.UseVisualStyleBackColor = true;
-            this.btnModPersona.Click += new System.EventHandler(this.btnModPersona_Click);
+            this.btnModCargo.Location = new System.Drawing.Point(348, 321);
+            this.btnModCargo.Name = "btnModCargo";
+            this.btnModCargo.Size = new System.Drawing.Size(75, 38);
+            this.btnModCargo.TabIndex = 7;
+            this.btnModCargo.Text = "Modificar Cargo";
+            this.btnModCargo.UseVisualStyleBackColor = true;
+            this.btnModCargo.Click += new System.EventHandler(this.btnModCargo_Click);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(253, 289);
+            this.btnLimpiar.Location = new System.Drawing.Point(253, 321);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 38);
             this.btnLimpiar.TabIndex = 8;
@@ -163,14 +165,34 @@ namespace NewWare_Soft.Forms
             this.Descripcion.ReadOnly = true;
             this.Descripcion.Width = 250;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(115, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 25);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "ID Cargo:";
+            // 
+            // txtIdCargo
+            // 
+            this.txtIdCargo.Enabled = false;
+            this.txtIdCargo.Location = new System.Drawing.Point(217, 99);
+            this.txtIdCargo.Name = "txtIdCargo";
+            this.txtIdCargo.Size = new System.Drawing.Size(22, 20);
+            this.txtIdCargo.TabIndex = 11;
+            // 
             // Modificacion_Cargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 487);
+            this.Controls.Add(this.txtIdCargo);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnModPersona);
+            this.Controls.Add(this.btnModCargo);
             this.Controls.Add(this.txtDescripcionCargo);
             this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.lblDescripcionCargo);
@@ -194,12 +216,14 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label lblDescripcionCargo;
         private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.TextBox txtDescripcionCargo;
-        private System.Windows.Forms.Button btnModPersona;
+        private System.Windows.Forms.Button btnModCargo;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView grillaListaCargos;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtIdCargo;
     }
 }

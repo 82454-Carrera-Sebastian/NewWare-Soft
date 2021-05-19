@@ -42,6 +42,7 @@ namespace NewWare_Soft.Forms
         }
         private void LimpiarCampos()
         {
+            
             txtCargo.Text = "";
             txtDescripcionCargo.Text = "";
             
@@ -95,7 +96,7 @@ namespace NewWare_Soft.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar");
+                    MessageBox.Show("No se puede eliminar debido a que tiene empleados asignados a ese cargo");
                 }
             }
             else

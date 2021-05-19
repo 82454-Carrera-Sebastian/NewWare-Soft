@@ -139,7 +139,7 @@ namespace NewWare_Soft.AccesoADatos
 
                 if (dr != null && dr.Read())
                 {
-
+                    c.IdCargoEmpleado = (int)dr["IdCargo"];
                     c.NombreCargoEmpleado = dr["Nombre"].ToString();
                     c.DescripcionCargoEmpleado = dr["Descripcion"].ToString();
 
@@ -164,9 +164,10 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "ModifCargo";
+                string consulta = "ModifCargo2";
                 cmd.Parameters.Clear();
 
+                cmd.Parameters.AddWithValue("@id", car.IdCargoEmpleado);
                 cmd.Parameters.AddWithValue("@nombre", car.NombreCargoEmpleado);
                 cmd.Parameters.AddWithValue("@descripcion", car.DescripcionCargoEmpleado);
 
@@ -212,10 +213,10 @@ namespace NewWare_Soft.AccesoADatos
                 cmd.ExecuteNonQuery();
                 resultado = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                resultado = false;
             }
 
             return resultado;
