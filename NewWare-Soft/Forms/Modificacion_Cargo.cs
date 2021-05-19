@@ -41,6 +41,7 @@ namespace NewWare_Soft.Forms
         }
         private void LimpiarCampos()
         {
+            txtIdCargo.Text = "";
             txtCargo.Text = "";
             txtDescripcionCargo.Text = "";
             txtCargo.Focus();
@@ -58,6 +59,7 @@ namespace NewWare_Soft.Forms
 
         private void CargarCampos(Cargos c)
         {
+            txtIdCargo.Text = c.IdCargoEmpleado.ToString();
             txtCargo.Text = c.NombreCargoEmpleado;
             txtDescripcionCargo.Text = c.DescripcionCargoEmpleado;
         }
@@ -69,19 +71,20 @@ namespace NewWare_Soft.Forms
         private Cargos ObtenerDatosCargo()
         {
             Cargos c = new Cargos();
+            c.IdCargoEmpleado = int.Parse(txtIdCargo.Text.Trim());
             c.NombreCargoEmpleado = txtCargo.Text.Trim();
             c.DescripcionCargoEmpleado = txtDescripcionCargo.Text.Trim();
 
             return c;
         }
 
-        private void btnModPersona_Click(object sender, EventArgs e)
+        private void btnModCargo_Click(object sender, EventArgs e)
         {
             Cargos c = ObtenerDatosCargo();
             bool resultado = AD_Cargo.ModificarCargo(c);
             if (resultado)
             {
-                MessageBox.Show("Persona Actualizada");
+                MessageBox.Show("Cargo Actualizado");
                 LimpiarCampos();
                 CargarGrilla();
 
