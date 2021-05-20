@@ -28,7 +28,6 @@ namespace NewWare_Soft.Forms
             bool tieneEmail = false;
             bool tieneNroCalle = false;
             bool tieneNombreCalle = false;
-            bool tieneBarrio = false;
 
             if (textBox_nombre.Text.Equals(""))
             {
@@ -47,15 +46,6 @@ namespace NewWare_Soft.Forms
             else
             {
                 tieneApellido = true;
-            }
-            if (textBox_barrio.Text.Equals(""))
-            {
-                MessageBox.Show("Debe ingresar un barrio! ");
-                textBox_barrio.Focus();
-            }
-            else
-            {
-                tieneBarrio = true;
             }
             if (textBox_Email.Text.Equals(""))
             {
@@ -102,15 +92,15 @@ namespace NewWare_Soft.Forms
             }
             else
             {
-                insertarCliente(tieneApellido, tieneBarrio, tieneEmail, tieneNombre, tieneNombreCalle, tieneNroCalle, tieneTelefono);
+                insertarCliente(tieneApellido, tieneEmail, tieneNombre, tieneNombreCalle, tieneNroCalle, tieneTelefono);
             }
 
 
         }
 
-        private void insertarCliente(bool tieneApellido, bool tieneBarrio, bool tieneEmail, bool tieneNombre, bool tieneNombreCalle, bool tieneNroCalle, bool tieneTelefono)
+        private void insertarCliente(bool tieneApellido, bool tieneEmail, bool tieneNombre, bool tieneNombreCalle, bool tieneNroCalle, bool tieneTelefono)
         {
-            if (tieneNombre && tieneApellido && tieneTelefono && tieneBarrio && tieneEmail && tieneNombreCalle && tieneNroCalle)
+            if (tieneNombre && tieneApellido && tieneTelefono  && tieneEmail && tieneNombreCalle && tieneNroCalle)
             {
                 Cliente client = obtenerData_Cliente();
                 bool result = AD_Cliente.AgregarCliente_DB(client);
@@ -133,7 +123,6 @@ namespace NewWare_Soft.Forms
             textBox_apellido.Text = "";
             textBox_telefono.Text = "";
             textBox_Email.Text = "";
-            textBox_barrio.Text = "";
             textBox_nombreCalle.Text = "";
             textBox_nroCalle.Text = "";
         }
@@ -146,11 +135,10 @@ namespace NewWare_Soft.Forms
             client.Telefono = textBox_telefono.Text.Trim();
             client.Email = textBox_Email.Text.Trim();
             client.Calle = textBox_nombreCalle.Text.Trim();
-            //DEBERIAMOS HACER COMBO CON LOS BARRIOS QUE ESTEN CARGADOS DESDE EL ABM. SE MOSTRARIAN LOS NOMBRES Y NO EL ID
-            client.Barrio = int.Parse(textBox_barrio.Text.Trim());
-            //falta validar que se sean ints
+            //falta validar que los ints
             client.Telefono = textBox_telefono.Text;
             client.NroCalle = int.Parse(textBox_nroCalle.Text);
+            client.Barrio = (int)comboBox_Barrio.SelectedValue;
             return client;
 
 
@@ -214,6 +202,26 @@ namespace NewWare_Soft.Forms
         private void button_limpiarCampos_Click(object sender, EventArgs e)
         {
             limpiarCampos();
+        }
+
+        private void AltaCliente_Load(object sender, EventArgs e)
+        {
+            llenarComboBarrio();
+        }
+
+        private void llenarComboBarrio()
+        {
+            try
+            {
+                comboBox_Barrio.DataSource = AD_Cliente.getData_Barrio_Combos();
+                comboBox_Barrio.DisplayMember = "NombreBarrio";
+                comboBox_Barrio.ValueMember = "IdBarrio";
+                comboBox_Barrio.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR! No pudimos obtener los datos de los barrios. Intentelo de nuevo.");
+            }
         }
     }
 }
