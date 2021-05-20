@@ -22,6 +22,21 @@ namespace NewWare_Soft.Forms
         private void ModificarCliente_Load(object sender, EventArgs e)
         {
             LlenarGrilla();
+            llenarComboBarrio();
+        }
+        private void llenarComboBarrio()
+        {
+            try
+            {
+                comboBox_Barrio.DataSource = AD_Cliente.getData_Barrio_Combos();
+                comboBox_Barrio.DisplayMember = "NombreBarrio";
+                comboBox_Barrio.ValueMember = "IdBarrio";
+                comboBox_Barrio.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR! No pudimos obtener los datos de los barrios. Intentelo de nuevo.");
+            }
         }
 
         private void LlenarGrilla()
@@ -51,7 +66,7 @@ namespace NewWare_Soft.Forms
         {
             textBox_nombre.Enabled = true;
             textBox_apellido.Enabled = true;
-            textBox_barrio.Enabled = true;
+            comboBox_Barrio.Enabled = true;
             textBox_Email.Enabled = false;
             textBox_nombreCalle.Enabled = true;
             textBox_nroCalle.Enabled = true;
@@ -59,7 +74,7 @@ namespace NewWare_Soft.Forms
 
             textBox_nombre.Text = dude.Nombre;
             textBox_apellido.Text = dude.Apellido;
-            textBox_barrio.Text = dude.Barrio.ToString();
+            comboBox_Barrio.SelectedValue = dude.Barrio;
             textBox_Email.Text = dude.Email;
             textBox_nombreCalle.Text = dude.Calle;
             textBox_nroCalle.Text = dude.NroCalle.ToString();
@@ -72,7 +87,6 @@ namespace NewWare_Soft.Forms
             textBox_apellido.Text = "";
             textBox_telefono.Text = "";
             textBox_Email.Text = "";
-            textBox_barrio.Text = "";
             textBox_nombreCalle.Text = "";
             textBox_nroCalle.Text = "";
         }
@@ -104,7 +118,7 @@ namespace NewWare_Soft.Forms
             client.Email = textBox_Email.Text.Trim();
             textBox_Email.Enabled = false;
             client.Calle = textBox_nombreCalle.Text.Trim();
-            client.Barrio = int.Parse(textBox_barrio.Text.Trim());
+            client.Barrio = (int)comboBox_Barrio.SelectedValue;
             client.Telefono = textBox_telefono.Text.Trim();
             client.NroCalle = int.Parse(textBox_nroCalle.Text.Trim());
             return client;
@@ -113,7 +127,7 @@ namespace NewWare_Soft.Forms
         {
             textBox_nombre.Enabled = false;
             textBox_apellido.Enabled = false;
-            textBox_barrio.Enabled = false;
+            comboBox_Barrio.Enabled = false;
             textBox_Email.Enabled = false;
             textBox_nombreCalle.Enabled = false;
             textBox_nroCalle.Enabled = false;

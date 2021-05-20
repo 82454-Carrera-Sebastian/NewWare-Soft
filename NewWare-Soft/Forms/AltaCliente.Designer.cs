@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_limpiarCampos = new System.Windows.Forms.Button();
             this.button_agregarCliente = new System.Windows.Forms.Button();
-            this.textBox_barrio = new System.Windows.Forms.TextBox();
             this.label_barrio = new System.Windows.Forms.Label();
             this.textBox_nroCalle = new System.Windows.Forms.TextBox();
             this.label_calle = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.label_apellido = new System.Windows.Forms.Label();
             this.textBox_nombre = new System.Windows.Forms.TextBox();
             this.label_titulo = new System.Windows.Forms.Label();
+            this.comboBox_Barrio = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -78,14 +78,6 @@
             this.button_agregarCliente.Text = "Agregar";
             this.button_agregarCliente.UseVisualStyleBackColor = true;
             this.button_agregarCliente.Click += new System.EventHandler(this.button_agregarCliente_Click);
-            // 
-            // textBox_barrio
-            // 
-            this.textBox_barrio.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_barrio.Location = new System.Drawing.Point(35, 504);
-            this.textBox_barrio.Name = "textBox_barrio";
-            this.textBox_barrio.Size = new System.Drawing.Size(509, 31);
-            this.textBox_barrio.TabIndex = 43;
             // 
             // label_barrio
             // 
@@ -216,15 +208,23 @@
             this.label_titulo.TabIndex = 30;
             this.label_titulo.Text = "Agregar nuevo cliente";
             // 
+            // comboBox_Barrio
+            // 
+            this.comboBox_Barrio.FormattingEnabled = true;
+            this.comboBox_Barrio.Location = new System.Drawing.Point(33, 504);
+            this.comboBox_Barrio.Name = "comboBox_Barrio";
+            this.comboBox_Barrio.Size = new System.Drawing.Size(511, 28);
+            this.comboBox_Barrio.TabIndex = 48;
+            // 
             // AltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 625);
+            this.Controls.Add(this.comboBox_Barrio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_limpiarCampos);
             this.Controls.Add(this.button_agregarCliente);
-            this.Controls.Add(this.textBox_barrio);
             this.Controls.Add(this.label_barrio);
             this.Controls.Add(this.textBox_nroCalle);
             this.Controls.Add(this.label_calle);
@@ -242,6 +242,7 @@
             this.Name = "AltaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Cliente";
+            this.Load += new System.EventHandler(this.AltaCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +253,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_limpiarCampos;
         private System.Windows.Forms.Button button_agregarCliente;
-        private System.Windows.Forms.TextBox textBox_barrio;
         private System.Windows.Forms.Label label_barrio;
         private System.Windows.Forms.TextBox textBox_nroCalle;
         private System.Windows.Forms.Label label_calle;
@@ -267,5 +267,6 @@
         private System.Windows.Forms.Label label_apellido;
         private System.Windows.Forms.TextBox textBox_nombre;
         private System.Windows.Forms.Label label_titulo;
+        private System.Windows.Forms.ComboBox comboBox_Barrio;
     }
 }
