@@ -14,6 +14,7 @@ namespace NewWare_Soft.Forms
 {
     public partial class ModificarEtapa : Form
     {
+        int global;
         public ModificarEtapa()
         {
             InitializeComponent();
@@ -57,8 +58,9 @@ namespace NewWare_Soft.Forms
         }
         #endregion
 
+
         #region Modificar Etapa
-        private bool updateEtapa(Etapas etapa)
+        private bool updateEtapa(Etapas etapa, int global)
         {
             bool isValid = false;
 
@@ -67,11 +69,12 @@ namespace NewWare_Soft.Forms
 
             try
             {
-                string query = "update etapas set NombreEtapa = @nombre";
+                string query = "update etapas set NombreEtapa = @nombre where IdEtapa = @id";
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombre", etapa.Nombre);
+                cmd.Parameters.AddWithValue("@id", global);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = query;
 
@@ -92,27 +95,38 @@ namespace NewWare_Soft.Forms
             return isValid;
         }
         #endregion
+
+        #region Load
         private void ModificarEtapa_Load(object sender, EventArgs e)
         {
+            btnModificar.Enabled = false;
             txtNombre.Focus();
             CargarGrilla();
         }
+        #endregion
 
+
+        #region Evento Cell click
         private void dgvEtapas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indice = e.RowIndex;
+            btnModificar.Enabled = true;
             DataGridViewRow filaSeleccionada = dgvEtapas.Rows[indice];
             string nombre = filaSeleccionada.Cells["NombreEtapa"].Value.ToString();
-            txtNombre.Text = nombre;
+            Etapas etapa = ObtenerEtapa(nombre);
+            txtNombre.Text = " ";
+            cargarCampo(etapa);
         }
+        #endregion
 
+        #region Boton modificar
         private void btnModificar_Click(object sender, EventArgs e)
         {
             try
             {
-                Etapas etapa = new Etapas();
-                etapa.Nombre = txtNombre.Text;
-                if (updateEtapa(etapa))
+                Etapas etapa = ObtenerDatosEtapa();
+                bool resultado = updateEtapa(etapa, global);
+                if (resultado)
                 {
                     CargarGrilla();
                     MessageBox.Show("Operacion exitosa");
@@ -131,5 +145,64 @@ namespace NewWare_Soft.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+        #endregion
+
+        #region Obtener Datos Personas
+        private Etapas ObtenerDatosEtapa()
+        {
+            Etapas etapa = new Etapas();
+            etapa.Nombre = txtNombre.Text.Trim();
+            return etapa;
+        }
+        #endregion
+
+        #region Obtener Etapas
+        private Etapas ObtenerEtapa(string nombre)
+        {
+            Etapas e = new Etapas();
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand command = new SqlCommand();
+                string query = "select * from etapas where NombreEtapa like @nombre";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@nombre", nombre);
+
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                canalConexion.Open();
+                command.Connection = canalConexion;
+
+                SqlDataReader dr = command.ExecuteReader();
+
+                if (dr != null && dr.Read())
+                {
+                    global = int.Parse(dr["IdEtapa"].ToString());
+                    e.Nombre = dr["NombreEtapa"].ToString();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+            return e;
+
+        }
+    #endregion
+
+        #region Cargar Campo
+        private void cargarCampo(Etapas etapa)
+        {
+            txtNombre.Text = etapa.Nombre;
+        }
+        #endregion
     }
 }
