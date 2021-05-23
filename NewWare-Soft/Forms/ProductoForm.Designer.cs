@@ -38,17 +38,25 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtFinalizacion = new System.Windows.Forms.MaskedTextBox();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
-            this.grdProductos = new System.Windows.Forms.DataGridView();
-            this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinalizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIdEtapa = new System.Windows.Forms.TextBox();
+            this.btnBuscarEtapa = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNombreEtapa = new System.Windows.Forms.TextBox();
+            this.grdEtapas = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregarEtapa = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtIdProducto = new System.Windows.Forms.TextBox();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdEtapas)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(12, 366);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(12, 298);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(101, 32);
             this.btnAgregarProducto.TabIndex = 4;
@@ -68,7 +76,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(12, 406);
+            this.btnLimpiar.Location = new System.Drawing.Point(12, 336);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(101, 32);
             this.btnLimpiar.TabIndex = 5;
@@ -138,56 +146,131 @@
             this.txtPrecio.TabIndex = 3;
             this.txtPrecio.ValidatingType = typeof(int);
             // 
-            // grdProductos
+            // groupBox1
             // 
-            this.grdProductos.AllowUserToAddRows = false;
-            this.grdProductos.AllowUserToDeleteRows = false;
-            this.grdProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.denominacion,
-            this.descripcion,
-            this.fechaFinalizacion,
-            this.precio});
-            this.grdProductos.Location = new System.Drawing.Point(420, 9);
-            this.grdProductos.Name = "grdProductos";
-            this.grdProductos.ReadOnly = true;
-            this.grdProductos.Size = new System.Drawing.Size(445, 429);
-            this.grdProductos.TabIndex = 10;
+            this.groupBox1.Controls.Add(this.btnAgregarEtapa);
+            this.groupBox1.Controls.Add(this.grdEtapas);
+            this.groupBox1.Controls.Add(this.txtNombreEtapa);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.btnBuscarEtapa);
+            this.groupBox1.Controls.Add(this.txtIdEtapa);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(420, 10);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(393, 358);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Etapas del producto";
             // 
-            // denominacion
+            // label5
             // 
-            this.denominacion.DataPropertyName = "Denominacion";
-            this.denominacion.HeaderText = "Denominación";
-            this.denominacion.Name = "denominacion";
-            this.denominacion.ReadOnly = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 18);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Id de etapa:";
             // 
-            // descripcion
+            // txtIdEtapa
             // 
-            this.descripcion.DataPropertyName = "Descripcion";
-            this.descripcion.HeaderText = "Descripción";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
+            this.txtIdEtapa.Location = new System.Drawing.Point(95, 34);
+            this.txtIdEtapa.Name = "txtIdEtapa";
+            this.txtIdEtapa.Size = new System.Drawing.Size(55, 20);
+            this.txtIdEtapa.TabIndex = 6;
             // 
-            // fechaFinalizacion
+            // btnBuscarEtapa
             // 
-            this.fechaFinalizacion.DataPropertyName = "FechaFinalizacion";
-            this.fechaFinalizacion.HeaderText = "Fecha de Finalización";
-            this.fechaFinalizacion.Name = "fechaFinalizacion";
-            this.fechaFinalizacion.ReadOnly = true;
+            this.btnBuscarEtapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEtapa.Location = new System.Drawing.Point(156, 31);
+            this.btnBuscarEtapa.Name = "btnBuscarEtapa";
+            this.btnBuscarEtapa.Size = new System.Drawing.Size(81, 25);
+            this.btnBuscarEtapa.TabIndex = 7;
+            this.btnBuscarEtapa.Text = "Buscar";
+            this.btnBuscarEtapa.UseVisualStyleBackColor = true;
+            this.btnBuscarEtapa.Click += new System.EventHandler(this.btnBuscarEtapa_Click);
             // 
-            // precio
+            // label6
             // 
-            this.precio.DataPropertyName = "PrecioVenta";
-            this.precio.HeaderText = "Precio De Venta";
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(126, 18);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Nombre de etapa:";
+            // 
+            // txtNombreEtapa
+            // 
+            this.txtNombreEtapa.Enabled = false;
+            this.txtNombreEtapa.Location = new System.Drawing.Point(138, 102);
+            this.txtNombreEtapa.Name = "txtNombreEtapa";
+            this.txtNombreEtapa.Size = new System.Drawing.Size(125, 20);
+            this.txtNombreEtapa.TabIndex = 8;
+            // 
+            // grdEtapas
+            // 
+            this.grdEtapas.AllowUserToAddRows = false;
+            this.grdEtapas.AllowUserToDeleteRows = false;
+            this.grdEtapas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdEtapas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.nombre});
+            this.grdEtapas.Location = new System.Drawing.Point(18, 128);
+            this.grdEtapas.Name = "grdEtapas";
+            this.grdEtapas.ReadOnly = true;
+            this.grdEtapas.Size = new System.Drawing.Size(245, 224);
+            this.grdEtapas.TabIndex = 15;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "Id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // btnAgregarEtapa
+            // 
+            this.btnAgregarEtapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEtapa.Location = new System.Drawing.Point(269, 97);
+            this.btnAgregarEtapa.Name = "btnAgregarEtapa";
+            this.btnAgregarEtapa.Size = new System.Drawing.Size(118, 27);
+            this.btnAgregarEtapa.TabIndex = 9;
+            this.btnAgregarEtapa.Text = "Agregar Etapa";
+            this.btnAgregarEtapa.UseVisualStyleBackColor = true;
+            this.btnAgregarEtapa.Click += new System.EventHandler(this.btnAgregarEtapa_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 151);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 18);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "IdProducto:";
+            // 
+            // txtIdProducto
+            // 
+            this.txtIdProducto.Enabled = false;
+            this.txtIdProducto.Location = new System.Drawing.Point(173, 152);
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Size = new System.Drawing.Size(61, 20);
+            this.txtIdProducto.TabIndex = 13;
             // 
             // ProductoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 450);
-            this.Controls.Add(this.grdProductos);
+            this.ClientSize = new System.Drawing.Size(825, 379);
+            this.Controls.Add(this.txtIdProducto);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtFinalizacion);
             this.Controls.Add(this.txtDescripcion);
@@ -202,7 +285,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductoForm";
             this.Load += new System.EventHandler(this.ProductoForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdEtapas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,10 +305,17 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.MaskedTextBox txtFinalizacion;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
-        private System.Windows.Forms.DataGridView grdProductos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn denominacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalizacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView grdEtapas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.TextBox txtNombreEtapa;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBuscarEtapa;
+        private System.Windows.Forms.TextBox txtIdEtapa;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAgregarEtapa;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtIdProducto;
     }
 }

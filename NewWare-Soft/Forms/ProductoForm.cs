@@ -21,7 +21,7 @@ namespace NewWare_Soft.Forms
         private void ProductoForm_Load(object sender, EventArgs e)
         {
             limpiarCampos();
-            cargarGrilla();
+            obtenerUltimoIdProducto();
         }
         private void limpiarCampos() 
         {
@@ -60,14 +60,19 @@ namespace NewWare_Soft.Forms
             }
             else
             {
+                List<int> listaEtapas = new List<int>();
+                for (int i = 0; i < grdEtapas.Rows.Count; i++)
+                {
+                    listaEtapas.Add(int.Parse(grdEtapas.Rows[i].Cells[0].Value.ToString()));
+                }
                 try
                 {
-                    bool resultado = AD_Productos.agregarProductoABd(prod);
+                    bool resultado = AD_Productos.agregarProductoABd(prod, listaEtapas, int.Parse(txtIdProducto.Text));
                     if (resultado)
                     {
                         MessageBox.Show("Producto dado de alta con exito.");
                         limpiarCampos();
-                        cargarGrilla();
+                        obtenerUltimoIdProducto();
                     }
                     else
                     {
@@ -81,16 +86,55 @@ namespace NewWare_Soft.Forms
                 
             }
         }
-        public void cargarGrilla()
+        private void btnBuscarEtapa_Click(object sender, EventArgs e)
         {
             try
             {
-                grdProductos.DataSource = AD_Productos.cargarGrilla();
+                DataTable tablaResultado = AD_Productos.obtenerEtapaTabla(txtIdEtapa.Text);
+                if (tablaResultado.Rows.Count > 0)
+                {
+                    txtNombreEtapa.Text = tablaResultado.Rows[0][1].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Etapa no encontrada...");
+                    txtIdEtapa.Focus();
+                    txtNombreEtapa.Text = "";
+                }
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al obtener productos...");
+                MessageBox.Show("Error al obtener Etapa...");
             }
+        }
+        private void btnAgregarEtapa_Click(object sender, EventArgs e)
+        {
+            if (!existeEnGrilla(txtNombreEtapa.Text))
+            {
+                grdEtapas.Rows.Add(txtIdEtapa.Text, txtNombreEtapa.Text);
+            }
+            else
+            {
+                MessageBox.Show("Esta etapa ya se encuntra en la grilla...");
+            }
+        }
+        private bool existeEnGrilla(string aBuscar)
+        {
+            bool resultado = false;
+            for (int i = 0; i < grdEtapas.Rows.Count; i++)
+            {
+                if (grdEtapas.Rows[i].Cells["nombre"].Value.Equals(aBuscar))
+                {
+                    resultado = true;
+                    break;
+                }
+            }
+            return resultado;
+        }
+        private void obtenerUltimoIdProducto()
+        {
+            int id = AD_Productos.obtenerUltimoProductoId();
+            txtIdProducto.Text = (id + 1).ToString();
         }
     }
 }
