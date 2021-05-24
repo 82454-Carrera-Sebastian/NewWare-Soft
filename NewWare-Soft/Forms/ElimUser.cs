@@ -54,7 +54,7 @@ namespace NewWare_Soft.Forms
             int indice = e.RowIndex;
             btnEliminar.Enabled = true;
             DataGridViewRow filaselec = GrillaUsers2.Rows[indice];
-            string user = filaselec.Cells["User"].Value.ToString(); //
+            string user = filaselec.Cells["ID"].Value.ToString(); //
             Usuarios U = AD_Usuarios.ObtenerUsuario(user);
             LimpiarCampos();
             CargarCampos(U);

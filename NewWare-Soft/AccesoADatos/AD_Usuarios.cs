@@ -56,6 +56,49 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
             }
         }
 
+        public static bool ValidarNombreUsuario(string nombreUsu)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                bool resultado = false;
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM usuarios WHERE NombreUsuario like '"+nombreUsu+"'";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                if (tabla.Rows.Count == 1)
+                {
+                    resultado = true;
+                }
+                else
+                {
+                    resultado = false;
+                }
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         public static bool InsertarNuevoUsuario(string nombreUsuario, string password)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -121,7 +164,7 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
             }
         }
 
-        public static Usuarios ObtenerUsuario(string User) //
+        public static Usuarios ObtenerUsuario(string idUser) //
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -129,10 +172,8 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM usuarios where NombreUsuario LIKE @user";
+                string consulta = "SELECT * FROM usuarios WHERE IdUsuario LIKE '" + idUser + "' ";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@user", User);
-
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -142,9 +183,9 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
 
                 if (dr != null && dr.Read())
                 {
+                    U.id = dr["IdUsuario"].ToString();
                     U.NombreUsuario = dr["NombreUsuario"].ToString();
                     U.Password = dr["Password"].ToString();
-
                 }
             }
             catch (Exception)
@@ -198,8 +239,9 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE usuarios SET Password = @pass WHERE NombreUsuario like @nombre"; //
+                string consulta = "UPDATE usuarios SET NombreUsuario = @nombre, Password = @pass WHERE IdUsuario like @idUSer"; //
                 cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idUSer", usu.id);
                 cmd.Parameters.AddWithValue("@nombre", usu.NombreUsuario);
                 cmd.Parameters.AddWithValue("@pass", usu.Password);
                 cmd.CommandType = CommandType.Text;
