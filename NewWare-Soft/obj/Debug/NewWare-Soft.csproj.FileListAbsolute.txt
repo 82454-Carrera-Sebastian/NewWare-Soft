@@ -209,3 +209,47 @@ C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateRes
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csprojAssemblyReference.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaBarrio.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCiudad.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCliente.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaEtapa.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaFormaPago.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Cargo.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaBarrio.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaCiudad.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaCliente.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaEtapa.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFormaPago.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_Banco.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_Cargo.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_Tarjeta.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ElimUser.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasAltasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasBajasForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Herramientas.HerramientasModificacionesForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Login.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionBarrio.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionCiudad.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificacionProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Modificacion_Cargo.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarCliente.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarEtapa.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarFormaPago.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModificarPersonal.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ModifUser.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_Banco.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PrincipalForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.ProductoForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.UserForm.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Properties.Resources.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.GenerateResource.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
