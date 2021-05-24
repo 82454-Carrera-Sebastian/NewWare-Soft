@@ -49,6 +49,7 @@ namespace NewWare_Soft.Forms
         private Usuarios ObtenerDatosUsuario()
         {
             Usuarios U = new Usuarios();
+            U.id = txtIdUser.Text.Trim();
             U.NombreUsuario = txtModifUser.Text.Trim();
             U.Password = txtModifPass.Text;
             return U;
@@ -59,7 +60,7 @@ namespace NewWare_Soft.Forms
             int indice = e.RowIndex;
             btnModificar.Enabled = true;
             DataGridViewRow filaselec = GrillaUsers.Rows[indice];
-            string user = filaselec.Cells["User"].Value.ToString(); //
+            string user = filaselec.Cells["ID"].Value.ToString(); //
             Usuarios U = AD_Usuarios.ObtenerUsuario(user);
             LimpiarCampos();
             CargarCampos(U);
@@ -68,13 +69,14 @@ namespace NewWare_Soft.Forms
 
         private void CargarCampos(Usuarios U)
         {
+            txtIdUser.Text = U.id;
             txtModifUser.Text = U.NombreUsuario;
             txtModifPass.Text = U.Password;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (txtModifUser.Text.Equals("") || AD_Usuarios.ValidarUsuario(txtModifUser.Text, txtModifPass.Text))
+            if (txtModifUser.Text.Equals("") || AD_Usuarios.ValidarNombreUsuario(txtModifUser.Text))
             {
                 MessageBox.Show("No rellenó el nombre de usuario o escogió uno ya utilizado previamente");
                 LimpiarCampos();
@@ -84,7 +86,7 @@ namespace NewWare_Soft.Forms
             {
                 if (txtModifPass.Text.Equals(txtConfirm2Pass.Text))
                 {
-                    if (MessageBox.Show("Vas a modificar la contraseña de " + txtModifUser.Text + ", estas seguro?", "Confirmar modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    if (MessageBox.Show("Vas a modificar a  " + txtModifUser.Text + ", estas seguro?", "Confirmar modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
                         try
                         {

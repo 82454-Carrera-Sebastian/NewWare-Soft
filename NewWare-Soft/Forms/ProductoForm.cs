@@ -22,6 +22,7 @@ namespace NewWare_Soft.Forms
         {
             limpiarCampos();
             obtenerUltimoIdProducto();
+            CargarComboEtapas();
         }
         private void limpiarCampos() 
         {
@@ -36,7 +37,7 @@ namespace NewWare_Soft.Forms
         }
         private Producto obtenerDatosProducto() 
         {
-            if (txtDenominacion.Text.Equals("") || txtDescripcion.Text.Equals("") || txtFinalizacion.Text.Equals("") || txtPrecio.Text.Equals(""))
+            if (txtDenominacion.Text.Equals("") || txtFinalizacion.Text.Equals("") || txtPrecio.Text.Equals(""))
             {
                 return null;
             }
@@ -51,6 +52,22 @@ namespace NewWare_Soft.Forms
             }
             
         }
+
+        private void CargarComboEtapas()
+        {
+            try
+            {
+                cmbEtapas.DataSource = AD_Productos.ObtenerEtapa();
+                cmbEtapas.DisplayMember = "NombreEtapa";
+                cmbEtapas.ValueMember = "IdEtapa";
+                cmbEtapas.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar combo de etapas");
+            }
+        }
+
         private void btnAgregarProducto_Click(object sender, EventArgs e)
         {
             Producto prod = obtenerDatosProducto();
@@ -76,42 +93,24 @@ namespace NewWare_Soft.Forms
                     }
                     else
                     {
-                        MessageBox.Show("Erro al dar de alta el producto...");
+                        MessageBox.Show("Error al dar de alta el producto...");
                     }
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Erro al dar de alta el producto...");
+                    MessageBox.Show("Error al dar de alta el producto...");
                 }
                 
             }
         }
-        private void btnBuscarEtapa_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataTable tablaResultado = AD_Productos.obtenerEtapaTabla(txtIdEtapa.Text);
-                if (tablaResultado.Rows.Count > 0)
-                {
-                    txtNombreEtapa.Text = tablaResultado.Rows[0][1].ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Etapa no encontrada...");
-                    txtIdEtapa.Focus();
-                    txtNombreEtapa.Text = "";
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error al obtener Etapa...");
-            }
-        }
+
         private void btnAgregarEtapa_Click(object sender, EventArgs e)
         {
-            if (!existeEnGrilla(txtNombreEtapa.Text))
+            int id = AD_Productos.ObtenerIDEtapa(cmbEtapas.Text.Trim());
+            if (!existeEnGrilla(cmbEtapas.Text))
             {
-                grdEtapas.Rows.Add(txtIdEtapa.Text, txtNombreEtapa.Text);
+                grdEtapas.Rows.Add(id, cmbEtapas.Text);
+                btnAgregarProducto.Enabled = true;
             }
             else
             {

@@ -215,16 +215,16 @@ namespace NewWare_Soft.AccesoADatos
             }
             return resultado;
         }
-        public static DataTable obtenerEtapaTabla(string id)
+        public static DataTable obtenerEtapaTabla(string nomEtapa)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection connect = new SqlConnection(cadenaConexion);
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM etapas WHERE IdEtapa LIKE @id";
+                string consulta = "SELECT * FROM etapas WHERE NombreEtapa LIKE @nombre";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@nombre", nomEtapa);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 connect.Open();
@@ -243,5 +243,69 @@ namespace NewWare_Soft.AccesoADatos
                 connect.Close();
             }
         }
+
+        public static DataTable ObtenerEtapa()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "GetEtapa";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static int ObtenerIDEtapa(string nomEtapa)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT IdEtapa FROM etapas WHERE NombreEtapa like '"+nomEtapa+"'";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                int resultado = (int)cmd.ExecuteScalar();
+                return resultado;
+
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
     }
 }

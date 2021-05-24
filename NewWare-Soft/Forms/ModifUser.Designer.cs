@@ -41,12 +41,14 @@ namespace NewWare_Soft.Forms
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtIdUser = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtIdUser);
             this.groupBox1.Controls.Add(this.txtConfirm2Pass);
             this.groupBox1.Controls.Add(this.lblConfirm2Pass);
             this.groupBox1.Controls.Add(this.btnModificar);
@@ -165,6 +167,14 @@ namespace NewWare_Soft.Forms
             this.Password.Name = "Password";
             this.Password.Width = 150;
             // 
+            // txtIdUser
+            // 
+            this.txtIdUser.Enabled = false;
+            this.txtIdUser.Location = new System.Drawing.Point(86, 150);
+            this.txtIdUser.Name = "txtIdUser";
+            this.txtIdUser.Size = new System.Drawing.Size(42, 26);
+            this.txtIdUser.TabIndex = 10;
+            // 
             // ModifUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,5 +207,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn User;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.TextBox txtIdUser;
     }
 }
