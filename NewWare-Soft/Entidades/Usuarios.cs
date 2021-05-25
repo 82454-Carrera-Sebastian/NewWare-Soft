@@ -8,6 +8,7 @@ namespace NewWare_Soft.Entidades
 {
     public class Usuarios
     {
+        private string ID;
         private string NombreUsu;
         private string Pass;
 
@@ -20,6 +21,12 @@ namespace NewWare_Soft.Entidades
         public Usuarios()
         {
 
+        }
+
+        public string id //
+        {
+            get => ID;
+            set => ID = value;
         }
 
         public string NombreUsuario

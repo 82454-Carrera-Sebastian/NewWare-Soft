@@ -164,7 +164,7 @@ namespace NewWare_Soft.AccesoADatos_Usuarios
             }
         }
 
-        public static Usuarios ObtenerUsuario(string idUser)
+        public static Usuarios ObtenerUsuario(string idUser) //
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
