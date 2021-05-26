@@ -70,7 +70,7 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                cmbBancos.DataSource = AD_Bancos.ObtenerListaBancos();
+                cmbBancos.DataSource = AD_FPagos.ObtenerListaBancos();
                 cmbBancos.DisplayMember = "Nombre";
                 cmbBancos.ValueMember = "IdBanco";
                 cmbBancos.SelectedIndex = -1;

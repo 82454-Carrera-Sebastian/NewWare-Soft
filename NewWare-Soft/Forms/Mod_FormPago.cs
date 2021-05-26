@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
 {
-    public partial class Mod_Banco : Form
+    public partial class Mod_FormPago : Form
     {
         int IdBanco = 0;
-        public Mod_Banco()
+        public Mod_FormPago()
         {
             InitializeComponent();
         }
@@ -29,11 +29,11 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                gdrBancos.DataSource = AD_FPagos.ObtenerListaBancos();
+                gdrBancos.DataSource = AD_FPago.ObtenerListaBancos();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener usuarios");
+                MessageBox.Show("Error al obtener formas de pago!");
             }
         }
 
@@ -41,8 +41,8 @@ namespace NewWare_Soft.Forms
         {
             int indice = e.RowIndex;
             DataGridViewRow filaSeleccionada = gdrBancos.Rows[indice];
-            string nombreBanco = filaSeleccionada.Cells["NombreBanco"].Value.ToString();
-            IdBanco = (int)filaSeleccionada.Cells["Id"].Value;
+            string nombreBanco = filaSeleccionada.Cells["NombreFormaPago"].Value.ToString();
+            IdBanco = (int)filaSeleccionada.Cells["idFormaPago"].Value;
             txtNombreBuscar.Clear();
             try
             {
@@ -52,7 +52,7 @@ namespace NewWare_Soft.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al obtener persona");
+                MessageBox.Show("Error al obtener forma de pago!");
             }
         }
 
@@ -60,8 +60,8 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                AD_FPagos.ActualizarNombreBanco(IdBanco, txtNombreBanco.Text);
-                MessageBox.Show("Banco actualizado con éxito");
+                AD_FPago.ActualizarNombreBanco(IdBanco, txtNombreBanco.Text);
+                MessageBox.Show("forma de pago actualizada con éxito!");
                 CargarGrilla();
                 txtNombreBanco.Clear();
                 txtNombreBanco.Enabled = false;
@@ -70,7 +70,7 @@ namespace NewWare_Soft.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al actualizar Banco");
+                MessageBox.Show("Error al actualizar forma de pago!");
             }
         }
 
@@ -81,28 +81,28 @@ namespace NewWare_Soft.Forms
             {
                 if (txtNombreBuscar.Text.Length != 0)
                 {
-                    Banco b = AD_FPagos.ObtenerBanco(nombreABuscar);
+                    FormasPago b = AD_FPago.ObtenerBanco(nombreABuscar);
 
-                    if (b.NombreBanco == "")
+                    if (b.NombreFormaPago == "")
                     {
                         MessageBox.Show("Ese banco no fue encontrado");
                     }
                     else
                     {
-                        IdBanco = b.IdBanco;
+                        IdBanco = b.IdFormaPagoPersona;
                         txtNombreBanco.Enabled = true;
-                        txtNombreBanco.Text = b.NombreBanco;
+                        txtNombreBanco.Text = b.NombreFormaPago;
                         btnGuardarBanco.Enabled = true;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Debe ingresar un banco para buscar");
+                    MessageBox.Show("Debe ingresar una forma de pago para buscar");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener el banco");
+                MessageBox.Show("Error al obtener forma de pago");
             }
         }
     }

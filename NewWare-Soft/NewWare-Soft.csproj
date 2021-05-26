@@ -67,6 +67,7 @@
     <Compile Include="Entidades\Etapas.cs" />
     <Compile Include="Entidades\Factura.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
+    <Compile Include="Entidades\FormasPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
     <Compile Include="Entidades\MotivoEgreso.cs" />
     <Compile Include="Entidades\Personal.cs" />
@@ -109,6 +110,12 @@
     </Compile>
     <Compile Include="Forms\AltaPersonal.Designer.cs">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alta_FormPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alta_FormPago.Designer.cs">
+      <DependentUpon>Alta_FormPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Alta_Banco.cs">
       <SubType>Form</SubType>
@@ -181,6 +188,12 @@
     </Compile>
     <Compile Include="Forms\BajaProductoForm.Designer.cs">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Baja_FormPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Baja_FormPago.Designer.cs">
+      <DependentUpon>Baja_FormPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Baja_Banco.cs">
       <SubType>Form</SubType>
@@ -290,6 +303,12 @@
     <Compile Include="Forms\ModifUser.Designer.cs">
       <DependentUpon>ModifUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Mod_FormPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mod_FormPago.Designer.cs">
+      <DependentUpon>Mod_FormPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Mod_Banco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +381,9 @@
     <EmbeddedResource Include="Forms\Alta_Cargo.resx">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alta_FormPago.resx">
+      <DependentUpon>Alta_FormPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaBarrio.resx">
       <DependentUpon>BajaBarrio.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaProductoForm.resx">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Baja_FormPago.resx">
+      <DependentUpon>Baja_FormPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Baja_Banco.resx">
       <DependentUpon>Baja_Banco.cs</DependentUpon>
@@ -436,6 +461,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModifUser.resx">
       <DependentUpon>ModifUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mod_FormPago.resx">
+      <DependentUpon>Mod_FormPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mod_Banco.resx">
       <DependentUpon>Mod_Banco.cs</DependentUpon>

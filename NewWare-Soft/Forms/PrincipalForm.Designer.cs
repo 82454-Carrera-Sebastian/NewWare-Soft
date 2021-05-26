@@ -82,9 +82,6 @@ namespace NewWare_Soft.Forms
             this.altaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bajaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -106,12 +103,11 @@ namespace NewWare_Soft.Forms
             this.tarjetasToolStripMenuItem,
             this.bancosToolStripMenuItem,
             this.motivoEgresoToolStripMenuItem,
-            this.formasDePagoToolStripMenuItem,
-            this.ventaToolStripMenuItem});
+            this.formasDePagoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1317, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1184, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,7 +126,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_user_plus_2561494;
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
@@ -138,7 +134,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_delete_user_6646521;
             this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
-            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.bajaToolStripMenuItem.Text = "Baja";
             this.bajaToolStripMenuItem.Click += new System.EventHandler(this.bajaToolStripMenuItem_Click);
             // 
@@ -146,7 +142,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_user_config_configuration_6646130;
             this.modificacionToolStripMenuItem.Name = "modificacionToolStripMenuItem";
-            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.modificacionToolStripMenuItem.Text = "Modificacion";
             this.modificacionToolStripMenuItem.Click += new System.EventHandler(this.modificacionToolStripMenuItem_Click);
             // 
@@ -570,32 +566,9 @@ namespace NewWare_Soft.Forms
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
-            // ventaToolStripMenuItem
-            // 
-            this.ventaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaVentaToolStripMenuItem,
-            this.bajaFacturaToolStripMenuItem});
-            this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
-            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(48, 28);
-            this.ventaToolStripMenuItem.Text = "Venta";
-            // 
-            // nuevaVentaToolStripMenuItem
-            // 
-            this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
-            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevaVentaToolStripMenuItem.Text = "Nueva Venta";
-            this.nuevaVentaToolStripMenuItem.Click += new System.EventHandler(this.nuevaVentaToolStripMenuItem_Click);
-            // 
-            // bajaFacturaToolStripMenuItem
-            // 
-            this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
-            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bajaFacturaToolStripMenuItem.Text = "Baja Factura";
-            this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click_1);
-            // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1135, 398);
+            this.btnSalir.Location = new System.Drawing.Point(1074, 411);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(98, 30);
             this.btnSalir.TabIndex = 1;
@@ -617,7 +590,7 @@ namespace NewWare_Soft.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1317, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.menuStrip1);
@@ -689,8 +662,5 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem modificacionToolStripMenuItem12;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bajaFacturaToolStripMenuItem;
     }
 }
