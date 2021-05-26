@@ -135,5 +135,11 @@ namespace NewWare_Soft.Forms
             int id = AD_Productos.obtenerUltimoProductoId();
             txtIdProducto.Text = (id + 1).ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Proyectos ventana = new Proyectos();
+            ventana.ShowDialog();
+        }
     }
 }

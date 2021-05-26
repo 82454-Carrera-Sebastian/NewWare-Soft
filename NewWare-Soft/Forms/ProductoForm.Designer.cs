@@ -39,14 +39,15 @@
             this.txtFinalizacion = new System.Windows.Forms.MaskedTextBox();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNombreEtapa = new System.Windows.Forms.Label();
+            this.cmbEtapas = new System.Windows.Forms.ComboBox();
             this.btnAgregarEtapa = new System.Windows.Forms.Button();
             this.grdEtapas = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
-            this.cmbEtapas = new System.Windows.Forms.ComboBox();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblNombreEtapa = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdEtapas)).BeginInit();
             this.SuspendLayout();
@@ -157,6 +158,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Etapas del producto";
             // 
+            // lblNombreEtapa
+            // 
+            this.lblNombreEtapa.AutoSize = true;
+            this.lblNombreEtapa.Location = new System.Drawing.Point(15, 55);
+            this.lblNombreEtapa.Name = "lblNombreEtapa";
+            this.lblNombreEtapa.Size = new System.Drawing.Size(75, 13);
+            this.lblNombreEtapa.TabIndex = 17;
+            this.lblNombreEtapa.Text = "NombreEtapa:";
+            // 
+            // cmbEtapas
+            // 
+            this.cmbEtapas.FormattingEnabled = true;
+            this.cmbEtapas.Location = new System.Drawing.Point(121, 47);
+            this.cmbEtapas.Name = "cmbEtapas";
+            this.cmbEtapas.Size = new System.Drawing.Size(121, 21);
+            this.cmbEtapas.TabIndex = 16;
+            // 
             // btnAgregarEtapa
             // 
             this.btnAgregarEtapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +200,18 @@
             this.grdEtapas.Size = new System.Drawing.Size(245, 224);
             this.grdEtapas.TabIndex = 15;
             // 
+            // id
+            // 
+            this.id.HeaderText = "Id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -200,40 +230,22 @@
             this.txtIdProducto.Size = new System.Drawing.Size(61, 20);
             this.txtIdProducto.TabIndex = 13;
             // 
-            // cmbEtapas
+            // button1
             // 
-            this.cmbEtapas.FormattingEnabled = true;
-            this.cmbEtapas.Location = new System.Drawing.Point(121, 47);
-            this.cmbEtapas.Name = "cmbEtapas";
-            this.cmbEtapas.Size = new System.Drawing.Size(121, 21);
-            this.cmbEtapas.TabIndex = 16;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "Id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // lblNombreEtapa
-            // 
-            this.lblNombreEtapa.AutoSize = true;
-            this.lblNombreEtapa.Location = new System.Drawing.Point(15, 55);
-            this.lblNombreEtapa.Name = "lblNombreEtapa";
-            this.lblNombreEtapa.Size = new System.Drawing.Size(75, 13);
-            this.lblNombreEtapa.TabIndex = 17;
-            this.lblNombreEtapa.Text = "NombreEtapa:";
+            this.button1.Location = new System.Drawing.Point(298, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ProductoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 379);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.Label lblNombreEtapa;
+        private System.Windows.Forms.Button button1;
     }
 }
