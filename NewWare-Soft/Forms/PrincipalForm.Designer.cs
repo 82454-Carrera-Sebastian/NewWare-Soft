@@ -585,14 +585,14 @@ namespace NewWare_Soft.Forms
             // nuevaVentaToolStripMenuItem
             // 
             this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
-            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.nuevaVentaToolStripMenuItem.Text = "Nueva Venta";
             this.nuevaVentaToolStripMenuItem.Click += new System.EventHandler(this.nuevaVentaToolStripMenuItem_Click);
             // 
             // bajaFacturaToolStripMenuItem
             // 
             this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
-            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.bajaFacturaToolStripMenuItem.Text = "Baja Factura";
             this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click_1);
             // 
