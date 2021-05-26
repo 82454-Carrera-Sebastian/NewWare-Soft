@@ -31,7 +31,6 @@ namespace NewWare_Soft.Forms
         {
             this.lblFinReal = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtCliente = new System.Windows.Forms.TextBox();
             this.lblFinProbable = new System.Windows.Forms.Label();
             this.fechaInicial = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +48,8 @@ namespace NewWare_Soft.Forms
             this.txtIDProyecto = new System.Windows.Forms.TextBox();
             this.txtFin = new System.Windows.Forms.MaskedTextBox();
             this.txtFinReal = new System.Windows.Forms.MaskedTextBox();
-            this.txtInicio = new System.Windows.Forms.MaskedTextBox();
+            this.txtInicio = new System.Windows.Forms.TextBox();
+            this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdEtapas)).BeginInit();
             this.SuspendLayout();
@@ -70,13 +70,6 @@ namespace NewWare_Soft.Forms
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(241, 20);
             this.txtDescripcion.TabIndex = 15;
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(173, 21);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(61, 20);
-            this.txtCliente.TabIndex = 14;
             // 
             // lblFinProbable
             // 
@@ -244,27 +237,34 @@ namespace NewWare_Soft.Forms
             // 
             // txtInicio
             // 
+            this.txtInicio.Enabled = false;
             this.txtInicio.Location = new System.Drawing.Point(173, 86);
-            this.txtInicio.Mask = "00/00/0000";
             this.txtInicio.Name = "txtInicio";
             this.txtInicio.Size = new System.Drawing.Size(66, 20);
-            this.txtInicio.TabIndex = 16;
-            this.txtInicio.ValidatingType = typeof(System.DateTime);
+            this.txtInicio.TabIndex = 31;
+            // 
+            // cmbClientes
+            // 
+            this.cmbClientes.FormattingEnabled = true;
+            this.cmbClientes.Location = new System.Drawing.Point(173, 21);
+            this.cmbClientes.Name = "cmbClientes";
+            this.cmbClientes.Size = new System.Drawing.Size(121, 21);
+            this.cmbClientes.TabIndex = 32;
             // 
             // Proyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 460);
+            this.ClientSize = new System.Drawing.Size(855, 393);
+            this.Controls.Add(this.cmbClientes);
+            this.Controls.Add(this.txtInicio);
             this.Controls.Add(this.txtFinReal);
             this.Controls.Add(this.txtFin);
             this.Controls.Add(this.txtIDProyecto);
             this.Controls.Add(this.lblIDProyecto);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblFinReal);
-            this.Controls.Add(this.txtInicio);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.lblFinProbable);
             this.Controls.Add(this.fechaInicial);
             this.Controls.Add(this.label2);
@@ -285,7 +285,6 @@ namespace NewWare_Soft.Forms
         #endregion
         private System.Windows.Forms.Label lblFinReal;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label lblFinProbable;
         private System.Windows.Forms.Label fechaInicial;
         private System.Windows.Forms.Label label2;
@@ -303,6 +302,7 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.TextBox txtIDProyecto;
         private System.Windows.Forms.MaskedTextBox txtFin;
         private System.Windows.Forms.MaskedTextBox txtFinReal;
-        private System.Windows.Forms.MaskedTextBox txtInicio;
+        private System.Windows.Forms.TextBox txtInicio;
+        private System.Windows.Forms.ComboBox cmbClientes;
     }
 }

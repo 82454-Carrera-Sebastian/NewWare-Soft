@@ -11,7 +11,7 @@ namespace NewWare_Soft.AccesoADatos
 {
     class AD_Productos
     {
-        public static bool agregarProductoABd(Producto prod, List<int> listaEtapas, int idProducto)
+        public static bool agregarProductoABd(Producto prod)
         {
             bool resultado = false;
             try
@@ -20,7 +20,6 @@ namespace NewWare_Soft.AccesoADatos
                 if (existe == null)
                 {
                     string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-                    SqlTransaction objTransaccion = null;
                     SqlConnection connect = new SqlConnection(cadenaConexion);
                     try
                     {
@@ -34,23 +33,11 @@ namespace NewWare_Soft.AccesoADatos
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = consulta;
                         connect.Open();
-                        objTransaccion = connect.BeginTransaction("AltaDeEtapas");
-                        cmd.Transaction = objTransaccion;
                         cmd.Connection = connect;
                         cmd.ExecuteNonQuery();
-                        foreach (var etapa in listaEtapas)
-                        {
-                            string consulta2 = "INSERT INTO etapas_x_producto VALUES (@IdEtapa, @IdProducto)";
-                            cmd.Parameters.Clear();
-                            cmd.Parameters.AddWithValue("@IdEtapa", etapa);
-                            cmd.Parameters.AddWithValue("@IdProducto", idProducto);
-                            cmd.CommandText = consulta2;
-                            cmd.ExecuteNonQuery();
-                        }
-                        objTransaccion.Commit();
                         resultado = true;
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         throw;
                     }
@@ -65,31 +52,6 @@ namespace NewWare_Soft.AccesoADatos
                 throw;
             }
             return resultado;
-        }
-        public static int obtenerUltimoProductoId()
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection connect = new SqlConnection(cadenaConexion);
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT MAX(IdProducto) FROM productos";
-                cmd.Parameters.Clear();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-                connect.Open();
-                cmd.Connection = connect;
-                int resultado = (int)cmd.ExecuteScalar();
-                return resultado;
-            }
-            catch (Exception)
-            {
-                return 0;
-            }
-            finally
-            {
-                connect.Close();
-            }
         }
         public static Producto obtenerProducto(string denominacion)
         {
@@ -215,97 +177,5 @@ namespace NewWare_Soft.AccesoADatos
             }
             return resultado;
         }
-        public static DataTable obtenerEtapaTabla(string nomEtapa)
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection connect = new SqlConnection(cadenaConexion);
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM etapas WHERE NombreEtapa LIKE @nombre";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@nombre", nomEtapa);
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-                connect.Open();
-                cmd.Connection = connect;
-                DataTable tabla = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-                return tabla;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                connect.Close();
-            }
-        }
-
-        public static DataTable ObtenerEtapa()
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "GetEtapa";
-
-                cmd.Parameters.Clear();
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-
-                return tabla;
-            }
-            catch (Exception ex)
-            {
-
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
-        }
-
-        public static int ObtenerIDEtapa(string nomEtapa)
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT IdEtapa FROM etapas WHERE NombreEtapa like '"+nomEtapa+"'";
-
-                cmd.Parameters.Clear();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                int resultado = (int)cmd.ExecuteScalar();
-                return resultado;
-
-            }
-            catch (Exception ex)
-            {
-                return 0;
-            }
-            finally
-            {
-                cn.Close();
-            }
-        }
-
     }
 }

@@ -21,8 +21,18 @@ namespace NewWare_Soft.Forms
         private void ProductoForm_Load(object sender, EventArgs e)
         {
             limpiarCampos();
-            obtenerUltimoIdProducto();
-            CargarComboEtapas();
+            cargarGrilla();
+        }
+        private void cargarGrilla()
+        {
+            try
+            {
+                grdProductos.DataSource = AD_Productos.cargarGrilla();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al obtener productos...");
+            }
         }
         private void limpiarCampos() 
         {
@@ -52,22 +62,6 @@ namespace NewWare_Soft.Forms
             }
             
         }
-
-        private void CargarComboEtapas()
-        {
-            try
-            {
-                cmbEtapas.DataSource = AD_Productos.ObtenerEtapa();
-                cmbEtapas.DisplayMember = "NombreEtapa";
-                cmbEtapas.ValueMember = "IdEtapa";
-                cmbEtapas.SelectedIndex = -1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar combo de etapas");
-            }
-        }
-
         private void btnAgregarProducto_Click(object sender, EventArgs e)
         {
             Producto prod = obtenerDatosProducto();
@@ -77,19 +71,13 @@ namespace NewWare_Soft.Forms
             }
             else
             {
-                List<int> listaEtapas = new List<int>();
-                for (int i = 0; i < grdEtapas.Rows.Count; i++)
-                {
-                    listaEtapas.Add(int.Parse(grdEtapas.Rows[i].Cells[0].Value.ToString()));
-                }
                 try
                 {
-                    bool resultado = AD_Productos.agregarProductoABd(prod, listaEtapas, int.Parse(txtIdProducto.Text));
+                    bool resultado = AD_Productos.agregarProductoABd(prod);
                     if (resultado)
                     {
                         MessageBox.Show("Producto dado de alta con exito.");
                         limpiarCampos();
-                        obtenerUltimoIdProducto();
                     }
                     else
                     {
@@ -103,39 +91,6 @@ namespace NewWare_Soft.Forms
                 
             }
         }
-
-        private void btnAgregarEtapa_Click(object sender, EventArgs e)
-        {
-            int id = AD_Productos.ObtenerIDEtapa(cmbEtapas.Text.Trim());
-            if (!existeEnGrilla(cmbEtapas.Text))
-            {
-                grdEtapas.Rows.Add(id, cmbEtapas.Text);
-                btnAgregarProducto.Enabled = true;
-            }
-            else
-            {
-                MessageBox.Show("Esta etapa ya se encuntra en la grilla...");
-            }
-        }
-        private bool existeEnGrilla(string aBuscar)
-        {
-            bool resultado = false;
-            for (int i = 0; i < grdEtapas.Rows.Count; i++)
-            {
-                if (grdEtapas.Rows[i].Cells["nombre"].Value.Equals(aBuscar))
-                {
-                    resultado = true;
-                    break;
-                }
-            }
-            return resultado;
-        }
-        private void obtenerUltimoIdProducto()
-        {
-            int id = AD_Productos.obtenerUltimoProductoId();
-            txtIdProducto.Text = (id + 1).ToString();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Proyectos ventana = new Proyectos();

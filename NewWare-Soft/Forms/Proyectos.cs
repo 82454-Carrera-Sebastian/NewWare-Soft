@@ -21,20 +21,21 @@ namespace NewWare_Soft.Forms
 
         private void Proyectos_Load(object sender, EventArgs e)
         {
-            CargarFechaInicio();
             LimpiarCampos();
             ObtenerUltimoIdProyecto();
             CargarComboEtapas();
+            CargarFechaInicio();
+            CargarComboClientes();
         }
 
         private void CargarFechaInicio()
         {
-            txtInicio.Text = DateTime.Now.ToShortTimeString();
+            txtInicio.Text = DateTime.Now.ToShortDateString();
         }
 
         private void LimpiarCampos()
         {
-            txtCliente.Clear();
+            cmbClientes.SelectedIndex = -1;
             txtDescripcion.Clear();
             txtInicio.Clear();
             txtFin.Clear();
@@ -59,6 +60,22 @@ namespace NewWare_Soft.Forms
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar combo de etapas");
+            }
+        }
+        private void CargarComboClientes()
+        {
+            try
+            {
+                DataTable tabla = AD_Proyectos.obtenerTablaClientes();
+                tabla.Columns.Add("nombreCompleto", typeof(string), "Nombre + ' ' + Apellido");
+                cmbClientes.DataSource = tabla;
+                cmbClientes.DisplayMember = "nombreCompleto";
+                cmbClientes.ValueMember = "IdCliente";
+                cmbClientes.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar combo de clientes");
             }
         }
 
@@ -97,14 +114,14 @@ namespace NewWare_Soft.Forms
 
         private Proyecto obtenerDatosProyecto()
         {
-            if (txtCliente.Text.Equals("") || txtDescripcion.Text.Equals("") || txtInicio.Text.Equals("") || txtFin.Text.Equals("") || txtFinReal.Text.Equals(""))
+            if (cmbClientes.SelectedIndex == -1 || txtDescripcion.Text.Equals("") || txtInicio.Text.Equals("") || txtFin.Text.Equals("") || txtFinReal.Text.Equals(""))
             {
                 return null;
             }
             else
             {
                 Proyecto pro = new Proyecto();
-                pro.IdCliente = int.Parse(txtCliente.Text);
+                pro.IdCliente = (int)cmbClientes.SelectedValue;
                 pro.Descripcion = txtDescripcion.Text.Trim();
                 pro.FechaDeInicio = DateTime.Parse(txtInicio.Text);
                 pro.FechaDeFinProbable = DateTime.Parse(txtFin.Text);

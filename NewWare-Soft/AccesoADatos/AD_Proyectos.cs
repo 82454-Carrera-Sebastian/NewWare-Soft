@@ -36,7 +36,6 @@ namespace NewWare_Soft.AccesoADatos
                 connect.Close();
             }
         }
-
         public static DataTable ObtenerEtapa()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -69,7 +68,33 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
-
+        public static DataTable obtenerTablaClientes()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM clientes";
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
         public static int ObtenerIDEtapa(string nomEtapa)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -99,7 +124,6 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
-
         public static bool agregarProyectoABD(Proyecto pro, List<int> listaEtapas, int idProyecto)
         {
             bool resultado = false;
@@ -141,6 +165,7 @@ namespace NewWare_Soft.AccesoADatos
                 }
                 catch (Exception ex)
                 {
+                    objTransaccion.Rollback();
                     throw;
                 }
                 finally
