@@ -212,12 +212,6 @@
     <Compile Include="Forms\ElimUser.Designer.cs">
       <DependentUpon>ElimUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HerramientasPorEtapa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\HerramientasPorEtapa.Designer.cs">
-      <DependentUpon>HerramientasPorEtapa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Herramientas\HerramientasAltasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,9 +397,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ElimUser.resx">
       <DependentUpon>ElimUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HerramientasPorEtapa.resx">
-      <DependentUpon>HerramientasPorEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Herramientas\HerramientasAltasForm.resx">
       <DependentUpon>HerramientasAltasForm.cs</DependentUpon>
