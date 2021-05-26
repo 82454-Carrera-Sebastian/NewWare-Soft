@@ -30,7 +30,11 @@ namespace NewWare_Soft.Forms
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bajaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +87,6 @@ namespace NewWare_Soft.Forms
             this.altaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,23 +106,57 @@ namespace NewWare_Soft.Forms
             this.tarjetasToolStripMenuItem,
             this.bancosToolStripMenuItem,
             this.motivoEgresoToolStripMenuItem,
-            this.formasDePagoToolStripMenuItem});
+            this.formasDePagoToolStripMenuItem,
+            this.ventaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1191, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1317, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // ventaToolStripMenuItem
+            // 
+            this.ventaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaVentaToolStripMenuItem,
+            this.bajaFacturaToolStripMenuItem});
+            this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
+            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(48, 28);
+            this.ventaToolStripMenuItem.Text = "Venta";
+            // 
+            // nuevaVentaToolStripMenuItem
+            // 
+            this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
+            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaVentaToolStripMenuItem.Text = "Nueva Venta";
+
+            // 
+            // bajaFacturaToolStripMenuItem
+            // 
+            this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
+            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bajaFacturaToolStripMenuItem.Text = "Baja Factura";
+
+            // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1081, 411);
+            this.btnSalir.Location = new System.Drawing.Point(1135, 398);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(98, 30);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 421);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bienvenido a NewWare-Soft";
             // 
             // usuarioToolStripMenuItem
             // 
@@ -346,7 +383,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem6.Name = "altaToolStripMenuItem6";
-            this.altaToolStripMenuItem6.Size = new System.Drawing.Size(188, 30);
+            this.altaToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem6.Text = "Alta";
             this.altaToolStripMenuItem6.Click += new System.EventHandler(this.altaToolStripMenuItem6_Click);
             // 
@@ -354,7 +391,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem6.Name = "bajaToolStripMenuItem6";
-            this.bajaToolStripMenuItem6.Size = new System.Drawing.Size(188, 30);
+            this.bajaToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem6.Text = "Baja";
             this.bajaToolStripMenuItem6.Click += new System.EventHandler(this.bajaToolStripMenuItem6_Click);
             // 
@@ -362,7 +399,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem6.Name = "modificacionToolStripMenuItem6";
-            this.modificacionToolStripMenuItem6.Size = new System.Drawing.Size(188, 30);
+            this.modificacionToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem6.Text = "Modificacion";
             this.modificacionToolStripMenuItem6.Click += new System.EventHandler(this.modificacionToolStripMenuItem6_Click);
             // 
@@ -576,21 +613,11 @@ namespace NewWare_Soft.Forms
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 421);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenido a NewWare-Soft";
-            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 450);
+            this.ClientSize = new System.Drawing.Size(1317, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.menuStrip1);
@@ -662,5 +689,8 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem modificacionToolStripMenuItem12;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bajaFacturaToolStripMenuItem;
     }
 }

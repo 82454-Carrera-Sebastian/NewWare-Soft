@@ -58,12 +58,14 @@
     <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="Entidades\.cs" />
     <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Ciudad.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Etapas.cs" />
+    <Compile Include="Entidades\Factura.cs" />
     <Compile Include="Entidades\FormaPago.cs" />
     <Compile Include="Entidades\Herramientas.cs" />
     <Compile Include="Entidades\MotivoEgreso.cs" />
@@ -155,6 +157,12 @@
     </Compile>
     <Compile Include="Forms\BajaEtapa.Designer.cs">
       <DependentUpon>BajaEtapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaFactura.Designer.cs">
+      <DependentUpon>BajaFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BajaFormaPago.cs">
       <SubType>Form</SubType>
@@ -300,6 +308,12 @@
     <Compile Include="Forms\Mod_Tarjeta.Designer.cs">
       <DependentUpon>Mod_Tarjeta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\NuevaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NuevaVenta.Designer.cs">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaEtapa.resx">
       <DependentUpon>BajaEtapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaFactura.resx">
+      <DependentUpon>BajaFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaFormaPago.resx">
       <DependentUpon>BajaFormaPago.cs</DependentUpon>
@@ -422,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mod_Banco.resx">
       <DependentUpon>Mod_Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NuevaVenta.resx">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>

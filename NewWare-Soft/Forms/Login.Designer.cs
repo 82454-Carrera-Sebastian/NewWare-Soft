@@ -52,6 +52,7 @@ namespace NewWare_Soft
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 20);
             this.txtUser.TabIndex = 1;
+            this.txtUser.Text = "Admin";
             // 
             // btnIngresar
             // 
@@ -59,7 +60,7 @@ namespace NewWare_Soft
             this.btnIngresar.Location = new System.Drawing.Point(187, 157);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(98, 31);
-            this.btnIngresar.TabIndex = 3;
+            this.btnIngresar.TabIndex = 1;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -78,9 +79,9 @@ namespace NewWare_Soft
             // 
             this.txtPassword.Location = new System.Drawing.Point(184, 105);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "12345";
             // 
             // Login
             // 
