@@ -57,7 +57,7 @@ namespace NewWare_Soft.AccesoADatos
                 SqlCommand cmd = new SqlCommand();
 
 
-                string consulta = "SELECT * FROM tipos_formas_pago WHERE Nombre like @nombreBanco";
+                string consulta = "SELECT * FROM tipos_formas_pago WHERE NombreFormaPago like @nombreBanco";
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombreBanco", nombreBanco);
@@ -97,7 +97,7 @@ namespace NewWare_Soft.AccesoADatos
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "INSERT INTO tipos_formas_pago(Nombre) VALUES(@nombreBanco)";
+                string consulta = "INSERT INTO tipos_formas_pago(NombreFormaPago) VALUES(@nombreBanco)";
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombreBanco", nombreBanco);
@@ -132,7 +132,7 @@ namespace NewWare_Soft.AccesoADatos
             {
 
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE tipos_formas_pago SET Nombre = @nombreBanco WHERE IdBanco = @idBanco";
+                string consulta = "UPDATE tipos_formas_pago SET NombreFormaPago = @nombreBanco WHERE idFormaPago = @idBanco";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombreBanco", nomNuevo);
                 cmd.Parameters.AddWithValue("@idBanco", idBanco);
@@ -168,7 +168,7 @@ namespace NewWare_Soft.AccesoADatos
             {
 
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM tipos_formas_pago WHERE Nombre like @nombreBanco";
+                string consulta = "SELECT * FROM tipos_formas_pago WHERE NombreFormaPago like @nombreBanco";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombreBanco", nomABuscar);
                 cmd.CommandType = CommandType.Text;
@@ -208,7 +208,7 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "DELETE FROM tipos_formas_pago WHERE Nombre like @nombreBanco";
+                string consulta = "DELETE FROM tipos_formas_pago WHERE NombreFormaPago like @nombreBanco";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombreBanco", nomBanco);
                 cmd.CommandType = CommandType.Text;

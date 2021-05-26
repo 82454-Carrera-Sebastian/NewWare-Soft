@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baja_Banco));
             this.btnEliminarBanco = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarBanco = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@ namespace NewWare_Soft.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreBanco = new System.Windows.Forms.TextBox();
             this.lblNombreBanco = new System.Windows.Forms.Label();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrBancos)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +49,10 @@ namespace NewWare_Soft.Forms
             // btnEliminarBanco
             // 
             this.btnEliminarBanco.Enabled = false;
-            this.btnEliminarBanco.Location = new System.Drawing.Point(226, 312);
+            this.btnEliminarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarBanco.Location = new System.Drawing.Point(177, 353);
             this.btnEliminarBanco.Name = "btnEliminarBanco";
-            this.btnEliminarBanco.Size = new System.Drawing.Size(119, 33);
+            this.btnEliminarBanco.Size = new System.Drawing.Size(225, 33);
             this.btnEliminarBanco.TabIndex = 18;
             this.btnEliminarBanco.Text = "Eliminar banco";
             this.btnEliminarBanco.UseVisualStyleBackColor = true;
@@ -62,7 +65,7 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Controls.Add(this.txtNombreBuscar);
             this.groupBox1.Controls.Add(this.lblBuscarBanco);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(42, 50);
+            this.groupBox1.Location = new System.Drawing.Point(48, 91);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(500, 205);
             this.groupBox1.TabIndex = 17;
@@ -71,6 +74,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnBuscarBanco
             // 
+            this.btnBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarBanco.Location = new System.Drawing.Point(360, 163);
             this.btnBuscarBanco.Name = "btnBuscarBanco";
             this.btnBuscarBanco.Size = new System.Drawing.Size(75, 23);
@@ -120,7 +124,7 @@ namespace NewWare_Soft.Forms
             // lblBuscarBanco
             // 
             this.lblBuscarBanco.AutoSize = true;
-            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarBanco.Location = new System.Drawing.Point(48, 164);
             this.lblBuscarBanco.Name = "lblBuscarBanco";
             this.lblBuscarBanco.Size = new System.Drawing.Size(104, 18);
@@ -131,16 +135,16 @@ namespace NewWare_Soft.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 9);
+            this.label1.Location = new System.Drawing.Point(209, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 20);
+            this.label1.Size = new System.Drawing.Size(154, 20);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Eliminar un banco";
+            this.label1.Text = "Eliminar un Banco";
             // 
             // txtNombreBanco
             // 
             this.txtNombreBanco.Enabled = false;
-            this.txtNombreBanco.Location = new System.Drawing.Point(282, 272);
+            this.txtNombreBanco.Location = new System.Drawing.Point(288, 313);
             this.txtNombreBanco.Name = "txtNombreBanco";
             this.txtNombreBanco.Size = new System.Drawing.Size(235, 20);
             this.txtNombreBanco.TabIndex = 20;
@@ -149,26 +153,40 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNombreBanco.AutoSize = true;
             this.lblNombreBanco.Enabled = false;
-            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreBanco.Location = new System.Drawing.Point(71, 271);
+            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreBanco.Location = new System.Drawing.Point(77, 312);
             this.lblNombreBanco.Name = "lblNombreBanco";
             this.lblNombreBanco.Size = new System.Drawing.Size(201, 18);
             this.lblNombreBanco.TabIndex = 19;
             this.lblNombreBanco.Text = "Nombre del banco a eliminar:";
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 54;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // Baja_Banco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 362);
+            this.ClientSize = new System.Drawing.Size(588, 398);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.txtNombreBanco);
             this.Controls.Add(this.lblNombreBanco);
             this.Controls.Add(this.btnEliminarBanco);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Baja_Banco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Baja_Banco";
+            this.Text = "Baja Banco";
             this.Load += new System.EventHandler(this.Baja_Banco_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -191,5 +209,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombreBanco;
         private System.Windows.Forms.Label lblNombreBanco;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

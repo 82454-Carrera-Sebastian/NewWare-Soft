@@ -305,3 +305,12 @@ C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-S
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CoreCompileInputs.cache
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe.config
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.exe
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\NewWare-Soft.pdb
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Banco.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_MotivoEgreso.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Tarjeta.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_MotivoEgreso.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_MotivoEgreso.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_Tarjeta.resources

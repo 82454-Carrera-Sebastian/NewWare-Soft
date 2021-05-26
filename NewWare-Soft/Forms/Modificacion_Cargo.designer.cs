@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificacion_Cargo));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombreCargo = new System.Windows.Forms.Label();
             this.lblDescripcionCargo = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@ namespace NewWare_Soft.Forms
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdCargo = new System.Windows.Forms.TextBox();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaCargos)).BeginInit();
             this.SuspendLayout();
@@ -50,44 +52,44 @@ namespace NewWare_Soft.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(271, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(348, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 31);
+            this.label1.Size = new System.Drawing.Size(160, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Modificacion de Cargo Empleado";
+            this.label1.Text = "Modificar un Cargo";
             // 
             // lblNombreCargo
             // 
             this.lblNombreCargo.AutoSize = true;
-            this.lblNombreCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCargo.Location = new System.Drawing.Point(38, 138);
+            this.lblNombreCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreCargo.Location = new System.Drawing.Point(55, 124);
             this.lblNombreCargo.Name = "lblNombreCargo";
-            this.lblNombreCargo.Size = new System.Drawing.Size(173, 25);
+            this.lblNombreCargo.Size = new System.Drawing.Size(131, 18);
             this.lblNombreCargo.TabIndex = 2;
             this.lblNombreCargo.Text = "Nombre de Cargo:";
             // 
             // lblDescripcionCargo
             // 
             this.lblDescripcionCargo.AutoSize = true;
-            this.lblDescripcionCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionCargo.Location = new System.Drawing.Point(1, 180);
+            this.lblDescripcionCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionCargo.Location = new System.Drawing.Point(27, 157);
             this.lblDescripcionCargo.Name = "lblDescripcionCargo";
-            this.lblDescripcionCargo.Size = new System.Drawing.Size(210, 25);
+            this.lblDescripcionCargo.Size = new System.Drawing.Size(159, 18);
             this.lblDescripcionCargo.TabIndex = 4;
             this.lblDescripcionCargo.Text = "Descripcion del Cargo:";
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(217, 144);
+            this.txtCargo.Location = new System.Drawing.Point(192, 125);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(219, 20);
             this.txtCargo.TabIndex = 5;
             // 
             // txtDescripcionCargo
             // 
-            this.txtDescripcionCargo.Location = new System.Drawing.Point(217, 180);
+            this.txtDescripcionCargo.Location = new System.Drawing.Point(192, 158);
             this.txtDescripcionCargo.Multiline = true;
             this.txtDescripcionCargo.Name = "txtDescripcionCargo";
             this.txtDescripcionCargo.Size = new System.Drawing.Size(219, 124);
@@ -95,9 +97,9 @@ namespace NewWare_Soft.Forms
             // 
             // btnModCargo
             // 
-            this.btnModCargo.Location = new System.Drawing.Point(348, 321);
+            this.btnModCargo.Location = new System.Drawing.Point(242, 304);
             this.btnModCargo.Name = "btnModCargo";
-            this.btnModCargo.Size = new System.Drawing.Size(75, 38);
+            this.btnModCargo.Size = new System.Drawing.Size(169, 38);
             this.btnModCargo.TabIndex = 7;
             this.btnModCargo.Text = "Modificar Cargo";
             this.btnModCargo.UseVisualStyleBackColor = true;
@@ -105,9 +107,9 @@ namespace NewWare_Soft.Forms
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(253, 321);
+            this.btnLimpiar.Location = new System.Drawing.Point(58, 304);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 38);
+            this.btnLimpiar.Size = new System.Drawing.Size(169, 38);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar Campos";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -117,7 +119,7 @@ namespace NewWare_Soft.Forms
             // 
             this.groupBox1.Controls.Add(this.grillaListaCargos);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(452, 56);
+            this.groupBox1.Location = new System.Drawing.Point(436, 93);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(509, 361);
             this.groupBox1.TabIndex = 9;
@@ -168,26 +170,39 @@ namespace NewWare_Soft.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(115, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 25);
+            this.label2.Size = new System.Drawing.Size(71, 18);
             this.label2.TabIndex = 10;
             this.label2.Text = "ID Cargo:";
             // 
             // txtIdCargo
             // 
             this.txtIdCargo.Enabled = false;
-            this.txtIdCargo.Location = new System.Drawing.Point(217, 99);
+            this.txtIdCargo.Location = new System.Drawing.Point(192, 94);
             this.txtIdCargo.Name = "txtIdCargo";
-            this.txtIdCargo.Size = new System.Drawing.Size(22, 20);
+            this.txtIdCargo.Size = new System.Drawing.Size(219, 20);
             this.txtIdCargo.TabIndex = 11;
+            // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 32;
+            this.label_Empresa.Text = "NewWare-Soft";
             // 
             // Modificacion_Cargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 487);
+            this.ClientSize = new System.Drawing.Size(950, 462);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.txtIdCargo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -198,9 +213,10 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.lblDescripcionCargo);
             this.Controls.Add(this.lblNombreCargo);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Modificacion_Cargo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Modificacion_Cargo";
+            this.Text = "Modificacion Cargo";
             this.Load += new System.EventHandler(this.Modificacion_Cargo_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaCargos)).EndInit();
@@ -225,5 +241,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdCargo;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

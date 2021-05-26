@@ -42,7 +42,7 @@ namespace NewWare_Soft.Forms
             {
                 if (AD_FPago.EliminarBanco(txtNombreBanco.Text))
                 {
-                    MessageBox.Show("La forma de pago fue eliminado con éxito");
+                    MessageBox.Show("La forma de pago fue eliminada con éxito");
                     CargarGrilla();
                     txtNombreBanco.Clear();
                     txtNombreBuscar.Clear();
@@ -82,7 +82,7 @@ namespace NewWare_Soft.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener el forma de pago");
+                MessageBox.Show("Error al obtener la forma de pago");
             }
         }
 

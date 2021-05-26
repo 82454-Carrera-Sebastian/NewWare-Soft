@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms.Herramientas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HerramientasModificacionesForm));
             this.label1 = new System.Windows.Forms.Label();
             this.btnModificarHerramienta = new System.Windows.Forms.Button();
             this.gdrHerramientas = new System.Windows.Forms.DataGridView();
@@ -40,25 +41,26 @@ namespace NewWare_Soft.Forms.Herramientas
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNomHerramienta = new System.Windows.Forms.Label();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
+            this.label_Empresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(170, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 20);
+            this.label1.Size = new System.Drawing.Size(221, 20);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Modificación de Herramientas";
+            this.label1.Text = "Modificar una Herramienta";
             // 
             // btnModificarHerramienta
             // 
-            this.btnModificarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarHerramienta.Location = new System.Drawing.Point(301, 185);
+            this.btnModificarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarHerramienta.Location = new System.Drawing.Point(317, 183);
             this.btnModificarHerramienta.Name = "btnModificarHerramienta";
-            this.btnModificarHerramienta.Size = new System.Drawing.Size(212, 63);
+            this.btnModificarHerramienta.Size = new System.Drawing.Size(180, 35);
             this.btnModificarHerramienta.TabIndex = 20;
             this.btnModificarHerramienta.Text = "Modificar Herramienta";
             this.btnModificarHerramienta.UseVisualStyleBackColor = true;
@@ -73,7 +75,7 @@ namespace NewWare_Soft.Forms.Herramientas
             this.IdHerramienta,
             this.NombreHerramienta,
             this.DescripcionHerramienta});
-            this.gdrHerramientas.Location = new System.Drawing.Point(25, 283);
+            this.gdrHerramientas.Location = new System.Drawing.Point(12, 224);
             this.gdrHerramientas.Name = "gdrHerramientas";
             this.gdrHerramientas.ReadOnly = true;
             this.gdrHerramientas.Size = new System.Drawing.Size(542, 150);
@@ -107,7 +109,7 @@ namespace NewWare_Soft.Forms.Herramientas
             // txtDescripcion
             // 
             this.txtDescripcion.Enabled = false;
-            this.txtDescripcion.Location = new System.Drawing.Point(251, 111);
+            this.txtDescripcion.Location = new System.Drawing.Point(213, 111);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(316, 54);
@@ -116,17 +118,17 @@ namespace NewWare_Soft.Forms.Herramientas
             // lblDescripcionHerramienta
             // 
             this.lblDescripcionHerramienta.AutoSize = true;
-            this.lblDescripcionHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcionHerramienta.Location = new System.Drawing.Point(14, 111);
             this.lblDescripcionHerramienta.Name = "lblDescripcionHerramienta";
-            this.lblDescripcionHerramienta.Size = new System.Drawing.Size(231, 20);
+            this.lblDescripcionHerramienta.Size = new System.Drawing.Size(191, 18);
             this.lblDescripcionHerramienta.TabIndex = 18;
             this.lblDescripcionHerramienta.Text = "Descripcion de Heramienta:";
             // 
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(251, 79);
+            this.txtNombre.Location = new System.Drawing.Point(213, 78);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(316, 20);
             this.txtNombre.TabIndex = 14;
@@ -134,29 +136,42 @@ namespace NewWare_Soft.Forms.Herramientas
             // lblNomHerramienta
             // 
             this.lblNomHerramienta.AutoSize = true;
-            this.lblNomHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomHerramienta.Location = new System.Drawing.Point(21, 77);
             this.lblNomHerramienta.Name = "lblNomHerramienta";
-            this.lblNomHerramienta.Size = new System.Drawing.Size(224, 20);
+            this.lblNomHerramienta.Size = new System.Drawing.Size(186, 18);
             this.lblNomHerramienta.TabIndex = 17;
             this.lblNomHerramienta.Text = "Nombre de la Herramienta:";
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(25, 185);
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(69, 183);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(79, 63);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(180, 35);
             this.btnLimpiarCampos.TabIndex = 22;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
             this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 30;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // HerramientasModificacionesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(562, 383);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnModificarHerramienta);
@@ -165,9 +180,10 @@ namespace NewWare_Soft.Forms.Herramientas
             this.Controls.Add(this.lblDescripcionHerramienta);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNomHerramienta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HerramientasModificacionesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Modificaciones de Herramientas ";
+            this.Text = "Modificaciones Herramientas ";
             this.Load += new System.EventHandler(this.HerramientasModificacionesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).EndInit();
             this.ResumeLayout(false);
@@ -188,5 +204,6 @@ namespace NewWare_Soft.Forms.Herramientas
         private System.Windows.Forms.DataGridViewTextBoxColumn IdHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreHerramienta;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionHerramienta;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

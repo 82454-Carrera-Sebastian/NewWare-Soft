@@ -29,17 +29,19 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mod_FormPago));
             this.btnGuardarBanco = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarBanco = new System.Windows.Forms.Button();
             this.gdrBancos = new System.Windows.Forms.DataGridView();
+            this.idFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNombreBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscarBanco = new System.Windows.Forms.Label();
             this.txtNombreBanco = new System.Windows.Forms.TextBox();
             this.lblNombreBanco = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreBanco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrBancos)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,7 @@ namespace NewWare_Soft.Forms
             // btnGuardarBanco
             // 
             this.btnGuardarBanco.Enabled = false;
-            this.btnGuardarBanco.Location = new System.Drawing.Point(194, 303);
+            this.btnGuardarBanco.Location = new System.Drawing.Point(194, 342);
             this.btnGuardarBanco.Name = "btnGuardarBanco";
             this.btnGuardarBanco.Size = new System.Drawing.Size(257, 33);
             this.btnGuardarBanco.TabIndex = 13;
@@ -62,7 +64,7 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Controls.Add(this.txtNombreBuscar);
             this.groupBox1.Controls.Add(this.lblBuscarBanco);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(60, 90);
+            this.groupBox1.Location = new System.Drawing.Point(60, 130);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(543, 205);
             this.groupBox1.TabIndex = 12;
@@ -71,6 +73,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnBuscarBanco
             // 
+            this.btnBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarBanco.Location = new System.Drawing.Point(427, 163);
             this.btnBuscarBanco.Name = "btnBuscarBanco";
             this.btnBuscarBanco.Size = new System.Drawing.Size(75, 23);
@@ -85,14 +88,30 @@ namespace NewWare_Soft.Forms
             this.gdrBancos.AllowUserToDeleteRows = false;
             this.gdrBancos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdrBancos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.NombreBanco});
+            this.idFormaPago,
+            this.NombreFormaPago});
             this.gdrBancos.Location = new System.Drawing.Point(76, 22);
             this.gdrBancos.Name = "gdrBancos";
             this.gdrBancos.ReadOnly = true;
             this.gdrBancos.Size = new System.Drawing.Size(412, 131);
             this.gdrBancos.TabIndex = 0;
             this.gdrBancos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrBancos_CellClick);
+            // 
+            // idFormaPago
+            // 
+            this.idFormaPago.DataPropertyName = "idFormaPago";
+            this.idFormaPago.HeaderText = "Id";
+            this.idFormaPago.Name = "idFormaPago";
+            this.idFormaPago.ReadOnly = true;
+            this.idFormaPago.Width = 50;
+            // 
+            // NombreFormaPago
+            // 
+            this.NombreFormaPago.DataPropertyName = "NombreFormaPago";
+            this.NombreFormaPago.HeaderText = "Nombre";
+            this.NombreFormaPago.Name = "NombreFormaPago";
+            this.NombreFormaPago.ReadOnly = true;
+            this.NombreFormaPago.Width = 300;
             // 
             // txtNombreBuscar
             // 
@@ -104,7 +123,7 @@ namespace NewWare_Soft.Forms
             // lblBuscarBanco
             // 
             this.lblBuscarBanco.AutoSize = true;
-            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarBanco.Location = new System.Drawing.Point(48, 164);
             this.lblBuscarBanco.Name = "lblBuscarBanco";
             this.lblBuscarBanco.Size = new System.Drawing.Size(159, 18);
@@ -114,7 +133,7 @@ namespace NewWare_Soft.Forms
             // txtNombreBanco
             // 
             this.txtNombreBanco.Enabled = false;
-            this.txtNombreBanco.Location = new System.Drawing.Point(194, 52);
+            this.txtNombreBanco.Location = new System.Drawing.Point(194, 92);
             this.txtNombreBanco.Name = "txtNombreBanco";
             this.txtNombreBanco.Size = new System.Drawing.Size(392, 20);
             this.txtNombreBanco.TabIndex = 11;
@@ -122,8 +141,8 @@ namespace NewWare_Soft.Forms
             // lblNombreBanco
             // 
             this.lblNombreBanco.AutoSize = true;
-            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreBanco.Location = new System.Drawing.Point(83, 51);
+            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreBanco.Location = new System.Drawing.Point(83, 91);
             this.lblNombreBanco.Name = "lblNombreBanco";
             this.lblNombreBanco.Size = new System.Drawing.Size(105, 18);
             this.lblNombreBanco.TabIndex = 10;
@@ -133,41 +152,39 @@ namespace NewWare_Soft.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(190, 9);
+            this.label1.Location = new System.Drawing.Point(190, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 20);
+            this.label1.Size = new System.Drawing.Size(244, 20);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Modificación de Forma de Pago";
+            this.label1.Text = "Modificar una Forma de Pago";
             // 
-            // Id
+            // label_Empresa
             // 
-            this.Id.DataPropertyName = "idFormaPago";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 50;
-            // 
-            // NombreBanco
-            // 
-            this.NombreBanco.DataPropertyName = "NombreFormaPago";
-            this.NombreBanco.HeaderText = "Nombre";
-            this.NombreBanco.Name = "NombreBanco";
-            this.NombreBanco.ReadOnly = true;
-            this.NombreBanco.Width = 300;
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 29;
+            this.label_Empresa.Text = "NewWare-Soft";
             // 
             // Mod_FormPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 343);
+            this.ClientSize = new System.Drawing.Size(668, 387);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.btnGuardarBanco);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtNombreBanco);
             this.Controls.Add(this.lblNombreBanco);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Mod_FormPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mod_Banco";
+            this.Text = "Modificacion Forma de Pago";
             this.Load += new System.EventHandler(this.Mod_Banco_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -188,7 +205,8 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.TextBox txtNombreBanco;
         private System.Windows.Forms.Label lblNombreBanco;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreBanco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idFormaPago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreFormaPago;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

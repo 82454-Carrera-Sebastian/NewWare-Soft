@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mod_Banco));
             this.btnGuardarBanco = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarBanco = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@ namespace NewWare_Soft.Forms
             this.txtNombreBanco = new System.Windows.Forms.TextBox();
             this.lblNombreBanco = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrBancos)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +49,9 @@ namespace NewWare_Soft.Forms
             // btnGuardarBanco
             // 
             this.btnGuardarBanco.Enabled = false;
-            this.btnGuardarBanco.Location = new System.Drawing.Point(266, 303);
+            this.btnGuardarBanco.Location = new System.Drawing.Point(194, 340);
             this.btnGuardarBanco.Name = "btnGuardarBanco";
-            this.btnGuardarBanco.Size = new System.Drawing.Size(119, 33);
+            this.btnGuardarBanco.Size = new System.Drawing.Size(264, 33);
             this.btnGuardarBanco.TabIndex = 13;
             this.btnGuardarBanco.Text = "Guardar cambio";
             this.btnGuardarBanco.UseVisualStyleBackColor = true;
@@ -62,7 +64,7 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Controls.Add(this.txtNombreBuscar);
             this.groupBox1.Controls.Add(this.lblBuscarBanco);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(86, 90);
+            this.groupBox1.Location = new System.Drawing.Point(86, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(500, 205);
             this.groupBox1.TabIndex = 12;
@@ -120,7 +122,7 @@ namespace NewWare_Soft.Forms
             // lblBuscarBanco
             // 
             this.lblBuscarBanco.AutoSize = true;
-            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarBanco.Location = new System.Drawing.Point(48, 164);
             this.lblBuscarBanco.Name = "lblBuscarBanco";
             this.lblBuscarBanco.Size = new System.Drawing.Size(104, 18);
@@ -130,7 +132,7 @@ namespace NewWare_Soft.Forms
             // txtNombreBanco
             // 
             this.txtNombreBanco.Enabled = false;
-            this.txtNombreBanco.Location = new System.Drawing.Point(194, 52);
+            this.txtNombreBanco.Location = new System.Drawing.Point(194, 88);
             this.txtNombreBanco.Name = "txtNombreBanco";
             this.txtNombreBanco.Size = new System.Drawing.Size(235, 20);
             this.txtNombreBanco.TabIndex = 11;
@@ -138,8 +140,8 @@ namespace NewWare_Soft.Forms
             // lblNombreBanco
             // 
             this.lblNombreBanco.AutoSize = true;
-            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreBanco.Location = new System.Drawing.Point(83, 51);
+            this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreBanco.Location = new System.Drawing.Point(83, 87);
             this.lblNombreBanco.Name = "lblNombreBanco";
             this.lblNombreBanco.Size = new System.Drawing.Size(105, 18);
             this.lblNombreBanco.TabIndex = 10;
@@ -149,25 +151,39 @@ namespace NewWare_Soft.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 9);
+            this.label1.Location = new System.Drawing.Point(232, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 20);
+            this.label1.Size = new System.Drawing.Size(163, 20);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Modificación de Banco";
+            this.label1.Text = "Modificar un Banco";
+            // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 28;
+            this.label_Empresa.Text = "NewWare-Soft";
             // 
             // Mod_Banco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 343);
+            this.ClientSize = new System.Drawing.Size(668, 385);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.btnGuardarBanco);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtNombreBanco);
             this.Controls.Add(this.lblNombreBanco);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Mod_Banco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mod_Banco";
+            this.Text = "Modificacion Banco";
             this.Load += new System.EventHandler(this.Mod_Banco_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -190,5 +206,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreBanco;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

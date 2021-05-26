@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baja_MotivoEgreso));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarMotivo = new System.Windows.Forms.Button();
             this.gdrMotivosEgresos = new System.Windows.Forms.DataGridView();
@@ -40,6 +41,7 @@ namespace NewWare_Soft.Forms
             this.btnEliminarMotivo = new System.Windows.Forms.Button();
             this.txtNombreMotivo = new System.Windows.Forms.TextBox();
             this.lblNombreMotivo = new System.Windows.Forms.Label();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrMotivosEgresos)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +53,7 @@ namespace NewWare_Soft.Forms
             this.groupBox1.Controls.Add(this.txtNombreBuscar);
             this.groupBox1.Controls.Add(this.lblBuscarMotivo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(49, 52);
+            this.groupBox1.Location = new System.Drawing.Point(49, 87);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(500, 205);
             this.groupBox1.TabIndex = 8;
@@ -60,6 +62,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnBuscarMotivo
             // 
+            this.btnBuscarMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarMotivo.Location = new System.Drawing.Point(360, 163);
             this.btnBuscarMotivo.Name = "btnBuscarMotivo";
             this.btnBuscarMotivo.Size = new System.Drawing.Size(75, 23);
@@ -109,7 +112,7 @@ namespace NewWare_Soft.Forms
             // lblBuscarMotivo
             // 
             this.lblBuscarMotivo.AutoSize = true;
-            this.lblBuscarMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarMotivo.Location = new System.Drawing.Point(48, 164);
             this.lblBuscarMotivo.Name = "lblBuscarMotivo";
             this.lblBuscarMotivo.Size = new System.Drawing.Size(108, 18);
@@ -120,18 +123,18 @@ namespace NewWare_Soft.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(184, 9);
+            this.label1.Location = new System.Drawing.Point(184, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 20);
+            this.label1.Size = new System.Drawing.Size(242, 20);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Eliminar un motivo de egreso";
+            this.label1.Text = "Eliminar un Motivo de Egreso";
             // 
             // btnEliminarMotivo
             // 
             this.btnEliminarMotivo.Enabled = false;
-            this.btnEliminarMotivo.Location = new System.Drawing.Point(261, 304);
+            this.btnEliminarMotivo.Location = new System.Drawing.Point(166, 345);
             this.btnEliminarMotivo.Name = "btnEliminarMotivo";
-            this.btnEliminarMotivo.Size = new System.Drawing.Size(88, 34);
+            this.btnEliminarMotivo.Size = new System.Drawing.Size(258, 34);
             this.btnEliminarMotivo.TabIndex = 10;
             this.btnEliminarMotivo.Text = "Eliminar";
             this.btnEliminarMotivo.UseVisualStyleBackColor = true;
@@ -140,7 +143,7 @@ namespace NewWare_Soft.Forms
             // txtNombreMotivo
             // 
             this.txtNombreMotivo.Enabled = false;
-            this.txtNombreMotivo.Location = new System.Drawing.Point(298, 271);
+            this.txtNombreMotivo.Location = new System.Drawing.Point(298, 306);
             this.txtNombreMotivo.Name = "txtNombreMotivo";
             this.txtNombreMotivo.Size = new System.Drawing.Size(235, 20);
             this.txtNombreMotivo.TabIndex = 12;
@@ -148,26 +151,40 @@ namespace NewWare_Soft.Forms
             // lblNombreMotivo
             // 
             this.lblNombreMotivo.AutoSize = true;
-            this.lblNombreMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreMotivo.Location = new System.Drawing.Point(87, 270);
+            this.lblNombreMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreMotivo.Location = new System.Drawing.Point(87, 305);
             this.lblNombreMotivo.Name = "lblNombreMotivo";
             this.lblNombreMotivo.Size = new System.Drawing.Size(205, 18);
             this.lblNombreMotivo.TabIndex = 11;
             this.lblNombreMotivo.Text = "Nombre del motivo a eliminar:";
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 56;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // Baja_MotivoEgreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 350);
+            this.ClientSize = new System.Drawing.Size(619, 391);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.txtNombreMotivo);
             this.Controls.Add(this.lblNombreMotivo);
             this.Controls.Add(this.btnEliminarMotivo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Baja_MotivoEgreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dar de baja un motivo de egreso";
+            this.Text = "Baja Motivo de Egreso";
             this.Load += new System.EventHandler(this.Baja_MotivoEgreso_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -190,5 +207,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Button btnEliminarMotivo;
         private System.Windows.Forms.TextBox txtNombreMotivo;
         private System.Windows.Forms.Label lblNombreMotivo;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

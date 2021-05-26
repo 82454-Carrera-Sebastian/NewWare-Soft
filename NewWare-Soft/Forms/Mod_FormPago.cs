@@ -85,7 +85,7 @@ namespace NewWare_Soft.Forms
 
                     if (b.NombreFormaPago == "")
                     {
-                        MessageBox.Show("Ese banco no fue encontrado");
+                        MessageBox.Show("Esa forma de pago no fue encontrada");
                     }
                     else
                     {

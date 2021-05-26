@@ -378,11 +378,20 @@
     <EmbeddedResource Include="Forms\AltaPersonal.resx">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alta_Banco.resx">
+      <DependentUpon>Alta_Banco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Alta_Cargo.resx">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Alta_FormPago.resx">
       <DependentUpon>Alta_FormPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alta_MotivoEgreso.resx">
+      <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alta_Tarjeta.resx">
+      <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaBarrio.resx">
       <DependentUpon>BajaBarrio.cs</DependentUpon>
@@ -416,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Baja_Cargo.resx">
       <DependentUpon>Baja_Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Baja_MotivoEgreso.resx">
+      <DependentUpon>Baja_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Baja_Tarjeta.resx">
       <DependentUpon>Baja_Tarjeta.cs</DependentUpon>
@@ -467,6 +479,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mod_Banco.resx">
       <DependentUpon>Mod_Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mod_MotivoEgreso.resx">
+      <DependentUpon>Mod_MotivoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mod_Tarjeta.resx">
+      <DependentUpon>Mod_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NuevaVenta.resx">
       <DependentUpon>NuevaVenta.cs</DependentUpon>
