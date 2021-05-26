@@ -177,5 +177,40 @@ namespace NewWare_Soft.AccesoADatos
             }
             return resultado;
         }
+
+        public static Producto obtenerDatosProductoSeleccionado(string denominacion)
+        {
+            Producto prod = new Producto();
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT p.IdProducto, p.Denominacion, p.PrecioVenta FROM productos p WHERE Denominacion LIKE @denominacion";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@denominacion", denominacion);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr != null && dr.Read())
+                {
+                    prod.IdProducto = int.Parse(dr["IdProducto"].ToString());
+                    prod.Denominacion = dr["Denominacion"].ToString();
+                    prod.Precio = int.Parse(dr["PrecioVenta"].ToString());
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return prod;
+        }
     }
 }
