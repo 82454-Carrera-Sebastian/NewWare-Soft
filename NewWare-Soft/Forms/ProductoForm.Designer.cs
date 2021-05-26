@@ -49,7 +49,6 @@
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Enabled = false;
             this.btnAgregarProducto.Location = new System.Drawing.Point(12, 298);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(101, 32);
