@@ -137,6 +137,7 @@ namespace NewWare_Soft.Forms
             client.Calle = textBox_nombreCalle.Text.Trim();
             //falta validar que los ints
             client.Telefono = textBox_telefono.Text;
+            //try catch
             client.NroCalle = int.Parse(textBox_nroCalle.Text);
             client.Barrio = (int)comboBox_Barrio.SelectedValue;
             return client;

@@ -15,6 +15,7 @@ namespace NewWare_Soft.Entidades
         private int nroCalle;
         private string nombreCalle;
         private string email;
+        private int idCliente;
 
         public string Nombre
         {
@@ -50,6 +51,12 @@ namespace NewWare_Soft.Entidades
         {
             get => email;
             set => email = value;
+        }
+
+        public int IdCliente
+        {
+            get => idCliente;
+            set => idCliente = value;
         }
     }
 }

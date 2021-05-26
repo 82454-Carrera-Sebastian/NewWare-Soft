@@ -12,12 +12,14 @@ namespace NewWare_Soft.Entidades
         private string descripcion;
         private DateTime fechaFinalizacion;
         private int precio;
-        public Producto(string denominacion, string descripcion, DateTime fechaFinalizacion, int precio)
+        private int idProducto;
+        public Producto(string denominacion, string descripcion, DateTime fechaFinalizacion, int precio, int idProducto)
         {
             this.denominacion = denominacion;
             this.descripcion = descripcion;
             this.fechaFinalizacion = fechaFinalizacion;
             this.precio = precio;
+            this.idProducto = idProducto;
         }
         public Producto() { }
         public string Denominacion
@@ -39,6 +41,12 @@ namespace NewWare_Soft.Entidades
         {
             get => precio;
             set => precio = value;
+        }
+
+        public int IdProducto
+        {
+            get => idProducto;
+            set => idProducto = value;
         }
     }
 }

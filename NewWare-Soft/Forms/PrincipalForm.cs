@@ -261,6 +261,18 @@ namespace NewWare_Soft.Forms
                 Application.Exit();
             }
         }
+
+        private void nuevaVentaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            NuevaVenta newVenta = new NuevaVenta();
+            newVenta.ShowDialog();
+        }
+
+        private void bajaFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BajaFactura bajaFactura = new BajaFactura();
+            bajaFactura.ShowDialog();
+        }
     }
     
 }
