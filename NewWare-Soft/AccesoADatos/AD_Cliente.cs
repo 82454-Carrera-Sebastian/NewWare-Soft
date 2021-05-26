@@ -129,6 +129,7 @@ namespace NewWare_Soft.AccesoADatos
 
                 if (dr != null && dr.Read())
                 {
+                    dude.IdCliente = int.Parse(dr["IdCliente"].ToString());
                     dude.Nombre = dr["Nombre"].ToString();
                     dude.Apellido = dr["Apellido"].ToString();
                     dude.Telefono = dr["Telefono"].ToString();
@@ -252,7 +253,73 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+        public static object getData_Producto_Combo()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string query = "GetComboProducto";
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        #region ultimo nro factura
+        public static int ultimoNroFactura()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand command = new SqlCommand();
+                string query = "SELECT MAX(NroFactura) FROM facturas";
+
+                command.Parameters.Clear();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                canalConexion.Open();
+                command.Connection = canalConexion;
+                try
+                {
+                    int result = (int)command.ExecuteScalar();
+                    return result;
+                }
+                catch (Exception)
+                {
+                    return -1;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+        }
+
+        #endregion
     }
 }
-
-
