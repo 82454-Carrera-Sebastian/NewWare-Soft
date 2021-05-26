@@ -38,7 +38,6 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtFinalizacion = new System.Windows.Forms.MaskedTextBox();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.grdProductos = new System.Windows.Forms.DataGridView();
             this.denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -139,16 +138,6 @@
             this.txtPrecio.TabIndex = 3;
             this.txtPrecio.ValidatingType = typeof(int);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(119, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 36);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Form Proyectos (Temporal)";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // grdProductos
             // 
             this.grdProductos.AllowUserToAddRows = false;
@@ -201,7 +190,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 379);
             this.Controls.Add(this.grdProductos);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtFinalizacion);
             this.Controls.Add(this.txtDescripcion);
@@ -234,7 +222,6 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.MaskedTextBox txtFinalizacion;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView grdProductos;
         private System.Windows.Forms.DataGridViewTextBoxColumn denominacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;

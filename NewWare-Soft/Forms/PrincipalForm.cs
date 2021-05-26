@@ -273,6 +273,12 @@ namespace NewWare_Soft.Forms
             BajaFactura bajaFactura = new BajaFactura();
             bajaFactura.ShowDialog();
         }
+
+        private void altaProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Proyectos ventana = new Proyectos();
+            ventana.ShowDialog();
+        }
     }
     
 }

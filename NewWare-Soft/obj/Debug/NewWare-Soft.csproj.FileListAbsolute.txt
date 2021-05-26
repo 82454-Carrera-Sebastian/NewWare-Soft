@@ -258,3 +258,5 @@ D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFactura.resources
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.NuevaVenta.resources
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Proyectos.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFactura.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.NuevaVenta.resources
