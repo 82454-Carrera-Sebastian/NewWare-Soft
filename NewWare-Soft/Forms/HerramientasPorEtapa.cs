@@ -201,12 +201,25 @@ namespace NewWare_Soft.Forms
                     listaHerramientas.Add(int.Parse(gdrHerramientas.Rows[i].Cells[0].Value.ToString()));
                 }
                 AD_Proyectos.HerramientasPorEtapa(int.Parse(txtCodProyecto.Text.Trim()), (int)cmbEtapas.SelectedValue, listaHerramientas);
+                LimpiarCampos();
             }
             catch (Exception)
             {
                 MessageBox.Show("Error al agregar la o las herramientas");
                 throw;
             }
+        }
+
+        private void LimpiarCampos()
+        {
+            txtCodProyecto.Text = "";
+            txtDescProyecto.Text = "";
+            cmbEtapas.SelectedIndex = -1;
+        }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

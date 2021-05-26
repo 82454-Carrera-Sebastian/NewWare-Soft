@@ -47,6 +47,7 @@ namespace NewWare_Soft.Forms
             this.btnBuscarProyecto = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
             this.SuspendLayout();
@@ -228,11 +229,22 @@ namespace NewWare_Soft.Forms
             this.label6.TabIndex = 11;
             this.label6.Text = "Descripción:";
             // 
+            // btnLimpiarCampos
+            // 
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(52, 389);
+            this.btnLimpiarCampos.Name = "btnLimpiarCampos";
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(75, 36);
+            this.btnLimpiarCampos.TabIndex = 12;
+            this.btnLimpiarCampos.Text = "Limpiar Campos";
+            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
+            // 
             // HerramientasPorEtapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 437);
+            this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDescProyecto);
@@ -276,5 +288,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbHerramientas;
+        private System.Windows.Forms.Button btnLimpiarCampos;
     }
 }

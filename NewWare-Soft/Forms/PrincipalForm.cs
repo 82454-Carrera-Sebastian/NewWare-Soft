@@ -274,11 +274,6 @@ namespace NewWare_Soft.Forms
             bajaFactura.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            HerramientasPorEtapa ventana = new HerramientasPorEtapa();
-            ventana.ShowDialog();
-        }
     }
     
 }
