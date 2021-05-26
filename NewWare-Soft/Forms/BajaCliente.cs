@@ -55,6 +55,7 @@ namespace NewWare_Soft.Forms
             button_NO.Visible = true;
             button_SI.Enabled = true;
             button_NO.Visible = true;
+            
         }
 
         private void button_NO_Click(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace NewWare_Soft.Forms
                 button_NO.Visible = false;
                 button_SI.Enabled = false;
                 button_NO.Visible = false;
+                textBox_Email.Text = " ";
             }
             else
             {
