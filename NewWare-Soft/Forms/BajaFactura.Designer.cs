@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BajaFactura));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvFacturas = new System.Windows.Forms.DataGridView();
             this.NroFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,17 +38,18 @@ namespace NewWare_Soft.Forms
             this.button_Borrar = new System.Windows.Forms.Button();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label_Empresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(34, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(564, 74);
+            this.label1.Size = new System.Drawing.Size(564, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Baja Factura";
+            this.label1.Text = "Eliminar una Factura";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvFacturas
@@ -59,7 +61,7 @@ namespace NewWare_Soft.Forms
             this.NroFactura,
             this.IdCliente,
             this.fechaFactura});
-            this.dgvFacturas.Location = new System.Drawing.Point(49, 165);
+            this.dgvFacturas.Location = new System.Drawing.Point(18, 73);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.ReadOnly = true;
             this.dgvFacturas.Size = new System.Drawing.Size(644, 194);
@@ -92,9 +94,9 @@ namespace NewWare_Soft.Forms
             // 
             // button_Borrar
             // 
-            this.button_Borrar.Location = new System.Drawing.Point(286, 376);
+            this.button_Borrar.Location = new System.Drawing.Point(218, 280);
             this.button_Borrar.Name = "button_Borrar";
-            this.button_Borrar.Size = new System.Drawing.Size(119, 35);
+            this.button_Borrar.Size = new System.Drawing.Size(244, 35);
             this.button_Borrar.TabIndex = 2;
             this.button_Borrar.Text = "Borrar";
             this.button_Borrar.UseVisualStyleBackColor = true;
@@ -105,7 +107,7 @@ namespace NewWare_Soft.Forms
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(620, 125);
+            this.linkLabel1.Location = new System.Drawing.Point(612, 9);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(54, 23);
             this.linkLabel1.TabIndex = 3;
@@ -113,19 +115,34 @@ namespace NewWare_Soft.Forms
             this.linkLabel1.Text = "Help";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 63;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // BajaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 450);
+            this.ClientSize = new System.Drawing.Size(678, 327);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button_Borrar);
             this.Controls.Add(this.dgvFacturas);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BajaFactura";
-            this.Text = "BajaFactura";
+            this.Text = "Baja Factura";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,5 +156,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Button button_Borrar;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

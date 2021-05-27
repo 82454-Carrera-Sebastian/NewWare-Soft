@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms
 {
-    partial class Alta_Banco
+    partial class Alta_FormPago
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Banco));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_FormPago));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreBanco = new System.Windows.Forms.TextBox();
             this.lblNombreBanco = new System.Windows.Forms.Label();
@@ -41,15 +41,15 @@ namespace NewWare_Soft.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 53);
+            this.label1.Location = new System.Drawing.Point(88, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 20);
+            this.label1.Size = new System.Drawing.Size(255, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Agregar Nuevo Banco";
+            this.label1.Text = "Agregar Nueva Forma de Pago";
             // 
             // txtNombreBanco
             // 
-            this.txtNombreBanco.Location = new System.Drawing.Point(174, 95);
+            this.txtNombreBanco.Location = new System.Drawing.Point(148, 102);
             this.txtNombreBanco.Name = "txtNombreBanco";
             this.txtNombreBanco.Size = new System.Drawing.Size(235, 20);
             this.txtNombreBanco.TabIndex = 4;
@@ -58,19 +58,19 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNombreBanco.AutoSize = true;
             this.lblNombreBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreBanco.Location = new System.Drawing.Point(30, 95);
+            this.lblNombreBanco.Location = new System.Drawing.Point(47, 101);
             this.lblNombreBanco.Name = "lblNombreBanco";
-            this.lblNombreBanco.Size = new System.Drawing.Size(134, 18);
+            this.lblNombreBanco.Size = new System.Drawing.Size(66, 18);
             this.lblNombreBanco.TabIndex = 3;
-            this.lblNombreBanco.Text = "Nombre del banco:";
+            this.lblNombreBanco.Text = "Nombre:";
             // 
             // btnAgregarBanco
             // 
-            this.btnAgregarBanco.Location = new System.Drawing.Point(96, 146);
+            this.btnAgregarBanco.Location = new System.Drawing.Point(79, 151);
             this.btnAgregarBanco.Name = "btnAgregarBanco";
-            this.btnAgregarBanco.Size = new System.Drawing.Size(265, 23);
+            this.btnAgregarBanco.Size = new System.Drawing.Size(271, 23);
             this.btnAgregarBanco.TabIndex = 5;
-            this.btnAgregarBanco.Text = "Agregar banco";
+            this.btnAgregarBanco.Text = "Agregar forma de pago";
             this.btnAgregarBanco.UseVisualStyleBackColor = true;
             this.btnAgregarBanco.Click += new System.EventHandler(this.btnAgregarBanco_Click);
             // 
@@ -83,23 +83,23 @@ namespace NewWare_Soft.Forms
             this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_Empresa.Name = "label_Empresa";
             this.label_Empresa.Size = new System.Drawing.Size(190, 24);
-            this.label_Empresa.TabIndex = 6;
+            this.label_Empresa.TabIndex = 10;
             this.label_Empresa.Text = "NewWare-Soft";
             // 
-            // Alta_Banco
+            // Alta_FormPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 181);
+            this.ClientSize = new System.Drawing.Size(436, 186);
             this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.btnAgregarBanco);
             this.Controls.Add(this.txtNombreBanco);
             this.Controls.Add(this.lblNombreBanco);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Alta_Banco";
+            this.Name = "Alta_FormPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alta Nuevo Banco";
+            this.Text = "Alta Forma de Pago";
             this.Load += new System.EventHandler(this.Alta_Banco_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

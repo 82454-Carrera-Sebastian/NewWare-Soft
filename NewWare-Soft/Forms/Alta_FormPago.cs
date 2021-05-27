@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
 {
-    public partial class Alta_Banco : Form
+    public partial class Alta_FormPago : Form
     {
-        public Alta_Banco()
+        public Alta_FormPago()
         {
             InitializeComponent();
         }
@@ -27,18 +27,18 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                bool resultado = AD_FPagos.VerificarExistencia(txtNombreBanco.Text);
+                bool resultado = AD_FPago.VerificarExistencia(txtNombreBanco.Text);
                 if (resultado)
                 {
-                    MessageBox.Show("Ese banco ya fue dado de alta", "¡Error!");
+                    MessageBox.Show("Esa forma de pago ya fue dada de alta", "¡Error!");
                 }
                 else
                 {
                     try
                     {
-                        if (AD_FPagos.InsertarBanco(txtNombreBanco.Text) == true)
+                        if (AD_FPago.InsertarBanco(txtNombreBanco.Text) == true)
                         {
-                            MessageBox.Show("El banco fue agregado éxitosamente", "Banco agregado");
+                            MessageBox.Show("La forma de pago fue agregada éxitosamente", "Agregado");
                             txtNombreBanco.Clear();
                             txtNombreBanco.Focus();
                         }
@@ -46,13 +46,13 @@ namespace NewWare_Soft.Forms
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Error al insertar el banco", "¡Error!");
+                        MessageBox.Show("Error al insertar forma de pago", "¡Error!");
                     }
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al verificar existencia del banco", "¡Error!");
+                MessageBox.Show("Error al verificar existencia de forma de pago", "¡Error!");
             }
         }
     }

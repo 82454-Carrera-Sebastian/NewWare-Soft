@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace NewWare_Soft.Forms
 {
-    public partial class Baja_Banco : Form
+    public partial class Baja_FormPago : Form
     {
         int IdBanco = 0;
-        public Baja_Banco()
+        public Baja_FormPago()
         {
             InitializeComponent();
         }
@@ -28,11 +28,11 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                gdrBancos.DataSource = AD_FPagos.ObtenerListaBancos();
+                gdrBancos.DataSource = AD_FPago.ObtenerListaBancos();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener bancos para la grilla");
+                MessageBox.Show("Error al obtener formas de pago para la grilla");
             }
         }
 
@@ -40,9 +40,9 @@ namespace NewWare_Soft.Forms
         {
             try
             {
-                if (AD_FPagos.EliminarBanco(txtNombreBanco.Text))
+                if (AD_FPago.EliminarBanco(txtNombreBanco.Text))
                 {
-                    MessageBox.Show("El banco fue eliminado con éxito");
+                    MessageBox.Show("La forma de pago fue eliminada con éxito");
                     CargarGrilla();
                     txtNombreBanco.Clear();
                     txtNombreBuscar.Clear();
@@ -51,7 +51,7 @@ namespace NewWare_Soft.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al eliminar el banco");
+                MessageBox.Show("Error al eliminar!");
             }
         }
 
@@ -62,27 +62,27 @@ namespace NewWare_Soft.Forms
             {
                 if (txtNombreBuscar.Text.Length != 0)
                 {
-                    Banco b = AD_FPagos.ObtenerBanco(nombreABuscar);
+                    FormasPago b = AD_FPago.ObtenerBanco(nombreABuscar);
 
-                    if (b.NombreBanco == "")
+                    if (b.NombreFormaPago == "")
                     {
-                        MessageBox.Show("Ese banco no fue encontrado");
+                        MessageBox.Show("Esa forma de pago no fue encontrada!");
                     }
                     else
                     {
-                        IdBanco = b.IdBanco;
-                        txtNombreBanco.Text = b.NombreBanco;
+                        IdBanco = b.IdFormaPagoPersona;
+                        txtNombreBanco.Text = b.NombreFormaPago;
                         btnEliminarBanco.Enabled = true;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Debe ingresar un banco para buscar");
+                    MessageBox.Show("Debe ingresar una forma de pago para buscar");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener el banco");
+                MessageBox.Show("Error al obtener la forma de pago");
             }
         }
 
@@ -90,7 +90,7 @@ namespace NewWare_Soft.Forms
         {
             int indice = e.RowIndex;
             DataGridViewRow filaSeleccionada = gdrBancos.Rows[indice];
-            string nombreMotivo = filaSeleccionada.Cells["NombreBanco"].Value.ToString();
+            string nombreMotivo = filaSeleccionada.Cells["NombreFormaPago"].Value.ToString();
             try
             {
                 txtNombreBanco.Text = nombreMotivo;
@@ -98,7 +98,7 @@ namespace NewWare_Soft.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al obtener persona");
+                MessageBox.Show("Error al obtener forma de pago!");
             }
         }
     }

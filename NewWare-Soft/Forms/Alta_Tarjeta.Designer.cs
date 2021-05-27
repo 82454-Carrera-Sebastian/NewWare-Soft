@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Tarjeta));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNroTarjeta = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,24 +40,25 @@ namespace NewWare_Soft.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.txtCodSeguridad = new System.Windows.Forms.MaskedTextBox();
             this.btnAgregarTarjeta = new System.Windows.Forms.Button();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 9);
+            this.label1.Location = new System.Drawing.Point(134, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
+            this.label1.Size = new System.Drawing.Size(189, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Nueva tarjeta";
+            this.label1.Text = "Agregar Nuevo Tarjeta";
             // 
             // txtNroTarjeta
             // 
-            this.txtNroTarjeta.Location = new System.Drawing.Point(168, 53);
+            this.txtNroTarjeta.Location = new System.Drawing.Point(179, 96);
             this.txtNroTarjeta.Mask = "99999999";
             this.txtNroTarjeta.Name = "txtNroTarjeta";
-            this.txtNroTarjeta.Size = new System.Drawing.Size(73, 20);
+            this.txtNroTarjeta.Size = new System.Drawing.Size(210, 20);
             this.txtNroTarjeta.TabIndex = 3;
             this.txtNroTarjeta.ValidatingType = typeof(int);
             // 
@@ -64,7 +66,7 @@ namespace NewWare_Soft.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 54);
+            this.label2.Location = new System.Drawing.Point(74, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 17);
             this.label2.TabIndex = 4;
@@ -74,7 +76,7 @@ namespace NewWare_Soft.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 83);
+            this.label3.Location = new System.Drawing.Point(121, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 5;
@@ -84,16 +86,16 @@ namespace NewWare_Soft.Forms
             // 
             this.cmbBancos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBancos.FormattingEnabled = true;
-            this.cmbBancos.Location = new System.Drawing.Point(168, 83);
+            this.cmbBancos.Location = new System.Drawing.Point(179, 126);
             this.cmbBancos.Name = "cmbBancos";
-            this.cmbBancos.Size = new System.Drawing.Size(121, 21);
+            this.cmbBancos.Size = new System.Drawing.Size(210, 21);
             this.cmbBancos.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 110);
+            this.label4.Location = new System.Drawing.Point(23, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 17);
             this.label4.TabIndex = 7;
@@ -101,10 +103,10 @@ namespace NewWare_Soft.Forms
             // 
             // txtFechaVencimiento
             // 
-            this.txtFechaVencimiento.Location = new System.Drawing.Point(168, 110);
+            this.txtFechaVencimiento.Location = new System.Drawing.Point(179, 153);
             this.txtFechaVencimiento.Mask = "00/00/0000";
             this.txtFechaVencimiento.Name = "txtFechaVencimiento";
-            this.txtFechaVencimiento.Size = new System.Drawing.Size(73, 20);
+            this.txtFechaVencimiento.Size = new System.Drawing.Size(210, 20);
             this.txtFechaVencimiento.TabIndex = 8;
             this.txtFechaVencimiento.ValidatingType = typeof(System.DateTime);
             // 
@@ -112,7 +114,7 @@ namespace NewWare_Soft.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(52, 137);
+            this.label5.Location = new System.Drawing.Point(63, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 17);
             this.label5.TabIndex = 10;
@@ -120,28 +122,41 @@ namespace NewWare_Soft.Forms
             // 
             // txtCodSeguridad
             // 
-            this.txtCodSeguridad.Location = new System.Drawing.Point(168, 136);
+            this.txtCodSeguridad.Location = new System.Drawing.Point(179, 179);
             this.txtCodSeguridad.Mask = "999";
             this.txtCodSeguridad.Name = "txtCodSeguridad";
-            this.txtCodSeguridad.Size = new System.Drawing.Size(32, 20);
+            this.txtCodSeguridad.Size = new System.Drawing.Size(37, 20);
             this.txtCodSeguridad.TabIndex = 9;
             this.txtCodSeguridad.ValidatingType = typeof(int);
             // 
             // btnAgregarTarjeta
             // 
-            this.btnAgregarTarjeta.Location = new System.Drawing.Point(189, 171);
+            this.btnAgregarTarjeta.Location = new System.Drawing.Point(112, 219);
             this.btnAgregarTarjeta.Name = "btnAgregarTarjeta";
-            this.btnAgregarTarjeta.Size = new System.Drawing.Size(100, 31);
+            this.btnAgregarTarjeta.Size = new System.Drawing.Size(235, 26);
             this.btnAgregarTarjeta.TabIndex = 11;
             this.btnAgregarTarjeta.Text = "Agregar tarjeta";
             this.btnAgregarTarjeta.UseVisualStyleBackColor = true;
             this.btnAgregarTarjeta.Click += new System.EventHandler(this.btnAgregarTarjeta_Click);
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 12;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // Alta_Tarjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 214);
+            this.ClientSize = new System.Drawing.Size(456, 257);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.btnAgregarTarjeta);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCodSeguridad);
@@ -152,9 +167,10 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNroTarjeta);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Alta_Tarjeta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar nueva tarjeta";
+            this.Text = "Alta Nueva Tarjeta";
             this.Load += new System.EventHandler(this.Alta_Tarjeta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,5 +189,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox txtCodSeguridad;
         private System.Windows.Forms.Button btnAgregarTarjeta;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

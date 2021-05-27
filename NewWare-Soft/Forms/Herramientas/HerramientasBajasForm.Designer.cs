@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms.Herramientas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HerramientasBajasForm));
             this.gdrHerramientas = new System.Windows.Forms.DataGridView();
             this.IdHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreHerramienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +41,7 @@ namespace NewWare_Soft.Forms.Herramientas
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNomHerramienta = new System.Windows.Forms.Label();
+            this.label_Empresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@ namespace NewWare_Soft.Forms.Herramientas
             this.IdHerramienta,
             this.NombreHerramienta,
             this.DescripcionHerramienta});
-            this.gdrHerramientas.Location = new System.Drawing.Point(22, 282);
+            this.gdrHerramientas.Location = new System.Drawing.Point(12, 233);
             this.gdrHerramientas.Name = "gdrHerramientas";
             this.gdrHerramientas.ReadOnly = true;
             this.gdrHerramientas.Size = new System.Drawing.Size(542, 150);
@@ -86,21 +88,21 @@ namespace NewWare_Soft.Forms.Herramientas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(172, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 20);
+            this.label1.Size = new System.Drawing.Size(212, 20);
             this.label1.TabIndex = 27;
-            this.label1.Text = "Baja de Herramientas";
+            this.label1.Text = "Eliminar una Herramienta";
             // 
             // btnEliminarHerramienta
             // 
             this.btnEliminarHerramienta.Enabled = false;
-            this.btnEliminarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHerramienta.ForeColor = System.Drawing.Color.Red;
-            this.btnEliminarHerramienta.Location = new System.Drawing.Point(297, 185);
+            this.btnEliminarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarHerramienta.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminarHerramienta.Location = new System.Drawing.Point(315, 183);
             this.btnEliminarHerramienta.Name = "btnEliminarHerramienta";
-            this.btnEliminarHerramienta.Size = new System.Drawing.Size(212, 63);
+            this.btnEliminarHerramienta.Size = new System.Drawing.Size(180, 35);
             this.btnEliminarHerramienta.TabIndex = 23;
             this.btnEliminarHerramienta.Text = "Eliminar Herramienta";
             this.btnEliminarHerramienta.UseVisualStyleBackColor = true;
@@ -108,7 +110,7 @@ namespace NewWare_Soft.Forms.Herramientas
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(248, 111);
+            this.txtDescripcion.Location = new System.Drawing.Point(212, 112);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(316, 54);
@@ -117,26 +119,26 @@ namespace NewWare_Soft.Forms.Herramientas
             // lblDescripcionHerramienta
             // 
             this.lblDescripcionHerramienta.AutoSize = true;
-            this.lblDescripcionHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionHerramienta.Location = new System.Drawing.Point(11, 111);
+            this.lblDescripcionHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionHerramienta.Location = new System.Drawing.Point(13, 119);
             this.lblDescripcionHerramienta.Name = "lblDescripcionHerramienta";
-            this.lblDescripcionHerramienta.Size = new System.Drawing.Size(231, 20);
+            this.lblDescripcionHerramienta.Size = new System.Drawing.Size(191, 18);
             this.lblDescripcionHerramienta.TabIndex = 26;
             this.lblDescripcionHerramienta.Text = "Descripcion de Heramienta:";
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(22, 185);
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(49, 183);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(79, 63);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(180, 35);
             this.btnLimpiarCampos.TabIndex = 24;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(248, 79);
+            this.txtNombre.Location = new System.Drawing.Point(212, 86);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(316, 20);
             this.txtNombre.TabIndex = 21;
@@ -144,19 +146,32 @@ namespace NewWare_Soft.Forms.Herramientas
             // lblNomHerramienta
             // 
             this.lblNomHerramienta.AutoSize = true;
-            this.lblNomHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomHerramienta.Location = new System.Drawing.Point(18, 77);
+            this.lblNomHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomHerramienta.Location = new System.Drawing.Point(20, 85);
             this.lblNomHerramienta.Name = "lblNomHerramienta";
-            this.lblNomHerramienta.Size = new System.Drawing.Size(224, 20);
+            this.lblNomHerramienta.Size = new System.Drawing.Size(186, 18);
             this.lblNomHerramienta.TabIndex = 25;
             this.lblNomHerramienta.Text = "Nombre de la Herramienta:";
+            // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 29;
+            this.label_Empresa.Text = "NewWare-Soft";
             // 
             // HerramientasBajasForm
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(566, 392);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.gdrHerramientas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminarHerramienta);
@@ -165,9 +180,10 @@ namespace NewWare_Soft.Forms.Herramientas
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNomHerramienta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HerramientasBajasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bajas de Herramientas";
+            this.Text = "Baja Herramienta";
             this.Load += new System.EventHandler(this.HerramientasBajasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrHerramientas)).EndInit();
             this.ResumeLayout(false);
@@ -188,5 +204,6 @@ namespace NewWare_Soft.Forms.Herramientas
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNomHerramienta;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

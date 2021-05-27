@@ -54,5 +54,10 @@ namespace NewWare_Soft
                 }
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            lblUser.Focus();
+        }
     }
 }

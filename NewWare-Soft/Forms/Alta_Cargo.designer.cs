@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Cargo));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombreCargo = new System.Windows.Forms.Label();
             this.lblDescripcionCargo = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@ namespace NewWare_Soft.Forms
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label_Empresa = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaCargos)).BeginInit();
             this.SuspendLayout();
@@ -48,44 +50,44 @@ namespace NewWare_Soft.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(320, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(317, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 31);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Alta de Cargo Empleado";
+            this.label1.Text = "Agregar Nuevo Usuario";
             // 
             // lblNombreCargo
             // 
             this.lblNombreCargo.AutoSize = true;
-            this.lblNombreCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCargo.Location = new System.Drawing.Point(49, 69);
+            this.lblNombreCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreCargo.Location = new System.Drawing.Point(37, 80);
             this.lblNombreCargo.Name = "lblNombreCargo";
-            this.lblNombreCargo.Size = new System.Drawing.Size(173, 25);
+            this.lblNombreCargo.Size = new System.Drawing.Size(131, 18);
             this.lblNombreCargo.TabIndex = 1;
             this.lblNombreCargo.Text = "Nombre de Cargo:";
             // 
             // lblDescripcionCargo
             // 
             this.lblDescripcionCargo.AutoSize = true;
-            this.lblDescripcionCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionCargo.Location = new System.Drawing.Point(5, 140);
+            this.lblDescripcionCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionCargo.Location = new System.Drawing.Point(9, 108);
             this.lblDescripcionCargo.Name = "lblDescripcionCargo";
-            this.lblDescripcionCargo.Size = new System.Drawing.Size(210, 25);
+            this.lblDescripcionCargo.Size = new System.Drawing.Size(159, 18);
             this.lblDescripcionCargo.TabIndex = 3;
             this.lblDescripcionCargo.Text = "Descripcion del Cargo:";
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(221, 74);
+            this.txtCargo.Location = new System.Drawing.Point(174, 81);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(219, 20);
             this.txtCargo.TabIndex = 4;
             // 
             // txtDescripcionCargo
             // 
-            this.txtDescripcionCargo.Location = new System.Drawing.Point(221, 146);
+            this.txtDescripcionCargo.Location = new System.Drawing.Point(174, 109);
             this.txtDescripcionCargo.Multiline = true;
             this.txtDescripcionCargo.Name = "txtDescripcionCargo";
             this.txtDescripcionCargo.Size = new System.Drawing.Size(219, 134);
@@ -93,9 +95,9 @@ namespace NewWare_Soft.Forms
             // 
             // btnAltaPersona
             // 
-            this.btnAltaPersona.Location = new System.Drawing.Point(365, 312);
+            this.btnAltaPersona.Location = new System.Drawing.Point(221, 315);
             this.btnAltaPersona.Name = "btnAltaPersona";
-            this.btnAltaPersona.Size = new System.Drawing.Size(75, 38);
+            this.btnAltaPersona.Size = new System.Drawing.Size(160, 38);
             this.btnAltaPersona.TabIndex = 6;
             this.btnAltaPersona.Text = "Alta Persona";
             this.btnAltaPersona.UseVisualStyleBackColor = true;
@@ -103,9 +105,9 @@ namespace NewWare_Soft.Forms
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(270, 312);
+            this.btnLimpiar.Location = new System.Drawing.Point(18, 315);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 38);
+            this.btnLimpiar.Size = new System.Drawing.Size(160, 38);
             this.btnLimpiar.TabIndex = 7;
             this.btnLimpiar.Text = "Limpiar Campos";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -114,7 +116,7 @@ namespace NewWare_Soft.Forms
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.grillaListaCargos);
-            this.groupBox1.Location = new System.Drawing.Point(478, 74);
+            this.groupBox1.Location = new System.Drawing.Point(399, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(505, 356);
             this.groupBox1.TabIndex = 8;
@@ -161,11 +163,24 @@ namespace NewWare_Soft.Forms
             this.Descripcion.ReadOnly = true;
             this.Descripcion.Width = 250;
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 9;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
             // Alta_Cargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 486);
+            this.ClientSize = new System.Drawing.Size(920, 442);
+            this.Controls.Add(this.label_Empresa);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAltaPersona);
@@ -174,9 +189,10 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.lblDescripcionCargo);
             this.Controls.Add(this.lblNombreCargo);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Alta_Cargo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alta_Usuario";
+            this.Text = "Alta Nuevo Usuario";
             this.Load += new System.EventHandler(this.Alta_Cargo_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaCargos)).EndInit();
@@ -199,5 +215,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.Label label_Empresa;
     }
 }

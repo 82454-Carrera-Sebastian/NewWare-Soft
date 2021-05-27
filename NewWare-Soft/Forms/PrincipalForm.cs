@@ -201,19 +201,19 @@ namespace NewWare_Soft.Forms
 
         private void altaToolStripMenuItem12_Click(object sender, EventArgs e)
         {
-            AltaFormaPago ventana = new AltaFormaPago();
+            Alta_FormPago ventana = new Alta_FormPago();
             ventana.ShowDialog();
         }
 
         private void bajaToolStripMenuItem12_Click(object sender, EventArgs e)
         {
-            BajaFormaPago ventana = new BajaFormaPago();
+            Baja_FormPago ventana = new Baja_FormPago();
             ventana.ShowDialog();
         }
 
         private void modificacionToolStripMenuItem12_Click(object sender, EventArgs e)
         {
-            ModificarFormaPago ventana = new ModificarFormaPago();
+            Mod_FormPago ventana = new Mod_FormPago();
             ventana.ShowDialog();
         }
 

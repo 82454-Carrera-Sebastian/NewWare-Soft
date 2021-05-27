@@ -29,7 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificacionCiudad));
             this.txtIdCiudad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreCiudad = new System.Windows.Forms.TextBox();
@@ -39,57 +39,44 @@ namespace NewWare_Soft.Forms
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimiarCampos = new System.Windows.Forms.Button();
             this.btnModificarCiudad = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.label_Empresa = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grillaCiudades)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtIdCiudad);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtNombreCiudad);
-            this.groupBox1.Controls.Add(this.lblNombre);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 166);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Generales";
             // 
             // txtIdCiudad
             // 
             this.txtIdCiudad.Enabled = false;
-            this.txtIdCiudad.Location = new System.Drawing.Point(107, 113);
+            this.txtIdCiudad.Location = new System.Drawing.Point(144, 110);
             this.txtIdCiudad.Name = "txtIdCiudad";
-            this.txtIdCiudad.Size = new System.Drawing.Size(44, 29);
+            this.txtIdCiudad.Size = new System.Drawing.Size(84, 20);
             this.txtIdCiudad.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 113);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(62, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 20);
+            this.label1.Size = new System.Drawing.Size(76, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "ID Ciudad:";
             // 
             // txtNombreCiudad
             // 
             this.txtNombreCiudad.Enabled = false;
-            this.txtNombreCiudad.Location = new System.Drawing.Point(150, 53);
+            this.txtNombreCiudad.Location = new System.Drawing.Point(144, 82);
             this.txtNombreCiudad.Name = "txtNombreCiudad";
-            this.txtNombreCiudad.Size = new System.Drawing.Size(199, 29);
+            this.txtNombreCiudad.Size = new System.Drawing.Size(199, 20);
             this.txtNombreCiudad.TabIndex = 4;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(7, 53);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(22, 81);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(137, 20);
+            this.lblNombre.Size = new System.Drawing.Size(116, 18);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre Ciudad:";
             // 
@@ -101,7 +88,7 @@ namespace NewWare_Soft.Forms
             this.grillaCiudades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Numero,
             this.Nombre});
-            this.grillaCiudades.Location = new System.Drawing.Point(373, 12);
+            this.grillaCiudades.Location = new System.Drawing.Point(372, 82);
             this.grillaCiudades.Name = "grillaCiudades";
             this.grillaCiudades.ReadOnly = true;
             this.grillaCiudades.Size = new System.Drawing.Size(246, 243);
@@ -126,10 +113,10 @@ namespace NewWare_Soft.Forms
             // 
             // btnLimiarCampos
             // 
-            this.btnLimiarCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnLimiarCampos.Location = new System.Drawing.Point(406, 277);
+            this.btnLimiarCampos.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLimiarCampos.Location = new System.Drawing.Point(25, 167);
             this.btnLimiarCampos.Name = "btnLimiarCampos";
-            this.btnLimiarCampos.Size = new System.Drawing.Size(104, 23);
+            this.btnLimiarCampos.Size = new System.Drawing.Size(137, 38);
             this.btnLimiarCampos.TabIndex = 4;
             this.btnLimiarCampos.Text = "Limpiar Campos";
             this.btnLimiarCampos.UseVisualStyleBackColor = false;
@@ -137,39 +124,65 @@ namespace NewWare_Soft.Forms
             // 
             // btnModificarCiudad
             // 
-            this.btnModificarCiudad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnModificarCiudad.BackColor = System.Drawing.SystemColors.Control;
             this.btnModificarCiudad.Enabled = false;
-            this.btnModificarCiudad.Location = new System.Drawing.Point(516, 277);
+            this.btnModificarCiudad.Location = new System.Drawing.Point(206, 167);
             this.btnModificarCiudad.Name = "btnModificarCiudad";
-            this.btnModificarCiudad.Size = new System.Drawing.Size(104, 23);
+            this.btnModificarCiudad.Size = new System.Drawing.Size(137, 38);
             this.btnModificarCiudad.TabIndex = 5;
             this.btnModificarCiudad.Text = "Realizar Cambios";
             this.btnModificarCiudad.UseVisualStyleBackColor = false;
             this.btnModificarCiudad.Click += new System.EventHandler(this.btnModificarCiudad_Click);
             // 
+            // label_Empresa
+            // 
+            this.label_Empresa.AutoSize = true;
+            this.label_Empresa.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Empresa.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_Empresa.Location = new System.Drawing.Point(14, 9);
+            this.label_Empresa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Empresa.Name = "label_Empresa";
+            this.label_Empresa.Size = new System.Drawing.Size(190, 24);
+            this.label_Empresa.TabIndex = 38;
+            this.label_Empresa.Text = "NewWare-Soft";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(216, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 20);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Modificar una Ciudad";
+            // 
             // ModificacionCiudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 324);
+            this.ClientSize = new System.Drawing.Size(630, 340);
+            this.Controls.Add(this.label_Empresa);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtIdCiudad);
             this.Controls.Add(this.btnModificarCiudad);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLimiarCampos);
+            this.Controls.Add(this.txtNombreCiudad);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.grillaCiudades);
-            this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModificacionCiudad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModificacionCiudad";
+            this.Text = "Modificacion Ciudad";
             this.Load += new System.EventHandler(this.ModificacionCiudad_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaCiudades)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtNombreCiudad;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.DataGridView grillaCiudades;
@@ -179,5 +192,7 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.TextBox txtIdCiudad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.Label label_Empresa;
+        private System.Windows.Forms.Label label2;
     }
 }

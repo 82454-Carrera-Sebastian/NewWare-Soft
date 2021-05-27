@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NewWare_Soft.AccesoADatos
 {
-    public class AD_Bancos
+    public class AD_FPagos
     {
         public static bool VerificarExistencia(string nombreBanco)
         {

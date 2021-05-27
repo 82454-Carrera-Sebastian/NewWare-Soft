@@ -29,7 +29,10 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,13 +85,6 @@ namespace NewWare_Soft.Forms
             this.altaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bajaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Proyecto = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,15 +104,33 @@ namespace NewWare_Soft.Forms
             this.tarjetasToolStripMenuItem,
             this.bancosToolStripMenuItem,
             this.motivoEgresoToolStripMenuItem,
-            this.formasDePagoToolStripMenuItem,
-            this.ventaToolStripMenuItem,
-            this.Proyecto});
+            this.formasDePagoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1310, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1184, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(1074, 411);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(98, 30);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 421);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bienvenido a NewWare-Soft";
             // 
             // usuarioToolStripMenuItem
             // 
@@ -133,7 +147,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_user_plus_2561494;
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
@@ -141,7 +155,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_delete_user_6646521;
             this.bajaToolStripMenuItem.Name = "bajaToolStripMenuItem";
-            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem.Text = "Baja";
             this.bajaToolStripMenuItem.Click += new System.EventHandler(this.bajaToolStripMenuItem_Click);
             // 
@@ -149,7 +163,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Users_user_config_configuration_6646130;
             this.modificacionToolStripMenuItem.Name = "modificacionToolStripMenuItem";
-            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem.Text = "Modificacion";
             this.modificacionToolStripMenuItem.Click += new System.EventHandler(this.modificacionToolStripMenuItem_Click);
             // 
@@ -168,7 +182,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem1.Name = "altaToolStripMenuItem1";
-            this.altaToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem1.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem1.Text = "Alta";
             this.altaToolStripMenuItem1.Click += new System.EventHandler(this.altaToolStripMenuItem1_Click);
             // 
@@ -176,7 +190,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem1.Name = "bajaToolStripMenuItem1";
-            this.bajaToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem1.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem1.Text = "Baja";
             this.bajaToolStripMenuItem1.Click += new System.EventHandler(this.bajaToolStripMenuItem1_Click);
             // 
@@ -184,7 +198,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem1.Name = "modificacionToolStripMenuItem1";
-            this.modificacionToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem1.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem1.Text = "Modificacion";
             this.modificacionToolStripMenuItem1.Click += new System.EventHandler(this.modificacionToolStripMenuItem1_Click);
             // 
@@ -203,7 +217,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem2.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem2.Name = "altaToolStripMenuItem2";
-            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem2.Text = "Alta";
             this.altaToolStripMenuItem2.Click += new System.EventHandler(this.altaToolStripMenuItem2_Click);
             // 
@@ -211,7 +225,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem2.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem2.Name = "bajaToolStripMenuItem2";
-            this.bajaToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem2.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem2.Text = "Baja";
             this.bajaToolStripMenuItem2.Click += new System.EventHandler(this.bajaToolStripMenuItem2_Click);
             // 
@@ -219,7 +233,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem2.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem2.Name = "modificacionToolStripMenuItem2";
-            this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem2.Text = "Modificacion";
             this.modificacionToolStripMenuItem2.Click += new System.EventHandler(this.modificacionToolStripMenuItem2_Click);
             // 
@@ -238,7 +252,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem3.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem3.Name = "altaToolStripMenuItem3";
-            this.altaToolStripMenuItem3.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem3.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem3.Text = "Alta";
             this.altaToolStripMenuItem3.Click += new System.EventHandler(this.altaToolStripMenuItem3_Click_1);
             // 
@@ -246,7 +260,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem3.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem3.Name = "bajaToolStripMenuItem3";
-            this.bajaToolStripMenuItem3.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem3.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem3.Text = "Baja";
             this.bajaToolStripMenuItem3.Click += new System.EventHandler(this.bajaToolStripMenuItem3_Click);
             // 
@@ -254,7 +268,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem3.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem3.Name = "modificacionToolStripMenuItem3";
-            this.modificacionToolStripMenuItem3.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem3.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem3.Text = "Modificacion";
             this.modificacionToolStripMenuItem3.Click += new System.EventHandler(this.modificacionToolStripMenuItem3_Click);
             // 
@@ -273,7 +287,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem4.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem4.Name = "altaToolStripMenuItem4";
-            this.altaToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem4.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem4.Text = "Alta";
             this.altaToolStripMenuItem4.Click += new System.EventHandler(this.altaToolStripMenuItem4_Click);
             // 
@@ -281,7 +295,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem4.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem4.Name = "bajaToolStripMenuItem4";
-            this.bajaToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem4.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem4.Text = "Baja";
             this.bajaToolStripMenuItem4.Click += new System.EventHandler(this.bajaToolStripMenuItem4_Click);
             // 
@@ -289,7 +303,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem4.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem4.Name = "modificacionToolStripMenuItem4";
-            this.modificacionToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem4.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem4.Text = "Modificacion";
             this.modificacionToolStripMenuItem4.Click += new System.EventHandler(this.modificacionToolStripMenuItem4_Click);
             // 
@@ -308,7 +322,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem5.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem5.Name = "altaToolStripMenuItem5";
-            this.altaToolStripMenuItem5.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem5.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem5.Text = "Alta";
             this.altaToolStripMenuItem5.Click += new System.EventHandler(this.altaToolStripMenuItem5_Click);
             // 
@@ -316,7 +330,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem5.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem5.Name = "bajaToolStripMenuItem5";
-            this.bajaToolStripMenuItem5.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem5.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem5.Text = "Baja";
             this.bajaToolStripMenuItem5.Click += new System.EventHandler(this.bajaToolStripMenuItem5_Click);
             // 
@@ -324,7 +338,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem5.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem5.Name = "modificacionToolStripMenuItem5";
-            this.modificacionToolStripMenuItem5.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem5.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem5.Text = "Modificacion";
             this.modificacionToolStripMenuItem5.Click += new System.EventHandler(this.modificacionToolStripMenuItem5_Click);
             // 
@@ -343,7 +357,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem6.Name = "altaToolStripMenuItem6";
-            this.altaToolStripMenuItem6.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem6.Text = "Alta";
             this.altaToolStripMenuItem6.Click += new System.EventHandler(this.altaToolStripMenuItem6_Click);
             // 
@@ -351,7 +365,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem6.Name = "bajaToolStripMenuItem6";
-            this.bajaToolStripMenuItem6.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem6.Text = "Baja";
             this.bajaToolStripMenuItem6.Click += new System.EventHandler(this.bajaToolStripMenuItem6_Click);
             // 
@@ -359,7 +373,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem6.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem6.Name = "modificacionToolStripMenuItem6";
-            this.modificacionToolStripMenuItem6.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem6.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem6.Text = "Modificacion";
             this.modificacionToolStripMenuItem6.Click += new System.EventHandler(this.modificacionToolStripMenuItem6_Click);
             // 
@@ -378,7 +392,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem7.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem7.Name = "altaToolStripMenuItem7";
-            this.altaToolStripMenuItem7.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem7.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem7.Text = "Alta";
             this.altaToolStripMenuItem7.Click += new System.EventHandler(this.altaToolStripMenuItem7_Click);
             // 
@@ -386,7 +400,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem7.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem7.Name = "bajaToolStripMenuItem7";
-            this.bajaToolStripMenuItem7.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem7.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem7.Text = "Baja";
             this.bajaToolStripMenuItem7.Click += new System.EventHandler(this.bajaToolStripMenuItem7_Click);
             // 
@@ -394,7 +408,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem7.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem7.Name = "modificacionToolStripMenuItem7";
-            this.modificacionToolStripMenuItem7.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem7.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem7.Text = "Modificacion";
             this.modificacionToolStripMenuItem7.Click += new System.EventHandler(this.modificacionToolStripMenuItem7_Click);
             // 
@@ -413,7 +427,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem8.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem8.Name = "altaToolStripMenuItem8";
-            this.altaToolStripMenuItem8.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem8.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem8.Text = "Alta";
             this.altaToolStripMenuItem8.Click += new System.EventHandler(this.altaToolStripMenuItem8_Click);
             // 
@@ -421,7 +435,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem8.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem8.Name = "bajaToolStripMenuItem8";
-            this.bajaToolStripMenuItem8.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem8.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem8.Text = "Baja";
             this.bajaToolStripMenuItem8.Click += new System.EventHandler(this.bajaToolStripMenuItem8_Click);
             // 
@@ -429,7 +443,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem8.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem8.Name = "modificacionToolStripMenuItem8";
-            this.modificacionToolStripMenuItem8.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem8.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem8.Text = "Modificacion";
             this.modificacionToolStripMenuItem8.Click += new System.EventHandler(this.modificacionToolStripMenuItem8_Click);
             // 
@@ -448,7 +462,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem9.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem9.Name = "altaToolStripMenuItem9";
-            this.altaToolStripMenuItem9.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem9.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem9.Text = "Alta";
             this.altaToolStripMenuItem9.Click += new System.EventHandler(this.altaToolStripMenuItem9_Click);
             // 
@@ -456,7 +470,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem9.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem9.Name = "bajaToolStripMenuItem9";
-            this.bajaToolStripMenuItem9.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem9.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem9.Text = "Baja";
             this.bajaToolStripMenuItem9.Click += new System.EventHandler(this.bajaToolStripMenuItem9_Click);
             // 
@@ -464,7 +478,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem9.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem9.Name = "modificacionToolStripMenuItem9";
-            this.modificacionToolStripMenuItem9.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem9.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem9.Text = "Modificacion";
             this.modificacionToolStripMenuItem9.Click += new System.EventHandler(this.modificacionToolStripMenuItem9_Click);
             // 
@@ -483,7 +497,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem10.Name = "altaToolStripMenuItem10";
-            this.altaToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem10.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem10.Text = "Alta";
             this.altaToolStripMenuItem10.Click += new System.EventHandler(this.altaToolStripMenuItem10_Click);
             // 
@@ -491,7 +505,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem10.Name = "bajaToolStripMenuItem10";
-            this.bajaToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem10.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem10.Text = "Baja";
             this.bajaToolStripMenuItem10.Click += new System.EventHandler(this.bajaToolStripMenuItem10_Click);
             // 
@@ -499,7 +513,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem10.Name = "modificacionToolStripMenuItem10";
-            this.modificacionToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem10.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem10.Text = "Modificacion";
             this.modificacionToolStripMenuItem10.Click += new System.EventHandler(this.modificacionToolStripMenuItem10_Click);
             // 
@@ -518,7 +532,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem11.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem11.Name = "altaToolStripMenuItem11";
-            this.altaToolStripMenuItem11.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem11.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem11.Text = "Alta";
             this.altaToolStripMenuItem11.Click += new System.EventHandler(this.altaToolStripMenuItem11_Click);
             // 
@@ -526,7 +540,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem11.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem11.Name = "bajaToolStripMenuItem11";
-            this.bajaToolStripMenuItem11.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem11.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem11.Text = "Baja";
             this.bajaToolStripMenuItem11.Click += new System.EventHandler(this.bajaToolStripMenuItem11_Click);
             // 
@@ -534,7 +548,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem11.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem11.Name = "modificacionToolStripMenuItem11";
-            this.modificacionToolStripMenuItem11.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem11.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem11.Text = "Modificacion";
             this.modificacionToolStripMenuItem11.Click += new System.EventHandler(this.modificacionToolStripMenuItem11_Click);
             // 
@@ -553,7 +567,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem12.Name = "altaToolStripMenuItem12";
-            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(152, 30);
             this.altaToolStripMenuItem12.Text = "Alta";
             this.altaToolStripMenuItem12.Click += new System.EventHandler(this.altaToolStripMenuItem12_Click);
             // 
@@ -561,7 +575,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem12.Name = "bajaToolStripMenuItem12";
-            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(152, 30);
             this.bajaToolStripMenuItem12.Text = "Baja";
             this.bajaToolStripMenuItem12.Click += new System.EventHandler(this.bajaToolStripMenuItem12_Click);
             // 
@@ -569,80 +583,23 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem12.Name = "modificacionToolStripMenuItem12";
-            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(152, 30);
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
-            // 
-            // ventaToolStripMenuItem
-            // 
-            this.ventaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaVentaToolStripMenuItem,
-            this.bajaFacturaToolStripMenuItem});
-            this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
-            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(48, 28);
-            this.ventaToolStripMenuItem.Text = "Venta";
-            // 
-            // nuevaVentaToolStripMenuItem
-            // 
-            this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
-            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.nuevaVentaToolStripMenuItem.Text = "Nueva Venta";
-            this.nuevaVentaToolStripMenuItem.Click += new System.EventHandler(this.nuevaVentaToolStripMenuItem_Click);
-            // 
-            // bajaFacturaToolStripMenuItem
-            // 
-            this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
-            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.bajaFacturaToolStripMenuItem.Text = "Baja Factura";
-            this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click_1);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(1135, 398);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(98, 30);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 421);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenido a NewWare-Soft";
-            // 
-            // Proyecto
-            // 
-            this.Proyecto.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.altaProyectoToolStripMenuItem});
-            this.Proyecto.Name = "Proyecto";
-            this.Proyecto.Size = new System.Drawing.Size(66, 28);
-            this.Proyecto.Text = "Proyecto";
-            // 
-            // altaProyectoToolStripMenuItem
-            // 
-            this.altaProyectoToolStripMenuItem.Name = "altaProyectoToolStripMenuItem";
-            this.altaProyectoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.altaProyectoToolStripMenuItem.Text = "Alta proyecto";
-            this.altaProyectoToolStripMenuItem.Click += new System.EventHandler(this.altaProyectoToolStripMenuItem_Click);
             // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PrincipalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrincipalForm";
+            this.Text = "Menu Principal";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -707,10 +664,5 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem modificacionToolStripMenuItem12;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bajaFacturaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem Proyecto;
-        private System.Windows.Forms.ToolStripMenuItem altaProyectoToolStripMenuItem;
     }
 }
