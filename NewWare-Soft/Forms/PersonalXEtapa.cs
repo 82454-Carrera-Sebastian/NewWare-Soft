@@ -20,9 +20,9 @@ namespace NewWare_Soft.Forms
 
         private void PersonalXEtapa_Load(object sender, EventArgs e)
         {
-            
             CargarCombos();
             CargarCombos2();
+            chkEtapa.Checked = false;
         }
         
 
@@ -31,6 +31,7 @@ namespace NewWare_Soft.Forms
             cmbEtapa.SelectedIndex = -1;
             cmbProyecto.SelectedIndex = -1;
             LimpiarCamposPersonal();
+            chkEtapa.Checked = false;
         }
 
         private void CargarCombos()
@@ -77,36 +78,64 @@ namespace NewWare_Soft.Forms
         
         private void btnBuscarPersonal_Click(object sender, EventArgs e)
         {
-            if (txtLegajo.Text.Equals("")) 
+            if (chkEtapa.Checked == false)
             {
-                MessageBox.Show("No ha ingresado ningun valor al campo de legajo, por favor carguelo");
-                txtLegajo.Focus();
+                MessageBox.Show("Aun no ha confirmado si la etapa pertenece al proyecto");
             }
             else
             {
-                try
+                if (txtLegajo.Text.Equals(""))
                 {
-                    DataTable tablaResultado = AD_PersonalXEtapa.ObtenerPersonalXLegajo(int.Parse(txtLegajo.Text.Trim()));
-                    if (tablaResultado.Rows.Count > 0)
-                    {
-                        txtNombrePersonal.Text = tablaResultado.Rows[0][3].ToString();
-                        txtApellido.Text = tablaResultado.Rows[0][2].ToString();
-                        txtIdCargo.Text = tablaResultado.Rows[0][8].ToString();
-                        txtFechaInicio.Text = tablaResultado.Rows[0][5].ToString();
-                        MessageBox.Show("El personal buscado existe");
-                    }
-                    else
-                    {
-                        MessageBox.Show("El personal buscado no existe");
-                        txtLegajo.Focus();
-                        txtLegajo.Text = "";
-                    }
+                    MessageBox.Show("No ha ingresado ningun valor al campo de legajo, por favor carguelo");
+                    txtLegajo.Focus();
                 }
-                catch (Exception ex)
+                else
                 {
+                    try
+                    {
+                        DataTable tablaResultado = AD_PersonalXEtapa.ObtenerPersonalXLegajo(int.Parse(txtLegajo.Text.Trim()));
+                        if (tablaResultado.Rows.Count > 0)
+                        {
+                            txtNombrePersonal.Text = tablaResultado.Rows[0][3].ToString();
+                            txtApellido.Text = tablaResultado.Rows[0][2].ToString();
+                            txtIdCargo.Text = tablaResultado.Rows[0][8].ToString();
+                            txtFechaInicio.Text = tablaResultado.Rows[0][5].ToString();
+                            DataTable tablaPersonalenEtapa = AD_PersonalXEtapa.BuscarPersonalEnTablaPXE(int.Parse(txtLegajo.Text.Trim()));
+                            try
+                            {
+                                if (tablaPersonalenEtapa.Rows.Count > 0)
+                                {
+                                    MessageBox.Show("El personal buscado existe pero ya esta asignado a un proyecto. " +
+                                        "Un empleado puede solo trabajar en un proyecto a la vez. Por favor seleccione otro Empleado.");
+                                    txtLegajo.Focus();
+                                    LimpiarCamposPersonal();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("El personal buscado existe y no esta asignado a ningun proyecto");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
 
-                    MessageBox.Show("Error al verificar personal");
+                                MessageBox.Show(ex.Message);
+                            }
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("El personal buscado no existe");
+                            txtLegajo.Focus();
+                            txtLegajo.Text = "";
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        MessageBox.Show("Error al verificar personal");
+                    }
                 }
+
             }
         }
 
@@ -189,6 +218,7 @@ namespace NewWare_Soft.Forms
                             MessageBox.Show("Operacion Exitosa");
                             gdrPersonal.Rows.Clear();
                             LimpiarForm();
+                            
                         }
                         else
                         {
@@ -206,8 +236,36 @@ namespace NewWare_Soft.Forms
             
         }
 
-        
+        private void btnConfirmarEtapaxProyecto_Click(object sender, EventArgs e)
+        {
+            if (cmbProyecto.SelectedIndex.Equals(-1) || cmbEtapa.SelectedIndex.Equals(-1))
+            {
+                MessageBox.Show("No ha seleccionado una etapa o proyecto");
+            }
+            else
+            {
+                
+                try
+                {
+                    DataTable tablaResultados = AD_PersonalXEtapa.ConfirmarEtapaxProyecto((int)cmbProyecto.SelectedValue, (int)cmbEtapa.SelectedValue);
+                    if (tablaResultados.Rows.Count > 0)
+                    {
+                        MessageBox.Show("La etapa es parte del proyecto");
+                        chkEtapa.Checked = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("La etapa seleccionada no es parte del proyecto");
+                        chkEtapa.Checked = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al verificar Etapa");
+                }
 
+            }
 
+        }
     }
 }

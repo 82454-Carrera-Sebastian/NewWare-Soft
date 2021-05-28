@@ -44,6 +44,76 @@ namespace NewWare_Soft.AccesoADatos
             }
         }
 
+
+        public static DataTable BuscarPersonalEnTablaPXE(int legajo)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM personal_X_etapas WHERE Legajo LIKE @legajo";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@legajo", legajo);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static DataTable ConfirmarEtapaxProyecto(int idProyecto, int idEtapa)
+        {
+            string cadenaConn = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConn);
+
+            try
+            {
+                bool res = false;
+                SqlCommand cmd = new SqlCommand();
+
+
+                string consulta = "SELECT * FROM etapas_x_proyecto where idProyecto = @idProyect and idEtapa = @idEtapa";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idProyect", idProyecto);
+                cmd.Parameters.AddWithValue("@idEtapa", idEtapa);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         public static bool TransaccionPersonalXEtapa(int idEtapa, int idProyecto, List<Personal>listaPersonal)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];

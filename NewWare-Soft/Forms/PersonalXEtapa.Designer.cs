@@ -59,6 +59,8 @@ namespace NewWare_Soft.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.txtLegajo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnConfirmarEtapaxProyecto = new System.Windows.Forms.Button();
+            this.chkEtapa = new System.Windows.Forms.CheckBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrPersonal)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +69,7 @@ namespace NewWare_Soft.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(52, 125);
+            this.label5.Location = new System.Drawing.Point(223, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 18);
             this.label5.TabIndex = 13;
@@ -77,7 +79,7 @@ namespace NewWare_Soft.Forms
             // 
             this.cmbEtapa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEtapa.FormattingEnabled = true;
-            this.cmbEtapa.Location = new System.Drawing.Point(99, 125);
+            this.cmbEtapa.Location = new System.Drawing.Point(270, 123);
             this.cmbEtapa.Name = "cmbEtapa";
             this.cmbEtapa.Size = new System.Drawing.Size(121, 21);
             this.cmbEtapa.TabIndex = 16;
@@ -97,7 +99,7 @@ namespace NewWare_Soft.Forms
             // 
             this.cmbProyecto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProyecto.FormattingEnabled = true;
-            this.cmbProyecto.Location = new System.Drawing.Point(313, 125);
+            this.cmbProyecto.Location = new System.Drawing.Point(128, 124);
             this.cmbProyecto.Name = "cmbProyecto";
             this.cmbProyecto.Size = new System.Drawing.Size(76, 21);
             this.cmbProyecto.TabIndex = 17;
@@ -106,7 +108,7 @@ namespace NewWare_Soft.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(235, 124);
+            this.label2.Location = new System.Drawing.Point(50, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 13;
@@ -362,11 +364,36 @@ namespace NewWare_Soft.Forms
             this.label7.TabIndex = 20;
             this.label7.Text = "Nombre:";
             // 
+            // btnConfirmarEtapaxProyecto
+            // 
+            this.btnConfirmarEtapaxProyecto.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConfirmarEtapaxProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnConfirmarEtapaxProyecto.Location = new System.Drawing.Point(417, 120);
+            this.btnConfirmarEtapaxProyecto.Name = "btnConfirmarEtapaxProyecto";
+            this.btnConfirmarEtapaxProyecto.Size = new System.Drawing.Size(68, 26);
+            this.btnConfirmarEtapaxProyecto.TabIndex = 33;
+            this.btnConfirmarEtapaxProyecto.Text = "Confirmar ";
+            this.btnConfirmarEtapaxProyecto.UseVisualStyleBackColor = true;
+            this.btnConfirmarEtapaxProyecto.Click += new System.EventHandler(this.btnConfirmarEtapaxProyecto_Click);
+            // 
+            // chkEtapa
+            // 
+            this.chkEtapa.AutoSize = true;
+            this.chkEtapa.Enabled = false;
+            this.chkEtapa.Location = new System.Drawing.Point(501, 125);
+            this.chkEtapa.Name = "chkEtapa";
+            this.chkEtapa.Size = new System.Drawing.Size(158, 17);
+            this.chkEtapa.TabIndex = 34;
+            this.chkEtapa.Text = "Etapa pertenece a proyecto";
+            this.chkEtapa.UseVisualStyleBackColor = true;
+            // 
             // PersonalXEtapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 610);
+            this.Controls.Add(this.chkEtapa);
+            this.Controls.Add(this.btnConfirmarEtapaxProyecto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbProyecto);
             this.Controls.Add(this.cmbEtapa);
@@ -416,5 +443,7 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbEtapa;
         private System.Windows.Forms.ComboBox cmbProyecto;
+        private System.Windows.Forms.Button btnConfirmarEtapaxProyecto;
+        private System.Windows.Forms.CheckBox chkEtapa;
     }
 }

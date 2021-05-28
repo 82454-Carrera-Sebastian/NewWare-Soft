@@ -349,3 +349,17 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Form
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_Tarjeta.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.NuevaVenta.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEtapa.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Banco.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_FormPago.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_MotivoEgreso.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Alta_Tarjeta.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.BajaFactura.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_FormPago.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Baja_MotivoEgreso.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasPorEtapa.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_FormPago.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_MotivoEgreso.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Mod_Tarjeta.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.NuevaVenta.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEtapa.resources
+C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Proyectos.resources
