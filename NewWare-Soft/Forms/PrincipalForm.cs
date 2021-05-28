@@ -291,6 +291,12 @@ namespace NewWare_Soft.Forms
             BajaFactura ventana = new BajaFactura();
             ventana.ShowDialog();
         }
+
+        private void formaDePagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaFormaPago ventana = new AltaFormaPago();
+            ventana.ShowDialog();
+        }
     }
     
 }

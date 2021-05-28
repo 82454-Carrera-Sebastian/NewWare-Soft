@@ -92,6 +92,7 @@ namespace NewWare_Soft.Forms
             this.Facturación = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formaDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -556,7 +557,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem12.Name = "altaToolStripMenuItem12";
-            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.altaToolStripMenuItem12.Text = "Alta";
             this.altaToolStripMenuItem12.Click += new System.EventHandler(this.altaToolStripMenuItem12_Click);
             // 
@@ -564,7 +565,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem12.Name = "bajaToolStripMenuItem12";
-            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.bajaToolStripMenuItem12.Text = "Baja";
             this.bajaToolStripMenuItem12.Click += new System.EventHandler(this.bajaToolStripMenuItem12_Click);
             // 
@@ -572,7 +573,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem12.Name = "modificacionToolStripMenuItem12";
-            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
@@ -632,7 +633,8 @@ namespace NewWare_Soft.Forms
             // 
             this.Facturación.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaVentaToolStripMenuItem,
-            this.bajaFacturaToolStripMenuItem});
+            this.bajaFacturaToolStripMenuItem,
+            this.formaDePagoToolStripMenuItem});
             this.Facturación.Name = "Facturación";
             this.Facturación.Size = new System.Drawing.Size(81, 28);
             this.Facturación.Text = "Facturación";
@@ -650,6 +652,13 @@ namespace NewWare_Soft.Forms
             this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bajaFacturaToolStripMenuItem.Text = "Baja factura";
             this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click);
+            // 
+            // formaDePagoToolStripMenuItem
+            // 
+            this.formaDePagoToolStripMenuItem.Name = "formaDePagoToolStripMenuItem";
+            this.formaDePagoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formaDePagoToolStripMenuItem.Text = "Forma de pago";
+            this.formaDePagoToolStripMenuItem.Click += new System.EventHandler(this.formaDePagoToolStripMenuItem_Click);
             // 
             // PrincipalForm
             // 
@@ -735,5 +744,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem Facturación;
         private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bajaFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formaDePagoToolStripMenuItem;
     }
 }
