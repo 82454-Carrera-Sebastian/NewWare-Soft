@@ -87,12 +87,12 @@ namespace NewWare_Soft.Forms
             this.altaProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignarHerramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.Facturación = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formaDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -487,7 +487,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem10.Name = "altaToolStripMenuItem10";
-            this.altaToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem10.Size = new System.Drawing.Size(188, 30);
             this.altaToolStripMenuItem10.Text = "Alta";
             this.altaToolStripMenuItem10.Click += new System.EventHandler(this.altaToolStripMenuItem10_Click);
             // 
@@ -495,7 +495,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem10.Name = "bajaToolStripMenuItem10";
-            this.bajaToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem10.Size = new System.Drawing.Size(188, 30);
             this.bajaToolStripMenuItem10.Text = "Baja";
             this.bajaToolStripMenuItem10.Click += new System.EventHandler(this.bajaToolStripMenuItem10_Click);
             // 
@@ -503,7 +503,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem10.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem10.Name = "modificacionToolStripMenuItem10";
-            this.modificacionToolStripMenuItem10.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem10.Size = new System.Drawing.Size(188, 30);
             this.modificacionToolStripMenuItem10.Text = "Modificacion";
             this.modificacionToolStripMenuItem10.Click += new System.EventHandler(this.modificacionToolStripMenuItem10_Click);
             // 
@@ -557,7 +557,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem12.Name = "altaToolStripMenuItem12";
-            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
             this.altaToolStripMenuItem12.Text = "Alta";
             this.altaToolStripMenuItem12.Click += new System.EventHandler(this.altaToolStripMenuItem12_Click);
             // 
@@ -565,7 +565,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem12.Name = "bajaToolStripMenuItem12";
-            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
             this.bajaToolStripMenuItem12.Text = "Baja";
             this.bajaToolStripMenuItem12.Click += new System.EventHandler(this.bajaToolStripMenuItem12_Click);
             // 
@@ -573,7 +573,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem12.Name = "modificacionToolStripMenuItem12";
-            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
+            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
@@ -581,8 +581,9 @@ namespace NewWare_Soft.Forms
             // 
             this.proyectoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaProyectoToolStripMenuItem});
+            this.proyectoToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Resource_management_6843031;
             this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
-            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(66, 28);
+            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(90, 28);
             this.proyectoToolStripMenuItem.Text = "Proyecto";
             // 
             // altaProyectoToolStripMenuItem
@@ -590,24 +591,62 @@ namespace NewWare_Soft.Forms
             this.altaProyectoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asignarPersonalToolStripMenuItem,
             this.asignarHerramientasToolStripMenuItem});
+            this.altaProyectoToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaProyectoToolStripMenuItem.Name = "altaProyectoToolStripMenuItem";
-            this.altaProyectoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaProyectoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.altaProyectoToolStripMenuItem.Text = "Alta Proyecto";
             this.altaProyectoToolStripMenuItem.Click += new System.EventHandler(this.altaProyectoToolStripMenuItem_Click);
             // 
             // asignarPersonalToolStripMenuItem
             // 
+            this.asignarPersonalToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_General___Office_32_1471083;
             this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
-            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
             this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
             this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click);
             // 
             // asignarHerramientasToolStripMenuItem
             // 
+            this.asignarHerramientasToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Wrench_3605320;
             this.asignarHerramientasToolStripMenuItem.Name = "asignarHerramientasToolStripMenuItem";
-            this.asignarHerramientasToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.asignarHerramientasToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
             this.asignarHerramientasToolStripMenuItem.Text = "Asignar herramientas";
             this.asignarHerramientasToolStripMenuItem.Click += new System.EventHandler(this.asignarHerramientasToolStripMenuItem_Click);
+            // 
+            // Facturación
+            // 
+            this.Facturación.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaVentaToolStripMenuItem,
+            this.bajaFacturaToolStripMenuItem,
+            this.formaDePagoToolStripMenuItem});
+            this.Facturación.Image = global::NewWare_Soft.Properties.Resources.iconfinder_635_Bill_excel_file_invoice_statement_4017677;
+            this.Facturación.Name = "Facturación";
+            this.Facturación.Size = new System.Drawing.Size(82, 28);
+            this.Facturación.Text = "Factura";
+            // 
+            // nuevaVentaToolStripMenuItem
+            // 
+            this.nuevaVentaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
+            this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
+            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.nuevaVentaToolStripMenuItem.Text = "Nueva venta";
+            this.nuevaVentaToolStripMenuItem.Click += new System.EventHandler(this.nuevaVentaToolStripMenuItem_Click);
+            // 
+            // bajaFacturaToolStripMenuItem
+            // 
+            this.bajaFacturaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
+            this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
+            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.bajaFacturaToolStripMenuItem.Text = "Baja factura";
+            this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click);
+            // 
+            // formaDePagoToolStripMenuItem
+            // 
+            this.formaDePagoToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_business_finance_money_12_2784282;
+            this.formaDePagoToolStripMenuItem.Name = "formaDePagoToolStripMenuItem";
+            this.formaDePagoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.formaDePagoToolStripMenuItem.Text = "Forma de pago";
+            this.formaDePagoToolStripMenuItem.Click += new System.EventHandler(this.formaDePagoToolStripMenuItem_Click);
             // 
             // btnSalir
             // 
@@ -628,37 +667,6 @@ namespace NewWare_Soft.Forms
             this.label1.Size = new System.Drawing.Size(208, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienvenido a NewWare-Soft";
-            // 
-            // Facturación
-            // 
-            this.Facturación.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaVentaToolStripMenuItem,
-            this.bajaFacturaToolStripMenuItem,
-            this.formaDePagoToolStripMenuItem});
-            this.Facturación.Name = "Facturación";
-            this.Facturación.Size = new System.Drawing.Size(81, 28);
-            this.Facturación.Text = "Facturación";
-            // 
-            // nuevaVentaToolStripMenuItem
-            // 
-            this.nuevaVentaToolStripMenuItem.Name = "nuevaVentaToolStripMenuItem";
-            this.nuevaVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevaVentaToolStripMenuItem.Text = "Nueva venta";
-            this.nuevaVentaToolStripMenuItem.Click += new System.EventHandler(this.nuevaVentaToolStripMenuItem_Click);
-            // 
-            // bajaFacturaToolStripMenuItem
-            // 
-            this.bajaFacturaToolStripMenuItem.Name = "bajaFacturaToolStripMenuItem";
-            this.bajaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bajaFacturaToolStripMenuItem.Text = "Baja factura";
-            this.bajaFacturaToolStripMenuItem.Click += new System.EventHandler(this.bajaFacturaToolStripMenuItem_Click);
-            // 
-            // formaDePagoToolStripMenuItem
-            // 
-            this.formaDePagoToolStripMenuItem.Name = "formaDePagoToolStripMenuItem";
-            this.formaDePagoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.formaDePagoToolStripMenuItem.Text = "Forma de pago";
-            this.formaDePagoToolStripMenuItem.Click += new System.EventHandler(this.formaDePagoToolStripMenuItem_Click);
             // 
             // PrincipalForm
             // 

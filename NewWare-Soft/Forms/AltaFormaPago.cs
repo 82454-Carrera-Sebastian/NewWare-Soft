@@ -101,14 +101,14 @@ namespace NewWare_Soft.Forms
             bool resultado = AgregarFormaPagoABD(fp);
             if (resultado)
             {
-                MessageBox.Show("persona agregada con exito");
+                MessageBox.Show("Forma de pago agregada");
                 LimpiarCampos();
                 CargarComboFormaPago();
                 CargarGrilla();
             }
             else
             {
-                MessageBox.Show("error al agregar persona");
+                MessageBox.Show("Error al agregar forma de pago");
             }
         }
         private bool AgregarFormaPagoABD(FormaPago fp)

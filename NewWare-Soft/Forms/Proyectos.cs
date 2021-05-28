@@ -86,15 +86,22 @@ namespace NewWare_Soft.Forms
 
         private void btnAgregarEtapa_Click(object sender, EventArgs e)
         {
-            int id = AD_Proyectos.ObtenerIDEtapa(cmbEtapas.Text.Trim());
-            if (!existeEnGrilla(cmbEtapas.Text))
+            if (cmbEtapas.SelectedIndex.Equals(-1))
             {
-                grdEtapas.Rows.Add(id, cmbEtapas.Text);
-                btnAgregarProyecto.Enabled = true;
+                MessageBox.Show("No ha seleccionado una etapa");
             }
             else
             {
-                MessageBox.Show("Esta etapa ya se encuntra en la grilla...");
+                int id = AD_Proyectos.ObtenerIDEtapa(cmbEtapas.Text.Trim());
+                if (!existeEnGrilla(cmbEtapas.Text))
+                {
+                    grdEtapas.Rows.Add(id, cmbEtapas.Text);
+                    btnAgregarProyecto.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Esta etapa ya se encuntra en la grilla...");
+                }
             }
         }
 

@@ -600,5 +600,11 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_Artboard_37_3952964.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Resource_management_6843031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

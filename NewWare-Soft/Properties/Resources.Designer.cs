@@ -83,6 +83,16 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_635_Bill_excel_file_invoice_statement_4017677 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_635_Bill_excel_file_invoice_statement_4017677", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_add_134224 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_add_134224", resourceCulture);
@@ -187,6 +197,16 @@ namespace NewWare_Soft.Properties {
         internal static System.Drawing.Bitmap iconfinder_Picture1_3289576 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Picture1_3289576", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Resource_management_6843031 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Resource_management_6843031", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
