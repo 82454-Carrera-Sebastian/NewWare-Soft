@@ -1,5 +1,4 @@
 ﻿using NewWare_Soft.AccesoADatos;
-using NewWare_Soft.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -32,6 +31,8 @@ namespace NewWare_Soft.Forms
                     CargarComboEtapas(int.Parse(txtCodProyecto.Text));
                     cmbEtapas.Enabled = true;
                     cmbEtapas.SelectedIndex = 0;
+                    btnAgregarHerramienta.Enabled = true;
+                    cmbHerramientas.Enabled = true;
                 }
                 else
                 {
@@ -175,19 +176,42 @@ namespace NewWare_Soft.Forms
             }
         }
 
+        private bool HerramientaCargadaPreviamente()
+        {
+            for (int i = 0; i < gdrHerramientas.Rows.Count; i++)
+            {
+                if (gdrHerramientas.Rows[i].Cells[0].Value.Equals(cmbHerramientas.SelectedValue))
+                {
+                    return false;
+                }              
+            }
+
+            return true;
+        }
+
         private void btnAgregarHerramienta_Click(object sender, EventArgs e)
         {
-            try
+            if (HerramientaCargadaPreviamente() == true)
             {
-                DataTable tabla = ConsultarDescripcion((int)cmbHerramientas.SelectedValue);
-                string descripcion = tabla.Rows[0][2].ToString();
-                gdrHerramientas.Rows.Add(cmbHerramientas.SelectedValue, cmbHerramientas.Text, descripcion);
+                try
+                {
+                    DataTable tabla = ConsultarDescripcion((int)cmbHerramientas.SelectedValue);
+                    string descripcion = tabla.Rows[0][2].ToString();
+                    gdrHerramientas.Rows.Add(cmbHerramientas.SelectedValue, cmbHerramientas.Text, descripcion);
+                    btnGuardarHxE.Enabled = true;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Seleccione una herramienta para poder agregarla");
+                    throw;
+                }
+
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Seleccione una herramienta para poder agregarla");
-                throw;
+                MessageBox.Show("Herramienta agregada previamente");
             }
+
         }
 
 
@@ -215,6 +239,10 @@ namespace NewWare_Soft.Forms
             txtCodProyecto.Text = "";
             txtDescProyecto.Text = "";
             cmbEtapas.SelectedIndex = -1;
+            btnAgregarHerramienta.Enabled = false;
+            btnGuardarHxE.Enabled = false;
+            cmbHerramientas.Enabled = false;
+            gdrHerramientas.Rows.Clear();
         }
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)

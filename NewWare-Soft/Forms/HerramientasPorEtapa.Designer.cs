@@ -119,6 +119,7 @@ namespace NewWare_Soft.Forms
             // cmbHerramientas
             // 
             this.cmbHerramientas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHerramientas.Enabled = false;
             this.cmbHerramientas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbHerramientas.FormattingEnabled = true;
             this.cmbHerramientas.Location = new System.Drawing.Point(198, 26);
@@ -128,6 +129,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnAgregarHerramienta
             // 
+            this.btnAgregarHerramienta.Enabled = false;
             this.btnAgregarHerramienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarHerramienta.Location = new System.Drawing.Point(352, 25);
             this.btnAgregarHerramienta.Name = "btnAgregarHerramienta";
@@ -184,6 +186,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnGuardarHxE
             // 
+            this.btnGuardarHxE.Enabled = false;
             this.btnGuardarHxE.Location = new System.Drawing.Point(355, 389);
             this.btnGuardarHxE.Name = "btnGuardarHxE";
             this.btnGuardarHxE.Size = new System.Drawing.Size(92, 36);
