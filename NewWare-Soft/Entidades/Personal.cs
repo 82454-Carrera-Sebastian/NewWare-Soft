@@ -21,12 +21,18 @@ namespace NewWare_Soft.Entidades
         private string calle;
         private int idBarrio;
         private DateTime fechaNacimiento;
+        private int cantHoras;
 
         public Personal()
         {
 
         }
 
+        public int CantidadHoras
+        {
+            get => cantHoras;
+            set => cantHoras = value;
+        }
         public DateTime FechaNacimientoPersonal
         {
             get => fechaNacimiento;
