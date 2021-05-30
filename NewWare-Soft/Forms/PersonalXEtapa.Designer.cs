@@ -29,6 +29,7 @@ namespace NewWare_Soft.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalXEtapa));
             this.label5 = new System.Windows.Forms.Label();
             this.cmbEtapa = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -400,6 +401,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PersonalXEtapa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarPersonalXEtapa";

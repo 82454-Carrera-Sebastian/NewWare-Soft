@@ -350,3 +350,5 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Form
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.NuevaVenta.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEtapa.resources
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEtapa.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.HerramientasPorEtapa.resources
+C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEtapa.resources
