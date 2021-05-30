@@ -165,11 +165,48 @@ namespace NewWare_Soft.Forms
         }
         #endregion
 
+        #region Metodo Borrar Factura en Forma Pago
+        private bool borrarFormaPago(int idFactura)
+        {
+            bool result = false;
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "DELETE FROM formas_pago_factura WHERE NroFactura like @nroFactura";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nroFactura", idFactura);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                canalConexion.Open();
+                cmd.Connection = canalConexion;
+                cmd.ExecuteNonQuery();
+                result = true;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+            return result;
+        }
+        #endregion
+
         private void button_Borrar_Click(object sender, EventArgs e)
         {
             try
             {
                 borrarFactura(facturaGlobal.NroFactura);
+                borrarFormaPago(facturaGlobal.NroFactura);
                 MessageBox.Show("Operacion exitosa");
                 llenarGrilla();
                 button_Borrar.Enabled = false;

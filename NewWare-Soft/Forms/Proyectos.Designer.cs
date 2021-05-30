@@ -301,6 +301,7 @@ namespace NewWare_Soft.Forms
             this.Controls.Add(this.btnAgregarProyecto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Proyectos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Proyecto";
             this.Load += new System.EventHandler(this.Proyectos_Load);
             this.groupBox1.ResumeLayout(false);

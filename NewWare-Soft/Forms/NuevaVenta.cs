@@ -108,10 +108,30 @@ namespace NewWare_Soft.Forms
         private void NuevaVenta_Load(object sender, EventArgs e)
         {
             cargarComboProducto();
+            CargarComboFormaPago();
             fechaFacturacion();
             nroFacturacion();
             this.comboBox_Producto.DropDownStyle = ComboBoxStyle.DropDownList;
             textBox_Precio.Text = "0";
+        }
+        #endregion
+
+        #region Cargar Combo Forma Pago
+        private void CargarComboFormaPago()
+        {
+
+            try
+            {
+                cmbFormaPago.DataSource = AD_FPago.ObtenerTiposPago();
+                cmbFormaPago.DisplayMember = "NombreFormaPago";
+                cmbFormaPago.ValueMember = "idFormaPago";
+                cmbFormaPago.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar combo tipos de pago");
+            }
         }
         #endregion
 
@@ -233,11 +253,12 @@ namespace NewWare_Soft.Forms
         private void button_Confirmar_Click(object sender, EventArgs e)
         {
             Factura factura = crearFactura();
+            FormaPago fp = crearFormPago();
             List<int> listProduct = new List<int>();         
             listProduct = obtenerDatosProductosGrilla(dgvProductos, 0);            
             try
             {
-                if (agregarFacturaDB(factura, listProduct, listGlobal))
+                if (agregarFacturaDB(factura, listProduct, listGlobal,fp))
                 {
                     MessageBox.Show("Operacion exitosa");
                     Thread.Sleep(2000);
@@ -282,8 +303,21 @@ namespace NewWare_Soft.Forms
         }
         #endregion
 
+        #region Instanciar Forma Pago
+        private FormaPago crearFormPago()
+        {
+            FormaPago fp = new FormaPago();
+            fp.NroFacturaPersona = int.Parse(textBox_NroFactura.Text);
+            fp.IdFormaPagoPersona = (int)cmbFormaPago.SelectedValue;
+            fp.DescripcionPersona = txtDescripcion.Text.Trim();
+            fp.MontoPersona = int.Parse(textBox_Total.Text);
+
+            return fp;
+        }
+        #endregion
+
         #region Agregar Factura a DB
-        private bool agregarFacturaDB(Factura factura, List<int> listaProductos, List<int> listPrecios)
+        private bool agregarFacturaDB(Factura factura, List<int> listaProductos, List<int> listPrecios, FormaPago fp)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlTransaction cmdTransaccion = null;
@@ -323,6 +357,16 @@ namespace NewWare_Soft.Forms
                     command.ExecuteNonQuery();
                     i++;
                 }
+
+                string query3 = "INSERT into formas_pago_factura (NroFactura,IdFormaPago,Descripcion,Monto) VALUES(@nroFactura,@idFormaPago,@descripcion,@monto)";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@nroFactura", fp.NroFacturaPersona);
+                command.Parameters.AddWithValue("@idFormaPago", fp.IdFormaPagoPersona);
+                command.Parameters.AddWithValue("@descripcion", fp.DescripcionPersona);
+                command.Parameters.AddWithValue("@monto", fp.MontoPersona);
+                command.CommandText = query3;
+                command.ExecuteNonQuery();
+
                 cmdTransaccion.Commit();
                 return true;
             }
@@ -367,5 +411,31 @@ namespace NewWare_Soft.Forms
         }
         #endregion
 
+        #region Boton Confirmar Pago
+        private void BtConfirmarDatosPago_Click(object sender, EventArgs e)
+        {
+            cmbFormaPago.Enabled = false;
+            txtDescripcion.Enabled = false;
+        }
+        #endregion
+
+        #region Boton Eliminar Datos Pago
+        private void BtborrarCamposPago_Click(object sender, EventArgs e)
+        {
+            cmbFormaPago.SelectedIndex = -1;
+            txtDescripcion.Text = "";
+            cmbFormaPago.Enabled = true;
+            txtDescripcion.Enabled = true;
+        }
+        #endregion
+
+        #region Boton Cancelar Venta
+        private void button_Cancelar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Operacion cancelada");
+            Thread.Sleep(2000);
+            this.Close();
+        }
+        #endregion
     }
 }
