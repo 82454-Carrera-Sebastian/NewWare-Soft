@@ -113,6 +113,16 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_basket_1814090__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_basket_1814090 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_business_finance_money_12_2784282 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_business_finance_money-12_2784282", resourceCulture);
@@ -146,6 +156,16 @@ namespace NewWare_Soft.Properties {
         internal static System.Drawing.Bitmap iconfinder_edit_2561427 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_edit_2561427", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Flat_34_6764721 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Flat-34_6764721", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -214,6 +234,16 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_sign_add_299068__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_sign-add_299068 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_stay_away_from_group_5946932 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_stay_away_from_group_5946932", resourceCulture);
@@ -247,6 +277,16 @@ namespace NewWare_Soft.Properties {
         internal static System.Drawing.Bitmap iconfinder_Users_user_config_configuration_6646130 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Users_user_config_configuration_6646130", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Web_Developmen_1562687__3_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Web_Developmen_1562687 (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
