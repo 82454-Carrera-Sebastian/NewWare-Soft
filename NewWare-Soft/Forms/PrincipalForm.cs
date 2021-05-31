@@ -262,36 +262,6 @@ namespace NewWare_Soft.Forms
             }
         }
 
-        private void altaProyectoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Proyectos ventana = new Proyectos();
-            ventana.ShowDialog();
-        }
-
-        private void asignarPersonalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PersonalXEtapa ventana = new PersonalXEtapa();
-            ventana.ShowDialog();
-        }
-
-        private void asignarHerramientasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            HerramientasPorEtapa ventana = new HerramientasPorEtapa();
-            ventana.ShowDialog();
-        }
-
-        private void nuevaVentaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            NuevaVenta ventana = new NuevaVenta();
-            ventana.ShowDialog();
-        }
-
-        private void bajaFacturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            BajaFactura ventana = new BajaFactura();
-            ventana.ShowDialog();
-        }
-
         private void formaDePagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AltaFormaPago ventana = new AltaFormaPago();
