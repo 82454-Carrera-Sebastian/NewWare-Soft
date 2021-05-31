@@ -297,6 +297,36 @@ namespace NewWare_Soft.Forms
             AltaFormaPago ventana = new AltaFormaPago();
             ventana.ShowDialog();
         }
+
+        private void btnNewProj_Click(object sender, EventArgs e)
+        {
+            Proyectos ventana = new Proyectos();
+            ventana.ShowDialog();
+        }
+
+        private void btnAsignPersonal_Click(object sender, EventArgs e)
+        {
+            PersonalXEtapa ventana = new PersonalXEtapa();
+            ventana.ShowDialog();
+        }
+
+        private void btnAsignHerramientas_Click(object sender, EventArgs e)
+        {
+            HerramientasPorEtapa ventana = new HerramientasPorEtapa();
+            ventana.ShowDialog();
+        }
+
+        private void btnNewVenta_Click(object sender, EventArgs e)
+        {
+            NuevaVenta ventana = new NuevaVenta();
+            ventana.ShowDialog();
+        }
+
+        private void btnEliminFactura_Click(object sender, EventArgs e)
+        {
+            BajaFactura ventana = new BajaFactura();
+            ventana.ShowDialog();
+        }
     }
     
 }

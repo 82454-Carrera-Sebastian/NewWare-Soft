@@ -606,5 +606,17 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Web_Developmen_1562687 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_sign-add_299068 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Flat-34_6764721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_basket_1814090 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
