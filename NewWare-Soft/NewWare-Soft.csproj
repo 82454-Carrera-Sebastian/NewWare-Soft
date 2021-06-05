@@ -78,6 +78,11 @@
     <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="BD3K7G07_2021DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\.cs" />
     <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Barrio.cs" />
@@ -95,160 +100,166 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Forms\AltaBarrio.cs">
+    <Compile Include="Forms\Barrio\AltaBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaBarrio.Designer.cs">
+    <Compile Include="Forms\Barrio\AltaBarrio.Designer.cs">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaCiudad.cs">
+    <Compile Include="Forms\Ciudad\AltaCiudad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaCiudad.Designer.cs">
+    <Compile Include="Forms\Ciudad\AltaCiudad.Designer.cs">
       <DependentUpon>AltaCiudad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaCliente.cs">
+    <Compile Include="Forms\Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaCliente.Designer.cs">
+    <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaEtapa.cs">
+    <Compile Include="Forms\Etapas\AltaEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaEtapa.Designer.cs">
+    <Compile Include="Forms\Etapas\AltaEtapa.Designer.cs">
       <DependentUpon>AltaEtapa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaFormaPago.cs">
+    <Compile Include="Forms\Forma de pago\AltaFormaPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaFormaPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\AltaFormaPago.Designer.cs">
       <DependentUpon>AltaFormaPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaPersonal.cs">
+    <Compile Include="Forms\Personal\AltaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaPersonal.Designer.cs">
+    <Compile Include="Forms\Personal\AltaPersonal.Designer.cs">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Alta_FormPago.cs">
+    <Compile Include="Forms\Forma de pago\Alta_FormPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Alta_FormPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\Alta_FormPago.Designer.cs">
       <DependentUpon>Alta_FormPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Alta_Banco.cs">
+    <Compile Include="Forms\Banco\Alta_Banco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Alta_Banco.Designer.cs">
+    <Compile Include="Forms\Banco\Alta_Banco.Designer.cs">
       <DependentUpon>Alta_Banco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Alta_Cargo.cs">
+    <Compile Include="Forms\Cargos\Alta_Cargo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Alta_Cargo.designer.cs">
+    <Compile Include="Forms\Cargos\Alta_Cargo.designer.cs">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Alta_MotivoEgreso.cs">
+    <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Alta_MotivoEgreso.Designer.cs">
+    <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.Designer.cs">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Alta_Tarjeta.cs">
+    <Compile Include="Forms\Reportes\ListadoDeTodosLosProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Alta_Tarjeta.Designer.cs">
+    <Compile Include="Forms\Reportes\ListadoDeTodosLosProyectos.Designer.cs">
+      <DependentUpon>ListadoDeTodosLosProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tarjetas\Alta_Tarjeta.Designer.cs">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaBarrio.cs">
+    <Compile Include="Forms\Barrio\BajaBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaBarrio.Designer.cs">
+    <Compile Include="Forms\Barrio\BajaBarrio.Designer.cs">
       <DependentUpon>BajaBarrio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaCiudad.cs">
+    <Compile Include="Forms\Ciudad\BajaCiudad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaCiudad.Designer.cs">
+    <Compile Include="Forms\Ciudad\BajaCiudad.Designer.cs">
       <DependentUpon>BajaCiudad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaCliente.cs">
+    <Compile Include="Forms\Clientes\BajaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaCliente.Designer.cs">
+    <Compile Include="Forms\Clientes\BajaCliente.Designer.cs">
       <DependentUpon>BajaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaEtapa.cs">
+    <Compile Include="Forms\Etapas\BajaEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaEtapa.Designer.cs">
+    <Compile Include="Forms\Etapas\BajaEtapa.Designer.cs">
       <DependentUpon>BajaEtapa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaFactura.cs">
+    <Compile Include="Forms\Procesos\BajaFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaFactura.Designer.cs">
+    <Compile Include="Forms\Procesos\BajaFactura.Designer.cs">
       <DependentUpon>BajaFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaFormaPago.cs">
+    <Compile Include="Forms\Forma de pago\BajaFormaPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaFormaPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\BajaFormaPago.Designer.cs">
       <DependentUpon>BajaFormaPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaPersonal.cs">
+    <Compile Include="Forms\Personal\BajaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaPersonal.Designer.cs">
+    <Compile Include="Forms\Personal\BajaPersonal.Designer.cs">
       <DependentUpon>BajaPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaProductoForm.cs">
+    <Compile Include="Forms\Productos\BajaProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaProductoForm.Designer.cs">
+    <Compile Include="Forms\Productos\BajaProductoForm.Designer.cs">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Baja_FormPago.cs">
+    <Compile Include="Forms\Forma de pago\Baja_FormPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Baja_FormPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\Baja_FormPago.Designer.cs">
       <DependentUpon>Baja_FormPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Baja_Banco.cs">
+    <Compile Include="Forms\Banco\Baja_Banco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Baja_Banco.Designer.cs">
+    <Compile Include="Forms\Banco\Baja_Banco.Designer.cs">
       <DependentUpon>Baja_Banco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Baja_Cargo.cs">
+    <Compile Include="Forms\Cargos\Baja_Cargo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Baja_Cargo.designer.cs">
+    <Compile Include="Forms\Cargos\Baja_Cargo.designer.cs">
       <DependentUpon>Baja_Cargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Baja_MotivoEgreso.cs">
+    <Compile Include="Forms\Motivo Egreso\Baja_MotivoEgreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Baja_MotivoEgreso.Designer.cs">
+    <Compile Include="Forms\Motivo Egreso\Baja_MotivoEgreso.Designer.cs">
       <DependentUpon>Baja_MotivoEgreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Baja_Tarjeta.cs">
+    <Compile Include="Forms\Tarjetas\Baja_Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Baja_Tarjeta.Designer.cs">
+    <Compile Include="Forms\Tarjetas\Baja_Tarjeta.Designer.cs">
       <DependentUpon>Baja_Tarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ElimUser.cs">
+    <Compile Include="Forms\Usuarios\ElimUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ElimUser.Designer.cs">
+    <Compile Include="Forms\Usuarios\ElimUser.Designer.cs">
       <DependentUpon>ElimUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HerramientasPorEtapa.cs">
+    <Compile Include="Forms\Procesos\HerramientasPorEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HerramientasPorEtapa.Designer.cs">
+    <Compile Include="Forms\Procesos\HerramientasPorEtapa.Designer.cs">
       <DependentUpon>HerramientasPorEtapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Herramientas\HerramientasAltasForm.cs">
@@ -269,100 +280,106 @@
     <Compile Include="Forms\Herramientas\HerramientasModificacionesForm.Designer.cs">
       <DependentUpon>HerramientasModificacionesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
+    <Compile Include="Forms\Reportes\ListadoDeUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
+    <Compile Include="Forms\Reportes\ListadoDeUsuarios.Designer.cs">
+      <DependentUpon>ListadoDeUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuarios\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuarios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificacionBarrio.cs">
+    <Compile Include="Forms\Barrio\ModificacionBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificacionBarrio.Designer.cs">
+    <Compile Include="Forms\Barrio\ModificacionBarrio.Designer.cs">
       <DependentUpon>ModificacionBarrio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificacionCiudad.cs">
+    <Compile Include="Forms\Ciudad\ModificacionCiudad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificacionCiudad.Designer.cs">
+    <Compile Include="Forms\Ciudad\ModificacionCiudad.Designer.cs">
       <DependentUpon>ModificacionCiudad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificacionProductoForm.cs">
+    <Compile Include="Forms\Productos\ModificacionProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificacionProductoForm.Designer.cs">
+    <Compile Include="Forms\Productos\ModificacionProductoForm.Designer.cs">
       <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Modificacion_Cargo.cs">
+    <Compile Include="Forms\Cargos\Modificacion_Cargo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Modificacion_Cargo.designer.cs">
+    <Compile Include="Forms\Cargos\Modificacion_Cargo.designer.cs">
       <DependentUpon>Modificacion_Cargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificarCliente.cs">
+    <Compile Include="Forms\Clientes\ModificarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificarCliente.Designer.cs">
+    <Compile Include="Forms\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificarEtapa.cs">
+    <Compile Include="Forms\Etapas\ModificarEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificarEtapa.Designer.cs">
+    <Compile Include="Forms\Etapas\ModificarEtapa.Designer.cs">
       <DependentUpon>ModificarEtapa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificarFormaPago.cs">
+    <Compile Include="Forms\Forma de pago\ModificarFormaPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificarFormaPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\ModificarFormaPago.Designer.cs">
       <DependentUpon>ModificarFormaPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModificarPersonal.cs">
+    <Compile Include="Forms\Personal\ModificarPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModificarPersonal.Designer.cs">
+    <Compile Include="Forms\Personal\ModificarPersonal.Designer.cs">
       <DependentUpon>ModificarPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ModifUser.cs">
+    <Compile Include="Forms\Usuarios\ModifUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ModifUser.Designer.cs">
+    <Compile Include="Forms\Usuarios\ModifUser.Designer.cs">
       <DependentUpon>ModifUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mod_FormPago.cs">
+    <Compile Include="Forms\Forma de pago\Mod_FormPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mod_FormPago.Designer.cs">
+    <Compile Include="Forms\Forma de pago\Mod_FormPago.Designer.cs">
       <DependentUpon>Mod_FormPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mod_Banco.cs">
+    <Compile Include="Forms\Banco\Mod_Banco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mod_Banco.Designer.cs">
+    <Compile Include="Forms\Banco\Mod_Banco.Designer.cs">
       <DependentUpon>Mod_Banco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mod_MotivoEgreso.cs">
+    <Compile Include="Forms\Motivo Egreso\Mod_MotivoEgreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mod_MotivoEgreso.Designer.cs">
+    <Compile Include="Forms\Motivo Egreso\Mod_MotivoEgreso.Designer.cs">
       <DependentUpon>Mod_MotivoEgreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mod_Tarjeta.cs">
+    <Compile Include="Forms\Tarjetas\Mod_Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mod_Tarjeta.Designer.cs">
+    <Compile Include="Forms\Tarjetas\Mod_Tarjeta.Designer.cs">
       <DependentUpon>Mod_Tarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NuevaVenta.cs">
+    <Compile Include="Forms\Procesos\NuevaVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\NuevaVenta.Designer.cs">
+    <Compile Include="Forms\Procesos\NuevaVenta.Designer.cs">
       <DependentUpon>NuevaVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PersonalXEtapa.cs">
+    <Compile Include="Forms\Procesos\PersonalXEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PersonalXEtapa.Designer.cs">
+    <Compile Include="Forms\Procesos\PersonalXEtapa.Designer.cs">
       <DependentUpon>PersonalXEtapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PrincipalForm.cs">
@@ -371,104 +388,107 @@
     <Compile Include="Forms\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ProductoForm.cs">
+    <Compile Include="Forms\Productos\ProductoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ProductoForm.Designer.cs">
+    <Compile Include="Forms\Productos\ProductoForm.Designer.cs">
       <DependentUpon>ProductoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Proyectos.cs">
+    <Compile Include="Forms\Procesos\Proyectos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Proyectos.Designer.cs">
+    <Compile Include="Forms\Procesos\Proyectos.Designer.cs">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserForm.cs">
+    <Compile Include="Forms\Usuarios\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserForm.Designer.cs">
+    <Compile Include="Forms\Usuarios\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VariablesGlobales.cs" />
-    <EmbeddedResource Include="Forms\AltaBarrio.resx">
+    <EmbeddedResource Include="Forms\Barrio\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaCiudad.resx">
+    <EmbeddedResource Include="Forms\Ciudad\AltaCiudad.resx">
       <DependentUpon>AltaCiudad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaCliente.resx">
+    <EmbeddedResource Include="Forms\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaEtapa.resx">
+    <EmbeddedResource Include="Forms\Etapas\AltaEtapa.resx">
       <DependentUpon>AltaEtapa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaFormaPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\AltaFormaPago.resx">
       <DependentUpon>AltaFormaPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaPersonal.resx">
+    <EmbeddedResource Include="Forms\Personal\AltaPersonal.resx">
       <DependentUpon>AltaPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Alta_Banco.resx">
+    <EmbeddedResource Include="Forms\Banco\Alta_Banco.resx">
       <DependentUpon>Alta_Banco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Alta_Cargo.resx">
+    <EmbeddedResource Include="Forms\Cargos\Alta_Cargo.resx">
       <DependentUpon>Alta_Cargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Alta_FormPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\Alta_FormPago.resx">
       <DependentUpon>Alta_FormPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Alta_MotivoEgreso.resx">
+    <EmbeddedResource Include="Forms\Motivo Egreso\Alta_MotivoEgreso.resx">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Alta_Tarjeta.resx">
+    <EmbeddedResource Include="Forms\Reportes\ListadoDeTodosLosProyectos.resx">
+      <DependentUpon>ListadoDeTodosLosProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaBarrio.resx">
+    <EmbeddedResource Include="Forms\Barrio\BajaBarrio.resx">
       <DependentUpon>BajaBarrio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaCiudad.resx">
+    <EmbeddedResource Include="Forms\Ciudad\BajaCiudad.resx">
       <DependentUpon>BajaCiudad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaCliente.resx">
+    <EmbeddedResource Include="Forms\Clientes\BajaCliente.resx">
       <DependentUpon>BajaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaEtapa.resx">
+    <EmbeddedResource Include="Forms\Etapas\BajaEtapa.resx">
       <DependentUpon>BajaEtapa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaFactura.resx">
+    <EmbeddedResource Include="Forms\Procesos\BajaFactura.resx">
       <DependentUpon>BajaFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaFormaPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\BajaFormaPago.resx">
       <DependentUpon>BajaFormaPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaPersonal.resx">
+    <EmbeddedResource Include="Forms\Personal\BajaPersonal.resx">
       <DependentUpon>BajaPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaProductoForm.resx">
+    <EmbeddedResource Include="Forms\Productos\BajaProductoForm.resx">
       <DependentUpon>BajaProductoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Baja_FormPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\Baja_FormPago.resx">
       <DependentUpon>Baja_FormPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Baja_Banco.resx">
+    <EmbeddedResource Include="Forms\Banco\Baja_Banco.resx">
       <DependentUpon>Baja_Banco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Baja_Cargo.resx">
+    <EmbeddedResource Include="Forms\Cargos\Baja_Cargo.resx">
       <DependentUpon>Baja_Cargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Baja_MotivoEgreso.resx">
+    <EmbeddedResource Include="Forms\Motivo Egreso\Baja_MotivoEgreso.resx">
       <DependentUpon>Baja_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Baja_Tarjeta.resx">
+    <EmbeddedResource Include="Forms\Tarjetas\Baja_Tarjeta.resx">
       <DependentUpon>Baja_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ElimUser.resx">
+    <EmbeddedResource Include="Forms\Usuarios\ElimUser.resx">
       <DependentUpon>ElimUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HerramientasPorEtapa.resx">
+    <EmbeddedResource Include="Forms\Procesos\HerramientasPorEtapa.resx">
       <DependentUpon>HerramientasPorEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Herramientas\HerramientasAltasForm.resx">
@@ -480,64 +500,67 @@
     <EmbeddedResource Include="Forms\Herramientas\HerramientasModificacionesForm.resx">
       <DependentUpon>HerramientasModificacionesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login.resx">
+    <EmbeddedResource Include="Forms\Reportes\ListadoDeUsuarios.resx">
+      <DependentUpon>ListadoDeUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificacionBarrio.resx">
+    <EmbeddedResource Include="Forms\Barrio\ModificacionBarrio.resx">
       <DependentUpon>ModificacionBarrio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificacionCiudad.resx">
+    <EmbeddedResource Include="Forms\Ciudad\ModificacionCiudad.resx">
       <DependentUpon>ModificacionCiudad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificacionProductoForm.resx">
+    <EmbeddedResource Include="Forms\Productos\ModificacionProductoForm.resx">
       <DependentUpon>ModificacionProductoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Modificacion_Cargo.resx">
+    <EmbeddedResource Include="Forms\Cargos\Modificacion_Cargo.resx">
       <DependentUpon>Modificacion_Cargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarCliente.resx">
+    <EmbeddedResource Include="Forms\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarEtapa.resx">
+    <EmbeddedResource Include="Forms\Etapas\ModificarEtapa.resx">
       <DependentUpon>ModificarEtapa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarFormaPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\ModificarFormaPago.resx">
       <DependentUpon>ModificarFormaPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModificarPersonal.resx">
+    <EmbeddedResource Include="Forms\Personal\ModificarPersonal.resx">
       <DependentUpon>ModificarPersonal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModifUser.resx">
+    <EmbeddedResource Include="Forms\Usuarios\ModifUser.resx">
       <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mod_FormPago.resx">
+    <EmbeddedResource Include="Forms\Forma de pago\Mod_FormPago.resx">
       <DependentUpon>Mod_FormPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mod_Banco.resx">
+    <EmbeddedResource Include="Forms\Banco\Mod_Banco.resx">
       <DependentUpon>Mod_Banco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mod_MotivoEgreso.resx">
+    <EmbeddedResource Include="Forms\Motivo Egreso\Mod_MotivoEgreso.resx">
       <DependentUpon>Mod_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mod_Tarjeta.resx">
+    <EmbeddedResource Include="Forms\Tarjetas\Mod_Tarjeta.resx">
       <DependentUpon>Mod_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NuevaVenta.resx">
+    <EmbeddedResource Include="Forms\Procesos\NuevaVenta.resx">
       <DependentUpon>NuevaVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PersonalXEtapa.resx">
+    <EmbeddedResource Include="Forms\Procesos\PersonalXEtapa.resx">
       <DependentUpon>PersonalXEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ProductoForm.resx">
+    <EmbeddedResource Include="Forms\Productos\ProductoForm.resx">
       <DependentUpon>ProductoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Proyectos.resx">
+    <EmbeddedResource Include="Forms\Procesos\Proyectos.resx">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserForm.resx">
+    <EmbeddedResource Include="Forms\Usuarios\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -550,6 +573,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
+    <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
+    <None Include="BD3K7G07_2021DataSet.xsc">
+      <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD3K7G07_2021DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD3K7G07_2021DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD3K7G07_2021DataSet.xss">
+      <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

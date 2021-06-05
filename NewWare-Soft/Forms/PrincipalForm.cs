@@ -1,5 +1,6 @@
 ﻿using NewWare_Soft.Entidades;
 using NewWare_Soft.Forms.Herramientas;
+using NewWare_Soft.Forms.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -297,7 +298,7 @@ namespace NewWare_Soft.Forms
             BajaFactura ventana = new BajaFactura();
             ventana.ShowDialog();
         }
-    }
-    
+    }    
 }
+
 

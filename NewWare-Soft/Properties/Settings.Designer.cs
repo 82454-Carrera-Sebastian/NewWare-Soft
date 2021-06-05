@@ -22,5 +22,16 @@ namespace NewWare_Soft.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=200.69.137.167,11333;Initial Catalog=BD3K7G07_2021;Persist Security I" +
+            "nfo=True;User ID=BD3K7G07_2021;Password=BDG07_5571")]
+        public string BD3K7G07_2021ConnectionString {
+            get {
+                return ((string)(this["BD3K7G07_2021ConnectionString"]));
+            }
+        }
     }
 }
