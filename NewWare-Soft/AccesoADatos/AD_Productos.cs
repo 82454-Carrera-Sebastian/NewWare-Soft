@@ -118,6 +118,33 @@ namespace NewWare_Soft.AccesoADatos
                 connect.Close();
             }
         }
+        public static DataTable obtenerListadoProductos()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM productos";
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
         public static bool actualizarProducto(Producto prod)
         {
             bool resultado = false;

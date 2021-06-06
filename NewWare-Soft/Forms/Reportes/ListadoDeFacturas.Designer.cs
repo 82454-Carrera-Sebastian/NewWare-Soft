@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms.Reportes
 {
-    partial class ListadoDeTodosLosProyectos
+    partial class ListadoDeFacturas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,35 @@ namespace NewWare_Soft.Forms.Reportes
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportProyectos = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.listadoFacturas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // reportProyectos
+            // listadoFacturas
             // 
-            this.reportProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportProyectos.LocalReport.ReportEmbeddedResource = "NewWare_Soft.ListadoDeProductos.rdlc";
-            this.reportProyectos.Location = new System.Drawing.Point(0, 0);
-            this.reportProyectos.Name = "reportProyectos";
-            this.reportProyectos.ServerReport.BearerToken = null;
-            this.reportProyectos.Size = new System.Drawing.Size(800, 450);
-            this.reportProyectos.TabIndex = 0;
-            this.reportProyectos.Load += new System.EventHandler(this.reportProyectos_Load);
+            this.listadoFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listadoFacturas.LocalReport.ReportEmbeddedResource = "NewWare_Soft.ListadoDeFacturas.rdlc";
+            this.listadoFacturas.Location = new System.Drawing.Point(0, 0);
+            this.listadoFacturas.Name = "listadoFacturas";
+            this.listadoFacturas.ServerReport.BearerToken = null;
+            this.listadoFacturas.Size = new System.Drawing.Size(800, 450);
+            this.listadoFacturas.TabIndex = 0;
+            this.listadoFacturas.Load += new System.EventHandler(this.listadoFacturas_Load);
             // 
-            // ListadoDeTodosLosProyectos
+            // ListadoDeFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportProyectos);
-            this.Name = "ListadoDeTodosLosProyectos";
-            this.Text = "ListadoDeTodosLosProyectos";
-            this.Load += new System.EventHandler(this.ListadoDeTodosLosProyectos_Load);
+            this.Controls.Add(this.listadoFacturas);
+            this.Name = "ListadoDeFacturas";
+            this.Text = "ListadoDeFacturas";
+            this.Load += new System.EventHandler(this.ListadoDeFacturas_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportProyectos;
+        private Microsoft.Reporting.WinForms.ReportViewer listadoFacturas;
     }
 }
