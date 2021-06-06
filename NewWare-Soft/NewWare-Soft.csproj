@@ -69,6 +69,7 @@
     <Compile Include="AccesoADatos\AD_Bancos.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
+    <Compile Include="AccesoADatos\AD_Facturas.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
     <Compile Include="AccesoADatos\AD_MotivosEgreso.cs" />
@@ -159,6 +160,18 @@
     </Compile>
     <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.Designer.cs">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoDeFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoDeFacturas.Designer.cs">
+      <DependentUpon>ListadoDeFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoDeProductos.Designer.cs">
+      <DependentUpon>ListadoDeProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoDeTodosLosProyectos.cs">
       <SubType>Form</SubType>
@@ -440,6 +453,12 @@
     <EmbeddedResource Include="Forms\Motivo Egreso\Alta_MotivoEgreso.resx">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoDeFacturas.resx">
+      <DependentUpon>ListadoDeFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoDeProductos.resx">
+      <DependentUpon>ListadoDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoDeTodosLosProyectos.resx">
       <DependentUpon>ListadoDeTodosLosProyectos.cs</DependentUpon>
     </EmbeddedResource>
@@ -563,6 +582,8 @@
     <EmbeddedResource Include="Forms\Usuarios\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListadoDeFacturas.rdlc" />
+    <EmbeddedResource Include="ListadoDeProductos.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
