@@ -84,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD3K7G07_2021DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD3K7G07_2021DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\.cs" />
     <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Barrio.cs" />
@@ -190,6 +195,12 @@
     </Compile>
     <Compile Include="Forms\Reportes\ListadoFactura_Cliente.Designer.cs">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.Designer.cs">
+      <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
       <SubType>Form</SubType>
@@ -480,6 +491,9 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoFactura_Cliente.resx">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoHerramientasXetapas.resx">
+      <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -612,6 +626,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reporte_HerramientasXetapas.rdlc" />
     <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
     <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
     <EmbeddedResource Include="Report_Clientes.rdlc" />
@@ -626,6 +641,17 @@
     </None>
     <None Include="BD3K7G07_2021DataSet.xss">
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD3K7G07_2021DataSet1.xsc">
+      <DependentUpon>BD3K7G07_2021DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD3K7G07_2021DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD3K7G07_2021DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD3K7G07_2021DataSet1.xss">
+      <DependentUpon>BD3K7G07_2021DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

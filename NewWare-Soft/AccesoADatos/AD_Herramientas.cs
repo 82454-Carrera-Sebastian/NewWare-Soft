@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NewWare_Soft.AccesoADatos_Herramientas
+namespace NewWare_Soft.AccesoADatos
 {
     public class AD_Herramientas
     {
@@ -148,6 +148,37 @@ namespace NewWare_Soft.AccesoADatos_Herramientas
             return h;
         }
 
+        public static DataTable ObtenerListadoHerramientaXetapa()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string query = "SELECT * FROM herramientas_x_etapas_x_proyectos";
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
         public static bool EliminarHerramienta(Herramientas her)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];

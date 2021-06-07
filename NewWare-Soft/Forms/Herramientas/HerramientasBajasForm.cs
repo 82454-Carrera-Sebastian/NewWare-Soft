@@ -1,4 +1,4 @@
-﻿using NewWare_Soft.AccesoADatos_Herramientas;
+﻿using NewWare_Soft.AccesoADatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

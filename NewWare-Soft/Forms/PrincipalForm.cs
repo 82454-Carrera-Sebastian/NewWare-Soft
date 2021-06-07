@@ -299,6 +299,11 @@ namespace NewWare_Soft.Forms
             ventana.ShowDialog();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ListadoHerramientasXetapas ventana = new ListadoHerramientasXetapas();
+            ventana.ShowDialog();
+        }
     }    
 }
 
