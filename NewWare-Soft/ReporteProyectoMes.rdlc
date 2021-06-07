@@ -392,6 +392,9 @@
               <SortExpression>
                 <Value>=Fields!FechaInicial.Value</Value>
               </SortExpression>
+              <SortExpression>
+                <Value>=Fields!FechaFinReal.Value</Value>
+              </SortExpression>
             </SortExpressions>
             <Top>0.98833in</Top>
             <Left>0.38417in</Left>
