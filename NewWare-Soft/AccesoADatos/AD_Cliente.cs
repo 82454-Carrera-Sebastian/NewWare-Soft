@@ -368,7 +368,7 @@ namespace NewWare_Soft.AccesoADatos
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = query;
-                
+
                 cn.Open();
                 cmd.Connection = cn;
 
@@ -422,5 +422,5 @@ namespace NewWare_Soft.AccesoADatos
 }
 
 
-       
-    
+
+

@@ -298,6 +298,7 @@ namespace NewWare_Soft.Forms
             BajaFactura ventana = new BajaFactura();
             ventana.ShowDialog();
         }
+
     }    
 }
 

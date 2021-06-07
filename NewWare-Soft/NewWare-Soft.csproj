@@ -161,6 +161,12 @@
     <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.Designer.cs">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoClientes.Designer.cs">
+      <DependentUpon>ListadoClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoDeFacturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     </Compile>
     <Compile Include="Forms\Reportes\ListadoDeTodosLosProyectos.Designer.cs">
       <DependentUpon>ListadoDeTodosLosProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoFactura_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoFactura_Cliente.Designer.cs">
+      <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
       <SubType>Form</SubType>
@@ -453,6 +465,9 @@
     <EmbeddedResource Include="Forms\Motivo Egreso\Alta_MotivoEgreso.resx">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoClientes.resx">
+      <DependentUpon>ListadoClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoDeFacturas.resx">
       <DependentUpon>ListadoDeFacturas.cs</DependentUpon>
     </EmbeddedResource>
@@ -461,6 +476,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoDeTodosLosProyectos.resx">
       <DependentUpon>ListadoDeTodosLosProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoFactura_Cliente.resx">
+      <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
@@ -596,6 +614,8 @@
     </Compile>
     <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
     <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
+    <EmbeddedResource Include="Report_Clientes.rdlc" />
+    <EmbeddedResource Include="Report_Facturas_Por_Cliente.rdlc" />
     <None Include="BD3K7G07_2021DataSet.xsc">
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
     </None>
