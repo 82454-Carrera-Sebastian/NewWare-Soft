@@ -191,6 +191,18 @@
     <Compile Include="Forms\Reportes\ListadoFactura_Cliente.Designer.cs">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoEtapa.Designer.cs">
+      <DependentUpon>ListadoProyectoEtapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosMes.Designer.cs">
+      <DependentUpon>ListadoProyectosMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -480,6 +492,12 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoFactura_Cliente.resx">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectoEtapa.resx">
+      <DependentUpon>ListadoProyectoEtapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectosMes.resx">
+      <DependentUpon>ListadoProyectosMes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -612,6 +630,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteProyectoEtapa.rdlc" />
+    <EmbeddedResource Include="ReporteProyectoMes.rdlc" />
     <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
     <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
     <EmbeddedResource Include="Report_Clientes.rdlc" />
