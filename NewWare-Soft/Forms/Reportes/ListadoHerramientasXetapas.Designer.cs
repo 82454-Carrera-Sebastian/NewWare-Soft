@@ -39,7 +39,7 @@ namespace NewWare_Soft.Forms.Reportes
             this.reportViewerHerramientasXetapas.Location = new System.Drawing.Point(0, 0);
             this.reportViewerHerramientasXetapas.Name = "reportViewerHerramientasXetapas";
             this.reportViewerHerramientasXetapas.ServerReport.BearerToken = null;
-            this.reportViewerHerramientasXetapas.Size = new System.Drawing.Size(666, 450);
+            this.reportViewerHerramientasXetapas.Size = new System.Drawing.Size(734, 461);
             this.reportViewerHerramientasXetapas.TabIndex = 0;
             this.reportViewerHerramientasXetapas.Load += new System.EventHandler(this.reportViewerHerramientasXetapas_Load);
             // 
@@ -47,7 +47,7 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 450);
+            this.ClientSize = new System.Drawing.Size(734, 461);
             this.Controls.Add(this.reportViewerHerramientasXetapas);
             this.Name = "ListadoHerramientasXetapas";
             this.Text = "ListadoHerramientasXetapas";

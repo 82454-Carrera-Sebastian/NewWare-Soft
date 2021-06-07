@@ -744,3 +744,4 @@ C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\ru\Microso
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonalXetapa.resources

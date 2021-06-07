@@ -45,9 +45,9 @@
       </Textbox>
       <Line Name="Line1">
         <Top>0.50694in</Top>
-        <Left>0.25345in</Left>
+        <Left>0.03958in</Left>
         <Height>0in</Height>
-        <Width>5.70139in</Width>
+        <Width>6.26042in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -282,7 +282,7 @@
         <Top>2.2987cm</Top>
         <Left>0.64376cm</Left>
         <Height>1.27938cm</Height>
-        <Width>14.48153cm</Width>
+        <Width>14.48154cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -291,13 +291,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.94792in</Height>
+    <Height>1.9in</Height>
     <Style />
   </Body>
-  <Width>6.26042in</Width>
+  <Width>6.3in</Width>
   <Page>
     <PageFooter>
-      <Height>1.27cm</Height>
+      <Height>1.2cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>

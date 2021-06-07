@@ -301,8 +301,13 @@ namespace NewWare_Soft.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ListadoHerramientasXetapas ventana = new ListadoHerramientasXetapas();
+            ListadoPersonalXetapa ventana = new ListadoPersonalXetapa();
             ventana.ShowDialog();
+        }
+
+        private void PrincipalForm_Load(object sender, EventArgs e)
+        {
+
         }
     }    
 }

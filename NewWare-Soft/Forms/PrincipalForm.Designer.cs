@@ -38,6 +38,7 @@ namespace NewWare_Soft.Forms
             this.lblAsigHerr = new System.Windows.Forms.Label();
             this.lblNewVent = new System.Windows.Forms.Label();
             this.lblElimFact = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEliminFactura = new System.Windows.Forms.Button();
             this.btnNewVenta = new System.Windows.Forms.Button();
             this.btnAsignHerramientas = new System.Windows.Forms.Button();
@@ -95,7 +96,6 @@ namespace NewWare_Soft.Forms
             this.altaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.bajaToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,6 +192,16 @@ namespace NewWare_Soft.Forms
             this.lblElimFact.Size = new System.Drawing.Size(50, 30);
             this.lblElimFact.TabIndex = 18;
             this.lblElimFact.Text = "Eliminar\r\nFactura";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(131, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEliminFactura
             // 
@@ -698,16 +708,6 @@ namespace NewWare_Soft.Forms
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(131, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -732,6 +732,7 @@ namespace NewWare_Soft.Forms
             this.Name = "PrincipalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
