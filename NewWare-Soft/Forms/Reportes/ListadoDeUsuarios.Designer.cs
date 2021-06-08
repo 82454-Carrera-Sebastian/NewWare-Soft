@@ -39,7 +39,7 @@ namespace NewWare_Soft.Forms
             this.reportUsuarios.Location = new System.Drawing.Point(0, 0);
             this.reportUsuarios.Name = "reportUsuarios";
             this.reportUsuarios.ServerReport.BearerToken = null;
-            this.reportUsuarios.Size = new System.Drawing.Size(800, 450);
+            this.reportUsuarios.Size = new System.Drawing.Size(1102, 492);
             this.reportUsuarios.TabIndex = 0;
             this.reportUsuarios.Load += new System.EventHandler(this.reportUsuarios_Load);
             // 
@@ -47,7 +47,7 @@ namespace NewWare_Soft.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1102, 492);
             this.Controls.Add(this.reportUsuarios);
             this.Name = "ListadoDeUsuarios";
             this.Text = "ListadoDeUsuarios";
