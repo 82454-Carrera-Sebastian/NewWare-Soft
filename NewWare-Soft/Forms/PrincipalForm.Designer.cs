@@ -118,7 +118,7 @@ namespace NewWare_Soft.Forms
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1185, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1195, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -579,7 +579,7 @@ namespace NewWare_Soft.Forms
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1260, 411);
+            this.btnSalir.Location = new System.Drawing.Point(1085, 412);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(98, 30);
             this.btnSalir.TabIndex = 1;
@@ -701,7 +701,7 @@ namespace NewWare_Soft.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 450);
+            this.ClientSize = new System.Drawing.Size(1195, 454);
             this.Controls.Add(this.lblElimFact);
             this.Controls.Add(this.btnEliminFactura);
             this.Controls.Add(this.lblNewVent);
