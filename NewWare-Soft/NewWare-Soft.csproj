@@ -197,11 +197,23 @@
     <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.Designer.cs">
       <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonal.Designer.cs">
+      <DependentUpon>ListadoPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoPersonalXetapa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoPersonalXetapa.Designer.cs">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProdXFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProdXFactura.Designer.cs">
+      <DependentUpon>ListadoProdXFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoProyectoEtapa.cs">
       <SubType>Form</SubType>
@@ -507,8 +519,14 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoHerramientasXetapas.resx">
       <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoPersonal.resx">
+      <DependentUpon>ListadoPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoPersonalXetapa.resx">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProdXFactura.resx">
+      <DependentUpon>ListadoProdXFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoProyectoEtapa.resx">
       <DependentUpon>ListadoProyectoEtapa.cs</DependentUpon>
@@ -648,6 +666,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reportePersonal.rdlc" />
+    <EmbeddedResource Include="ReporteProdXFact.rdlc" />
     <EmbeddedResource Include="ReporteProyectoEtapa.rdlc" />
     <EmbeddedResource Include="ReporteProyectoMes.rdlc" />
     <EmbeddedResource Include="Reporte_PersonalXetapa.rdlc" />

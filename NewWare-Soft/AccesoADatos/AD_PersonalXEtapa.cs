@@ -274,6 +274,7 @@ namespace NewWare_Soft.AccesoADatos
             {
                 cn.Close();
             }
+
         }
     }
 }
