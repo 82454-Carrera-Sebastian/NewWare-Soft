@@ -299,6 +299,7 @@ namespace NewWare_Soft.Forms
             ventana.ShowDialog();
         }
 
+        
     }    
 }
 
