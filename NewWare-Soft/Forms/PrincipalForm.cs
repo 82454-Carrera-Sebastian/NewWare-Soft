@@ -298,11 +298,128 @@ namespace NewWare_Soft.Forms
             BajaFactura ventana = new BajaFactura();
             ventana.ShowDialog();
         }
-        private void PrincipalForm_Load(object sender, EventArgs e)
-        {
 
+        private void todasLasFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoDeFacturas ventana = new ListadoDeFacturas();
+            ventana.ShowDialog();
         }
-    }    
+
+        private void porClienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Listado_Factura_Cliente ventana = new Listado_Factura_Cliente();
+            ventana.ShowDialog();
+        }
+
+        private void todosLosProyectosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListadoDeTodosLosProyectos ventana = new ListadoDeTodosLosProyectos();
+            ventana.ShowDialog();
+        }
+
+        private void porEtapaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListadoProyectoEtapa ventana = new ListadoProyectoEtapa();
+            ventana.ShowDialog();
+        }
+
+        private void porMesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListadoProyectoMes ventana = new ListadoProyectoMes();
+            ventana.ShowDialog();
+        }
+
+        private void finalizadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteProyectosFinalizados ventana = new ReporteProyectosFinalizados();
+            ventana.ShowDialog();
+        }
+
+        private void enEjecuciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoProyectosActivos ventana = new ListadoProyectosActivos();
+            ventana.ShowDialog();
+        }
+
+        private void todosLosProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoDeProductos ventana = new ListadoDeProductos();
+            ventana.ShowDialog();
+        }
+
+        private void porClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoProductosXCliente ventana = new ListadoProductosXCliente();
+            ventana.ShowDialog();
+        }
+
+        private void porFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoProdXFactura ventana = new ListadoProdXFactura();
+            ventana.ShowDialog();
+        }
+
+        private void todosLosClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoClientes ventana = new ListadoClientes();
+            ventana.ShowDialog();
+        }
+
+        private void compraronMásDe5ProducToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listado_Productos_X_Clientes ventana = new Listado_Productos_X_Clientes();
+            ventana.ShowDialog();
+        }
+
+        private void todosLosEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteListadoPersonal ventana = new ReporteListadoPersonal();
+            ventana.ShowDialog();
+        }
+
+        private void porProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoPersonal ventana = new ListadoPersonal();
+            ventana.ShowDialog();
+        }
+
+        private void porEtapaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoPersonalXetapa ventana = new ListadoPersonalXetapa();
+            ventana.ShowDialog();
+        }
+
+        private void usuarioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListadoDeUsuarios ventana = new ListadoDeUsuarios();
+            ventana.ShowDialog();
+        }
+
+        private void etapasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ReporteListadoEtapas ven = new ReporteListadoEtapas();
+            ven.ShowDialog();
+        }
+
+        private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoBarrios ven = new ListadoBarrios();
+            ven.ShowDialog();
+        }
+
+        private void formasDePagoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListadoFormasDePago ven = new ListadoFormasDePago();
+            ven.ShowDialog();
+        }
+
+        private void herramPorEtapaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
+            ven.ShowDialog();
+        }
+    }   
+
 }
 
 

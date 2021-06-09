@@ -853,6 +853,8 @@
     <None Include="Resources\iconfinder_basket_1814090 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\iconfinder_1553045_blue_number_five_numbers_study_icon_128px.png" />
+    <None Include="Resources\iconfinder_984753_more_other_yet_detail_details_icon_128px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

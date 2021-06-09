@@ -35,7 +35,7 @@ namespace NewWare_Soft.Forms.Reportes
             // reportProyectos
             // 
             this.reportProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportProyectos.LocalReport.ReportEmbeddedResource = "NewWare_Soft.ListadoDeProductos.rdlc";
+            this.reportProyectos.LocalReport.ReportEmbeddedResource = "NewWare_Soft.Reporte_Todos_Proyectos.rdlc";
             this.reportProyectos.Location = new System.Drawing.Point(0, 0);
             this.reportProyectos.Name = "reportProyectos";
             this.reportProyectos.ServerReport.BearerToken = null;

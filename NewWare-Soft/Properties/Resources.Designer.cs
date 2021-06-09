@@ -83,9 +83,29 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_1553045_blue_number_five_numbers_study_icon_128px {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_1553045_blue_number_five_numbers_study_icon_128px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_635_Bill_excel_file_invoice_statement_4017677 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_635_Bill_excel_file_invoice_statement_4017677", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_984753_more_other_yet_detail_details_icon_128px {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_984753_more_other_yet_detail_details_icon_128px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

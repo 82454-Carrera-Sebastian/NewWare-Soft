@@ -924,3 +924,5 @@ C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.PersonalXEta
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\RdlCompile.cache
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\RdlCompile.compiled
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
+C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources
