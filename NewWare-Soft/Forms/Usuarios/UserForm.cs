@@ -32,9 +32,9 @@ namespace NewWare_Soft.Forms
 
         private void btnNewUser_Click(object sender, EventArgs e)
         {
-            if (txtNewUser.Text.Equals("") || AD_Usuarios.ValidarUsuario(txtNewUser.Text, txtNewPass.Text))
+            if (txtNewUser.Text.Equals("") || txtNewPass.Text.Equals("") || AD_Usuarios.ValidarNombreUsuario(txtNewUser.Text.Trim()))
             {
-                MessageBox.Show("No rellenó el nombre de usuario o escogió uno ya utilizado previamente");
+                MessageBox.Show("No rellenó los campos o por el contrario escogió un usuario ya utilizado previamente");
                 LimpiarCampos();
                 txtNewUser.Focus();
             }
