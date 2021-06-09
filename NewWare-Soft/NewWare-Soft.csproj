@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Bancos.cs" />
+    <Compile Include="AccesoADatos\AD_Barrio.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
     <Compile Include="AccesoADatos\AD_Facturas.cs" />
@@ -162,6 +163,12 @@
     <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.Designer.cs">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoBarrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoBarrios.Designer.cs">
+      <DependentUpon>ListadoBarrios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +198,12 @@
     </Compile>
     <Compile Include="Forms\Reportes\ListadoFactura_Cliente.Designer.cs">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoFormasDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoFormasDePago.Designer.cs">
+      <DependentUpon>ListadoFormasDePago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.cs">
       <SubType>Form</SubType>
@@ -693,6 +706,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoDeFacturas.rdlc" />
     <EmbeddedResource Include="ListadoDeProductos.rdlc" />
+    <EmbeddedResource Include="ListadoFormasDePago.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -703,6 +717,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteBarrios.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
     <EmbeddedResource Include="Reporte_Etapas.rdlc" />
