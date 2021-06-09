@@ -75,6 +75,7 @@
     <Compile Include="AccesoADatos\AD_MotivosEgreso.cs" />
     <Compile Include="AccesoADatos\AD_PersonalXEtapa.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
+    <Compile Include="AccesoADatos\AD_ProductosXCliente.cs" />
     <Compile Include="AccesoADatos\AD_Proyectos.cs" />
     <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
@@ -209,6 +210,12 @@
     <Compile Include="Forms\Reportes\ListadoPersonalXetapa.Designer.cs">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoProductosXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProductosXCliente.Designer.cs">
+      <DependentUpon>ListadoProductosXCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoProdXFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +233,12 @@
     </Compile>
     <Compile Include="Forms\Reportes\ListadoProyectoMes.Designer.cs">
       <DependentUpon>ListadoProyectoMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosActivos.Designer.cs">
+      <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reportes\ReporteListadoEtapas.cs">
       <SubType>Form</SubType>
@@ -537,6 +550,9 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoPersonalXetapa.resx">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProductosXCliente.resx">
+      <DependentUpon>ListadoProductosXCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoProdXFactura.resx">
       <DependentUpon>ListadoProdXFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -545,6 +561,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoProyectoMes.resx">
       <DependentUpon>ListadoProyectoMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectosActivos.resx">
+      <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ReporteListadoEtapas.resx">
       <DependentUpon>ReporteListadoEtapas.cs</DependentUpon>
@@ -684,6 +703,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
+    <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
     <EmbeddedResource Include="Reporte_Etapas.rdlc" />
     <EmbeddedResource Include="Reporte_Personal.rdlc" />
     <EmbeddedResource Include="reportePersonal.rdlc" />
