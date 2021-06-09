@@ -283,6 +283,47 @@ namespace NewWare_Soft.AccesoADatos
             }
         }
 
+        #region Metodo Clientes mas de 5 productos
+        public static DataTable Productos_x_Clientes()
+        {
+
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                string query = "select CP.IdProducto, CP.IdCliente, CP.FechaVendido, CP.FechaInicioInstalacion, CP.LiderInstalacion " +
+                               "from productos_x_clientes CP " +
+                               "where CP.IdCliente in (select p.IdCliente from productos_x_clientes p group by p.IdCliente having count(*) > 5) " +
+                               "group by CP.IdProducto, CP.IdCliente, CP.FechaVendido, CP.FechaInicioInstalacion, CP.LiderInstalacion";
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Clear();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                canalConexion.Open();
+                command.Connection = canalConexion;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                da.Fill(tabla);
+                return tabla;
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+
+        }
+        #endregion
+
         #region ultimo nro factura
         public static int ultimoNroFactura()
         {

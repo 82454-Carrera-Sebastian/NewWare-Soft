@@ -253,6 +253,12 @@
     <Compile Include="Forms\Reportes\ListadoProyectosActivos.Designer.cs">
       <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\Listado_Productos_X_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Listado_Productos_X_Clientes.designer.cs">
+      <DependentUpon>Listado_Productos_X_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ReporteListadoEtapas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,12 @@
     </Compile>
     <Compile Include="Forms\Reportes\ReporteListadoPersonal.Designer.cs">
       <DependentUpon>ReporteListadoPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteProyectosFinalizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteProyectosFinalizados.designer.cs">
+      <DependentUpon>ReporteProyectosFinalizados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
       <SubType>Form</SubType>
@@ -578,11 +590,17 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoProyectosActivos.resx">
       <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Listado_Productos_X_Clientes.resx">
+      <DependentUpon>Listado_Productos_X_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ReporteListadoEtapas.resx">
       <DependentUpon>ReporteListadoEtapas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ReporteListadoPersonal.resx">
       <DependentUpon>ReporteListadoPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ReporteProyectosFinalizados.resx">
+      <DependentUpon>ReporteProyectosFinalizados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
@@ -720,6 +738,7 @@
     <EmbeddedResource Include="ReporteBarrios.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
+    <EmbeddedResource Include="ReporteProyectosFinalizados.rdlc" />
     <EmbeddedResource Include="Reporte_Etapas.rdlc" />
     <EmbeddedResource Include="Reporte_Personal.rdlc" />
     <EmbeddedResource Include="reportePersonal.rdlc" />
@@ -728,6 +747,7 @@
     <EmbeddedResource Include="ReporteProyectoMes.rdlc" />
     <EmbeddedResource Include="Reporte_PersonalXetapa.rdlc" />
     <EmbeddedResource Include="Reporte_HerramientasXetapas.rdlc" />
+    <EmbeddedResource Include="Reporte_Productos_X_Clientes.rdlc" />
     <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
     <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
     <EmbeddedResource Include="Report_Clientes.rdlc" />

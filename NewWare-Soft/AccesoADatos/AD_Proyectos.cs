@@ -363,5 +363,45 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+
+        #region Proyectos Finalizados
+        public static DataTable proyectoFinalizados()
+        {
+
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                string query = "Select p.CodigoProyecto, p.IdCliente, p.Descripcion, p.FechaInicial, p.FechaFinProbable, p.FechaFinReal " +
+                               "from proyectos p " +
+                               "where p.FechaFinReal is not null " +
+                               "group by p.CodigoProyecto, p.IdCliente, p.Descripcion, p.FechaInicial, p.FechaFinProbable, p.FechaFinReal";
+
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Clear();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                canalConexion.Open();
+                command.Connection = canalConexion;
+
+                DataTable table = new DataTable();
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                dataAdapter.Fill(table);
+
+                return table;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+        }
+        #endregion
     }
 }
