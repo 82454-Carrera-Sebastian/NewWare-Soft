@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Bancos.cs" />
+    <Compile Include="AccesoADatos\AD_Barrio.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
     <Compile Include="AccesoADatos\AD_Facturas.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="AccesoADatos\AD_MotivosEgreso.cs" />
     <Compile Include="AccesoADatos\AD_PersonalXEtapa.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
+    <Compile Include="AccesoADatos\AD_ProductosXCliente.cs" />
     <Compile Include="AccesoADatos\AD_Proyectos.cs" />
     <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
@@ -161,6 +163,12 @@
     <Compile Include="Forms\Motivo Egreso\Alta_MotivoEgreso.Designer.cs">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoBarrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoBarrios.Designer.cs">
+      <DependentUpon>ListadoBarrios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,17 +199,83 @@
     <Compile Include="Forms\Reportes\ListadoFactura_Cliente.Designer.cs">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoFormasDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoFormasDePago.Designer.cs">
+      <DependentUpon>ListadoFormasDePago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoHerramientasXetapas.Designer.cs">
       <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonal.Designer.cs">
+      <DependentUpon>ListadoPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoPersonalXetapa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Reportes\ListadoPersonalXetapa.Designer.cs">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProductosXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProductosXCliente.Designer.cs">
+      <DependentUpon>ListadoProductosXCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProdXFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProdXFactura.Designer.cs">
+      <DependentUpon>ListadoProdXFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoEtapa.Designer.cs">
+      <DependentUpon>ListadoProyectoEtapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectoMes.Designer.cs">
+      <DependentUpon>ListadoProyectoMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoProyectosActivos.Designer.cs">
+      <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Listado_Productos_X_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Listado_Productos_X_Clientes.designer.cs">
+      <DependentUpon>Listado_Productos_X_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteListadoEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteListadoEtapas.Designer.cs">
+      <DependentUpon>ReporteListadoEtapas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteListadoPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteListadoPersonal.Designer.cs">
+      <DependentUpon>ReporteListadoPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteProyectosFinalizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ReporteProyectosFinalizados.designer.cs">
+      <DependentUpon>ReporteProyectosFinalizados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tarjetas\Alta_Tarjeta.cs">
       <SubType>Form</SubType>
@@ -495,8 +569,38 @@
     <EmbeddedResource Include="Forms\Reportes\ListadoHerramientasXetapas.resx">
       <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoPersonal.resx">
+      <DependentUpon>ListadoPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoPersonalXetapa.resx">
       <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProductosXCliente.resx">
+      <DependentUpon>ListadoProductosXCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProdXFactura.resx">
+      <DependentUpon>ListadoProdXFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectoEtapa.resx">
+      <DependentUpon>ListadoProyectoEtapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectoMes.resx">
+      <DependentUpon>ListadoProyectoMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoProyectosActivos.resx">
+      <DependentUpon>ListadoProyectosActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Listado_Productos_X_Clientes.resx">
+      <DependentUpon>Listado_Productos_X_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ReporteListadoEtapas.resx">
+      <DependentUpon>ReporteListadoEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ReporteListadoPersonal.resx">
+      <DependentUpon>ReporteListadoPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ReporteProyectosFinalizados.resx">
+      <DependentUpon>ReporteProyectosFinalizados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tarjetas\Alta_Tarjeta.resx">
       <DependentUpon>Alta_Tarjeta.cs</DependentUpon>
@@ -620,6 +724,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoDeFacturas.rdlc" />
     <EmbeddedResource Include="ListadoDeProductos.rdlc" />
+    <EmbeddedResource Include="ListadoFormasDePago.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -630,8 +735,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteBarrios.rdlc" />
+    <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
+    <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
+    <EmbeddedResource Include="ReporteProyectosFinalizados.rdlc" />
+    <EmbeddedResource Include="Reporte_Etapas.rdlc" />
+    <EmbeddedResource Include="Reporte_Personal.rdlc" />
+    <EmbeddedResource Include="reportePersonal.rdlc" />
+    <EmbeddedResource Include="ReporteProdXFact.rdlc" />
+    <EmbeddedResource Include="ReporteProyectoEtapa.rdlc" />
+    <EmbeddedResource Include="ReporteProyectoMes.rdlc" />
     <EmbeddedResource Include="Reporte_PersonalXetapa.rdlc" />
     <EmbeddedResource Include="Reporte_HerramientasXetapas.rdlc" />
+    <EmbeddedResource Include="Reporte_Productos_X_Clientes.rdlc" />
     <EmbeddedResource Include="Reporte_Todos_Proyectos.rdlc" />
     <EmbeddedResource Include="Reporte_Usuarios.rdlc" />
     <EmbeddedResource Include="Report_Clientes.rdlc" />
@@ -737,6 +853,8 @@
     <None Include="Resources\iconfinder_basket_1814090 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\iconfinder_1553045_blue_number_five_numbers_study_icon_128px.png" />
+    <None Include="Resources\iconfinder_984753_more_other_yet_detail_details_icon_128px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

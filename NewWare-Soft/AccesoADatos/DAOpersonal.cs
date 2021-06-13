@@ -400,5 +400,70 @@ namespace NewWare_Soft.AccesoADatos
 
             return res;
         }
+
+        public static DataTable ObtenerListadoPersonal()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM personal_x_etapas";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static DataTable ObtenerListadoPersonalpReporte()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM personal";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }

@@ -298,5 +298,178 @@ namespace NewWare_Soft.AccesoADatos
             }
         }
 
+        public static DataTable ObtenerProyectosXEtapa()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM etapas_X_proyecto";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerProyectosActivos()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM proyectos WHERE GETDATE() BETWEEN FechaInicial AND FechaFinReal";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerProyectoPorFechaInicio(DateTime fechaInicio)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+
+
+                string consulta = "Select * from proyectos WHERE FechaInicial >= Convert(datetime, '" + fechaInicio + "', 103)";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerProyectosPorPatrón(string patron)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM proyectos WHERE Descripcion LIKE '%" + patron + "%' ";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        #region Proyectos Finalizados
+        public static DataTable proyectoFinalizados()
+        {
+
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection canalConexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                string query = "Select p.CodigoProyecto, p.IdCliente, p.Descripcion, p.FechaInicial, p.FechaFinProbable, p.FechaFinReal " +
+                               "from proyectos p " +
+                               "where p.FechaFinReal is not null " +
+                               "group by p.CodigoProyecto, p.IdCliente, p.Descripcion, p.FechaInicial, p.FechaFinProbable, p.FechaFinReal";
+
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Clear();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                canalConexion.Open();
+                command.Connection = canalConexion;
+
+                DataTable table = new DataTable();
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                dataAdapter.Fill(table);
+
+                return table;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                canalConexion.Close();
+            }
+        }
+        #endregion
     }
 }
