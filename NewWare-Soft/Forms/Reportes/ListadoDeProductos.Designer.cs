@@ -36,9 +36,9 @@ namespace NewWare_Soft.Forms.Reportes
             this.label2 = new System.Windows.Forms.Label();
             this.txtDenominacion = new System.Windows.Forms.TextBox();
             this.grpOpcion = new System.Windows.Forms.GroupBox();
-            this.rdPrecio = new System.Windows.Forms.RadioButton();
-            this.rdDenominacion = new System.Windows.Forms.RadioButton();
             this.rdFecha = new System.Windows.Forms.RadioButton();
+            this.rdDenominacion = new System.Windows.Forms.RadioButton();
+            this.rdPrecio = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.MaskedTextBox();
             this.grpOpcion.SuspendLayout();
@@ -76,7 +76,7 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(692, 131);
+            this.btnActualizar.Location = new System.Drawing.Point(628, 131);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(96, 31);
             this.btnActualizar.TabIndex = 4;
@@ -115,17 +115,17 @@ namespace NewWare_Soft.Forms.Reportes
             this.grpOpcion.TabStop = false;
             this.grpOpcion.Text = "Buscar por:";
             // 
-            // rdPrecio
+            // rdFecha
             // 
-            this.rdPrecio.AutoSize = true;
-            this.rdPrecio.Location = new System.Drawing.Point(7, 20);
-            this.rdPrecio.Name = "rdPrecio";
-            this.rdPrecio.Size = new System.Drawing.Size(71, 24);
-            this.rdPrecio.TabIndex = 0;
-            this.rdPrecio.TabStop = true;
-            this.rdPrecio.Text = "Precio";
-            this.rdPrecio.UseVisualStyleBackColor = true;
-            this.rdPrecio.CheckedChanged += new System.EventHandler(this.rdPrecio_CheckedChanged);
+            this.rdFecha.AutoSize = true;
+            this.rdFecha.Location = new System.Drawing.Point(7, 80);
+            this.rdFecha.Name = "rdFecha";
+            this.rdFecha.Size = new System.Drawing.Size(159, 24);
+            this.rdFecha.TabIndex = 2;
+            this.rdFecha.TabStop = true;
+            this.rdFecha.Text = "Fecha Finalización";
+            this.rdFecha.UseVisualStyleBackColor = true;
+            this.rdFecha.CheckedChanged += new System.EventHandler(this.rdFecha_CheckedChanged);
             // 
             // rdDenominacion
             // 
@@ -139,17 +139,17 @@ namespace NewWare_Soft.Forms.Reportes
             this.rdDenominacion.UseVisualStyleBackColor = true;
             this.rdDenominacion.CheckedChanged += new System.EventHandler(this.rdDenominacion_CheckedChanged);
             // 
-            // rdFecha
+            // rdPrecio
             // 
-            this.rdFecha.AutoSize = true;
-            this.rdFecha.Location = new System.Drawing.Point(7, 80);
-            this.rdFecha.Name = "rdFecha";
-            this.rdFecha.Size = new System.Drawing.Size(159, 24);
-            this.rdFecha.TabIndex = 2;
-            this.rdFecha.TabStop = true;
-            this.rdFecha.Text = "Fecha Finalización";
-            this.rdFecha.UseVisualStyleBackColor = true;
-            this.rdFecha.CheckedChanged += new System.EventHandler(this.rdFecha_CheckedChanged);
+            this.rdPrecio.AutoSize = true;
+            this.rdPrecio.Location = new System.Drawing.Point(7, 20);
+            this.rdPrecio.Name = "rdPrecio";
+            this.rdPrecio.Size = new System.Drawing.Size(71, 24);
+            this.rdPrecio.TabIndex = 0;
+            this.rdPrecio.TabStop = true;
+            this.rdPrecio.Text = "Precio";
+            this.rdPrecio.UseVisualStyleBackColor = true;
+            this.rdPrecio.CheckedChanged += new System.EventHandler(this.rdPrecio_CheckedChanged);
             // 
             // label3
             // 
