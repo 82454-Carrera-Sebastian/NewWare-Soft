@@ -298,16 +298,17 @@ namespace NewWare_Soft.AccesoADatos
             }
         }
 
-        public static DataTable ObtenerProyectosXEtapa()
+        public static DataTable ObtenerProyectosXEtapa(int etapa)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM etapas_X_proyecto";
+                string consulta = "SELECT * FROM etapas_X_proyecto WHERE idEtapa = @etapa";
 
                 cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@etapa", etapa);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -330,7 +331,6 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
-
         public static DataTable ObtenerProyectosActivos()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -431,6 +431,41 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+
+        public static DataTable ObtenerProyectosXMes(int mes)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM proyectos WHERE MONTH(FechaInicial) = @mes";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@mes", mes);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
 
         #region Proyectos Finalizados
         public static DataTable proyectoFinalizados()
