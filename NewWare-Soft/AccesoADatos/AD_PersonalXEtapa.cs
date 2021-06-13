@@ -276,5 +276,147 @@ namespace NewWare_Soft.AccesoADatos
             }
 
         }
+
+        public static DataTable ObtenerProyectosTabPXE()
+        {
+            string cadenaConn = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConn);
+
+            try
+            {
+                bool res = false;
+                SqlCommand cmd = new SqlCommand();
+
+
+                string consulta = "SELECT distinct IdProyecto FROM personal_X_etapas";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerPersonalTabPXE()
+        {
+            string cadenaConn = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConn);
+
+            try
+            {
+                bool res = false;
+                SqlCommand cmd = new SqlCommand();
+
+
+                string consulta = "select * from personal_X_etapas";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerProyectoPersonalXetapa(int IdProyecto)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string query = "SELECT * FROM personal_x_etapas where IdProyecto=@idProy";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idProy", IdProyecto);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
+
+        public static DataTable ObtenerEmpleadoPersonalXetapa(int Legajo)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string query = "SELECT * FROM personal_x_etapas where Legajo=@legajo";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@legajo", Legajo);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
     }
 }
