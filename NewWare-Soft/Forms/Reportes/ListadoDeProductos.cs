@@ -24,11 +24,98 @@ namespace NewWare_Soft.Forms.Reportes
         }
         private void listadoProductos_Load(object sender, EventArgs e)
         {
-            DataTable tabla = AD_Productos.obtenerListadoProductos();
-            ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
-            listadoProductos.LocalReport.DataSources.Clear();
-            listadoProductos.LocalReport.DataSources.Add(ds);
-            listadoProductos.LocalReport.Refresh();
+            try
+            {
+                DataTable tabla = AD_Productos.obtenerListadoProductos();
+                ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
+                listadoProductos.LocalReport.DataSources.Clear();
+                listadoProductos.LocalReport.DataSources.Add(ds);
+                listadoProductos.RefreshReport();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error ak obtener listado de productos...");
+            }
+            
+        }
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (rdPrecio.Checked)
+            {
+                DataTable tabla = AD_Productos.obtenerProductosPrecioMayorA(int.Parse(txtPrecioMayor.Text));
+                ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
+                listadoProductos.Visible = false;
+                listadoProductos.LocalReport.DataSources.Clear();
+                listadoProductos.LocalReport.DataSources.Add(ds);
+                listadoProductos.RefreshReport();
+                listadoProductos.Visible = true;
+            }
+            else if (rdDenominacion.Checked)
+            {
+                DataTable tabla = AD_Productos.obtenerProductoConDenominacion(txtDenominacion.Text);
+                ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
+                listadoProductos.Visible = false;
+                listadoProductos.LocalReport.DataSources.Clear();
+                listadoProductos.LocalReport.DataSources.Add(ds);
+                listadoProductos.RefreshReport();
+                listadoProductos.Visible = true;
+            }
+            else if (rdFecha.Checked)
+            {
+                DataTable tabla = AD_Productos.obtenerProductoFechaMayor(txtFecha.Text);
+                ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
+                listadoProductos.Visible = false;
+                listadoProductos.LocalReport.DataSources.Clear();
+                listadoProductos.LocalReport.DataSources.Add(ds);
+                listadoProductos.RefreshReport();
+                listadoProductos.Visible = true;
+            }
+            else
+            {
+                DataTable tabla = AD_Productos.obtenerListadoProductos();
+                ReportDataSource ds = new ReportDataSource("DatosProductos", tabla);
+                listadoProductos.Visible = false;
+                listadoProductos.LocalReport.DataSources.Clear();
+                listadoProductos.LocalReport.DataSources.Add(ds);
+                listadoProductos.RefreshReport();
+                listadoProductos.Visible = true;
+            }
+        }
+        private void rdPrecio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdPrecio.Checked)
+            {
+                txtPrecioMayor.Enabled = true;
+            } else
+            {
+                txtPrecioMayor.Enabled = false;
+                txtPrecioMayor.Text = "";
+            }
+            
+        }
+        private void rdDenominacion_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdDenominacion.Checked)
+            {
+                txtDenominacion.Enabled = true;
+            }
+            else
+            {
+                txtDenominacion.Enabled = false;
+                txtDenominacion.Text = "";
+            }
+        }
+        private void rdFecha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdFecha.Checked)
+            {
+                txtFecha.Enabled = true;
+            }
+            else
+            {
+                txtFecha.Enabled = false;
+                txtFecha.Text = "";
+            }
         }
     }
 }

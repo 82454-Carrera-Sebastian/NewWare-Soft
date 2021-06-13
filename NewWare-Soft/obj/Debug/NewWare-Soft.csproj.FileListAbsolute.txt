@@ -1005,3 +1005,17 @@ C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-S
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\RdlCompile.cache
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\RdlCompile.compiled
 C:\Users\Tomas\OneDrive - frc.utn.edu.ar\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoClientes.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Factura_Cliente.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoHerramientasXetapas.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonal.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonalXetapa.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProductosXCliente.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProdXFactura.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoEtapa.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoMes.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectosActivos.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoEtapas.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoPersonal.resources
+D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources

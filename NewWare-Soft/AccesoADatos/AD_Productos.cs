@@ -53,6 +53,63 @@ namespace NewWare_Soft.AccesoADatos
             }
             return resultado;
         }
+        public static DataTable obtenerProductosPrecioMayorA(int precio)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM productos WHERE PrecioVenta >= @precio";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@precio", precio);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+        internal static DataTable obtenerProductoFechaMayor(string fecha)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM productos WHERE FechaFinalizacion >= @fecha";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@fecha", fecha);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
         public static Producto obtenerProducto(string denominacion)
         {
             Producto prod = new Producto();
@@ -90,6 +147,33 @@ namespace NewWare_Soft.AccesoADatos
                 connect.Close();
             }
             return prod;
+        }
+        public static DataTable obtenerProductoConDenominacion(string denominacion)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connect = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM productos WHERE Denominacion LIKE '%" + (denominacion) + "%'";
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                connect.Open();
+                cmd.Connection = connect;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connect.Close();
+            }
         }
         public static DataTable cargarGrilla()
         {
