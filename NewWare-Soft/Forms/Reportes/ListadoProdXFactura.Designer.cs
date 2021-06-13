@@ -77,6 +77,7 @@ namespace NewWare_Soft.Forms.Reportes
             this.btnListarPorFactura.Text = "Seleccionar";
             this.btnListarPorFactura.UseVisualStyleBackColor = true;
             this.btnListarPorFactura.Visible = false;
+            this.btnListarPorFactura.Click += new System.EventHandler(this.btnListarPorFactura_Click);
             // 
             // lblFactura
             // 
@@ -113,6 +114,7 @@ namespace NewWare_Soft.Forms.Reportes
             this.btnSeleccionarProducto.Text = "Seleccionar";
             this.btnSeleccionarProducto.UseVisualStyleBackColor = true;
             this.btnSeleccionarProducto.Visible = false;
+            this.btnSeleccionarProducto.Click += new System.EventHandler(this.btnSeleccionarProducto_Click);
             // 
             // lblUnProducto
             // 
