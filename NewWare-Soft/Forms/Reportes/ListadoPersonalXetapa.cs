@@ -21,12 +21,12 @@ namespace NewWare_Soft.Forms.Reportes
 
         private void ListadoPersonalXetapa_Load(object sender, EventArgs e)
         {
-
-            this.reportViewerPersonalXetapa.RefreshReport();
+            CargarTipoReporte();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
         {
+            
             DataTable tabla = new DataTable();
             tabla = AD_PersonalXEtapa.ObtenerListadoPersonalXetapa();
 
@@ -35,5 +35,46 @@ namespace NewWare_Soft.Forms.Reportes
             reportViewerPersonalXetapa.LocalReport.DataSources.Add(ds);
             reportViewerPersonalXetapa.LocalReport.Refresh();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (cmbTipoReporte.Text.Equals("Todos los reportes"))
+            {
+                DataTable tabla = new DataTable();
+                tabla = AD_PersonalXEtapa.ObtenerListadoPersonalXetapa();
+
+                ReportDataSource ds = new ReportDataSource("DataSet_PersonalXetapa", tabla);
+                reportViewerPersonalXetapa.LocalReport.DataSources.Clear();
+                reportViewerPersonalXetapa.LocalReport.DataSources.Add(ds);
+                reportViewerPersonalXetapa.LocalReport.Refresh();
+            }
+
+
+        }
+
+        private void button_Siguiente_Click(object sender, EventArgs e)
+        {
+            LimpiarIconos();
+        }
+        private void CargarTipoReporte()
+        {
+            DataTable tablaTipoReportes = new DataTable();
+            tablaTipoReportes.Columns.Add("Tipo de reporte");
+            tablaTipoReportes.Rows.Add("Todos los reportes");
+            tablaTipoReportes.Rows.Add("Buscar por Id de Etapa");
+            tablaTipoReportes.Rows.Add("Buscar por Id de Proyecto");
+            tablaTipoReportes.Rows.Add("Buscar por Id de Cargo");
+            tablaTipoReportes.Rows.Add("Buscar por rango de fecha");
+            tablaTipoReportes.Rows.Add("Buscar por Legajo");
+
+            cmbTipoReporte.DataSource = tablaTipoReportes;
+            cmbTipoReporte.DisplayMember = "Tipo de reporte";
+        }
+
+        private void LimpiarIconos()
+        {
+
+        }
+
     }
 }
