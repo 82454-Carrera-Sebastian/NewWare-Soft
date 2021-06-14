@@ -418,6 +418,18 @@ namespace NewWare_Soft.Forms
             ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
             ven.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ListadoPersonalXetapa ven = new ListadoPersonalXetapa();
+            ven.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
+            ven.ShowDialog();
+        }
     }   
 
 }
