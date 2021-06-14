@@ -31,33 +31,32 @@ namespace NewWare_Soft.Forms.Reportes
         {
             this.reportViewerPersonalXetapa = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox_tipoReporte = new System.Windows.Forms.GroupBox();
-            this.button_Siguiente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipoReporte = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblFormato = new System.Windows.Forms.Label();
             this.maskedTextBox_Hasta = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox_Desde = new System.Windows.Forms.MaskedTextBox();
-            this.label_Hasta = new System.Windows.Forms.Label();
-            this.label_Desde = new System.Windows.Forms.Label();
-            this.lblIdEtapa = new System.Windows.Forms.Label();
-            this.txtGeneral = new System.Windows.Forms.TextBox();
+            this.lblHasta = new System.Windows.Forms.Label();
+            this.lblDesde = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblLegajo = new System.Windows.Forms.Label();
+            this.cmbGeneral = new System.Windows.Forms.ComboBox();
             this.groupBox_tipoReporte.SuspendLayout();
             this.SuspendLayout();
             // 
             // reportViewerPersonalXetapa
             // 
             this.reportViewerPersonalXetapa.LocalReport.ReportEmbeddedResource = "NewWare_Soft.Reporte_PersonalXetapa.rdlc";
-            this.reportViewerPersonalXetapa.Location = new System.Drawing.Point(0, 137);
+            this.reportViewerPersonalXetapa.Location = new System.Drawing.Point(0, 109);
             this.reportViewerPersonalXetapa.Name = "reportViewerPersonalXetapa";
             this.reportViewerPersonalXetapa.ServerReport.BearerToken = null;
-            this.reportViewerPersonalXetapa.Size = new System.Drawing.Size(632, 292);
-            this.reportViewerPersonalXetapa.TabIndex = 0;
+            this.reportViewerPersonalXetapa.Size = new System.Drawing.Size(630, 320);
+            this.reportViewerPersonalXetapa.TabIndex = 6;
             this.reportViewerPersonalXetapa.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // groupBox_tipoReporte
             // 
-            this.groupBox_tipoReporte.Controls.Add(this.button_Siguiente);
             this.groupBox_tipoReporte.Controls.Add(this.label1);
             this.groupBox_tipoReporte.Controls.Add(this.cmbTipoReporte);
             this.groupBox_tipoReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,18 +68,6 @@ namespace NewWare_Soft.Forms.Reportes
             this.groupBox_tipoReporte.TabIndex = 12;
             this.groupBox_tipoReporte.TabStop = false;
             this.groupBox_tipoReporte.Text = "Eleccion Reporte";
-            // 
-            // button_Siguiente
-            // 
-            this.button_Siguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Siguiente.Location = new System.Drawing.Point(522, 14);
-            this.button_Siguiente.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Siguiente.Name = "button_Siguiente";
-            this.button_Siguiente.Size = new System.Drawing.Size(99, 27);
-            this.button_Siguiente.TabIndex = 7;
-            this.button_Siguiente.Text = "Siguiente";
-            this.button_Siguiente.UseVisualStyleBackColor = true;
-            this.button_Siguiente.Click += new System.EventHandler(this.button_Siguiente_Click);
             // 
             // label1
             // 
@@ -95,119 +82,130 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             // cmbTipoReporte
             // 
-            this.cmbTipoReporte.FormattingEnabled = true;
             this.cmbTipoReporte.Location = new System.Drawing.Point(132, 17);
             this.cmbTipoReporte.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipoReporte.Name = "cmbTipoReporte";
             this.cmbTipoReporte.Size = new System.Drawing.Size(342, 24);
-            this.cmbTipoReporte.TabIndex = 12;
+            this.cmbTipoReporte.TabIndex = 1;
+            this.cmbTipoReporte.SelectedIndexChanged += new System.EventHandler(this.cmbTipoReporte_SelectedIndexChanged);
             // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(525, 97);
+            this.btnBuscar.Location = new System.Drawing.Point(450, 77);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(96, 27);
-            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label2
+            // lblFormato
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(283, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 17);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Formato: DD/MM/AAAA";
-            this.label2.Visible = false;
+            this.lblFormato.AutoSize = true;
+            this.lblFormato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormato.Location = new System.Drawing.Point(234, 89);
+            this.lblFormato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFormato.Name = "lblFormato";
+            this.lblFormato.Size = new System.Drawing.Size(154, 17);
+            this.lblFormato.TabIndex = 30;
+            this.lblFormato.Text = "Formato: DD/MM/AAAA";
+            this.lblFormato.Visible = false;
             // 
             // maskedTextBox_Hasta
             // 
-            this.maskedTextBox_Hasta.Enabled = false;
             this.maskedTextBox_Hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox_Hasta.Location = new System.Drawing.Point(405, 80);
+            this.maskedTextBox_Hasta.Location = new System.Drawing.Point(356, 57);
             this.maskedTextBox_Hasta.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox_Hasta.Mask = "00/00/0000";
             this.maskedTextBox_Hasta.Name = "maskedTextBox_Hasta";
             this.maskedTextBox_Hasta.Size = new System.Drawing.Size(69, 23);
-            this.maskedTextBox_Hasta.TabIndex = 29;
+            this.maskedTextBox_Hasta.TabIndex = 3;
             this.maskedTextBox_Hasta.ValidatingType = typeof(System.DateTime);
             this.maskedTextBox_Hasta.Visible = false;
             // 
             // maskedTextBox_Desde
             // 
-            this.maskedTextBox_Desde.Enabled = false;
             this.maskedTextBox_Desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox_Desde.Location = new System.Drawing.Point(275, 80);
+            this.maskedTextBox_Desde.Location = new System.Drawing.Point(226, 57);
             this.maskedTextBox_Desde.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox_Desde.Mask = "00/00/0000";
             this.maskedTextBox_Desde.Name = "maskedTextBox_Desde";
             this.maskedTextBox_Desde.Size = new System.Drawing.Size(71, 23);
-            this.maskedTextBox_Desde.TabIndex = 28;
+            this.maskedTextBox_Desde.TabIndex = 2;
             this.maskedTextBox_Desde.ValidatingType = typeof(System.DateTime);
             this.maskedTextBox_Desde.Visible = false;
             // 
-            // label_Hasta
+            // lblHasta
             // 
-            this.label_Hasta.AutoSize = true;
-            this.label_Hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Hasta.Location = new System.Drawing.Point(360, 83);
-            this.label_Hasta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_Hasta.Name = "label_Hasta";
-            this.label_Hasta.Size = new System.Drawing.Size(45, 17);
-            this.label_Hasta.TabIndex = 27;
-            this.label_Hasta.Text = "Hasta";
-            this.label_Hasta.Visible = false;
+            this.lblHasta.AutoSize = true;
+            this.lblHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHasta.Location = new System.Drawing.Point(311, 60);
+            this.lblHasta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHasta.Name = "lblHasta";
+            this.lblHasta.Size = new System.Drawing.Size(45, 17);
+            this.lblHasta.TabIndex = 27;
+            this.lblHasta.Text = "Hasta";
+            this.lblHasta.Visible = false;
             // 
-            // label_Desde
+            // lblDesde
             // 
-            this.label_Desde.AutoSize = true;
-            this.label_Desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Desde.Location = new System.Drawing.Point(225, 83);
-            this.label_Desde.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_Desde.Name = "label_Desde";
-            this.label_Desde.Size = new System.Drawing.Size(49, 17);
-            this.label_Desde.TabIndex = 25;
-            this.label_Desde.Text = "Desde";
-            this.label_Desde.Visible = false;
+            this.lblDesde.AutoSize = true;
+            this.lblDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesde.Location = new System.Drawing.Point(176, 60);
+            this.lblDesde.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesde.Name = "lblDesde";
+            this.lblDesde.Size = new System.Drawing.Size(49, 17);
+            this.lblDesde.TabIndex = 25;
+            this.lblDesde.Text = "Desde";
+            this.lblDesde.Visible = false;
             // 
-            // lblIdEtapa
+            // lblId
             // 
-            this.lblIdEtapa.AutoSize = true;
-            this.lblIdEtapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdEtapa.Location = new System.Drawing.Point(107, 60);
-            this.lblIdEtapa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIdEtapa.Name = "lblIdEtapa";
-            this.lblIdEtapa.Size = new System.Drawing.Size(19, 17);
-            this.lblIdEtapa.TabIndex = 23;
-            this.lblIdEtapa.Text = "Id";
-            this.lblIdEtapa.Visible = false;
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(337, 86);
+            this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(19, 17);
+            this.lblId.TabIndex = 23;
+            this.lblId.Text = "Id";
+            this.lblId.Visible = false;
             // 
-            // txtGeneral
+            // lblLegajo
             // 
-            this.txtGeneral.Location = new System.Drawing.Point(132, 59);
-            this.txtGeneral.Name = "txtGeneral";
-            this.txtGeneral.Size = new System.Drawing.Size(68, 20);
-            this.txtGeneral.TabIndex = 31;
-            this.txtGeneral.Visible = false;
+            this.lblLegajo.AutoSize = true;
+            this.lblLegajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.Location = new System.Drawing.Point(282, 80);
+            this.lblLegajo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(51, 17);
+            this.lblLegajo.TabIndex = 32;
+            this.lblLegajo.Text = "Legajo";
+            this.lblLegajo.Visible = false;
+            // 
+            // cmbGeneral
+            // 
+            this.cmbGeneral.Location = new System.Drawing.Point(340, 79);
+            this.cmbGeneral.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGeneral.Name = "cmbGeneral";
+            this.cmbGeneral.Size = new System.Drawing.Size(106, 21);
+            this.cmbGeneral.TabIndex = 4;
             // 
             // ListadoPersonalXetapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 425);
-            this.Controls.Add(this.txtGeneral);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(629, 426);
+            this.Controls.Add(this.cmbGeneral);
+            this.Controls.Add(this.lblLegajo);
+            this.Controls.Add(this.lblFormato);
             this.Controls.Add(this.maskedTextBox_Hasta);
             this.Controls.Add(this.maskedTextBox_Desde);
-            this.Controls.Add(this.label_Hasta);
-            this.Controls.Add(this.label_Desde);
-            this.Controls.Add(this.lblIdEtapa);
+            this.Controls.Add(this.lblHasta);
+            this.Controls.Add(this.lblDesde);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.groupBox_tipoReporte);
             this.Controls.Add(this.reportViewerPersonalXetapa);
@@ -227,14 +225,14 @@ namespace NewWare_Soft.Forms.Reportes
         private System.Windows.Forms.GroupBox groupBox_tipoReporte;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblFormato;
         private System.Windows.Forms.MaskedTextBox maskedTextBox_Hasta;
         private System.Windows.Forms.MaskedTextBox maskedTextBox_Desde;
-        private System.Windows.Forms.Label label_Hasta;
-        private System.Windows.Forms.Label label_Desde;
-        private System.Windows.Forms.Label lblIdEtapa;
-        private System.Windows.Forms.Button button_Siguiente;
-        private System.Windows.Forms.TextBox txtGeneral;
+        private System.Windows.Forms.Label lblHasta;
+        private System.Windows.Forms.Label lblDesde;
+        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.ComboBox cmbTipoReporte;
+        private System.Windows.Forms.Label lblLegajo;
+        private System.Windows.Forms.ComboBox cmbGeneral;
     }
 }

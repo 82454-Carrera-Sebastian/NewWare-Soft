@@ -926,3 +926,13 @@ C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\RdlCompile.compiled
 C:\APP-PAV-1\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProductosXCliente.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProdXFactura.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoEtapa.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoMes.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectosActivos.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoEtapas.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources

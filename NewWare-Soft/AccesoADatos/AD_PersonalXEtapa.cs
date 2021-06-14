@@ -13,7 +13,7 @@ namespace NewWare_Soft.AccesoADatos
     public class AD_PersonalXEtapa
     {
        
-        public static DataTable ObtenerPersonalXLegajo(int legajo)
+        public static DataTable ObtenerPersonalXLegajo(int legajo)   
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -56,6 +56,37 @@ namespace NewWare_Soft.AccesoADatos
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@legajo", legajo);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable BuscarPersonalXetapa_porInt(int id, string nombre)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM personal_X_etapas WHERE " + nombre + " LIKE @id";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -276,5 +307,37 @@ namespace NewWare_Soft.AccesoADatos
             }
 
         }
+        public static DataTable BuscarPxPEntreFechas(string desde, string hasta)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string query = "select * from personal_x_etapas where FechaInicioParticipacion >= convert(datetime,'" + desde + "' ,103) and FechaFinParticipacion <= CONVERT(datetime,'" + hasta + "', 103)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@fechaDesde", desde);
+                cmd.Parameters.AddWithValue("@fechaHasta", hasta);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
     }
 }
