@@ -178,6 +178,5 @@ namespace NewWare_Soft.Forms.Reportes
 
             HabilitarRB();
         }
-
     }
 }
