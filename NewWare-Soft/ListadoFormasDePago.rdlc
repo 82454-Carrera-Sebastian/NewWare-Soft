@@ -12,7 +12,7 @@
                 <Value>Listado Formas de Pago</Value>
                 <Style>
                   <FontSize>20pt</FontSize>
-                  <Color>Blue</Color>
+                  <Color>DodgerBlue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -26,7 +26,7 @@
                 <Value />
                 <Style>
                   <FontSize>20pt</FontSize>
-                  <Color>Blue</Color>
+                  <Color>DodgerBlue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -84,9 +84,8 @@
                             <TextRun>
                               <Value>idFormaPago</Value>
                               <Style>
-                                <FontStyle>Normal</FontStyle>
                                 <FontSize>12pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
+                                <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -101,7 +100,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Plum</BackgroundColor>
+                        <BackgroundColor>DodgerBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -121,9 +120,8 @@
                             <TextRun>
                               <Value>NombreFormaPago</Value>
                               <Style>
-                                <FontStyle>Normal</FontStyle>
                                 <FontSize>12pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
+                                <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -138,7 +136,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Plum</BackgroundColor>
+                        <BackgroundColor>DodgerBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -332,7 +330,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>BD3K7G07_2021DataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\BD3K7G07_2021DataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\BD3K7G07_2021DataSet.xsd</rd:SchemaPath>
         <rd:TableName>tipos_formas_pago</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
