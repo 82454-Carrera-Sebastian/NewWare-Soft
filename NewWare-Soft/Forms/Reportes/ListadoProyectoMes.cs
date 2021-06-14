@@ -44,10 +44,26 @@ namespace NewWare_Soft.Forms.Reportes
 
         private void btn_SeleccPatron_Click(object sender, EventArgs e)
         {
-            int mes = (int)meses.SelectedIndex + 1;
-            DataTable tabla = new DataTable();
-            tabla = AD_Proyectos.ObtenerProyectosXMes(mes);
-            generarReporte(tabla);
+            if (rbMes.Checked)
+            {
+                int mes = (int)meses.SelectedIndex + 1;
+                DataTable tabla = new DataTable();
+                tabla = AD_Proyectos.ObtenerProyectosXMes(mes);
+                generarReporte(tabla);
+            }
+
+            if (rbCli.Checked)
+            {
+                int cli = int.Parse(txtCli.Text);
+                int mes = (int)meses.SelectedIndex + 1;
+                DataTable tabla = new DataTable();
+                tabla = AD_Proyectos.ObtenerProyectosXMesCli(mes,cli);
+                generarReporte(tabla);
+            }
+            
+            txtCli.Enabled = false;
+            meses.Enabled = false;
+            btn_SeleccPatron.Enabled = false;
         }
 
         private void generarReporte(DataTable tabla)
@@ -59,5 +75,19 @@ namespace NewWare_Soft.Forms.Reportes
             reportViewer1.Visible = true;
         }
 
+        private void btConf_Click(object sender, EventArgs e)
+        {
+            if (rbCli.Checked)
+            {
+                txtCli.Enabled = true;
+                meses.Enabled = true;
+                btn_SeleccPatron.Enabled = true;
+            }
+            if (rbMes.Checked)
+            {
+                meses.Enabled = true;
+                btn_SeleccPatron.Enabled = true;
+            }
+        }
     }
 }

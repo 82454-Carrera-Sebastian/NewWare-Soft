@@ -86,18 +86,49 @@ namespace NewWare_Soft.Forms.Reportes
             reportViewer1.Visible = true;
         }
 
-        private void btn_SeleccPatron_Click(object sender, EventArgs e)
-        {
-            int etapa = (int)cmbEtapas.SelectedValue;
-            DataTable tabla = new DataTable();
-            tabla = AD_Proyectos.ObtenerProyectosXEtapa(etapa);
-            generarReporte(tabla);
-            btn_SeleccPatron.Enabled = false;
-        }
-
         private void cmbEtapas_SelectedIndexChanged(object sender, EventArgs e)
         {
             btn_SeleccPatron.Enabled = true;
+        }
+
+        private void btn_SeleccPatron_Click(object sender, EventArgs e)
+        {
+            if (rbMes.Checked)
+            {
+                int etapa = (int)cmbEtapas.SelectedValue;
+                DataTable tabla = new DataTable();
+                tabla = AD_Proyectos.ObtenerProyectosXEtapa(etapa);
+                generarReporte(tabla);
+                btn_SeleccPatron.Enabled = false;
+            }
+
+            if (rbCli.Checked)
+            {
+                DateTime cli = DateTime.Parse((txtFecha.Text));
+                int mes = (int)cmbEtapas.SelectedIndex + 1;
+                DataTable tabla = new DataTable();
+                tabla = AD_Proyectos.ObtenerProyectosXEtapaFecha(mes, cli);
+                generarReporte(tabla);
+            }
+
+            txtFecha.Enabled = false;
+            cmbEtapas.Enabled = false;
+            btn_SeleccPatron.Enabled = false;
+        }
+
+        private void btConf_Click_1(object sender, EventArgs e)
+        {
+            if (rbCli.Checked)
+            {
+                txtFecha.Enabled = true;
+                cmbEtapas.Enabled = true;
+                btn_SeleccPatron.Enabled = true;
+            }
+            if (rbMes.Checked)
+            {
+                cmbEtapas.Enabled = true;
+                btn_SeleccPatron.Enabled = true;
+            }
         }
     }
 }
