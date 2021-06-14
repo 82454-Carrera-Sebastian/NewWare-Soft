@@ -134,22 +134,30 @@ namespace NewWare_Soft.Forms.Reportes
         {
             try
             {
-                object seleccionCombo = new object();
-                seleccionCombo = (int)txt_ciudad.SelectedValue;
-                DataTable tabla = new DataTable();
-                tabla = buscarTablas();
-                if (tabla == null || tabla.Rows.Count == 0)
-                {
-                    MessageBox.Show("El reporte esta vacio, intentelo de nuevo");
+                if (txt_ciudad.Text.Equals(""))
+                { 
+                    MessageBox.Show("Debe seleccionar al menos una ciudad");
+                    txt_ciudad.Focus();
                 }
                 else
                 {
-                    armarReporte(tabla);
-                    lbl_Ciudad.Visible = false;
-                    txt_ciudad.Visible = false;
-                    btnGenerarReporte.Visible = false;
-                    txt_ciudad.Enabled = false;
-                    txt_ciudad.Visible = false;
+                    object seleccionCombo = new object();
+                    seleccionCombo = (int)txt_ciudad.SelectedValue;
+                    DataTable tabla = new DataTable();
+                    tabla = buscarTablas();
+                    if (tabla == null || tabla.Rows.Count == 0)
+                    {
+                        MessageBox.Show("El reporte esta vacio, intentelo de nuevo");
+                    }
+                    else
+                    {
+                        armarReporte(tabla);
+                        lbl_Ciudad.Visible = false;
+                        txt_ciudad.Visible = false;
+                        btnGenerarReporte.Visible = false;
+                        txt_ciudad.Enabled = false;
+                        txt_ciudad.Visible = false;
+                    }
                 }
 
             }

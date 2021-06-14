@@ -1065,3 +1065,4 @@ E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWar
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoFormasDePago.resources
+E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoEmpleadoXproyecto.resources
