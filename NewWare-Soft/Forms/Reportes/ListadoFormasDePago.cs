@@ -80,7 +80,7 @@ namespace NewWare_Soft.Forms.Reportes
         }
         private void armarReporte(DataTable tabla)
         {
-            ReportDataSource ds = new ReportDataSource("DatosFormasDePago", tabla);
+            ReportDataSource ds = new ReportDataSource("DatosFormaDePago", tabla);
             report_FormasdePago.LocalReport.DataSources.Clear();
             report_FormasdePago.LocalReport.DataSources.Add(ds);
             report_FormasdePago.RefreshReport();
@@ -97,7 +97,9 @@ namespace NewWare_Soft.Forms.Reportes
                     tabla = buscarTablas();
                     if (tabla == null || tabla.Rows.Count == 0)
                     {
-                        MessageBox.Show("El reporte esta vacio, intentelo de nuevo");
+                        MessageBox.Show("Esa forma de pago no existe, ingrese otra");
+                        txtNombre.Focus();
+
                     }
                     else
                     {

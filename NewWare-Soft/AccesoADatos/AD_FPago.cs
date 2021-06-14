@@ -273,7 +273,7 @@ namespace NewWare_Soft.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string query = "SELECT * FROM tipos_formas_pago WHERE NombreFormaPago = " + nombre + " ";
+                string query = "SELECT * FROM tipos_formas_pago WHERE NombreFormaPago = '" + nombre + "'";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@NombreFormaPago", nombre);
                 cmd.CommandType = CommandType.Text;
