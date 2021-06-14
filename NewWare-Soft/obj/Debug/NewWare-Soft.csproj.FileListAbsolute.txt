@@ -744,7 +744,6 @@ C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\ru\Microso
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
-C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonalXetapa.resources
 C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\david.LAPTOP-02B98GBJ\Desktop\FRC\3er nivel\PAV I\NewWare-Soft\NewWare-Soft\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -1019,3 +1018,14 @@ D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_
 D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoEtapas.resources
 D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoPersonal.resources
 D:\Usuarios\Alejo\Documentos\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoEmpleadoXproyecto.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProductosXCliente.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProdXFactura.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoEtapa.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoMes.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectosActivos.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoEtapas.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoPersonal.resources
+C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources

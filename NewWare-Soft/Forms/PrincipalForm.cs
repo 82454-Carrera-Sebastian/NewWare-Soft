@@ -385,7 +385,7 @@ namespace NewWare_Soft.Forms
 
         private void porEtapaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListadoPersonalXetapa ventana = new ListadoPersonalXetapa();
+            ListadoEmpleadoXproyecto ventana = new ListadoEmpleadoXproyecto();
             ventana.ShowDialog();
         }
 

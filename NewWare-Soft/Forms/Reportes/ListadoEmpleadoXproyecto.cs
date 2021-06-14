@@ -12,9 +12,9 @@ using Microsoft.Reporting.WinForms;
 
 namespace NewWare_Soft.Forms.Reportes
 {
-    public partial class ListadoPersonalXetapa : Form
+    public partial class ListadoEmpleadoXproyecto : Form
     {
-        public ListadoPersonalXetapa()
+        public ListadoEmpleadoXproyecto()
         {
             InitializeComponent();
         }

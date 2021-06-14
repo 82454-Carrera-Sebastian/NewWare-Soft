@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms.Reportes
 {
-    partial class ListadoPersonalXetapa
+    partial class ListadoEmpleadoXproyecto
     {
         /// <summary>
         /// Required designer variable.
