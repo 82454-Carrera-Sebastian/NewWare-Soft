@@ -379,13 +379,13 @@ namespace NewWare_Soft.Forms
 
         private void porProyectoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListadoPersonal ventana = new ListadoPersonal();
+            ListadoEmpleadoXproyecto ventana = new ListadoEmpleadoXproyecto();
             ventana.ShowDialog();
         }
 
         private void porEtapaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListadoEmpleadoXproyecto ventana = new ListadoEmpleadoXproyecto();
+            ListadoPersonalXetapa ventana = new ListadoPersonalXetapa();
             ventana.ShowDialog();
         }
 
@@ -419,19 +419,8 @@ namespace NewWare_Soft.Forms
             ven.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ListadoPersonalXetapa ven = new ListadoPersonalXetapa();
-            ven.ShowDialog();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
-            ven.ShowDialog();
-        }
-    }   
-
+    }
 }
 
 

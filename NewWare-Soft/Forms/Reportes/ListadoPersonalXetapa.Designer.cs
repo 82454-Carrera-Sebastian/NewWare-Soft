@@ -105,7 +105,7 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             this.lblFormato.AutoSize = true;
             this.lblFormato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFormato.Location = new System.Drawing.Point(234, 89);
+            this.lblFormato.Location = new System.Drawing.Point(249, 89);
             this.lblFormato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFormato.Name = "lblFormato";
             this.lblFormato.Size = new System.Drawing.Size(154, 17);
@@ -165,7 +165,7 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(337, 86);
+            this.lblId.Location = new System.Drawing.Point(317, 80);
             this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(19, 17);
@@ -210,6 +210,7 @@ namespace NewWare_Soft.Forms.Reportes
             this.Controls.Add(this.groupBox_tipoReporte);
             this.Controls.Add(this.reportViewerPersonalXetapa);
             this.Name = "ListadoPersonalXetapa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListadoPersonalXetapa";
             this.Load += new System.EventHandler(this.ListadoPersonalXetapa_Load);
             this.groupBox_tipoReporte.ResumeLayout(false);

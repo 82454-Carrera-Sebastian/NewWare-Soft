@@ -224,6 +224,12 @@
     <Compile Include="Forms\Reportes\ListadoEmpleadoXproyecto.Designer.cs">
       <DependentUpon>ListadoEmpleadoXproyecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonalXetapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\ListadoPersonalXetapa.Designer.cs">
+      <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reportes\ListadoProductosXCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -575,6 +581,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoEmpleadoXproyecto.resx">
       <DependentUpon>ListadoEmpleadoXproyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoPersonalXetapa.resx">
+      <DependentUpon>ListadoPersonalXetapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoProductosXCliente.resx">
       <DependentUpon>ListadoProductosXCliente.cs</DependentUpon>
