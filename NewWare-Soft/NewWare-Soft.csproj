@@ -558,6 +558,9 @@
     <EmbeddedResource Include="Forms\Motivo Egreso\Alta_MotivoEgreso.resx">
       <DependentUpon>Alta_MotivoEgreso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoBarrios.resx">
+      <DependentUpon>ListadoBarrios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoClientes.resx">
       <DependentUpon>ListadoClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -572,6 +575,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoFactura_Cliente.resx">
       <DependentUpon>ListadoFactura_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\ListadoFormasDePago.resx">
+      <DependentUpon>ListadoFormasDePago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reportes\ListadoHerramientasXetapas.resx">
       <DependentUpon>ListadoHerramientasXetapas.cs</DependentUpon>

@@ -11,10 +11,10 @@
               <TextRun>
                 <Value>LISTADO DE BARRIOS</Value>
                 <Style>
-                  <FontStyle>Italic</FontStyle>
-                  <FontSize>15pt</FontSize>
-                  <FontWeight>SemiBold</FontWeight>
-                  <Color>Blue</Color>
+                  <FontStyle>Normal</FontStyle>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>DodgerBlue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -77,8 +77,7 @@
                             <TextRun>
                               <Value>IdBarrio</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
+                                <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -93,7 +92,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Plum</BackgroundColor>
+                        <BackgroundColor>DodgerBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -113,8 +112,7 @@
                             <TextRun>
                               <Value>NombreBarrio</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
+                                <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -129,7 +127,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Plum</BackgroundColor>
+                        <BackgroundColor>DodgerBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -149,8 +147,7 @@
                             <TextRun>
                               <Value>IdCiudad</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
+                                <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -165,7 +162,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>Plum</BackgroundColor>
+                        <BackgroundColor>DodgerBlue</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -209,7 +206,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -242,7 +238,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -275,7 +270,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -312,7 +306,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.125in</Height>
+    <Height>2.01042in</Height>
     <Style />
   </Body>
   <Width>6.5in</Width>
