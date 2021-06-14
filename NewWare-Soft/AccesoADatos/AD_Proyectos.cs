@@ -465,6 +465,75 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+        public static DataTable ObtenerProyectoActivoXFecha(DateTime fechaInicio)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+
+
+                string consulta = "SELECT * FROM proyectos WHERE GETDATE() BETWEEN FechaInicial AND FechaFinReal AND FechaInicial >= Convert(datetime, '" + fechaInicio + "', 103)";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerProyectosXID(int id)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM proyectos WHERE IdCliente = @id AND GETDATE() BETWEEN FechaInicial AND FechaFinReal";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
 
 
         #region Proyectos Finalizados
@@ -507,4 +576,5 @@ namespace NewWare_Soft.AccesoADatos
         }
         #endregion
     }
+
 }
