@@ -59,7 +59,7 @@ namespace NewWare_Soft.Forms.Reportes
             this.groupBox1.Controls.Add(this.rdb_reportenormal);
             this.groupBox1.Controls.Add(this.rdb_ordenAlfabetico);
             this.groupBox1.Controls.Add(this.rdbNombre);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(402, 113);
@@ -70,9 +70,10 @@ namespace NewWare_Soft.Forms.Reportes
             // rdb_reportenormal
             // 
             this.rdb_reportenormal.AutoSize = true;
-            this.rdb_reportenormal.Location = new System.Drawing.Point(50, 85);
+            this.rdb_reportenormal.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.rdb_reportenormal.Location = new System.Drawing.Point(50, 82);
             this.rdb_reportenormal.Name = "rdb_reportenormal";
-            this.rdb_reportenormal.Size = new System.Drawing.Size(197, 24);
+            this.rdb_reportenormal.Size = new System.Drawing.Size(199, 25);
             this.rdb_reportenormal.TabIndex = 2;
             this.rdb_reportenormal.TabStop = true;
             this.rdb_reportenormal.Text = "Mostrar Reporte Normal";
@@ -81,9 +82,10 @@ namespace NewWare_Soft.Forms.Reportes
             // rdb_ordenAlfabetico
             // 
             this.rdb_ordenAlfabetico.AutoSize = true;
-            this.rdb_ordenAlfabetico.Location = new System.Drawing.Point(50, 55);
+            this.rdb_ordenAlfabetico.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.rdb_ordenAlfabetico.Location = new System.Drawing.Point(50, 54);
             this.rdb_ordenAlfabetico.Name = "rdb_ordenAlfabetico";
-            this.rdb_ordenAlfabetico.Size = new System.Drawing.Size(336, 24);
+            this.rdb_ordenAlfabetico.Size = new System.Drawing.Size(333, 25);
             this.rdb_ordenAlfabetico.TabIndex = 1;
             this.rdb_ordenAlfabetico.TabStop = true;
             this.rdb_ordenAlfabetico.Text = "Mostrar formas de pago en orden alfabetico";
@@ -92,9 +94,10 @@ namespace NewWare_Soft.Forms.Reportes
             // rdbNombre
             // 
             this.rdbNombre.AutoSize = true;
+            this.rdbNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNombre.Location = new System.Drawing.Point(50, 25);
             this.rdbNombre.Name = "rdbNombre";
-            this.rdbNombre.Size = new System.Drawing.Size(259, 24);
+            this.rdbNombre.Size = new System.Drawing.Size(262, 25);
             this.rdbNombre.TabIndex = 0;
             this.rdbNombre.TabStop = true;
             this.rdbNombre.Text = "Filtrar forma de pago por nombre";
@@ -154,7 +157,7 @@ namespace NewWare_Soft.Forms.Reportes
             // 
             // lblNormal
             // 
-            this.lblNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNormal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNormal.Location = new System.Drawing.Point(429, 20);
             this.lblNormal.Name = "lblNormal";
             this.lblNormal.Size = new System.Drawing.Size(348, 71);
