@@ -418,8 +418,6 @@ namespace NewWare_Soft.Forms
             ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
             ven.ShowDialog();
         }
-
-
     }
 }
 
