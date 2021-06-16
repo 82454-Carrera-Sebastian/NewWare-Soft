@@ -585,7 +585,7 @@ namespace NewWare_Soft.Forms
             // 
             this.altaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_add_134224;
             this.altaToolStripMenuItem12.Name = "altaToolStripMenuItem12";
-            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.altaToolStripMenuItem12.Text = "Alta";
             this.altaToolStripMenuItem12.Click += new System.EventHandler(this.altaToolStripMenuItem12_Click);
             // 
@@ -593,7 +593,7 @@ namespace NewWare_Soft.Forms
             // 
             this.bajaToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_minus_circle_2561243;
             this.bajaToolStripMenuItem12.Name = "bajaToolStripMenuItem12";
-            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.bajaToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.bajaToolStripMenuItem12.Text = "Baja";
             this.bajaToolStripMenuItem12.Click += new System.EventHandler(this.bajaToolStripMenuItem12_Click);
             // 
@@ -601,7 +601,7 @@ namespace NewWare_Soft.Forms
             // 
             this.modificacionToolStripMenuItem12.Image = global::NewWare_Soft.Properties.Resources.iconfinder_edit_2561427;
             this.modificacionToolStripMenuItem12.Name = "modificacionToolStripMenuItem12";
-            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(144, 22);
+            this.modificacionToolStripMenuItem12.Size = new System.Drawing.Size(188, 30);
             this.modificacionToolStripMenuItem12.Text = "Modificacion";
             this.modificacionToolStripMenuItem12.Click += new System.EventHandler(this.modificacionToolStripMenuItem12_Click);
             // 
@@ -883,7 +883,7 @@ namespace NewWare_Soft.Forms
             // 
             this.usuarioToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Picture1_3289576;
             this.usuarioToolStripMenuItem1.Name = "usuarioToolStripMenuItem1";
-            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.usuarioToolStripMenuItem1.Text = "Usuario";
             this.usuarioToolStripMenuItem1.Click += new System.EventHandler(this.usuarioToolStripMenuItem1_Click);
             // 
@@ -891,7 +891,7 @@ namespace NewWare_Soft.Forms
             // 
             this.etapasToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.Webp_net_resizeimage;
             this.etapasToolStripMenuItem1.Name = "etapasToolStripMenuItem1";
-            this.etapasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.etapasToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.etapasToolStripMenuItem1.Text = "Etapas ";
             this.etapasToolStripMenuItem1.Click += new System.EventHandler(this.etapasToolStripMenuItem1_Click);
             // 
@@ -899,7 +899,7 @@ namespace NewWare_Soft.Forms
             // 
             this.barriosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_house_home_main_menu_start_building_3643769;
             this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
-            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.barriosToolStripMenuItem.Text = "Barrios";
             this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
             // 
@@ -907,7 +907,7 @@ namespace NewWare_Soft.Forms
             // 
             this.formasDePagoToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_07_Wallet_290143;
             this.formasDePagoToolStripMenuItem1.Name = "formasDePagoToolStripMenuItem1";
-            this.formasDePagoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.formasDePagoToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.formasDePagoToolStripMenuItem1.Text = "Formas de pago";
             this.formasDePagoToolStripMenuItem1.Click += new System.EventHandler(this.formasDePagoToolStripMenuItem1_Click);
             // 
@@ -915,7 +915,7 @@ namespace NewWare_Soft.Forms
             // 
             this.herramPorEtapaToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Wrench_3605320;
             this.herramPorEtapaToolStripMenuItem.Name = "herramPorEtapaToolStripMenuItem";
-            this.herramPorEtapaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.herramPorEtapaToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.herramPorEtapaToolStripMenuItem.Text = "Herram. por etapa";
             this.herramPorEtapaToolStripMenuItem.Click += new System.EventHandler(this.herramPorEtapaToolStripMenuItem_Click);
             // 

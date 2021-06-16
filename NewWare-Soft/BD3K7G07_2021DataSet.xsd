@@ -1756,6 +1756,14 @@ SELECT IdUsuario, NombreUsuario, Password FROM usuarios WHERE (IdUsuario = @IdUs
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="estadistica" msprop:Generator_TableClassName="estadisticaDataTable" msprop:Generator_TableVarName="tableestadistica" msprop:Generator_RowChangedName="estadisticaRowChanged" msprop:Generator_TablePropName="estadistica" msprop:Generator_RowDeletingName="estadisticaRowDeleting" msprop:Generator_RowChangingName="estadisticaRowChanging" msprop:Generator_RowEvHandlerName="estadisticaRowChangeEventHandler" msprop:Generator_RowDeletedName="estadisticaRowDeleted" msprop:Generator_RowClassName="estadisticaRow" msprop:Generator_UserTableName="estadistica" msprop:Generator_RowEvArgName="estadisticaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
