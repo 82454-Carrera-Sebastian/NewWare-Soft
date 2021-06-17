@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Datos_Estadisticos" targetNamespace="http://tempuri.org/Datos_Estadisticos.xsd" xmlns:mstns="http://tempuri.org/Datos_Estadisticos.xsd" xmlns="http://tempuri.org/Datos_Estadisticos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Datos_Estadisticos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Datos_Estadisticos" msprop:Generator_UserDSName="Datos_Estadisticos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PreciosProd" msprop:Generator_TableClassName="PreciosProdDataTable" msprop:Generator_TableVarName="tablePreciosProd" msprop:Generator_TablePropName="PreciosProd" msprop:Generator_RowDeletingName="PreciosProdRowDeleting" msprop:Generator_RowChangingName="PreciosProdRowChanging" msprop:Generator_RowEvHandlerName="PreciosProdRowChangeEventHandler" msprop:Generator_RowDeletedName="PreciosProdRowDeleted" msprop:Generator_UserTableName="PreciosProd" msprop:Generator_RowChangedName="PreciosProdRowChanged" msprop:Generator_RowEvArgName="PreciosProdRowChangeEvent" msprop:Generator_RowClassName="PreciosProdRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto" msprop:Generator_ColumnVarNameInTable="columnProducto" msprop:Generator_ColumnPropNameInRow="Producto" msprop:Generator_ColumnPropNameInTable="ProductoColumn" msprop:Generator_UserColumnName="Producto" type="xs:string" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PreciosProdMes" msprop:Generator_TableClassName="PreciosProdMesDataTable" msprop:Generator_TableVarName="tablePreciosProdMes" msprop:Generator_TablePropName="PreciosProdMes" msprop:Generator_RowDeletingName="PreciosProdMesRowDeleting" msprop:Generator_RowChangingName="PreciosProdMesRowChanging" msprop:Generator_RowEvHandlerName="PreciosProdMesRowChangeEventHandler" msprop:Generator_RowDeletedName="PreciosProdMesRowDeleted" msprop:Generator_UserTableName="PreciosProdMes" msprop:Generator_RowChangedName="PreciosProdMesRowChanged" msprop:Generator_RowEvArgName="PreciosProdMesRowChangeEvent" msprop:Generator_RowClassName="PreciosProdMesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="Promedio" msprop:Generator_ColumnVarNameInTable="columnPromedio" msprop:Generator_ColumnPropNameInRow="Promedio" msprop:Generator_ColumnPropNameInTable="PromedioColumn" msprop:Generator_UserColumnName="Promedio" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

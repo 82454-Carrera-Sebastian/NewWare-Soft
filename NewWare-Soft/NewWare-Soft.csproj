@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos_Estadisticos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\.cs" />
     <Compile Include="Entidades\Banco.cs" />
     <Compile Include="Entidades\Barrio.cs" />
@@ -104,6 +109,12 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="EstadisticaPromProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticaPromProductos.Designer.cs">
+      <DependentUpon>EstadisticaPromProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstadisticaProyectoMes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -534,6 +545,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VariablesGlobales.cs" />
+    <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
+    <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
+    <EmbeddedResource Include="EstadisticaPromProductos.resx">
+      <DependentUpon>EstadisticaPromProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstadisticaProyectoMes.rdlc" />
     <EmbeddedResource Include="EstadisticaProyectoMes.resx">
       <DependentUpon>EstadisticaProyectoMes.cs</DependentUpon>
@@ -789,6 +805,17 @@
     </None>
     <None Include="BD3K7G07_2021DataSet.xss">
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datos_Estadisticos.xsc">
+      <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
+    </None>
+    <None Include="Datos_Estadisticos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Datos_Estadisticos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos_Estadisticos.xss">
+      <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

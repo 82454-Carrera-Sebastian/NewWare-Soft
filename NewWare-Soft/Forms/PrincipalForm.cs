@@ -418,6 +418,18 @@ namespace NewWare_Soft.Forms
             ListadoHerramientasXetapas ven = new ListadoHerramientasXetapas();
             ven.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EstadisticaProyectoMes ven = new EstadisticaProyectoMes();
+            ven.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EstadisticaPromProductos ven = new EstadisticaPromProductos();
+            ven.ShowDialog();
+        }
     }
 }
 
