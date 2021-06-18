@@ -74,6 +74,7 @@
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
     <Compile Include="AccesoADatos\AD_MotivosEgreso.cs" />
+    <Compile Include="AccesoADatos\AD_Personal.cs" />
     <Compile Include="AccesoADatos\AD_PersonalXEtapa.cs" />
     <Compile Include="AccesoADatos\AD_Productos.cs" />
     <Compile Include="AccesoADatos\AD_ProductosXCliente.cs" />
@@ -86,6 +87,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_Estadisticos.cs">
+      <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
     </Compile>
     <Compile Include="Datos_Estadisticos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,6 +124,12 @@
     </Compile>
     <Compile Include="EstadisticaProyectoMes.Designer.cs">
       <DependentUpon>EstadisticaProyectoMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica_Antiguedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadistica_Antiguedad.Designer.cs">
+      <DependentUpon>Estadistica_Antiguedad.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Barrio\AltaBarrio.cs">
       <SubType>Form</SubType>
@@ -555,6 +565,10 @@
       <DependentUpon>EstadisticaProyectoMes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstadisticaProyectoMes2.rdlc" />
+    <EmbeddedResource Include="Estadistica_Antiguedad.resx">
+      <DependentUpon>Estadistica_Antiguedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadistica_Antiguedad_Personal.rdlc" />
     <EmbeddedResource Include="Forms\Barrio\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
