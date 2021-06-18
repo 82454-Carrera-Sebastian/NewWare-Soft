@@ -430,6 +430,12 @@ namespace NewWare_Soft.Forms
             EstadisticaPromProductos ven = new EstadisticaPromProductos();
             ven.ShowDialog();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Estadistica_Antiguedad ventana = new Estadistica_Antiguedad();
+            ventana.ShowDialog();
+        }
     }
 }
 

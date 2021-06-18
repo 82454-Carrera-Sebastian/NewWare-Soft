@@ -1161,3 +1161,21 @@ C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Esta
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoBarrios.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoFormasDePago.resources
 C:\Facultad\PAV I\Practico\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoEmpleadoXproyecto.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.EstadisticaPromProductos.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.EstadisticaProyectoMes.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoBarrios.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoFormasDePago.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoHerramientasXetapas.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonal.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoEmpleadoXproyecto.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoPersonalXetapa.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProductosXCliente.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProdXFactura.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoEtapa.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectoMes.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ListadoProyectosActivos.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.Listado_Productos_X_Clientes.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoEtapas.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteListadoPersonal.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Reportes.ReporteProyectosFinalizados.resources
+C:\Users\facur\Documents\FACULTAD\3RO\PAV1\PROYECTOS\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Estadistica_Antiguedad.resources
