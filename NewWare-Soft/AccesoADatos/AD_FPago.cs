@@ -45,6 +45,40 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+        public static DataTable obtenerEstadisticaFormaDePago()
+        {
+
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT f.NombreFormaPago, COUNT(fp.IdFormaPago) as Cantidad FROM formas_pago_factura fp Inner join tipos_formas_pago f On fp.IdFormaPago = f.IdFormaPago Group by f.NombreFormaPago";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
 
         public static bool VerificarExistencia(string nombreBanco)
         {
