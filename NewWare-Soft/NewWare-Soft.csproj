@@ -113,22 +113,22 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="EstadisticaPromProductos.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticaPromProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EstadisticaPromProductos.Designer.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticaPromProductos.Designer.cs">
       <DependentUpon>EstadisticaPromProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="EstadisticaProyectoMes.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticaProyectoMes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EstadisticaProyectoMes.Designer.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticaProyectoMes.Designer.cs">
       <DependentUpon>EstadisticaProyectoMes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estadistica_Antiguedad.cs">
+    <Compile Include="Forms\Estadisticas\Estadistica_Antiguedad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estadistica_Antiguedad.Designer.cs">
+    <Compile Include="Forms\Estadisticas\Estadistica_Antiguedad.Designer.cs">
       <DependentUpon>Estadistica_Antiguedad.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Barrio\AltaBarrio.cs">
@@ -557,15 +557,15 @@
     <Compile Include="VariablesGlobales.cs" />
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
-    <EmbeddedResource Include="EstadisticaPromProductos.resx">
+    <EmbeddedResource Include="Forms\Estadisticas\EstadisticaPromProductos.resx">
       <DependentUpon>EstadisticaPromProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstadisticaProyectoMes.rdlc" />
-    <EmbeddedResource Include="EstadisticaProyectoMes.resx">
+    <EmbeddedResource Include="Forms\Estadisticas\EstadisticaProyectoMes.resx">
       <DependentUpon>EstadisticaProyectoMes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstadisticaProyectoMes2.rdlc" />
-    <EmbeddedResource Include="Estadistica_Antiguedad.resx">
+    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_Antiguedad.resx">
       <DependentUpon>Estadistica_Antiguedad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estadistica_Antiguedad_Personal.rdlc" />
