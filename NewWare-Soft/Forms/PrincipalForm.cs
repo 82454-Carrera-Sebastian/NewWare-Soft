@@ -1,4 +1,5 @@
 ﻿using NewWare_Soft.Entidades;
+using NewWare_Soft.Forms.Estadisticas;
 using NewWare_Soft.Forms.Herramientas;
 using NewWare_Soft.Forms.Reportes;
 using System;
