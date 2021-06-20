@@ -2,23 +2,23 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSetEstadisticaEmpleados">
+    <DataSource Name="Datos_Estadisticos">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>b9dcaf41-f246-4b01-bab5-9740b36cb4c7</rd:DataSourceID>
+      <rd:DataSourceID>597a22fe-3cdc-4d63-bdbb-e2f1d9b5a78b</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetEmpleados">
+    <DataSet Name="DataSetEmp2">
       <Query>
-        <DataSourceName>DataSetEstadisticaEmpleados</DataSourceName>
+        <DataSourceName>Datos_Estadisticos</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Nombre">
-          <DataField>Nombre</DataField>
+        <Field Name="Proyecto">
+          <DataField>Proyecto</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Empleados">
@@ -27,9 +27,9 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSetEstadisticaEmpleados</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\DataSetEstadisticaEmpleados.xsd</rd:SchemaPath>
-        <rd:TableName>EmpleadosXProyecto</rd:TableName>
+        <rd:DataSetName>Datos_Estadisticos</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Nico\Desktop\NewWare-Soft\NewWare-Soft\Datos_Estadisticos.xsd</rd:SchemaPath>
+        <rd:TableName>EmpleadosProyecto</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -92,21 +92,21 @@
               </Border>
             </Style>
           </Line>
-          <Chart Name="Chart1">
+          <Chart Name="Chart3">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart3_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
+                      <GroupExpression>=Fields!Proyecto.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Nombre.Value</Value>
+                      <Value>=Fields!Proyecto.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Nombre.Value</Label>
+                  <Label>=Fields!Proyecto.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -416,7 +416,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption> Empleados por proyecto</Caption>
+                <Caption>Empleados por Proyecto</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -426,7 +426,6 @@
                   <Color>#a6a6a6</Color>
                 </Style>
                 <Position>TopLeft</Position>
-                <DockOutsideChartArea>true</DockOutsideChartArea>
               </ChartTitle>
             </ChartTitles>
             <Palette>PacificSemiTransparent</Palette>
@@ -446,11 +445,11 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSetEmpleados</DataSetName>
-            <Top>4.73287cm</Top>
-            <Left>2.66912cm</Left>
-            <Height>7.35479cm</Height>
-            <Width>11.945cm</Width>
+            <DataSetName>DataSetEmp2</DataSetName>
+            <Top>4.15078cm</Top>
+            <Left>1.29328cm</Left>
+            <Height>9.28625cm</Height>
+            <Width>14.45917cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -459,7 +458,7 @@
               </Border>
               <BackgroundColor>White</BackgroundColor>
               <BackgroundGradientType>LeftRight</BackgroundGradientType>
-              <BackgroundGradientEndColor>LightBlue</BackgroundGradientEndColor>
+              <BackgroundGradientEndColor>PaleTurquoise</BackgroundGradientEndColor>
             </Style>
           </Chart>
         </ReportItems>
