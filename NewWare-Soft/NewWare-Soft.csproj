@@ -88,6 +88,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetEstadisticaEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEstadisticaEmpleados.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos_Estadisticos.cs">
       <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
     </Compile>
@@ -113,6 +118,12 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="EstadisticasEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticasEmpleados.Designer.cs">
+      <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Estadisticas\EstadisticaDuracionProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -578,6 +589,10 @@
     <EmbeddedResource Include="EstadisticaHerrMasUtilizadas.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
+    <EmbeddedResource Include="EstadisticasEmpleadoProyecto.rdlc" />
+    <EmbeddedResource Include="EstadisticasEmpleados.resx">
+      <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\EstadisticaDuracionProyectos.resx">
       <DependentUpon>EstadisticaDuracionProyectos.cs</DependentUpon>
     </EmbeddedResource>
@@ -850,6 +865,17 @@
     </None>
     <None Include="BD3K7G07_2021DataSet.xss">
       <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstadisticaEmpleados.xsc">
+      <DependentUpon>DataSetEstadisticaEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstadisticaEmpleados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEstadisticaEmpleados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetEstadisticaEmpleados.xss">
+      <DependentUpon>DataSetEstadisticaEmpleados.xsd</DependentUpon>
     </None>
     <None Include="Datos_Estadisticos.xsc">
       <DependentUpon>Datos_Estadisticos.xsd</DependentUpon>
