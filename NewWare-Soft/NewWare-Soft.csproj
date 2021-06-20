@@ -113,6 +113,12 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Forms\Estadisticas\EstadisticaDuracionProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\EstadisticaDuracionProyectos.Designer.cs">
+      <DependentUpon>EstadisticaDuracionProyectos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Estadisticas\EstadisticaPromProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -567,10 +573,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VariablesGlobales.cs" />
+    <EmbeddedResource Include="EstadisticaDuracion2.rdlc" />
     <EmbeddedResource Include="EstadisticaFormaDePagoMasUtilizada.rdlc" />
     <EmbeddedResource Include="EstadisticaHerrMasUtilizadas.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
+    <EmbeddedResource Include="Forms\Estadisticas\EstadisticaDuracionProyectos.resx">
+      <DependentUpon>EstadisticaDuracionProyectos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\EstadisticaPromProductos.resx">
       <DependentUpon>EstadisticaPromProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -812,6 +822,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="EstadisticaDuracion1.rdlc" />
     <EmbeddedResource Include="ReporteBarrios.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />

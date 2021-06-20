@@ -437,6 +437,12 @@ namespace NewWare_Soft.Forms
             Estadistica_Antiguedad ventana = new Estadistica_Antiguedad();
             ventana.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            EstadisticaDuracionProyectos ventana = new EstadisticaDuracionProyectos();
+            ventana.ShowDialog();
+        }
     }
 }
 
