@@ -123,6 +123,7 @@ namespace NewWare_Soft.Forms
             this.btnAsignHerramientas = new System.Windows.Forms.Button();
             this.btnAsignPersonal = new System.Windows.Forms.Button();
             this.btnNewProj = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -698,7 +699,7 @@ namespace NewWare_Soft.Forms
             this.menuStrip3.Location = new System.Drawing.Point(242, 284);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip3.Size = new System.Drawing.Size(927, 30);
+            this.menuStrip3.Size = new System.Drawing.Size(807, 30);
             this.menuStrip3.TabIndex = 0;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -980,11 +981,22 @@ namespace NewWare_Soft.Forms
             this.btnNewProj.UseVisualStyleBackColor = true;
             this.btnNewProj.Click += new System.EventHandler(this.btnNewProj_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(31, 235);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 454);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip3);
             this.Controls.Add(this.lblElimFact);
             this.Controls.Add(this.btnEliminFactura);
@@ -1108,5 +1120,6 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem herramPorEtapaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Button button1;
     }
 }
