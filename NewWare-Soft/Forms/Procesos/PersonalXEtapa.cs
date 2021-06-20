@@ -267,5 +267,10 @@ namespace NewWare_Soft.Forms
             }
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

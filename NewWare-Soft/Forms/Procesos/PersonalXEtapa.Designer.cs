@@ -142,6 +142,7 @@ namespace NewWare_Soft.Forms
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Personal";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txtApellido
             // 
