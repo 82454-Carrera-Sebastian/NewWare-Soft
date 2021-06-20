@@ -166,6 +166,12 @@
     <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EdadPromPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EdadPromPersonal.Designer.cs">
+      <DependentUpon>Estadistica_EdadPromPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -838,6 +844,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="EstadisticaDuracion1.rdlc" />
+    <EmbeddedResource Include="EstadisticaEdadPromPersonal.rdlc" />
     <EmbeddedResource Include="ReporteBarrios.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
