@@ -32,7 +32,7 @@ namespace NewWare_Soft
                 DeshabilitarElementos();
                 DataTable tabla = new DataTable();
                 tabla = AD_PersonalXEtapa.ObtenerEstadisticasporProyectos();
-                ReportDataSource ds = new ReportDataSource("DataSetEmpleados", tabla);
+                ReportDataSource ds = new ReportDataSource("DataSetEmp2", tabla);
                 
 
                 rptEstadisticasProyectos.LocalReport.DataSources.Clear();
@@ -74,7 +74,7 @@ namespace NewWare_Soft
             {
                 DataTable tabla = new DataTable();
                 tabla = AD_PersonalXEtapa.ObtenerEstadisticasProyectosporFecha(DateTime.Parse(txtFechaIni.Text));
-                ReportDataSource ds = new ReportDataSource("DataSetEmpleados", tabla);
+                ReportDataSource ds = new ReportDataSource("DataSetEmp2", tabla);
 
 
                 rptEstadisticasProyectos.LocalReport.DataSources.Clear();
@@ -84,6 +84,7 @@ namespace NewWare_Soft
                 DeshabilitarElementos();
                 rbPorFecha.Checked = false;
                 rbTodos.Checked = false;
+                txtFechaIni.Text = "";
             }
         }
     }
