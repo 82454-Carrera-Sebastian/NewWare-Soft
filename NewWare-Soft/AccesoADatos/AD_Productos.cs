@@ -419,5 +419,38 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+        public static DataTable getProductosMasVendidos()
+        {
+            string connection_network = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection connection_duct = new SqlConnection(connection_network);
+
+            try
+            {
+                SqlCommand command = new SqlCommand();
+                string query = "select p.Denominacion, count(*) as 'Cantidad' " +
+                                "from detalle_factura d inner join productos p on d.IdProducto = p.IdProducto " +
+                                "group by p.Denominacion";
+                command.Parameters.Clear();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                connection_duct.Open();
+                command.Connection = connection_duct;
+
+                DataTable table = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(table);
+
+                return table;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection_duct.Close();
+            }
+        }
     }
 }

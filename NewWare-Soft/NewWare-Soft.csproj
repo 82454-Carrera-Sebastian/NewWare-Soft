@@ -184,6 +184,12 @@
     <Compile Include="Forms\Estadisticas\FormaDePagoMasUtilizadas.Designer.cs">
       <DependentUpon>FormaDePagoMasUtilizadas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Estadisticas\ProductosMasVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\ProductosMasVendidos.Designer.cs">
+      <DependentUpon>ProductosMasVendidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Etapas\AltaEtapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -629,6 +635,9 @@
     <EmbeddedResource Include="Forms\Estadisticas\FormaDePagoMasUtilizadas.resx">
       <DependentUpon>FormaDePagoMasUtilizadas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estadisticas\ProductosMasVendidos.resx">
+      <DependentUpon>ProductosMasVendidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Etapas\AltaEtapa.resx">
       <DependentUpon>AltaEtapa.cs</DependentUpon>
     </EmbeddedResource>
@@ -846,6 +855,7 @@
     <EmbeddedResource Include="EstadisticaDuracion1.rdlc" />
     <EmbeddedResource Include="EstadisticaEdadPromPersonal.rdlc" />
     <EmbeddedResource Include="ReporteBarrios.rdlc" />
+    <EmbeddedResource Include="ReporteProductoMasVendido.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
     <EmbeddedResource Include="ReporteProyectosFinalizados.rdlc" />
