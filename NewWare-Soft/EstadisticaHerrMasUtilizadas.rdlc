@@ -29,7 +29,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>Datos_Estadisticos</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Usuario\Documents\GitHub\NewWare-Soft\NewWare-Soft\Datos_Estadisticos.xsd</rd:SchemaPath>
-        <rd:TableName>HerramientasMasUtilizadas</rd:TableName>
+        <rd:TableName>HerrMasUtilizadas</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />

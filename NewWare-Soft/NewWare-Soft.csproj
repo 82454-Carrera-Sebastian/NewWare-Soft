@@ -149,6 +149,12 @@
     <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.Designer.cs">
+      <DependentUpon>Estadistica_HerramientasMasUtilizadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Estadisticas\FormaDePagoMasUtilizadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -562,6 +568,7 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VariablesGlobales.cs" />
     <EmbeddedResource Include="EstadisticaFormaDePagoMasUtilizada.rdlc" />
+    <EmbeddedResource Include="EstadisticaHerrMasUtilizadas.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
     <EmbeddedResource Include="Forms\Estadisticas\EstadisticaPromProductos.resx">
@@ -584,6 +591,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.resx">
+      <DependentUpon>Estadistica_HerramientasMasUtilizadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\FormaDePagoMasUtilizadas.resx">
       <DependentUpon>FormaDePagoMasUtilizadas.cs</DependentUpon>
