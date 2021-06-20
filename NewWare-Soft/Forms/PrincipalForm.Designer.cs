@@ -687,7 +687,7 @@ namespace NewWare_Soft.Forms
             this.otrosReportesToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(242, 284);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(881, 24);
+            this.menuStrip3.Size = new System.Drawing.Size(761, 24);
             this.menuStrip3.TabIndex = 0;
             this.menuStrip3.Text = "menuStrip3";
             // 

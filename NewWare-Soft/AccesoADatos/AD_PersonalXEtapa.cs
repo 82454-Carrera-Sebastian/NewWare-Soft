@@ -481,5 +481,72 @@ namespace NewWare_Soft.AccesoADatos
                 cn.Close();
             }
         }
+
+        public static DataTable ObtenerEstadisticasporProyectos()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "select pe.IdProyecto as 'Proyecto', count(pe.Legajo) as 'Empleados' from personal_x_etapas pe group by pe.IdProyecto";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerEstadisticasProyectosporFecha( DateTime fechaIni)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "select pe.IdProyecto as 'Proyecto', count(pe.Legajo) as 'Empleados' from personal_x_etapas pe, proyectos p where p.FechaInicial >= @fechaIni  and pe.IdProyecto =p.CodigoProyecto group by pe.IdProyecto";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("fechaIni", fechaIni);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }

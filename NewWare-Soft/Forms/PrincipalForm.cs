@@ -430,6 +430,8 @@ namespace NewWare_Soft.Forms
             EstadisticaPromProductos ven = new EstadisticaPromProductos();
             ven.ShowDialog();
         }
+
+        
     }
 }
 
