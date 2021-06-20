@@ -65,6 +65,7 @@ namespace NewWare_Soft.Forms.Estadisticas
                 RvcEstadisticaEdadProm.LocalReport.DataSources.Clear();
                 RvcEstadisticaEdadProm.LocalReport.DataSources.Add(ds);
                 RvcEstadisticaEdadProm.RefreshReport();
+                txtEdadPromEstadistica.Text = ObtenerPromedioEdadFiltrado(int.Parse(txtCargoEstadisticaEdadProm.Text)).ToString();
             }
         }
         public static int ObtenerPromedioEdad()
@@ -77,6 +78,37 @@ namespace NewWare_Soft.Forms.Estadisticas
                 string consulta = "select avg(datediff(year, p.fechaNacimiento, getdate())) as 'Promedio' from personal p";
 
                 cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                int resultado = (int)cmd.ExecuteScalar();
+
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static int ObtenerPromedioEdadFiltrado(int idCargo)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "select avg(datediff(year, p.fechaNacimiento, getdate())) as 'Promedio' from personal p where IdCargo = @idCargo";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idCargo", idCargo);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
