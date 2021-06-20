@@ -443,6 +443,12 @@ namespace NewWare_Soft.Forms
             EstadisticaDuracionProyectos ventana = new EstadisticaDuracionProyectos();
             ventana.ShowDialog();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Estadistica_EtapasQueMasTardaron ventana = new Estadistica_EtapasQueMasTardaron();
+            ventana.ShowDialog();
+        }
     }
 }
 

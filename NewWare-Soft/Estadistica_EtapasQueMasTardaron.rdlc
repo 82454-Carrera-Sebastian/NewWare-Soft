@@ -7,29 +7,29 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>91e11634-8dd5-4468-885c-ab78a82f71d0</rd:DataSourceID>
+      <rd:DataSourceID>37b4779a-a53e-4ff6-ae7e-0f9e49aed486</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet_Antiguedad">
+    <DataSet Name="EtapasMasTardaron">
       <Query>
         <DataSourceName>Datos_Estadisticos</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Apellido">
-          <DataField>Apellido</DataField>
+        <Field Name="Nombre">
+          <DataField>Nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Antiguedad">
-          <DataField>Antiguedad</DataField>
+        <Field Name="Tiempo">
+          <DataField>Tiempo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Datos_Estadisticos</rd:DataSetName>
         <rd:SchemaPath>E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\Datos_Estadisticos.xsd</rd:SchemaPath>
-        <rd:TableName>Antiguedad_Personal</rd:TableName>
+        <rd:TableName>EtapasMasTardaron</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -47,7 +47,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Antiguedad del personal</Value>
+                    <Value>Etapas que mas tardaron</Value>
                     <Style>
                       <FontSize>15pt</FontSize>
                       <Color>DodgerBlue</Color>
@@ -60,8 +60,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.13417in</Top>
-            <Left>0.09944in</Left>
+            <Top>0.11458in</Top>
+            <Left>0.51153cm</Left>
             <Height>0.33333in</Height>
             <Width>6.29861in</Width>
             <Style>
@@ -75,15 +75,13 @@
             </Style>
           </Textbox>
           <Line Name="Line1">
-            <Top>0.4675in</Top>
-            <Left>0.09944in</Left>
-            <Height>0in</Height>
-            <Width>6.40056in</Width>
+            <Top>1.1377cm</Top>
+            <Height>0cm</Height>
+            <Width>16.51cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
-                <Width>2pt</Width>
               </Border>
             </Style>
           </Line>
@@ -93,32 +91,32 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Apellido.Value</GroupExpression>
+                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Apellido.Value</Value>
+                      <Value>=Fields!Nombre.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Apellido.Value</Label>
+                  <Label>=Fields!Nombre.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Antiguedad</Label>
+                  <Label>Tiempo</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Antiguedad">
+                <ChartSeries Name="Tiempo">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Antiguedad.Value)</Y>
+                        <Y>=Sum(Fields!Tiempo.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -402,7 +400,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Antiguedad medida en meses</Caption>
+                <Caption>Etapas que mas tardaron</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -431,11 +429,11 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSet_Antiguedad</DataSetName>
-            <Top>0.71056in</Top>
-            <Left>0.09944in</Left>
-            <Height>2in</Height>
-            <Width>5.66667in</Width>
+            <DataSetName>EtapasMasTardaron</DataSetName>
+            <Top>1.79599cm</Top>
+            <Left>3.35703cm</Left>
+            <Height>5cm</Height>
+            <Width>11.09833cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -447,15 +445,59 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.91194in</Height>
+        <Height>2.89434in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
       <Page>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <PageFooter>
+          <Height>2.54cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="PageNumber">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>PageNumber</rd:DefaultName>
+              <Top>0.81703cm</Top>
+              <Left>13.04078cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -466,6 +508,6 @@
       <NumberOfRows>2</NumberOfRows>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>d465db1b-8119-4ff5-944e-26992e73b4f9</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d10f4b5a-6184-459b-a39c-adb61e6df37d</rd:ReportID>
 </Report>

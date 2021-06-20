@@ -70,6 +70,7 @@
     <Compile Include="AccesoADatos\AD_Barrio.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
+    <Compile Include="AccesoADatos\AD_Etapas.cs" />
     <Compile Include="AccesoADatos\AD_Facturas.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
@@ -154,6 +155,12 @@
     </Compile>
     <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.Designer.cs">
+      <DependentUpon>Estadistica_EtapasQueMasTardaron.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.cs">
       <SubType>Form</SubType>
@@ -578,6 +585,7 @@
     <EmbeddedResource Include="EstadisticaHerrMasUtilizadas.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
+    <EmbeddedResource Include="Estadistica_EtapasQueMasTardaron.rdlc" />
     <EmbeddedResource Include="Forms\Estadisticas\EstadisticaDuracionProyectos.resx">
       <DependentUpon>EstadisticaDuracionProyectos.cs</DependentUpon>
     </EmbeddedResource>
@@ -601,6 +609,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.resx">
+      <DependentUpon>Estadistica_EtapasQueMasTardaron.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.resx">
       <DependentUpon>Estadistica_HerramientasMasUtilizadas.cs</DependentUpon>
