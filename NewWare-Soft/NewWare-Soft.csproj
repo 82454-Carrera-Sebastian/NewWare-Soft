@@ -83,6 +83,9 @@
     <Compile Include="AccesoADatos\AD_Tarjetas.cs" />
     <Compile Include="AccesoADatos\AD_Usuarios.cs" />
     <Compile Include="AccesoADatos\DAOpersonal.cs" />
+    <Compile Include="BD3K7G07_2021DataSet.cs">
+      <DependentUpon>BD3K7G07_2021DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BD3K7G07_2021DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +151,12 @@
     </Compile>
     <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EdadPromPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\Estadistica_EdadPromPersonal.Designer.cs">
+      <DependentUpon>Estadistica_EdadPromPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Etapas\AltaEtapa.cs">
       <SubType>Form</SubType>
@@ -578,6 +587,9 @@
     <EmbeddedResource Include="Forms\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_EdadPromPersonal.resx">
+      <DependentUpon>Estadistica_EdadPromPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Etapas\AltaEtapa.resx">
       <DependentUpon>AltaEtapa.cs</DependentUpon>
     </EmbeddedResource>
@@ -792,6 +804,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="EstadisticaEdadPromPersonal.rdlc" />
     <EmbeddedResource Include="ReporteBarrios.rdlc" />
     <EmbeddedResource Include="ReporteProductosXCliente.rdlc" />
     <EmbeddedResource Include="ReporteProyectoActivo.rdlc" />
