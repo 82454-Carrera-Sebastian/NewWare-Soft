@@ -116,6 +116,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
+                        <X>=Fields!Codigo.Value</X>
                         <Y>=Max(Fields!Duracion.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>

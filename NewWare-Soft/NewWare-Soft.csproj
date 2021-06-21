@@ -70,7 +70,7 @@
     <Compile Include="AccesoADatos\AD_Barrio.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
-    <Compile Include="AccesoADatos\AD_Etapass.cs" />
+    <Compile Include="AccesoADatos\AD_Etapas.cs" />
     <Compile Include="AccesoADatos\AD_Facturas.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />

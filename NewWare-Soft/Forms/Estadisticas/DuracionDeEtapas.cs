@@ -75,20 +75,20 @@ namespace NewWare_Soft.Forms.Estadisticas
             if (rbTodas.Checked)
             {
                 DataTable tabla = new DataTable();
-                tabla = AD_Etapass.duracionEtapa();
+                tabla = AD_Etapas.duracionEtapa();
                 return tabla;
             }
 
             if (rdbNombre.Checked)
             {
                 DataTable tabla = new DataTable();
-                tabla = AD_Etapass.duracionEtapasPorProyectos(txtNombre.Text.Trim());
+                tabla = AD_Etapas.duracionEtapasPorProyectos(txtNombre.Text.Trim());
                 return tabla;
             }
             else
             {
                 DataTable tabla = new DataTable();
-                tabla = AD_Etapass.duracionEtapa();
+                tabla = AD_Etapas.duracionMayoRA(txtNumero.Text.Trim());
                 return tabla;
             }
         }
@@ -113,7 +113,7 @@ namespace NewWare_Soft.Forms.Estadisticas
                 txtNombre.Focus();
                 
             }
-            if (rdbNombre.Checked)
+            if (rdbDuracionMayor.Checked)
             {
                 DataTable tabla = new DataTable();
                 tabla = buscarTablas();
