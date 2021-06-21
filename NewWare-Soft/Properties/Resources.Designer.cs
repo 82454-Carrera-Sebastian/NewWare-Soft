@@ -63,6 +63,56 @@ namespace NewWare_Soft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486504340_calendar_date_event_month_schedule_81325 {
+            get {
+                object obj = ResourceManager.GetObject("1486504340-calendar-date-event-month-schedule_81325", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6_icon_icons_com_68891 {
+            get {
+                object obj = ResourceManager.GetObject("6_icon-icons.com_68891", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap age_theapplication_3019 {
+            get {
+                object obj = ResourceManager.GetObject("age_theapplication_3019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_coin_money_icon_icons_com_56177 {
+            get {
+                object obj = ResourceManager.GetObject("dollar-coin-money_icon-icons.com_56177", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap history_time_clock_1019 {
+            get {
+                object obj = ResourceManager.GetObject("history_time_clock_1019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_04_Bank_290147 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_04.Bank_290147", resourceCulture);
@@ -317,6 +367,36 @@ namespace NewWare_Soft.Properties {
         internal static System.Drawing.Bitmap iconfinder_Wrench_3605320 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Wrench_3605320", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oldboss_person_man_grandpa_deeda_2857 {
+            get {
+                object obj = ResourceManager.GetObject("oldboss_person_man_grandpa_deeda_2857", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_78352 {
+            get {
+                object obj = ResourceManager.GetObject("settings_78352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shoppaymentorderbuy_29_icon_icons_com_73875 {
+            get {
+                object obj = ResourceManager.GetObject("shoppaymentorderbuy-29_icon-icons.com_73875", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

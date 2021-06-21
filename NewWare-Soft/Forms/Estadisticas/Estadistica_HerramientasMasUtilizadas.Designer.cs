@@ -161,6 +161,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.Controls.Add(this.groupBox_tipoReporte);
             this.Controls.Add(this.rpv_HerrMasUtilizadas);
             this.Name = "Estadistica_HerramientasMasUtilizadas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estadistica_HerramientasMasUtilizadas";
             this.Load += new System.EventHandler(this.Estadistica_HerramientasMasUtilizadas_Load);
             this.groupBox_tipoReporte.ResumeLayout(false);

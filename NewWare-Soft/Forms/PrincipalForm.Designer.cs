@@ -118,17 +118,27 @@ namespace NewWare_Soft.Forms
             this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formasDePagoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.herramPorEtapaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.reportesEstadisticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosMasVendidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.masVendidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promedioDeLosPreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formasDePagoMasUtilizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.duracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.realizadosPorMesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasMasUtilizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edadPromedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.antiguedadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.masUtilizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formasDePagoMasUtilizadasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.duracionDeLasEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEliminFactura = new System.Windows.Forms.Button();
             this.btnNewVenta = new System.Windows.Forms.Button();
             this.btnAsignHerramientas = new System.Windows.Forms.Button();
             this.btnAsignPersonal = new System.Windows.Forms.Button();
             this.btnNewProj = new System.Windows.Forms.Button();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.estadisticaAntiguedadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.duracionDeEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.herramientasMasUtlizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.duracionDeLosProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip3.SuspendLayout();
             this.menuStrip2.SuspendLayout();
@@ -645,7 +655,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNewProj.AutoSize = true;
             this.lblNewProj.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewProj.Location = new System.Drawing.Point(349, 147);
+            this.lblNewProj.Location = new System.Drawing.Point(342, 116);
             this.lblNewProj.Name = "lblNewProj";
             this.lblNewProj.Size = new System.Drawing.Size(121, 21);
             this.lblNewProj.TabIndex = 4;
@@ -655,7 +665,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblAsigPer.AutoSize = true;
             this.lblAsigPer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAsigPer.Location = new System.Drawing.Point(461, 188);
+            this.lblAsigPer.Location = new System.Drawing.Point(454, 157);
             this.lblAsigPer.Name = "lblAsigPer";
             this.lblAsigPer.Size = new System.Drawing.Size(52, 30);
             this.lblAsigPer.TabIndex = 6;
@@ -665,7 +675,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblAsigHerr.AutoSize = true;
             this.lblAsigHerr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAsigHerr.Location = new System.Drawing.Point(519, 188);
+            this.lblAsigHerr.Location = new System.Drawing.Point(512, 157);
             this.lblAsigHerr.Name = "lblAsigHerr";
             this.lblAsigHerr.Size = new System.Drawing.Size(76, 30);
             this.lblAsigHerr.TabIndex = 14;
@@ -675,7 +685,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblNewVent.AutoSize = true;
             this.lblNewVent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewVent.Location = new System.Drawing.Point(637, 147);
+            this.lblNewVent.Location = new System.Drawing.Point(630, 116);
             this.lblNewVent.Name = "lblNewVent";
             this.lblNewVent.Size = new System.Drawing.Size(97, 21);
             this.lblNewVent.TabIndex = 16;
@@ -685,7 +695,7 @@ namespace NewWare_Soft.Forms
             // 
             this.lblElimFact.AutoSize = true;
             this.lblElimFact.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblElimFact.Location = new System.Drawing.Point(749, 188);
+            this.lblElimFact.Location = new System.Drawing.Point(742, 157);
             this.lblElimFact.Name = "lblElimFact";
             this.lblElimFact.Size = new System.Drawing.Size(50, 30);
             this.lblElimFact.TabIndex = 18;
@@ -702,7 +712,7 @@ namespace NewWare_Soft.Forms
             this.reportesClientesToolStripMenuItem,
             this.reportesPersonalToolStripMenuItem,
             this.otrosReportesToolStripMenuItem});
-            this.menuStrip3.Location = new System.Drawing.Point(242, 284);
+            this.menuStrip3.Location = new System.Drawing.Point(235, 253);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
             this.menuStrip3.Size = new System.Drawing.Size(807, 30);
@@ -937,10 +947,155 @@ namespace NewWare_Soft.Forms
             this.herramPorEtapaToolStripMenuItem.Text = "Herram. por etapa";
             this.herramPorEtapaToolStripMenuItem.Click += new System.EventHandler(this.herramPorEtapaToolStripMenuItem_Click);
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportesEstadisticosToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(511, 304);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(273, 24);
+            this.menuStrip2.TabIndex = 19;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // reportesEstadisticosToolStripMenuItem
+            // 
+            this.reportesEstadisticosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosMasVendidosToolStripMenuItem,
+            this.formasDePagoMasUtilizadasToolStripMenuItem,
+            this.herramientasMasUtilizadasToolStripMenuItem,
+            this.herramientasToolStripMenuItem1,
+            this.otrosToolStripMenuItem});
+            this.reportesEstadisticosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources._6_icon_icons_com_68891;
+            this.reportesEstadisticosToolStripMenuItem.Name = "reportesEstadisticosToolStripMenuItem";
+            this.reportesEstadisticosToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.reportesEstadisticosToolStripMenuItem.Text = "Reportes Estadisticos";
+            // 
+            // productosMasVendidosToolStripMenuItem
+            // 
+            this.productosMasVendidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.masVendidosToolStripMenuItem,
+            this.promedioDeLosPreciosToolStripMenuItem});
+            this.productosMasVendidosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_MadeInUSA_product_export_usa_unitedstates_trade_chinaandustradewar_4817164;
+            this.productosMasVendidosToolStripMenuItem.Name = "productosMasVendidosToolStripMenuItem";
+            this.productosMasVendidosToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.productosMasVendidosToolStripMenuItem.Text = "Productos";
+            // 
+            // masVendidosToolStripMenuItem
+            // 
+            this.masVendidosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.shoppaymentorderbuy_29_icon_icons_com_73875;
+            this.masVendidosToolStripMenuItem.Name = "masVendidosToolStripMenuItem";
+            this.masVendidosToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.masVendidosToolStripMenuItem.Text = "Mas vendidos";
+            this.masVendidosToolStripMenuItem.Click += new System.EventHandler(this.masVendidosToolStripMenuItem_Click);
+            // 
+            // promedioDeLosPreciosToolStripMenuItem
+            // 
+            this.promedioDeLosPreciosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.dollar_coin_money_icon_icons_com_56177;
+            this.promedioDeLosPreciosToolStripMenuItem.Name = "promedioDeLosPreciosToolStripMenuItem";
+            this.promedioDeLosPreciosToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.promedioDeLosPreciosToolStripMenuItem.Text = "Promedio de los precios";
+            this.promedioDeLosPreciosToolStripMenuItem.Click += new System.EventHandler(this.promedioDeLosPreciosToolStripMenuItem_Click);
+            // 
+            // formasDePagoMasUtilizadasToolStripMenuItem
+            // 
+            this.formasDePagoMasUtilizadasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.duracionToolStripMenuItem,
+            this.realizadosPorMesToolStripMenuItem});
+            this.formasDePagoMasUtilizadasToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Web_Developmen_1562687__3_;
+            this.formasDePagoMasUtilizadasToolStripMenuItem.Name = "formasDePagoMasUtilizadasToolStripMenuItem";
+            this.formasDePagoMasUtilizadasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.formasDePagoMasUtilizadasToolStripMenuItem.Text = "Proyectos";
+            // 
+            // duracionToolStripMenuItem
+            // 
+            this.duracionToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.history_time_clock_1019;
+            this.duracionToolStripMenuItem.Name = "duracionToolStripMenuItem";
+            this.duracionToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.duracionToolStripMenuItem.Text = "Duracion";
+            this.duracionToolStripMenuItem.Click += new System.EventHandler(this.duracionToolStripMenuItem_Click);
+            // 
+            // realizadosPorMesToolStripMenuItem
+            // 
+            this.realizadosPorMesToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources._1486504340_calendar_date_event_month_schedule_81325;
+            this.realizadosPorMesToolStripMenuItem.Name = "realizadosPorMesToolStripMenuItem";
+            this.realizadosPorMesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.realizadosPorMesToolStripMenuItem.Text = "Realizados por mes";
+            this.realizadosPorMesToolStripMenuItem.Click += new System.EventHandler(this.realizadosPorMesToolStripMenuItem_Click);
+            // 
+            // herramientasMasUtilizadasToolStripMenuItem
+            // 
+            this.herramientasMasUtilizadasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.edadPromedioToolStripMenuItem,
+            this.antiguedadToolStripMenuItem});
+            this.herramientasMasUtilizadasToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_General___Office_32_1471083;
+            this.herramientasMasUtilizadasToolStripMenuItem.Name = "herramientasMasUtilizadasToolStripMenuItem";
+            this.herramientasMasUtilizadasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.herramientasMasUtilizadasToolStripMenuItem.Text = "Personal";
+            // 
+            // edadPromedioToolStripMenuItem
+            // 
+            this.edadPromedioToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.age_theapplication_3019;
+            this.edadPromedioToolStripMenuItem.Name = "edadPromedioToolStripMenuItem";
+            this.edadPromedioToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.edadPromedioToolStripMenuItem.Text = "Edad Promedio";
+            this.edadPromedioToolStripMenuItem.Click += new System.EventHandler(this.edadPromedioToolStripMenuItem_Click);
+            // 
+            // antiguedadToolStripMenuItem
+            // 
+            this.antiguedadToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.oldboss_person_man_grandpa_deeda_2857;
+            this.antiguedadToolStripMenuItem.Name = "antiguedadToolStripMenuItem";
+            this.antiguedadToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.antiguedadToolStripMenuItem.Text = "Antiguedad";
+            this.antiguedadToolStripMenuItem.Click += new System.EventHandler(this.antiguedadToolStripMenuItem_Click);
+            // 
+            // herramientasToolStripMenuItem1
+            // 
+            this.herramientasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.masUtilizadasToolStripMenuItem});
+            this.herramientasToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Wrench_3605320;
+            this.herramientasToolStripMenuItem1.Name = "herramientasToolStripMenuItem1";
+            this.herramientasToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.herramientasToolStripMenuItem1.Text = "Herramientas";
+            // 
+            // masUtilizadasToolStripMenuItem
+            // 
+            this.masUtilizadasToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.settings_78352;
+            this.masUtilizadasToolStripMenuItem.Name = "masUtilizadasToolStripMenuItem";
+            this.masUtilizadasToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.masUtilizadasToolStripMenuItem.Text = "Mas utilizadas";
+            this.masUtilizadasToolStripMenuItem.Click += new System.EventHandler(this.masUtilizadasToolStripMenuItem_Click);
+            // 
+            // otrosToolStripMenuItem
+            // 
+            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formasDePagoMasUtilizadasToolStripMenuItem1,
+            this.duracionDeLasEtapasToolStripMenuItem});
+            this.otrosToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.iconfinder_984753_more_other_yet_detail_details_icon_128px;
+            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
+            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.otrosToolStripMenuItem.Text = "Otros";
+            // 
+            // formasDePagoMasUtilizadasToolStripMenuItem1
+            // 
+            this.formasDePagoMasUtilizadasToolStripMenuItem1.Image = global::NewWare_Soft.Properties.Resources.iconfinder_07_Wallet_290143;
+            this.formasDePagoMasUtilizadasToolStripMenuItem1.Name = "formasDePagoMasUtilizadasToolStripMenuItem1";
+            this.formasDePagoMasUtilizadasToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
+            this.formasDePagoMasUtilizadasToolStripMenuItem1.Text = "Formas de pago mas utilizadas";
+            this.formasDePagoMasUtilizadasToolStripMenuItem1.Click += new System.EventHandler(this.formasDePagoMasUtilizadasToolStripMenuItem1_Click);
+            // 
+            // duracionDeLasEtapasToolStripMenuItem
+            // 
+            this.duracionDeLasEtapasToolStripMenuItem.Image = global::NewWare_Soft.Properties.Resources.Webp_net_resizeimage;
+            this.duracionDeLasEtapasToolStripMenuItem.Name = "duracionDeLasEtapasToolStripMenuItem";
+            this.duracionDeLasEtapasToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.duracionDeLasEtapasToolStripMenuItem.Text = "Duracion de las etapas";
+            this.duracionDeLasEtapasToolStripMenuItem.Click += new System.EventHandler(this.duracionDeLasEtapasToolStripMenuItem_Click);
+            // 
             // btnEliminFactura
             // 
             this.btnEliminFactura.Image = global::NewWare_Soft.Properties.Resources.iconfinder_basket_1814090__1_;
-            this.btnEliminFactura.Location = new System.Drawing.Point(752, 221);
+            this.btnEliminFactura.Location = new System.Drawing.Point(745, 190);
             this.btnEliminFactura.Name = "btnEliminFactura";
             this.btnEliminFactura.Size = new System.Drawing.Size(39, 42);
             this.btnEliminFactura.TabIndex = 17;
@@ -950,7 +1105,7 @@ namespace NewWare_Soft.Forms
             // btnNewVenta
             // 
             this.btnNewVenta.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Flat_34_6764721;
-            this.btnNewVenta.Location = new System.Drawing.Point(641, 171);
+            this.btnNewVenta.Location = new System.Drawing.Point(634, 140);
             this.btnNewVenta.Name = "btnNewVenta";
             this.btnNewVenta.Size = new System.Drawing.Size(93, 92);
             this.btnNewVenta.TabIndex = 15;
@@ -960,7 +1115,7 @@ namespace NewWare_Soft.Forms
             // btnAsignHerramientas
             // 
             this.btnAsignHerramientas.Image = global::NewWare_Soft.Properties.Resources.iconfinder_sign_add_299068__1_;
-            this.btnAsignHerramientas.Location = new System.Drawing.Point(531, 221);
+            this.btnAsignHerramientas.Location = new System.Drawing.Point(524, 190);
             this.btnAsignHerramientas.Name = "btnAsignHerramientas";
             this.btnAsignHerramientas.Size = new System.Drawing.Size(39, 42);
             this.btnAsignHerramientas.TabIndex = 13;
@@ -970,7 +1125,7 @@ namespace NewWare_Soft.Forms
             // btnAsignPersonal
             // 
             this.btnAsignPersonal.Image = global::NewWare_Soft.Properties.Resources.iconfinder_sign_add_299068__1_;
-            this.btnAsignPersonal.Location = new System.Drawing.Point(468, 221);
+            this.btnAsignPersonal.Location = new System.Drawing.Point(461, 190);
             this.btnAsignPersonal.Name = "btnAsignPersonal";
             this.btnAsignPersonal.Size = new System.Drawing.Size(39, 42);
             this.btnAsignPersonal.TabIndex = 5;
@@ -980,58 +1135,12 @@ namespace NewWare_Soft.Forms
             // btnNewProj
             // 
             this.btnNewProj.Image = global::NewWare_Soft.Properties.Resources.iconfinder_Web_Developmen_1562687__3_;
-            this.btnNewProj.Location = new System.Drawing.Point(362, 171);
+            this.btnNewProj.Location = new System.Drawing.Point(355, 140);
             this.btnNewProj.Name = "btnNewProj";
             this.btnNewProj.Size = new System.Drawing.Size(93, 92);
             this.btnNewProj.TabIndex = 3;
             this.btnNewProj.UseVisualStyleBackColor = true;
             this.btnNewProj.Click += new System.EventHandler(this.btnNewProj_Click);
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.estadisticaAntiguedadToolStripMenuItem,
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem,
-            this.duracionDeEtapasToolStripMenuItem,
-            this.herramientasMasUtlizadasToolStripMenuItem,
-            this.duracionDeLosProyectosToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(242, 330);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(932, 24);
-            this.menuStrip2.TabIndex = 19;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // estadisticaAntiguedadToolStripMenuItem
-            // 
-            this.estadisticaAntiguedadToolStripMenuItem.Name = "estadisticaAntiguedadToolStripMenuItem";
-            this.estadisticaAntiguedadToolStripMenuItem.Size = new System.Drawing.Size(139, 20);
-            this.estadisticaAntiguedadToolStripMenuItem.Text = "Estadistica Antiguedad";
-            // 
-            // estadisticaEdadPromedioDelPersonalToolStripMenuItem
-            // 
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Name = "estadisticaEdadPromedioDelPersonalToolStripMenuItem";
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Size = new System.Drawing.Size(225, 20);
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Text = "Estadistica Edad Promedio del Personal";
-            // 
-            // duracionDeEtapasToolStripMenuItem
-            // 
-            this.duracionDeEtapasToolStripMenuItem.Name = "duracionDeEtapasToolStripMenuItem";
-            this.duracionDeEtapasToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
-            this.duracionDeEtapasToolStripMenuItem.Text = "Duracion de Etapas";
-            this.duracionDeEtapasToolStripMenuItem.Click += new System.EventHandler(this.duracionDeEtapasToolStripMenuItem_Click);
-            // 
-            // herramientasMasUtlizadasToolStripMenuItem
-            // 
-            this.herramientasMasUtlizadasToolStripMenuItem.Name = "herramientasMasUtlizadasToolStripMenuItem";
-            this.herramientasMasUtlizadasToolStripMenuItem.Size = new System.Drawing.Size(164, 20);
-            this.herramientasMasUtlizadasToolStripMenuItem.Text = "Herramientas mas utlizadas";
-            // 
-            // duracionDeLosProyectosToolStripMenuItem
-            // 
-            this.duracionDeLosProyectosToolStripMenuItem.Name = "duracionDeLosProyectosToolStripMenuItem";
-            this.duracionDeLosProyectosToolStripMenuItem.Size = new System.Drawing.Size(156, 20);
-            this.duracionDeLosProyectosToolStripMenuItem.Text = "Duracion de los Proyectos";
             // 
             // PrincipalForm
             // 
@@ -1165,10 +1274,20 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.ToolStripMenuItem porFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem estadisticaAntiguedadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem estadisticaEdadPromedioDelPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem duracionDeEtapasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem herramientasMasUtlizadasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem duracionDeLosProyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesEstadisticosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosMasVendidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem masVendidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formasDePagoMasUtilizadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem duracionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasMasUtilizadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem edadPromedioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem antiguedadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem masUtilizadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formasDePagoMasUtilizadasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem duracionDeLasEtapasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promedioDeLosPreciosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem realizadosPorMesToolStripMenuItem;
     }
 }

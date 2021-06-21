@@ -49,6 +49,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "ProductosMasVendidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductosMasVendidos";
             this.Load += new System.EventHandler(this.ProductosMasVendidos_Load);
             this.ResumeLayout(false);

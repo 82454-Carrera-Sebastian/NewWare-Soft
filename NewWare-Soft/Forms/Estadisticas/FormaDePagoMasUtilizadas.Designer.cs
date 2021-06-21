@@ -50,6 +50,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FormaDePagoMasUtilizadas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormaDePagoMasUtilizadas";
             this.Load += new System.EventHandler(this.FormaDePagoMasUtilizadas_Load);
             this.ResumeLayout(false);

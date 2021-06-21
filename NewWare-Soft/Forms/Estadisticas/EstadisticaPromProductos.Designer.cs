@@ -141,6 +141,7 @@ namespace NewWare_Soft
             this.Controls.Add(this.lblPromedio);
             this.Controls.Add(this.groupBox1);
             this.Name = "EstadisticaPromProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Precio promedio de productos";
             this.Load += new System.EventHandler(this.EstadisticaPromProductos_Load);
             this.groupBox1.ResumeLayout(false);

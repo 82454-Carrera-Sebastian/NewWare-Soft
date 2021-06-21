@@ -134,6 +134,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chk_barras);
             this.Name = "EstadisticaDuracionProyectos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estadistica de duracion de proyectos";
             this.Load += new System.EventHandler(this.EstadisticaDuracionProyectos_Load);
             this.groupBox1.ResumeLayout(false);

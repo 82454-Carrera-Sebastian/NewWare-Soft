@@ -449,11 +449,58 @@ namespace NewWare_Soft.Forms
             EstadisticasEmpleados ven = new EstadisticasEmpleados();
             ven.ShowDialog();
         }
-
-        private void duracionDeEtapasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void masVendidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DuracionDeEtapas ventana = new DuracionDeEtapas();
-            ventana.ShowDialog();
+            ProductosMasVendidos ven = new ProductosMasVendidos();
+            ven.ShowDialog();
+        }
+
+        private void duracionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaDuracionProyectos ven = new EstadisticaDuracionProyectos();
+            ven.ShowDialog();
+        }
+
+        private void edadPromedioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadistica_EdadPromPersonal ven = new Estadistica_EdadPromPersonal();
+            ven.ShowDialog();
+        }
+
+        private void antiguedadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadistica_Antiguedad ven = new Estadistica_Antiguedad();
+            ven.ShowDialog();
+        }
+
+        private void masUtilizadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadistica_HerramientasMasUtilizadas ven = new Estadistica_HerramientasMasUtilizadas();
+            ven.ShowDialog();
+        }
+
+        private void formasDePagoMasUtilizadasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormaDePagoMasUtilizadas ven = new FormaDePagoMasUtilizadas();
+            ven.ShowDialog();
+        }
+
+        private void duracionDeLasEtapasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DuracionDeEtapas ven = new DuracionDeEtapas();
+            ven.ShowDialog();
+        }
+
+        private void promedioDeLosPreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaPromProductos ven = new EstadisticaPromProductos();
+            ven.ShowDialog();
+        }
+
+        private void realizadosPorMesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticaProyectoMes ven = new EstadisticaProyectoMes();
+            ven.ShowDialog();
         }
     }
 }

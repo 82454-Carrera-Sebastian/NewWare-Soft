@@ -1008,6 +1008,14 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_1553045_blue_number_five_numbers_study_icon_128px.png" />
     <None Include="Resources\iconfinder_984753_more_other_yet_detail_details_icon_128px.png" />
+    <None Include="Resources\6_icon-icons.com_68891.png" />
+    <None Include="Resources\dollar-coin-money_icon-icons.com_56177.png" />
+    <None Include="Resources\history_time_clock_1019.png" />
+    <None Include="Resources\1486504340-calendar-date-event-month-schedule_81325.png" />
+    <None Include="Resources\shoppaymentorderbuy-29_icon-icons.com_73875.png" />
+    <None Include="Resources\settings_78352.png" />
+    <None Include="Resources\oldboss_person_man_grandpa_deeda_2857.png" />
+    <None Include="Resources\age_theapplication_3019.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
