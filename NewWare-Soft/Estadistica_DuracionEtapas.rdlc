@@ -47,7 +47,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Etapas que mas tardaron</Value>
+                    <Value>Duracion por Etapa</Value>
                     <Style>
                       <FontSize>15pt</FontSize>
                       <Color>DodgerBlue</Color>
