@@ -358,6 +358,7 @@ E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWar
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaBarrio.resources
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCiudad.resources
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaCliente.resources
+E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Estadisticas.Estadistica_EtapasQueMasTardaron.resources
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Estadisticas.Estadistica_HerramientasMasUtilizadas.resources
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Estadisticas.FormaDePagoMasUtilizadas.resources
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.AltaEtapa.resources
@@ -435,4 +436,3 @@ E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWar
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.csproj.CopyComplete
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.exe
 E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare-Soft.pdb
-E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\obj\Debug\NewWare_Soft.Forms.Estadisticas.Estadistica_DuracionEtapas.resources

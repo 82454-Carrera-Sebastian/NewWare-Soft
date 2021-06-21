@@ -11,25 +11,25 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DuracionEtapas">
+    <DataSet Name="EtapasMasTardaron">
       <Query>
         <DataSourceName>Datos_Estadisticos</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Codigo">
-          <DataField>Codigo</DataField>
+        <Field Name="Nombre">
+          <DataField>Nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Dias">
-          <DataField>Dias</DataField>
+        <Field Name="Tiempo">
+          <DataField>Tiempo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Datos_Estadisticos</rd:DataSetName>
         <rd:SchemaPath>E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\Datos_Estadisticos.xsd</rd:SchemaPath>
-        <rd:TableName>DuracionEtapas</rd:TableName>
+        <rd:TableName>EtapasMasTardaron</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -47,7 +47,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Duracion de Etapas</Value>
+                    <Value>Etapas que mas tardaron</Value>
                     <Style>
                       <FontSize>15pt</FontSize>
                       <Color>DodgerBlue</Color>
@@ -91,33 +91,32 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Codigo.Value</GroupExpression>
+                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Codigo.Value</Value>
+                      <Value>=Fields!Nombre.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Codigo.Value</Label>
+                  <Label>=Fields!Nombre.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Dias</Label>
+                  <Label>Tiempo</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Dias">
+                <ChartSeries Name="Tiempo">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <X>=Fields!Codigo.Value</X>
-                        <Y>=Sum(Fields!Dias.Value)</Y>
+                        <Y>=Sum(Fields!Tiempo.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -401,7 +400,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Grafico de Barras</Caption>
+                <Caption>Etapas que mas tardaron</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -430,7 +429,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DuracionEtapas</DataSetName>
+            <DataSetName>EtapasMasTardaron</DataSetName>
             <Top>1.79599cm</Top>
             <Left>3.35703cm</Left>
             <Height>5cm</Height>

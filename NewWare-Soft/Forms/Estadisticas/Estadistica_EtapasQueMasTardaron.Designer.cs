@@ -1,7 +1,7 @@
 ﻿
 namespace NewWare_Soft.Forms.Estadisticas
 {
-    partial class Estadistica_DuracionEtapas
+    partial class Estadistica_EtapasQueMasTardaron
     {
         /// <summary>
         /// Required designer variable.
@@ -71,10 +71,10 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.rdbDuracionMayor.AutoSize = true;
             this.rdbDuracionMayor.Location = new System.Drawing.Point(18, 70);
             this.rdbDuracionMayor.Name = "rdbDuracionMayor";
-            this.rdbDuracionMayor.Size = new System.Drawing.Size(213, 17);
+            this.rdbDuracionMayor.Size = new System.Drawing.Size(175, 17);
             this.rdbDuracionMayor.TabIndex = 6;
             this.rdbDuracionMayor.TabStop = true;
-            this.rdbDuracionMayor.Text = "Etapas que poseen duracion mayor a ...";
+            this.rdbDuracionMayor.Text = "Etapas con duracion mayor a ...";
             this.rdbDuracionMayor.UseVisualStyleBackColor = true;
             // 
             // rdbNombre
@@ -82,10 +82,10 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.rdbNombre.AutoSize = true;
             this.rdbNombre.Location = new System.Drawing.Point(18, 47);
             this.rdbNombre.Name = "rdbNombre";
-            this.rdbNombre.Size = new System.Drawing.Size(181, 17);
+            this.rdbNombre.Size = new System.Drawing.Size(113, 17);
             this.rdbNombre.TabIndex = 4;
             this.rdbNombre.TabStop = true;
-            this.rdbNombre.Text = "Duracion de etapas por Proyecto";
+            this.rdbNombre.Text = "Filtrar por Proyecto";
             this.rdbNombre.UseVisualStyleBackColor = true;
             // 
             // rbTodas
@@ -93,10 +93,10 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.rbTodas.AutoSize = true;
             this.rbTodas.Location = new System.Drawing.Point(18, 24);
             this.rbTodas.Name = "rbTodas";
-            this.rbTodas.Size = new System.Drawing.Size(163, 17);
+            this.rbTodas.Size = new System.Drawing.Size(106, 17);
             this.rbTodas.TabIndex = 3;
             this.rbTodas.TabStop = true;
-            this.rbTodas.Text = "Duracion de todas las etapas";
+            this.rbTodas.Text = "Todas las etapas";
             this.rbTodas.UseVisualStyleBackColor = true;
             // 
             // btnSelecc
@@ -136,6 +136,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(273, 36);
             this.label2.Name = "label2";
@@ -157,6 +158,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Enabled = false;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(374, 56);
             this.label3.Name = "label3";
@@ -175,7 +177,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.txtNumero.TabIndex = 24;
             this.txtNumero.Visible = false;
             // 
-            // Estadistica_DuracionEtapas
+            // Estadistica_EtapasQueMasTardaron
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,9 +191,9 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSelecc);
             this.Controls.Add(this.reporte_Etapas);
-            this.Name = "Estadistica_DuracionEtapas";
+            this.Name = "Estadistica_EtapasQueMasTardaron";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estadistica_DuracionEtapas";
+            this.Text = "Estadistica_EtapasQueMasTardaron";
             this.Load += new System.EventHandler(this.Estadistica_EtapasQueMasTardaron_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

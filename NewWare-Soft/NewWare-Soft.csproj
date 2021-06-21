@@ -156,11 +156,11 @@
     <Compile Include="Forms\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Estadisticas\Estadistica_DuracionEtapas.cs">
+    <Compile Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Estadisticas\Estadistica_DuracionEtapas.Designer.cs">
-      <DependentUpon>Estadistica_DuracionEtapas.cs</DependentUpon>
+    <Compile Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.Designer.cs">
+      <DependentUpon>Estadistica_EtapasQueMasTardaron.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.cs">
       <SubType>Form</SubType>
@@ -610,8 +610,8 @@
     <EmbeddedResource Include="Forms\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_DuracionEtapas.resx">
-      <DependentUpon>Estadistica_DuracionEtapas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Estadisticas\Estadistica_EtapasQueMasTardaron.resx">
+      <DependentUpon>Estadistica_EtapasQueMasTardaron.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\Estadistica_HerramientasMasUtilizadas.resx">
       <DependentUpon>Estadistica_HerramientasMasUtilizadas.cs</DependentUpon>
