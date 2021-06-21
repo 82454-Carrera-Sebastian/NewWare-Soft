@@ -502,6 +502,12 @@ namespace NewWare_Soft.Forms
             EstadisticaProyectoMes ven = new EstadisticaProyectoMes();
             ven.ShowDialog();
         }
+
+        private void empleadosPorProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstadisticasEmpleados ven = new EstadisticasEmpleados();
+            ven.ShowDialog();
+        }
     }
 }
 

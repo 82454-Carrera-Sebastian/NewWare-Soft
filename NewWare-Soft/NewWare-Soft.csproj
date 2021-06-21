@@ -119,10 +119,10 @@
     <Compile Include="Entidades\Proyecto.cs" />
     <Compile Include="Entidades\Tarjeta.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="EstadisticasEmpleados.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticasEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EstadisticasEmpleados.Designer.cs">
+    <Compile Include="Forms\Estadisticas\EstadisticasEmpleados.Designer.cs">
       <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Estadisticas\DuracionDeEtapas.cs">
@@ -609,7 +609,7 @@
     <EmbeddedResource Include="EstadisticaPromProd.rdlc" />
     <EmbeddedResource Include="EstadisticaPromProdMes.rdlc" />
     <EmbeddedResource Include="EstadisticasEmpleadoProyecto.rdlc" />
-    <EmbeddedResource Include="EstadisticasEmpleados.resx">
+    <EmbeddedResource Include="Forms\Estadisticas\EstadisticasEmpleados.resx">
       <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estadistica_DuracionEtapas.rdlc" />
