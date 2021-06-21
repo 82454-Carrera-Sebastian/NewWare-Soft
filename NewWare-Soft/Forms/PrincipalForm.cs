@@ -446,7 +446,7 @@ namespace NewWare_Soft.Forms
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Estadistica_EtapasQueMasTardaron ventana = new Estadistica_EtapasQueMasTardaron();
+            Estadistica_DuracionEtapas ventana = new Estadistica_DuracionEtapas();
             ventana.ShowDialog();
         }
     }

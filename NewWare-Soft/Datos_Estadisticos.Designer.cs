@@ -36,7 +36,7 @@ namespace NewWare_Soft {
         
         private DuracionProyectoDataTable tableDuracionProyecto;
         
-        private EtapasMasTardaronDataTable tableEtapasMasTardaron;
+        private DuracionEtapasDataTable tableDuracionEtapas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -84,8 +84,8 @@ namespace NewWare_Soft {
                 if ((ds.Tables["DuracionProyecto"] != null)) {
                     base.Tables.Add(new DuracionProyectoDataTable(ds.Tables["DuracionProyecto"]));
                 }
-                if ((ds.Tables["EtapasMasTardaron"] != null)) {
-                    base.Tables.Add(new EtapasMasTardaronDataTable(ds.Tables["EtapasMasTardaron"]));
+                if ((ds.Tables["DuracionEtapas"] != null)) {
+                    base.Tables.Add(new DuracionEtapasDataTable(ds.Tables["DuracionEtapas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -169,9 +169,9 @@ namespace NewWare_Soft {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public EtapasMasTardaronDataTable EtapasMasTardaron {
+        public DuracionEtapasDataTable DuracionEtapas {
             get {
-                return this.tableEtapasMasTardaron;
+                return this.tableDuracionEtapas;
             }
         }
         
@@ -260,8 +260,8 @@ namespace NewWare_Soft {
                 if ((ds.Tables["DuracionProyecto"] != null)) {
                     base.Tables.Add(new DuracionProyectoDataTable(ds.Tables["DuracionProyecto"]));
                 }
-                if ((ds.Tables["EtapasMasTardaron"] != null)) {
-                    base.Tables.Add(new EtapasMasTardaronDataTable(ds.Tables["EtapasMasTardaron"]));
+                if ((ds.Tables["DuracionEtapas"] != null)) {
+                    base.Tables.Add(new DuracionEtapasDataTable(ds.Tables["DuracionEtapas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -332,10 +332,10 @@ namespace NewWare_Soft {
                     this.tableDuracionProyecto.InitVars();
                 }
             }
-            this.tableEtapasMasTardaron = ((EtapasMasTardaronDataTable)(base.Tables["EtapasMasTardaron"]));
+            this.tableDuracionEtapas = ((DuracionEtapasDataTable)(base.Tables["DuracionEtapas"]));
             if ((initTable == true)) {
-                if ((this.tableEtapasMasTardaron != null)) {
-                    this.tableEtapasMasTardaron.InitVars();
+                if ((this.tableDuracionEtapas != null)) {
+                    this.tableDuracionEtapas.InitVars();
                 }
             }
         }
@@ -360,8 +360,8 @@ namespace NewWare_Soft {
             base.Tables.Add(this.tableHerrMasUtilizadas);
             this.tableDuracionProyecto = new DuracionProyectoDataTable();
             base.Tables.Add(this.tableDuracionProyecto);
-            this.tableEtapasMasTardaron = new EtapasMasTardaronDataTable();
-            base.Tables.Add(this.tableEtapasMasTardaron);
+            this.tableDuracionEtapas = new DuracionEtapasDataTable();
+            base.Tables.Add(this.tableDuracionEtapas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -402,7 +402,7 @@ namespace NewWare_Soft {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeEtapasMasTardaron() {
+        private bool ShouldSerializeDuracionEtapas() {
             return false;
         }
         
@@ -480,7 +480,7 @@ namespace NewWare_Soft {
         public delegate void DuracionProyectoRowChangeEventHandler(object sender, DuracionProyectoRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void EtapasMasTardaronRowChangeEventHandler(object sender, EtapasMasTardaronRowChangeEvent e);
+        public delegate void DuracionEtapasRowChangeEventHandler(object sender, DuracionEtapasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2053,16 +2053,16 @@ namespace NewWare_Soft {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class EtapasMasTardaronDataTable : global::System.Data.TypedTableBase<EtapasMasTardaronRow> {
+        public partial class DuracionEtapasDataTable : global::System.Data.TypedTableBase<DuracionEtapasRow> {
             
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnCodigo;
             
-            private global::System.Data.DataColumn columnTiempo;
+            private global::System.Data.DataColumn columnDias;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronDataTable() {
-                this.TableName = "EtapasMasTardaron";
+            public DuracionEtapasDataTable() {
+                this.TableName = "DuracionEtapas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2070,7 +2070,7 @@ namespace NewWare_Soft {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal EtapasMasTardaronDataTable(global::System.Data.DataTable table) {
+            internal DuracionEtapasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2087,24 +2087,24 @@ namespace NewWare_Soft {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected EtapasMasTardaronDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DuracionEtapasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
+            public global::System.Data.DataColumn CodigoColumn {
                 get {
-                    return this.columnNombre;
+                    return this.columnCodigo;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TiempoColumn {
+            public global::System.Data.DataColumn DiasColumn {
                 get {
-                    return this.columnTiempo;
+                    return this.columnDias;
                 }
             }
             
@@ -2119,46 +2119,46 @@ namespace NewWare_Soft {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronRow this[int index] {
+            public DuracionEtapasRow this[int index] {
                 get {
-                    return ((EtapasMasTardaronRow)(this.Rows[index]));
+                    return ((DuracionEtapasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event EtapasMasTardaronRowChangeEventHandler EtapasMasTardaronRowChanging;
+            public event DuracionEtapasRowChangeEventHandler DuracionEtapasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event EtapasMasTardaronRowChangeEventHandler EtapasMasTardaronRowChanged;
+            public event DuracionEtapasRowChangeEventHandler DuracionEtapasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event EtapasMasTardaronRowChangeEventHandler EtapasMasTardaronRowDeleting;
+            public event DuracionEtapasRowChangeEventHandler DuracionEtapasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event EtapasMasTardaronRowChangeEventHandler EtapasMasTardaronRowDeleted;
+            public event DuracionEtapasRowChangeEventHandler DuracionEtapasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddEtapasMasTardaronRow(EtapasMasTardaronRow row) {
+            public void AddDuracionEtapasRow(DuracionEtapasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronRow AddEtapasMasTardaronRow(string Nombre, int Tiempo) {
-                EtapasMasTardaronRow rowEtapasMasTardaronRow = ((EtapasMasTardaronRow)(this.NewRow()));
+            public DuracionEtapasRow AddDuracionEtapasRow(string Codigo, int Dias) {
+                DuracionEtapasRow rowDuracionEtapasRow = ((DuracionEtapasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Nombre,
-                        Tiempo};
-                rowEtapasMasTardaronRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowEtapasMasTardaronRow);
-                return rowEtapasMasTardaronRow;
+                        Codigo,
+                        Dias};
+                rowDuracionEtapasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDuracionEtapasRow);
+                return rowDuracionEtapasRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                EtapasMasTardaronDataTable cln = ((EtapasMasTardaronDataTable)(base.Clone()));
+                DuracionEtapasDataTable cln = ((DuracionEtapasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2166,49 +2166,49 @@ namespace NewWare_Soft {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new EtapasMasTardaronDataTable();
+                return new DuracionEtapasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnTiempo = base.Columns["Tiempo"];
+                this.columnCodigo = base.Columns["Codigo"];
+                this.columnDias = base.Columns["Dias"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnTiempo = new global::System.Data.DataColumn("Tiempo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTiempo);
+                this.columnCodigo = new global::System.Data.DataColumn("Codigo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodigo);
+                this.columnDias = new global::System.Data.DataColumn("Dias", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDias);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronRow NewEtapasMasTardaronRow() {
-                return ((EtapasMasTardaronRow)(this.NewRow()));
+            public DuracionEtapasRow NewDuracionEtapasRow() {
+                return ((DuracionEtapasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new EtapasMasTardaronRow(builder);
+                return new DuracionEtapasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(EtapasMasTardaronRow);
+                return typeof(DuracionEtapasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.EtapasMasTardaronRowChanged != null)) {
-                    this.EtapasMasTardaronRowChanged(this, new EtapasMasTardaronRowChangeEvent(((EtapasMasTardaronRow)(e.Row)), e.Action));
+                if ((this.DuracionEtapasRowChanged != null)) {
+                    this.DuracionEtapasRowChanged(this, new DuracionEtapasRowChangeEvent(((DuracionEtapasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2216,8 +2216,8 @@ namespace NewWare_Soft {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.EtapasMasTardaronRowChanging != null)) {
-                    this.EtapasMasTardaronRowChanging(this, new EtapasMasTardaronRowChangeEvent(((EtapasMasTardaronRow)(e.Row)), e.Action));
+                if ((this.DuracionEtapasRowChanging != null)) {
+                    this.DuracionEtapasRowChanging(this, new DuracionEtapasRowChangeEvent(((DuracionEtapasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2225,8 +2225,8 @@ namespace NewWare_Soft {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.EtapasMasTardaronRowDeleted != null)) {
-                    this.EtapasMasTardaronRowDeleted(this, new EtapasMasTardaronRowChangeEvent(((EtapasMasTardaronRow)(e.Row)), e.Action));
+                if ((this.DuracionEtapasRowDeleted != null)) {
+                    this.DuracionEtapasRowDeleted(this, new DuracionEtapasRowChangeEvent(((DuracionEtapasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2234,14 +2234,14 @@ namespace NewWare_Soft {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.EtapasMasTardaronRowDeleting != null)) {
-                    this.EtapasMasTardaronRowDeleting(this, new EtapasMasTardaronRowChangeEvent(((EtapasMasTardaronRow)(e.Row)), e.Action));
+                if ((this.DuracionEtapasRowDeleting != null)) {
+                    this.DuracionEtapasRowDeleting(this, new DuracionEtapasRowChangeEvent(((DuracionEtapasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveEtapasMasTardaronRow(EtapasMasTardaronRow row) {
+            public void RemoveDuracionEtapasRow(DuracionEtapasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2268,7 +2268,7 @@ namespace NewWare_Soft {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "EtapasMasTardaronDataTable";
+                attribute2.FixedValue = "DuracionEtapasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2741,71 +2741,71 @@ namespace NewWare_Soft {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class EtapasMasTardaronRow : global::System.Data.DataRow {
+        public partial class DuracionEtapasRow : global::System.Data.DataRow {
             
-            private EtapasMasTardaronDataTable tableEtapasMasTardaron;
+            private DuracionEtapasDataTable tableDuracionEtapas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal EtapasMasTardaronRow(global::System.Data.DataRowBuilder rb) : 
+            internal DuracionEtapasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableEtapasMasTardaron = ((EtapasMasTardaronDataTable)(this.Table));
+                this.tableDuracionEtapas = ((DuracionEtapasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre {
+            public string Codigo {
                 get {
                     try {
-                        return ((string)(this[this.tableEtapasMasTardaron.NombreColumn]));
+                        return ((string)(this[this.tableDuracionEtapas.CodigoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'EtapasMasTardaron\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Codigo\' de la tabla \'DuracionEtapas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEtapasMasTardaron.NombreColumn] = value;
+                    this[this.tableDuracionEtapas.CodigoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Tiempo {
+            public int Dias {
                 get {
                     try {
-                        return ((int)(this[this.tableEtapasMasTardaron.TiempoColumn]));
+                        return ((int)(this[this.tableDuracionEtapas.DiasColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Tiempo\' de la tabla \'EtapasMasTardaron\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Dias\' de la tabla \'DuracionEtapas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEtapasMasTardaron.TiempoColumn] = value;
+                    this[this.tableDuracionEtapas.DiasColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tableEtapasMasTardaron.NombreColumn);
+            public bool IsCodigoNull() {
+                return this.IsNull(this.tableDuracionEtapas.CodigoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tableEtapasMasTardaron.NombreColumn] = global::System.Convert.DBNull;
+            public void SetCodigoNull() {
+                this[this.tableDuracionEtapas.CodigoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTiempoNull() {
-                return this.IsNull(this.tableEtapasMasTardaron.TiempoColumn);
+            public bool IsDiasNull() {
+                return this.IsNull(this.tableDuracionEtapas.DiasColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTiempoNull() {
-                this[this.tableEtapasMasTardaron.TiempoColumn] = global::System.Convert.DBNull;
+            public void SetDiasNull() {
+                this[this.tableDuracionEtapas.DiasColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3017,22 +3017,22 @@ namespace NewWare_Soft {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class EtapasMasTardaronRowChangeEvent : global::System.EventArgs {
+        public class DuracionEtapasRowChangeEvent : global::System.EventArgs {
             
-            private EtapasMasTardaronRow eventRow;
+            private DuracionEtapasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronRowChangeEvent(EtapasMasTardaronRow row, global::System.Data.DataRowAction action) {
+            public DuracionEtapasRowChangeEvent(DuracionEtapasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EtapasMasTardaronRow Row {
+            public DuracionEtapasRow Row {
                 get {
                     return this.eventRow;
                 }
