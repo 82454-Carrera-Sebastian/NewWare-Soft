@@ -28,12 +28,19 @@ namespace NewWare_Soft.Forms.Estadisticas
         {
             if (rbTodas.Checked)
             {
+                label2.Visible = false;
+                txtNombre.Visible = false;
+                label3.Visible = false;
+                txtNumero.Visible = false;
                 label1.Visible = true;
                 btnConfirmar.Visible = true;
                 btnConfirmar.Enabled = true;
             }
             if (rdbNombre.Checked)
             {
+                label3.Visible = false;
+                txtNumero.Visible = false;
+                label1.Visible = false;
                 label2.Visible = true;
                 txtNombre.Visible = true;
                 txtNombre.Enabled = true;
@@ -42,6 +49,9 @@ namespace NewWare_Soft.Forms.Estadisticas
             }
             if (rdbDuracionMayor.Checked)
             {
+                label2.Visible = false;
+                txtNombre.Visible = false;
+                label1.Visible = false;
                 label3.Visible = true;
                 txtNumero.Visible = true;
                 txtNumero.Enabled = true;
@@ -52,10 +62,10 @@ namespace NewWare_Soft.Forms.Estadisticas
         }
         private void armarReporte(DataTable tabla)
         {
-            ReportDataSource ds = new ReportDataSource("EtapasMasTardaron", tabla);
+            ReportDataSource ds = new ReportDataSource("DuracionDeEtapas", tabla);
             reporte_Etapas.LocalReport.DataSources.Clear();
             reporte_Etapas.LocalReport.DataSources.Add(ds);
-            reporte_Etapas.LocalReport.Refresh();
+            //reporte_Etapas.LocalReport.Refresh();
             reporte_Etapas.RefreshReport();
             reporte_Etapas.Visible = true;
         }
@@ -72,7 +82,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             if (rdbNombre.Checked)
             {
                 DataTable tabla = new DataTable();
-                tabla = AD_Etapass.duracionEtapa();
+                tabla = AD_Etapass.duracionEtapasPorProyectos(txtNombre.Text.Trim());
                 return tabla;
             }
             else
@@ -85,10 +95,33 @@ namespace NewWare_Soft.Forms.Estadisticas
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            if (rbTodas.Checked)
+            {
+                DataTable tabla = new DataTable();
+                tabla = buscarTablas();
+                armarReporte(tabla);
+                label1.Visible = false;
+                btnConfirmar.Visible = false;
+            
+            }
+            if (rdbNombre.Checked)
+            {
+                DataTable tabla = new DataTable();
+                tabla = buscarTablas();
+                armarReporte(tabla);
+                txtNombre.Text = "";
+                txtNombre.Focus();
+                
+            }
+            if (rdbNombre.Checked)
+            {
+                DataTable tabla = new DataTable();
+                tabla = buscarTablas();
+                armarReporte(tabla);
+                txtNumero.Text = "";
+                txtNumero.Focus();
 
-            DataTable tabla = new DataTable();
-            tabla = buscarTablas();
-            armarReporte(tabla);
+            }
 
         }
     }

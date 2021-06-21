@@ -126,6 +126,9 @@ namespace NewWare_Soft.Forms
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.estadisticaAntiguedadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticaEdadPromedioDelPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.duracionDeEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasMasUtlizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.duracionDeLosProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip3.SuspendLayout();
             this.menuStrip2.SuspendLayout();
@@ -989,10 +992,13 @@ namespace NewWare_Soft.Forms
             this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.estadisticaAntiguedadToolStripMenuItem,
-            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem});
+            this.estadisticaEdadPromedioDelPersonalToolStripMenuItem,
+            this.duracionDeEtapasToolStripMenuItem,
+            this.herramientasMasUtlizadasToolStripMenuItem,
+            this.duracionDeLosProyectosToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(242, 330);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(492, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(932, 24);
             this.menuStrip2.TabIndex = 19;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -1007,6 +1013,25 @@ namespace NewWare_Soft.Forms
             this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Name = "estadisticaEdadPromedioDelPersonalToolStripMenuItem";
             this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Size = new System.Drawing.Size(225, 20);
             this.estadisticaEdadPromedioDelPersonalToolStripMenuItem.Text = "Estadistica Edad Promedio del Personal";
+            // 
+            // duracionDeEtapasToolStripMenuItem
+            // 
+            this.duracionDeEtapasToolStripMenuItem.Name = "duracionDeEtapasToolStripMenuItem";
+            this.duracionDeEtapasToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.duracionDeEtapasToolStripMenuItem.Text = "Duracion de Etapas";
+            this.duracionDeEtapasToolStripMenuItem.Click += new System.EventHandler(this.duracionDeEtapasToolStripMenuItem_Click);
+            // 
+            // herramientasMasUtlizadasToolStripMenuItem
+            // 
+            this.herramientasMasUtlizadasToolStripMenuItem.Name = "herramientasMasUtlizadasToolStripMenuItem";
+            this.herramientasMasUtlizadasToolStripMenuItem.Size = new System.Drawing.Size(164, 20);
+            this.herramientasMasUtlizadasToolStripMenuItem.Text = "Herramientas mas utlizadas";
+            // 
+            // duracionDeLosProyectosToolStripMenuItem
+            // 
+            this.duracionDeLosProyectosToolStripMenuItem.Name = "duracionDeLosProyectosToolStripMenuItem";
+            this.duracionDeLosProyectosToolStripMenuItem.Size = new System.Drawing.Size(156, 20);
+            this.duracionDeLosProyectosToolStripMenuItem.Text = "Duracion de los Proyectos";
             // 
             // PrincipalForm
             // 
@@ -1142,5 +1167,8 @@ namespace NewWare_Soft.Forms
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem estadisticaAntiguedadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadisticaEdadPromedioDelPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem duracionDeEtapasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasMasUtlizadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem duracionDeLosProyectosToolStripMenuItem;
     }
 }

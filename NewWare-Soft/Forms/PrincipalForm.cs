@@ -449,6 +449,12 @@ namespace NewWare_Soft.Forms
             EstadisticasEmpleados ven = new EstadisticasEmpleados();
             ven.ShowDialog();
         }
+
+        private void duracionDeEtapasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DuracionDeEtapas ventana = new DuracionDeEtapas();
+            ventana.ShowDialog();
+        }
     }
 }
 

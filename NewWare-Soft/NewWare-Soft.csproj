@@ -612,6 +612,10 @@
     <EmbeddedResource Include="EstadisticasEmpleados.resx">
       <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estadistica_DuracionEtapas.rdlc" />
+    <EmbeddedResource Include="Forms\Estadisticas\DuracionDeEtapas.resx">
+      <DependentUpon>DuracionDeEtapas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Estadisticas\EstadisticaDuracionProyectos.resx">
       <DependentUpon>EstadisticaDuracionProyectos.cs</DependentUpon>
     </EmbeddedResource>

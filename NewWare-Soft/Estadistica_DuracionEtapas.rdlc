@@ -11,7 +11,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DuracionEtapas">
+    <DataSet Name="DuracionDeEtapas">
       <Query>
         <DataSourceName>Datos_Estadisticos</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -91,32 +91,32 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
+                      <GroupExpression>=Fields!Codigo.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Nombre.Value</Value>
+                      <Value>=Fields!Codigo.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Nombre.Value</Label>
+                  <Label>=Fields!Codigo.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Tiempo</Label>
+                  <Label>Duracion</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Tiempo">
+                <ChartSeries Name="Duracion">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Tiempo.Value)</Y>
+                        <Y>=Max(Fields!Duracion.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -400,7 +400,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Etapas que mas tardaron</Caption>
+                <Caption>Grafico de Barras</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -429,7 +429,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DuracionEtapas</DataSetName>
+            <DataSetName>DuracionDeEtapas</DataSetName>
             <Top>1.79599cm</Top>
             <Left>3.35703cm</Left>
             <Height>5cm</Height>

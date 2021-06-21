@@ -46,13 +46,14 @@ namespace NewWare_Soft.Forms.Estadisticas
             // 
             // reporte_Etapas
             // 
-            this.reporte_Etapas.LocalReport.ReportEmbeddedResource = "NewWare_Soft.Estadistica_EtapasQueMasTardaron.rdlc";
+            this.reporte_Etapas.LocalReport.ReportEmbeddedResource = "NewWare_Soft.Estadistica_DuracionEtapas.rdlc";
             this.reporte_Etapas.Location = new System.Drawing.Point(0, 157);
             this.reporte_Etapas.Name = "reporte_Etapas";
             this.reporte_Etapas.ServerReport.BearerToken = null;
             this.reporte_Etapas.Size = new System.Drawing.Size(800, 359);
             this.reporte_Etapas.TabIndex = 0;
             this.reporte_Etapas.Visible = false;
+            this.reporte_Etapas.Load += new System.EventHandler(this.Estadistica_EtapasQueMasTardaron_Load);
             // 
             // groupBox1
             // 
@@ -177,7 +178,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.txtNumero.TabIndex = 24;
             this.txtNumero.Visible = false;
             // 
-            // Estadistica_EtapasQueMasTardaron
+            // DuracionDeEtapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +192,7 @@ namespace NewWare_Soft.Forms.Estadisticas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSelecc);
             this.Controls.Add(this.reporte_Etapas);
-            this.Name = "Estadistica_EtapasQueMasTardaron";
+            this.Name = "DuracionDeEtapas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estadistica_EtapasQueMasTardaron";
             this.Load += new System.EventHandler(this.Estadistica_EtapasQueMasTardaron_Load);
