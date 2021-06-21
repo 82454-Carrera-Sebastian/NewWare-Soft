@@ -11,25 +11,25 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="EtapasMasTardaron">
+    <DataSet Name="DuracionEtapas">
       <Query>
         <DataSourceName>Datos_Estadisticos</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Nombre">
-          <DataField>Nombre</DataField>
+        <Field Name="Codigo">
+          <DataField>Codigo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Tiempo">
-          <DataField>Tiempo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="Duracion">
+          <DataField>Duracion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Datos_Estadisticos</rd:DataSetName>
         <rd:SchemaPath>E:\Facultad\PAV 1\Repositorios GitHub\NewWare-Soft\NewWare-Soft\Datos_Estadisticos.xsd</rd:SchemaPath>
-        <rd:TableName>EtapasMasTardaron</rd:TableName>
+        <rd:TableName>DuracionEtapas</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -429,7 +429,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>EtapasMasTardaron</DataSetName>
+            <DataSetName>DuracionEtapas</DataSetName>
             <Top>1.79599cm</Top>
             <Left>3.35703cm</Left>
             <Height>5cm</Height>
