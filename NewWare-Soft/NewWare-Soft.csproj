@@ -70,6 +70,7 @@
     <Compile Include="AccesoADatos\AD_Barrio.cs" />
     <Compile Include="AccesoADatos\AD_Cargo.cs" />
     <Compile Include="AccesoADatos\AD_Cliente.cs" />
+    <Compile Include="AccesoADatos\AD_Etapass.cs" />
     <Compile Include="AccesoADatos\AD_Facturas.cs" />
     <Compile Include="AccesoADatos\AD_FPago.cs" />
     <Compile Include="AccesoADatos\AD_Herramientas.cs" />
@@ -123,6 +124,12 @@
     </Compile>
     <Compile Include="EstadisticasEmpleados.Designer.cs">
       <DependentUpon>EstadisticasEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\DuracionDeEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estadisticas\DuracionDeEtapas.Designer.cs">
+      <DependentUpon>DuracionDeEtapas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Estadisticas\EstadisticaDuracionProyectos.cs">
       <SubType>Form</SubType>
